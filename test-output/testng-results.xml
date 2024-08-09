@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-09T22:20:39 SAST" name="Trello Suite" finished-at="2024-08-09T22:21:24 SAST" duration-ms="45368">
+    <groups>
+    </groups>
+    <test started-at="2024-08-09T22:20:39 SAST" name="Takealot Automation Tests" finished-at="2024-08-09T22:21:24 SAST" duration-ms="45368">
+      <class name="tests.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:20:39 SAST" name="setUp" finished-at="2024-08-09T22:20:48 SAST" duration-ms="9652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:20:51 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:20:54 SAST" duration-ms="3891" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[query1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iphone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[results-page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFunctionality -->
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:20:54 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:20:57 SAST" duration-ms="2439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[query2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wireless Earbuds]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[results-page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFunctionality -->
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:20:57 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:21:00 SAST" duration-ms="3209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[query3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[monitor]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[results-page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFunctionality -->
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:21:00 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:21:03 SAST" duration-ms="2539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[query4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[IPHONE 15]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[results-page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFunctionality -->
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:21:03 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:21:05 SAST" duration-ms="2412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[query5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iphone 15]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[results-page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFunctionality -->
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:21:05 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:21:08 SAST" duration-ms="2911" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[query6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[default-page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFunctionality -->
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:21:08 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:21:11 SAST" duration-ms="3162" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[query7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[default-page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFunctionality -->
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:21:11 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:21:13 SAST" duration-ms="2332" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[query8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[empty-results-page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFunctionality -->
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:21:13 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:21:16 SAST" duration-ms="2336" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[query9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[XYZ123NonExistent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[empty-results-page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFunctionality -->
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:21:16 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:21:18 SAST" duration-ms="1842" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[query10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gibharish-uhjbjk]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[empty-results-page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:21:18 SAST" name="tearDown" finished-at="2024-08-09T22:21:24 SAST" duration-ms="6518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.HomePageTest -->
+    </test> <!-- Takealot Automation Tests -->
+  </suite> <!-- Trello Suite -->
+</testng-results>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <!-- Console Appender for logging to the console -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <Filters>
+                <!-- Filter out TestNG logs -->
+                <RegexFilter regex=".*org.testng.*" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+        </Console>
+
+        <!-- RollingFile Appender for file-based logging -->
+        <RollingFile name="RollingFile" fileName="${sys:logFilePath}"
+             filePattern="${sys:logFilePath}-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+            <Policies>
+                <!-- Rotate log files daily -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <!-- Optionally, add size-based rotation -->
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="7"/>
+            <Filters>
+                <!-- Filter out TestNG logs -->
+                <RegexFilter regex=".*org.testng.*" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <!-- Root logger configuration -->
+        <Root level="debug">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </Root>
+    </Loggers>
+</Configuration>
