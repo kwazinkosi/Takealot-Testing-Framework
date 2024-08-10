@@ -13,6 +13,7 @@ public class TestSetup implements ITestListener {
         System.out.println("Setting up logging...");
         LoggingManager.configureLogging();
         System.out.println("Logging configured.");
+        LoggingManager.info("Logging configured succesfully!!");
     }
 
 }

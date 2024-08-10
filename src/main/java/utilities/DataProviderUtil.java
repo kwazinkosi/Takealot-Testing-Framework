@@ -3,12 +3,16 @@ package utilities;
 import file.ExcelReader;
 import org.testng.annotations.DataProvider;
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 
 public class DataProviderUtil {
 
     private static final String data_path = System.getProperty("user.dir") + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + "testdata.xlsx";
+    private static ExcelReader reader;
+
+    // Initialize the ExcelReader once in the constructor
+    public DataProviderUtil() {
+        reader = new ExcelReader(data_path);
+    }
 
     /**
      * DataProvider method that reads search data from an Excel file.
@@ -17,7 +21,6 @@ public class DataProviderUtil {
      */
     @DataProvider(name = "searchData")
     public Object[][] getSearchData() {
-    	ExcelReader reader = new ExcelReader(data_path);
         String sheetName = "search data";
 
         // Get the total number of rows in the sheet
@@ -34,5 +37,18 @@ public class DataProviderUtil {
         }
 
         return data;
+    }
+    
+    /**
+     * Retrieves the value from the specified sheet and key.
+     *
+     * @param sheetName The name of the sheet to read from.
+     * @param key The key to search for in the first column of the sheet.
+     * @return The value corresponding to the key in the second column, or null if not found.
+     */
+    public String getValue(String sheetName, String key) {
+        // Use the existing getValue method from ExcelReader
+        String value = reader.getValue(sheetName, key);
+        return value;
     }
 }

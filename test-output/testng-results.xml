@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-09T22:20:39 SAST" name="Trello Suite" finished-at="2024-08-09T22:21:24 SAST" duration-ms="45368">
+  <suite started-at="2024-08-10T13:29:41 SAST" name="Takealot Suite" finished-at="2024-08-10T13:31:32 SAST" duration-ms="110881">
     <groups>
     </groups>
-    <test started-at="2024-08-09T22:20:39 SAST" name="Takealot Automation Tests" finished-at="2024-08-09T22:21:24 SAST" duration-ms="45368">
+    <test started-at="2024-08-10T13:29:41 SAST" name="Takealot Automation Tests" finished-at="2024-08-10T13:31:32 SAST" duration-ms="110881">
       <class name="tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:20:39 SAST" name="setUp" finished-at="2024-08-09T22:20:48 SAST" duration-ms="9652" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@64bc21ac]" started-at="2024-08-10T13:30:05 SAST" name="setUp" finished-at="2024-08-10T13:30:11 SAST" duration-ms="6617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:20:51 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:20:54 SAST" duration-ms="3891" status="PASS">
+        <test-method signature="verifyTitle()[pri:0, instance:tests.HomePageTest@64bc21ac]" started-at="2024-08-10T13:30:11 SAST" name="verifyTitle" finished-at="2024-08-10T13:30:24 SAST" duration-ms="12425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.HomePageTest@64bc21ac]" started-at="2024-08-10T13:30:27 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-10T13:30:33 SAST" duration-ms="6658" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,7 +36,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:20:54 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:20:57 SAST" duration-ms="2439" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.HomePageTest@64bc21ac]" started-at="2024-08-10T13:30:33 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-10T13:30:37 SAST" duration-ms="4255" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +57,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:20:57 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:21:00 SAST" duration-ms="3209" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.HomePageTest@64bc21ac]" started-at="2024-08-10T13:30:38 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-10T13:30:45 SAST" duration-ms="7632" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,7 +78,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:21:00 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:21:03 SAST" duration-ms="2539" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.HomePageTest@64bc21ac]" started-at="2024-08-10T13:30:45 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-10T13:30:53 SAST" duration-ms="7381" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,7 +99,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:21:03 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:21:05 SAST" duration-ms="2412" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.HomePageTest@64bc21ac]" started-at="2024-08-10T13:30:53 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-10T13:30:59 SAST" duration-ms="6211" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,7 +120,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:21:05 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:21:08 SAST" duration-ms="2911" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.HomePageTest@64bc21ac]" started-at="2024-08-10T13:30:59 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-10T13:31:07 SAST" duration-ms="8264" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -137,7 +141,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:21:08 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:21:11 SAST" duration-ms="3162" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.HomePageTest@64bc21ac]" started-at="2024-08-10T13:31:07 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-10T13:31:14 SAST" duration-ms="7291" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -158,7 +162,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:21:11 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:21:13 SAST" duration-ms="2332" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.HomePageTest@64bc21ac]" started-at="2024-08-10T13:31:14 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-10T13:31:21 SAST" duration-ms="6268" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -179,7 +183,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:21:13 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:21:16 SAST" duration-ms="2336" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.HomePageTest@64bc21ac]" started-at="2024-08-10T13:31:21 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-10T13:31:26 SAST" duration-ms="5345" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -200,7 +204,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:21:16 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-09T22:21:18 SAST" duration-ms="1842" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.HomePageTest@64bc21ac]" started-at="2024-08-10T13:31:26 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-10T13:31:31 SAST" duration-ms="5243" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -221,11 +225,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@5fb97279]" started-at="2024-08-09T22:21:18 SAST" name="tearDown" finished-at="2024-08-09T22:21:24 SAST" duration-ms="6518" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@64bc21ac]" started-at="2024-08-10T13:31:31 SAST" name="tearDown" finished-at="2024-08-10T13:31:32 SAST" duration-ms="1184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.HomePageTest -->
     </test> <!-- Takealot Automation Tests -->
-  </suite> <!-- Trello Suite -->
+  </suite> <!-- Takealot Suite -->
 </testng-results>

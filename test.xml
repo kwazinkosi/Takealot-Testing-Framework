@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Trello Suite">
-	<listeners>
-		<listener class-name="utilities.TestSetup">
+<suite name="Takealot Suite">
+    <listeners>
+        <!-- Register listeners for setup and reporting -->
+        <listener class-name="utilities.TestSetup"/>
+        <listener class-name="reporting.ReportManager"/>
+    </listeners>
 
-		</listener>
-	</listeners>
-
-	<test thread-count="5" name="Takealot Automation Tests">
-		<classes>
-			<class name="tests.HomePageTest" />
-
-		</classes>
-	</test> <!--	
-	Takealot Automation Tests -->
-</suite> <!--
-Takealot Automation Suite -->
+    <test name="Takealot Automation Tests" thread-count="1" parallel="tests">
+        <classes>
+            <!-- Specify your test classes here -->
+            <class name="tests.HomePageTest"/>
+        </classes>
+    </test>
+</suite>

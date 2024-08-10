@@ -6,8 +6,8 @@
       <class name="tests.HomePageTest">
         <methods>
           <include name="setUp"/>
+          <include name="verifyTitle"/>
           <include name="tearDown"/>
-          <include name="verifySearchFunctionality"/>
         </methods>
       </class> <!-- tests.HomePageTest -->
     </classes>

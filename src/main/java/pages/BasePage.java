@@ -7,19 +7,22 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import logging.LoggingManager;
 import reporting.ReportManager;
+import utilities.DataProviderUtil;
 import wait.WaitUtil;
 
 public class BasePage {
 
 	protected WebDriver driver;
 	protected WaitUtil waitUtil;
-	public ReportManager reporter;
+	public static ReportManager reporter;
+	public DataProviderUtil dataUtil;
 
 	public BasePage(WebDriver driver) {
 
 		this.driver = driver;
 		this.waitUtil = new WaitUtil(driver);
-		this.reporter = new ReportManager(driver);
+		reporter = new ReportManager();
+		this.dataUtil = new DataProviderUtil();
 		PageFactory.initElements(driver, this);
 	}
 
@@ -75,13 +78,4 @@ public class BasePage {
 		}
 	}
 
-	public void closeBlocker(boolean blocker, WebElement closeBtn) {
-
-		if (blocker) {
-
-			LoggingManager.info("The page has been blocked");
-			System.out.println("The page has been blocked");
-			click(closeBtn);
-		}
-	}
 }

@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import wait.WaitUtil;
 import logging.LoggingManager;
+import utilities.DataProviderUtil;
 
 public class HomePage extends BasePage {
 	
@@ -49,8 +50,6 @@ public class HomePage extends BasePage {
         	click(searchButton);
         	
         }else {
-        	boolean blocker = isVisible(pageBlocker); 
-            closeBlocker(blocker, adPopupCloseButton);
             sendKeys(searchBox, query);
             click(searchButton);
         }
@@ -71,8 +70,6 @@ public class HomePage extends BasePage {
         	click(searchButton);
         	
         }else {
-        	boolean blocker = isVisible(pageBlocker); 
-            closeBlocker(blocker, adPopupCloseButton);
             sendKeys(searchBox, query);
             click(searchButton);
         }
@@ -93,5 +90,11 @@ public class HomePage extends BasePage {
         		
         }
         return false;
+    }
+    
+    public String getHomeTitle() {
+    	
+    	
+    	return driver.getTitle();
     }
 }

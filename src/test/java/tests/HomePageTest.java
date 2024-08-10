@@ -12,6 +12,7 @@ import org.testng.Assert;
 
 import config.ConfigReader;
 import logging.LoggingManager;
+import pages.BasePage;
 import pages.HomePage;
 import reporting.ReportManager;
 import utilities.AdOverlayListener;
@@ -24,8 +25,6 @@ public class HomePageTest {
     @BeforeClass
     public void setUp() {
     	
-        //LoggingManager.configureLogging();
-        
         WebDriver originalDriver = new ChromeDriver();
 
         // Create an instance of your custom WebDriverListener
@@ -36,9 +35,21 @@ public class HomePageTest {
         driver = decoratedDriver;
         driver.get(ConfigReader.getProperty("base_url"));
         homePage = new HomePage(driver);
+        BasePage.reporter.setDriver(driver);  // Inject WebDriver into ReportManager
     }
     
-    @Test(dataProvider = "searchData", dataProviderClass = DataProviderUtil.class)
+    @Test(priority = 0)
+    public void verifyTitle() {
+    	LoggingManager.info("Testing home page title");
+    	String expectedTitle = homePage.dataUtil.getValue("common info", "home_page_title");
+    	String actualTitle = homePage.getHomeTitle();
+    	
+    	Assert.assertEquals(actualTitle, expectedTitle);
+        LoggingManager.info("Testing home page title -- PASSED \n");
+    	
+    }
+    
+    @Test(priority = 1, dataProvider = "searchData", dataProviderClass = DataProviderUtil.class)
     public void verifySearchFunctionality(String queryName, String searchValue, String expected) {
         LoggingManager.info("Testing search functionality with query: " + searchValue);
         
