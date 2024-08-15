@@ -14,7 +14,7 @@ public class CheckoutPage extends BasePage {
     @FindBy(id = "proceedToCheckoutButton")
     private WebElement proceedToCheckoutButton;
 
-    @FindBy(id = "loginForm")
+    @FindBy(name = "login-form")
     private WebElement loginForm;
 
     private LoginPage loginPage;
@@ -40,16 +40,18 @@ public class CheckoutPage extends BasePage {
         if (isVisible(loginForm)) {
             // Login and return the page object that follows successful login
             LoginPage loginPage = new LoginPage(driver);
-            CheckoutPage checkoutPage = loginPage.loginAs(email, password, CheckoutPage.class);
+            BasePage basePage = loginPage.loginAs(email, password);
 
-            if (checkoutPage == null) {
+            // Check if the login was successful and redirected to CheckoutPage
+            if (basePage instanceof CheckoutPage) {
+                return (CheckoutPage) basePage;
+            } else {
                 throw new RuntimeException("Login failed or redirection to CheckoutPage failed");
             }
-
-            return checkoutPage;
         }
 
         return this;
     }
+
 
 }

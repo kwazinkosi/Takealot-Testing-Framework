@@ -52,14 +52,18 @@ public class LoginPage extends BasePage {
 
     /**
      * Submits the login form.
-     * This method may navigate to a different page, so it returns a generic Page object.
+     * This method may navigate to a different page, so it returns a BasePage or specific page type.
      *
-     * @return An instance of the page navigated to after login.
+     * @return An instance of BasePage or a specific page navigated to after login.
      */
-    public <T> T submitLogin(Class<T> pageClass) {
-        loginButton.click();
-        // Optionally wait for the new page to load and return the page object
-        return PageFactory.initElements(driver, pageClass);
+    public BasePage submitLogin() {
+        
+    	loginButton.click();
+        // Optionally wait for the new page to load
+        // Return a new instance of the expected page here or a generic BasePage
+        // For now, let's assume you navigate to a Page that extends BasePage
+//        return PageFactory.initElements(driver, BasePage.class); // Adjust if you know specific pages
+        return new BasePage(driver);
     }
 
     /**
@@ -68,23 +72,23 @@ public class LoginPage extends BasePage {
      * @return The current LoginPage instance.
      */
     public LoginPage submitLoginExpectingFailure() {
-        loginButton.click();
+        
+    	loginButton.click();
         return this;
     }
 
     /**
      * Logs in using the provided username and password.
-     * This method returns a page object of the page navigated to after login.
+     * This method returns a BasePage instance of the page navigated to after login.
      *
      * @param username The username for login.
      * @param password The password for login.
-     * @param pageClass The class of the page expected after login.
-     * @param <T> The type of the page expected after login.
-     * @return An instance of the page navigated to after login.
+     * @return An instance of BasePage or a specific page navigated to after login.
      */
-    public <T> T loginAs(String username, String password, Class<T> pageClass) {
-        typeUsername(username);
+    public BasePage loginAs(String username, String password) {
+        
+    	typeUsername(username);
         typePassword(password);
-        return submitLogin(pageClass);
+        return submitLogin();
     }
 }

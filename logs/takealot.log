@@ -1,174 +1,890 @@
-2024-08-10 13:13:42 INFO  LoggingManager:35 - The log file path is: C:\Users\kwazinkosizwane\eclipse-workspace\takealot-automation\logs\takealot.log
-2024-08-10 13:19:46 INFO  LoggingManager:35 - The log file path is: C:\Users\kwazinkosizwane\eclipse-workspace\takealot-automation\logs\takealot.log
-2024-08-10 13:21:09 INFO  LoggingManager:35 - The log file path is: C:\Users\kwazinkosizwane\eclipse-workspace\takealot-automation\logs\takealot.log
-2024-08-10 13:21:14 INFO  LoggingManager:44 - Logging configured succesfully!!
-2024-08-10 13:23:59 INFO  LoggingManager:35 - The log file path is: C:\Users\kwazinkosizwane\eclipse-workspace\takealot-automation\logs\takealot.log
-2024-08-10 13:24:01 INFO  LoggingManager:44 - Logging configured succesfully!!
-2024-08-10 13:29:53 INFO  LoggingManager:35 - The log file path is: C:\Users\kwazinkosizwane\eclipse-workspace\takealot-automation\logs\takealot.log
-2024-08-10 13:29:56 INFO  LoggingManager:44 - Logging configured succesfully!!
-2024-08-10 13:30:11 INFO  LoggingManager:44 - Testing home page title
-2024-08-10 13:30:17 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:17 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:17 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:18 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:24 INFO  LoggingManager:44 - Testing home page title -- PASSED 
+2024-08-13 00:06:10 INFO  LoggingManager:35 - The log file path is: C:\Users\kwazinkosizwane\eclipse-workspace\takealot-automation\logs\takealot.log
+2024-08-13 00:06:10 INFO  LoggingManager:44 - Logging configured succesfully!!
+2024-08-13 00:06:17 INFO  LoggingManager:44 - Page factory initialized for HomePage
+2024-08-13 00:06:17 INFO  LoggingManager:44 - Testing home page title
+2024-08-13 00:06:17 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:17 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:17 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:18 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:18 INFO  LoggingManager:44 - Testing home page title -- PASSED 
 
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:24 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:24 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:24 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:24 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:24 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:24 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:24 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:26 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:26 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:26 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:26 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:26 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:26 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:26 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:26 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:26 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:26 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:26 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-08-10 13:30:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
-2024-08-10 13:30:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-08-10 13:30:27 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-08-10 13:30:27 INFO  LoggingManager:44 - Testing search functionality with query: iphone
-2024-08-10 13:30:33 INFO  LoggingManager:44 - Products now visible
-2024-08-10 13:30:33 INFO  LoggingManager:44 - Testing search functionality {search value = iphone -- PASSED 
+2024-08-13 00:06:18 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:18 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:18 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:19 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:19 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:19 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:19 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:19 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:19 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:20 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:20 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:20 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:20 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:20 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:20 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:20 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:20 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:20 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:21 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:21 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:21 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:21 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:21 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:21 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:21 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:21 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:22 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:22 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:22 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:22 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:22 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:22 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:22 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:22 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:23 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:23 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:23 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:23 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:23 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:06:23 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:06:23 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:06:23 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:06:23 INFO  LoggingManager:44 - Testing search functionality with query: iphone
+2024-08-13 00:06:23 INFO  LoggingManager:44 - Searching for iphone
+2024-08-13 00:06:24 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (8d2803a5880053071d90ab72f1a14202)] -> xpath: //input[@name='search']]}
+2024-08-13 00:06:24 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:06:24 INFO  LoggingManager:44 - Sending keys 'iphone' to element: Decorated {[[ChromeDriver: chrome on windows (8d2803a5880053071d90ab72f1a14202)] -> xpath: //input[@name='search']]}
+2024-08-13 00:06:24 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (8d2803a5880053071d90ab72f1a14202)] -> xpath: //input[@name='search']]}
+2024-08-13 00:06:31 INFO  LoggingManager:44 - Ad blocker overlay closed.
+2024-08-13 00:06:42 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (8d2803a5880053071d90ab72f1a14202)] -> xpath: //input[@name='search']]}
+2024-08-13 00:06:51 INFO  LoggingManager:44 - Testing search functionality with query: Wireless Earbuds
+2024-08-13 00:06:51 INFO  LoggingManager:44 - Searching for Wireless Earbuds
+2024-08-13 00:06:51 INFO  LoggingManager:44 - Testing search functionality with query: monitor
+2024-08-13 00:06:51 INFO  LoggingManager:44 - Searching for monitor
+2024-08-13 00:06:51 INFO  LoggingManager:44 - Testing search functionality with query: IPHONE 15
+2024-08-13 00:06:51 INFO  LoggingManager:44 - Searching for IPHONE 15
+2024-08-13 00:06:51 INFO  LoggingManager:44 - Testing search functionality with query: iphone 15
+2024-08-13 00:06:51 INFO  LoggingManager:44 - Searching for iphone 15
+2024-08-13 00:06:51 INFO  LoggingManager:44 - Testing search functionality with query: 
+2024-08-13 00:06:51 INFO  LoggingManager:44 - Testing search functionality with query: 
+2024-08-13 00:06:51 INFO  LoggingManager:44 - Testing search functionality with query: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2024-08-13 00:06:51 INFO  LoggingManager:44 - Testing search functionality with query: XYZ123NonExistent
+2024-08-13 00:06:51 INFO  LoggingManager:44 - Testing search functionality with query: gibharish-uhjbjk
+2024-08-13 00:07:15 INFO  LoggingManager:35 - The log file path is: C:\Users\kwazinkosizwane\eclipse-workspace\takealot-automation\logs\takealot.log
+2024-08-13 00:07:15 INFO  LoggingManager:44 - Logging configured succesfully!!
+2024-08-13 00:07:20 INFO  LoggingManager:44 - Page factory initialized for HomePage
+2024-08-13 00:07:21 INFO  LoggingManager:44 - Testing home page title
+2024-08-13 00:07:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:21 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:22 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:23 INFO  LoggingManager:44 - Testing home page title -- PASSED 
 
-2024-08-10 13:30:33 INFO  LoggingManager:44 - Testing search functionality with query: Wireless Earbuds
-2024-08-10 13:30:37 INFO  LoggingManager:44 - Products now visible
-2024-08-10 13:30:37 INFO  LoggingManager:44 - Testing search functionality {search value = Wireless Earbuds -- PASSED 
+2024-08-13 00:07:23 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:23 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:23 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:24 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:24 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:24 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:24 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:24 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:24 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:25 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:25 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:26 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:26 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:27 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:27 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:27 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:27 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:27 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:27 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:27 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:27 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:27 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:28 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:28 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:28 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:28 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:28 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:28 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:29 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:29 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:29 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:29 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:29 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:29 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:29 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:29 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:30 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:30 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:30 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:30 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:30 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:30 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:30 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:30 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:30 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:30 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:30 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:30 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:30 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:07:30 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:07:30 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:07:30 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:07:30 INFO  LoggingManager:44 - Testing search functionality with query: iphone
+2024-08-13 00:07:30 INFO  LoggingManager:44 - Searching for iphone
+2024-08-13 00:07:30 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (f319de23fb66cd2240c676bbd9ec4bdb)] -> xpath: //input[@name='search']]}
+2024-08-13 00:07:31 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:07:31 INFO  LoggingManager:44 - Sending keys 'iphone' to element: Decorated {[[ChromeDriver: chrome on windows (f319de23fb66cd2240c676bbd9ec4bdb)] -> xpath: //input[@name='search']]}
+2024-08-13 00:07:31 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f319de23fb66cd2240c676bbd9ec4bdb)] -> xpath: //input[@name='search']]}
+2024-08-13 00:07:34 INFO  LoggingManager:44 - Ad blocker overlay closed.
+2024-08-13 00:07:45 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f319de23fb66cd2240c676bbd9ec4bdb)] -> xpath: //input[@name='search']]}
+2024-08-13 00:07:52 INFO  LoggingManager:44 - Testing search functionality with query: Wireless Earbuds
+2024-08-13 00:07:52 INFO  LoggingManager:44 - Searching for Wireless Earbuds
+2024-08-13 00:07:53 INFO  LoggingManager:44 - Testing search functionality with query: monitor
+2024-08-13 00:07:53 INFO  LoggingManager:44 - Searching for monitor
+2024-08-13 00:07:53 INFO  LoggingManager:44 - Testing search functionality with query: IPHONE 15
+2024-08-13 00:07:53 INFO  LoggingManager:44 - Searching for IPHONE 15
+2024-08-13 00:07:53 INFO  LoggingManager:44 - Testing search functionality with query: iphone 15
+2024-08-13 00:07:53 INFO  LoggingManager:44 - Searching for iphone 15
+2024-08-13 00:07:53 INFO  LoggingManager:44 - Testing search functionality with query: 
+2024-08-13 00:07:53 INFO  LoggingManager:44 - Testing search functionality with query: 
+2024-08-13 00:07:53 INFO  LoggingManager:44 - Testing search functionality with query: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2024-08-13 00:07:53 INFO  LoggingManager:44 - Testing search functionality with query: XYZ123NonExistent
+2024-08-13 00:07:53 INFO  LoggingManager:44 - Testing search functionality with query: gibharish-uhjbjk
+2024-08-13 00:08:35 INFO  LoggingManager:35 - The log file path is: C:\Users\kwazinkosizwane\eclipse-workspace\takealot-automation\logs\takealot.log
+2024-08-13 00:08:35 INFO  LoggingManager:44 - Logging configured succesfully!!
+2024-08-13 00:08:41 INFO  LoggingManager:44 - Page factory initialized for HomePage
+2024-08-13 00:08:41 INFO  LoggingManager:44 - Testing home page title
+2024-08-13 00:08:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:41 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:42 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:44 INFO  LoggingManager:44 - Testing home page title -- PASSED 
 
-2024-08-10 13:30:38 INFO  LoggingManager:44 - Testing search functionality with query: monitor
-2024-08-10 13:30:45 INFO  LoggingManager:44 - Products now visible
-2024-08-10 13:30:45 INFO  LoggingManager:44 - Testing search functionality {search value = monitor -- PASSED 
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:44 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:44 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:44 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:44 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:44 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:44 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:45 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:45 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:45 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:45 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:45 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:45 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:45 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:45 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:45 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:45 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:45 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:45 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:45 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:45 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:45 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:45 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:45 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:45 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:45 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:45 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:45 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:46 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:46 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:46 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:46 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:46 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:46 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:46 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:47 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:47 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:47 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:47 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:47 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:47 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:47 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:47 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:47 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:47 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:47 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:47 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:47 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:48 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:48 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:48 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:48 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:48 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:48 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:48 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:48 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:48 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:48 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:48 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:49 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:49 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:49 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:49 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:49 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:49 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:49 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:49 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:49 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:49 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:50 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:50 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:08:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:08:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:08:50 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:08:50 INFO  LoggingManager:44 - Testing search functionality with query: iphone
+2024-08-13 00:08:50 INFO  LoggingManager:44 - Searching for iphone
+2024-08-13 00:08:50 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:08:51 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:08:51 INFO  LoggingManager:44 - Sending keys 'iphone' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:08:51 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:08:53 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:08:55 INFO  LoggingManager:44 - Sent keys 'iphone' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:08:55 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:08:56 INFO  LoggingManager:44 - Ad blocker overlay closed.
+2024-08-13 00:09:01 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:09:01 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:09:01 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:09:01 INFO  LoggingManager:44 - Products now visible
+2024-08-13 00:09:01 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> class name: listings-container-module_listings-container_AC4LI]}
+2024-08-13 00:09:01 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:09:01 INFO  LoggingManager:44 - Testing search functionality {search value = iphone -- PASSED 
 
-2024-08-10 13:30:45 INFO  LoggingManager:44 - Testing search functionality with query: IPHONE 15
-2024-08-10 13:30:53 INFO  LoggingManager:44 - Products now visible
-2024-08-10 13:30:53 INFO  LoggingManager:44 - Testing search functionality {search value = IPHONE 15 -- PASSED 
+2024-08-13 00:09:01 INFO  LoggingManager:44 - Testing search functionality with query: Wireless Earbuds
+2024-08-13 00:09:01 INFO  LoggingManager:44 - Searching for Wireless Earbuds
+2024-08-13 00:09:01 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:01 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:09:01 INFO  LoggingManager:44 - Sending keys 'Wireless Earbuds' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:01 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:04 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:05 INFO  LoggingManager:44 - Sent keys 'Wireless Earbuds' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:05 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:09:10 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:09:10 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:09:10 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:09:10 INFO  LoggingManager:44 - Products now visible
+2024-08-13 00:09:10 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> class name: listings-container-module_listings-container_AC4LI]}
+2024-08-13 00:09:11 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:09:11 INFO  LoggingManager:44 - Testing search functionality {search value = Wireless Earbuds -- PASSED 
 
-2024-08-10 13:30:53 INFO  LoggingManager:44 - Testing search functionality with query: iphone 15
-2024-08-10 13:30:59 INFO  LoggingManager:44 - Products now visible
-2024-08-10 13:30:59 INFO  LoggingManager:44 - Testing search functionality {search value = iphone 15 -- PASSED 
+2024-08-13 00:09:11 INFO  LoggingManager:44 - Testing search functionality with query: monitor
+2024-08-13 00:09:11 INFO  LoggingManager:44 - Searching for monitor
+2024-08-13 00:09:11 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:11 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:09:11 INFO  LoggingManager:44 - Sending keys 'monitor' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:11 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:13 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:15 INFO  LoggingManager:44 - Sent keys 'monitor' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:15 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:09:21 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:09:21 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:09:21 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:09:21 INFO  LoggingManager:44 - Products now visible
+2024-08-13 00:09:21 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> class name: listings-container-module_listings-container_AC4LI]}
+2024-08-13 00:09:21 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:09:21 INFO  LoggingManager:44 - Testing search functionality {search value = monitor -- PASSED 
 
-2024-08-10 13:30:59 INFO  LoggingManager:44 - Testing search functionality with query: 
-2024-08-10 13:31:07 INFO  LoggingManager:44 - Testing search functionality {search value =  -- PASSED 
+2024-08-13 00:09:21 INFO  LoggingManager:44 - Testing search functionality with query: IPHONE 15
+2024-08-13 00:09:21 INFO  LoggingManager:44 - Searching for IPHONE 15
+2024-08-13 00:09:21 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:21 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:09:21 INFO  LoggingManager:44 - Sending keys 'IPHONE 15' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:21 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:23 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:25 INFO  LoggingManager:44 - Sent keys 'IPHONE 15' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:25 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:09:31 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:09:31 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:09:31 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:09:31 INFO  LoggingManager:44 - Products now visible
+2024-08-13 00:09:31 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> class name: listings-container-module_listings-container_AC4LI]}
+2024-08-13 00:09:31 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:09:31 INFO  LoggingManager:44 - Testing search functionality {search value = IPHONE 15 -- PASSED 
 
-2024-08-10 13:31:07 INFO  LoggingManager:44 - Testing search functionality with query: 
-2024-08-10 13:31:14 INFO  LoggingManager:44 - Testing search functionality {search value =  -- PASSED 
+2024-08-13 00:09:31 INFO  LoggingManager:44 - Testing search functionality with query: iphone 15
+2024-08-13 00:09:31 INFO  LoggingManager:44 - Searching for iphone 15
+2024-08-13 00:09:31 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:31 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:09:31 INFO  LoggingManager:44 - Sending keys 'iphone 15' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:31 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:34 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:35 INFO  LoggingManager:44 - Sent keys 'iphone 15' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:36 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:09:41 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:09:41 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:09:41 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:09:41 INFO  LoggingManager:44 - Products now visible
+2024-08-13 00:09:41 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> class name: listings-container-module_listings-container_AC4LI]}
+2024-08-13 00:09:41 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:09:41 INFO  LoggingManager:44 - Testing search functionality {search value = iphone 15 -- PASSED 
 
-2024-08-10 13:31:14 INFO  LoggingManager:44 - Testing search functionality with query: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-2024-08-10 13:31:21 INFO  LoggingManager:44 - Testing search functionality {search value = aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -- PASSED 
+2024-08-13 00:09:41 INFO  LoggingManager:44 - Testing search functionality with query: 
+2024-08-13 00:09:41 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:41 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:09:41 INFO  LoggingManager:44 - Sending keys '' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:41 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:44 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:45 INFO  LoggingManager:44 - Sent keys '' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:45 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:09:50 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:09:50 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:09:50 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:09:50 INFO  LoggingManager:44 - Default results page displayed
+2024-08-13 00:09:50 INFO  LoggingManager:44 - Testing search functionality {search value =  -- PASSED 
 
-2024-08-10 13:31:21 INFO  LoggingManager:44 - Testing search functionality with query: XYZ123NonExistent
-2024-08-10 13:31:26 INFO  LoggingManager:44 - Testing search functionality {search value = XYZ123NonExistent -- PASSED 
+2024-08-13 00:09:50 INFO  LoggingManager:44 - Testing search functionality with query: 
+2024-08-13 00:09:50 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:50 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:09:51 INFO  LoggingManager:44 - Sending keys '' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:51 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:53 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:54 INFO  LoggingManager:44 - Sent keys '' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:09:54 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:10:00 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:10:00 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:10:00 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:10:00 INFO  LoggingManager:44 - Default results page displayed
+2024-08-13 00:10:00 INFO  LoggingManager:44 - Testing search functionality {search value =  -- PASSED 
 
-2024-08-10 13:31:26 INFO  LoggingManager:44 - Testing search functionality with query: gibharish-uhjbjk
-2024-08-10 13:31:31 INFO  LoggingManager:44 - Testing search functionality {search value = gibharish-uhjbjk -- PASSED 
+2024-08-13 00:10:00 INFO  LoggingManager:44 - Testing search functionality with query: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2024-08-13 00:10:00 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:10:00 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:10:00 INFO  LoggingManager:44 - Sending keys 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:10:00 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:10:03 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:10:05 INFO  LoggingManager:44 - Sent keys 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:10:05 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:10:09 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:10:09 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:10:09 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:10:09 INFO  LoggingManager:44 - Empty results page displayed
+2024-08-13 00:10:09 INFO  LoggingManager:44 - Testing search functionality {search value = aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -- PASSED 
+
+2024-08-13 00:10:09 INFO  LoggingManager:44 - Testing search functionality with query: XYZ123NonExistent
+2024-08-13 00:10:09 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:10:09 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:10:09 INFO  LoggingManager:44 - Sending keys 'XYZ123NonExistent' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:10:09 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:10:12 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:10:13 INFO  LoggingManager:44 - Sent keys 'XYZ123NonExistent' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:10:13 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:10:17 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:10:17 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:10:17 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:10:17 INFO  LoggingManager:44 - Empty results page displayed
+2024-08-13 00:10:17 INFO  LoggingManager:44 - Testing search functionality {search value = XYZ123NonExistent -- PASSED 
+
+2024-08-13 00:10:17 INFO  LoggingManager:44 - Testing search functionality with query: gibharish-uhjbjk
+2024-08-13 00:10:17 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:10:17 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:10:17 INFO  LoggingManager:44 - Sending keys 'gibharish-uhjbjk' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:10:18 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:10:20 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:10:21 INFO  LoggingManager:44 - Sent keys 'gibharish-uhjbjk' to element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //input[@name='search']]}
+2024-08-13 00:10:21 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:10:25 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (35b0c227ee234571e955f2e23999e09e)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:10:25 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:10:25 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:10:26 INFO  LoggingManager:44 - Empty results page displayed
+2024-08-13 00:10:26 INFO  LoggingManager:44 - Testing search functionality {search value = gibharish-uhjbjk -- PASSED 
+
+2024-08-13 00:15:46 INFO  LoggingManager:35 - The log file path is: C:\Users\kwazinkosizwane\eclipse-workspace\takealot-automation\logs\takealot.log
+2024-08-13 00:15:46 INFO  LoggingManager:44 - Logging configured succesfully!!
+2024-08-13 00:15:52 INFO  LoggingManager:44 - Page factory initialized for HomePage
+2024-08-13 00:15:52 INFO  LoggingManager:44 - Testing home page title
+2024-08-13 00:15:53 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:53 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:53 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:54 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:55 INFO  LoggingManager:44 - Testing home page title -- PASSED 
+
+2024-08-13 00:15:55 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:55 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:55 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:55 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:55 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:55 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:55 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:55 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:55 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:55 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:55 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:55 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:56 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:56 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:56 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:56 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:56 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:56 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:56 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:57 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:57 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:57 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:57 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:57 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:57 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:57 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:57 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:57 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:58 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:58 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:58 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:58 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:58 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:58 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:58 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:59 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:59 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:59 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:59 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:59 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:59 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:59 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:59 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:59 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:59 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:15:59 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2024-08-13 00:15:59 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-08-13 00:16:00 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-08-13 00:16:00 INFO  LoggingManager:44 - Testing search functionality with query: iphone
+2024-08-13 00:16:00 INFO  LoggingManager:44 - Searching for iphone
+2024-08-13 00:16:00 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:00 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:16:00 INFO  LoggingManager:44 - Sending keys 'iphone' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:01 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:01 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:02 INFO  LoggingManager:44 - Sent keys 'iphone' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:02 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:07 INFO  LoggingManager:44 - Ad blocker overlay closed.
+2024-08-13 00:16:08 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:08 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:16:08 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:16:08 INFO  LoggingManager:44 - Products now visible
+2024-08-13 00:16:08 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> class name: listings-container-module_listings-container_AC4LI]}
+2024-08-13 00:16:08 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:16:08 INFO  LoggingManager:44 - Testing search functionality {search value = iphone -- PASSED 
+
+2024-08-13 00:16:08 INFO  LoggingManager:44 - Testing search functionality with query: Wireless Earbuds
+2024-08-13 00:16:08 INFO  LoggingManager:44 - Searching for Wireless Earbuds
+2024-08-13 00:16:08 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:08 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:16:08 INFO  LoggingManager:44 - Sending keys 'Wireless Earbuds' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:08 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:09 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:10 INFO  LoggingManager:44 - Sent keys 'Wireless Earbuds' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:10 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:13 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:13 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:16:13 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:16:14 INFO  LoggingManager:44 - Products now visible
+2024-08-13 00:16:14 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> class name: listings-container-module_listings-container_AC4LI]}
+2024-08-13 00:16:14 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:16:14 INFO  LoggingManager:44 - Testing search functionality {search value = Wireless Earbuds -- PASSED 
+
+2024-08-13 00:16:14 INFO  LoggingManager:44 - Testing search functionality with query: monitor
+2024-08-13 00:16:14 INFO  LoggingManager:44 - Searching for monitor
+2024-08-13 00:16:14 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:14 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:16:14 INFO  LoggingManager:44 - Sending keys 'monitor' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:14 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:15 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:15 INFO  LoggingManager:44 - Sent keys 'monitor' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:15 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:19 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:19 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:16:19 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:16:19 INFO  LoggingManager:44 - Products now visible
+2024-08-13 00:16:19 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> class name: listings-container-module_listings-container_AC4LI]}
+2024-08-13 00:16:19 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:16:19 INFO  LoggingManager:44 - Testing search functionality {search value = monitor -- PASSED 
+
+2024-08-13 00:16:19 INFO  LoggingManager:44 - Testing search functionality with query: IPHONE 15
+2024-08-13 00:16:19 INFO  LoggingManager:44 - Searching for IPHONE 15
+2024-08-13 00:16:19 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:20 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:16:20 INFO  LoggingManager:44 - Sending keys 'IPHONE 15' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:20 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:20 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:21 INFO  LoggingManager:44 - Sent keys 'IPHONE 15' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:21 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:25 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:25 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:16:25 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:16:25 INFO  LoggingManager:44 - Products now visible
+2024-08-13 00:16:25 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> class name: listings-container-module_listings-container_AC4LI]}
+2024-08-13 00:16:25 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:16:25 INFO  LoggingManager:44 - Testing search functionality {search value = IPHONE 15 -- PASSED 
+
+2024-08-13 00:16:25 INFO  LoggingManager:44 - Testing search functionality with query: iphone 15
+2024-08-13 00:16:25 INFO  LoggingManager:44 - Searching for iphone 15
+2024-08-13 00:16:25 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:25 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:16:25 INFO  LoggingManager:44 - Sending keys 'iphone 15' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:25 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:26 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:26 INFO  LoggingManager:44 - Sent keys 'iphone 15' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:26 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:30 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:30 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:16:30 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:16:30 INFO  LoggingManager:44 - Products now visible
+2024-08-13 00:16:30 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> class name: listings-container-module_listings-container_AC4LI]}
+2024-08-13 00:16:30 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:16:30 INFO  LoggingManager:44 - Testing search functionality {search value = iphone 15 -- PASSED 
+
+2024-08-13 00:16:30 INFO  LoggingManager:44 - Testing search functionality with query: 
+2024-08-13 00:16:30 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:30 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:16:30 INFO  LoggingManager:44 - Sending keys '' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:30 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:31 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:31 INFO  LoggingManager:44 - Sent keys '' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:31 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:34 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:34 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:16:34 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:16:34 INFO  LoggingManager:44 - Default results page displayed
+2024-08-13 00:16:34 INFO  LoggingManager:44 - Testing search functionality {search value =  -- PASSED 
+
+2024-08-13 00:16:34 INFO  LoggingManager:44 - Testing search functionality with query: 
+2024-08-13 00:16:34 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:35 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:16:35 INFO  LoggingManager:44 - Sending keys '' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:35 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:35 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:36 INFO  LoggingManager:44 - Sent keys '' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:36 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:39 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:40 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:16:40 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:16:40 INFO  LoggingManager:44 - Default results page displayed
+2024-08-13 00:16:40 INFO  LoggingManager:44 - Testing search functionality {search value =  -- PASSED 
+
+2024-08-13 00:16:40 INFO  LoggingManager:44 - Testing search functionality with query: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2024-08-13 00:16:40 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:40 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:16:40 INFO  LoggingManager:44 - Sending keys 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:40 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:41 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:42 INFO  LoggingManager:44 - Sent keys 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:42 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:45 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:45 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:16:45 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:16:45 INFO  LoggingManager:44 - Empty results page displayed
+2024-08-13 00:16:45 INFO  LoggingManager:44 - Testing search functionality {search value = aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -- PASSED 
+
+2024-08-13 00:16:45 INFO  LoggingManager:44 - Testing search functionality with query: XYZ123NonExistent
+2024-08-13 00:16:45 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:45 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:16:45 INFO  LoggingManager:44 - Sending keys 'XYZ123NonExistent' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:45 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:45 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:46 INFO  LoggingManager:44 - Sent keys 'XYZ123NonExistent' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:46 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:49 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:49 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:16:49 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:16:49 INFO  LoggingManager:44 - Empty results page displayed
+2024-08-13 00:16:49 INFO  LoggingManager:44 - Testing search functionality {search value = XYZ123NonExistent -- PASSED 
+
+2024-08-13 00:16:49 INFO  LoggingManager:44 - Testing search functionality with query: gibharish-uhjbjk
+2024-08-13 00:16:49 INFO  LoggingManager:44 - Checking visibility of element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:49 INFO  LoggingManager:44 - Element visibility status: true
+2024-08-13 00:16:49 INFO  LoggingManager:44 - Sending keys 'gibharish-uhjbjk' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:49 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:49 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:50 INFO  LoggingManager:44 - Sent keys 'gibharish-uhjbjk' to element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //input[@name='search']]}
+2024-08-13 00:16:50 INFO  LoggingManager:44 - Attempting to click on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:52 INFO  LoggingManager:44 - Clicked on element: Decorated {[[ChromeDriver: chrome on windows (f97f534b78c6bef5a8972827d1ac7cf8)] -> xpath: //button[@data-ref='search-submit-button']]}
+2024-08-13 00:16:52 INFO  LoggingManager:44 - Search submitted
+2024-08-13 00:16:52 INFO  LoggingManager:44 - Page factory initialized for ProductsPage
+2024-08-13 00:16:52 INFO  LoggingManager:44 - Empty results page displayed
+2024-08-13 00:16:52 INFO  LoggingManager:44 - Testing search functionality {search value = gibharish-uhjbjk -- PASSED 
 
