@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-15T02:11:54 SAST" name="Default suite" finished-at="2024-08-15T02:16:00 SAST" duration-ms="246764">
+  <suite started-at="2024-08-15T03:09:19 SAST" name="Default suite" finished-at="2024-08-15T03:10:12 SAST" duration-ms="52498">
     <groups>
     </groups>
-    <test started-at="2024-08-15T02:11:54 SAST" name="Default test" finished-at="2024-08-15T02:16:00 SAST" duration-ms="246764">
+    <test started-at="2024-08-15T03:09:19 SAST" name="Default test" finished-at="2024-08-15T03:10:12 SAST" duration-ms="52498">
       <class name="tests.ProductsPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductsPageTest@5d25e6bb]" started-at="2024-08-15T02:11:54 SAST" name="setUp" finished-at="2024-08-15T02:12:08 SAST" duration-ms="14690" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductsPageTest@493dfb8e]" started-at="2024-08-15T03:09:19 SAST" name="setUp" finished-at="2024-08-15T03:09:34 SAST" duration-ms="14356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyProductAddToCart()[pri:5, instance:tests.ProductsPageTest@5d25e6bb]" started-at="2024-08-15T02:12:08 SAST" name="verifyProductAddToCart" finished-at="2024-08-15T02:15:59 SAST" duration-ms="230969" status="PASS">
+        <test-method signature="verifyProductAddToCart()[pri:5, instance:tests.ProductsPageTest@493dfb8e]" started-at="2024-08-15T03:09:34 SAST" name="verifyProductAddToCart" finished-at="2024-08-15T03:10:10 SAST" duration-ms="36665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsPageTest@5d25e6bb]" started-at="2024-08-15T02:15:59 SAST" name="tearDown" finished-at="2024-08-15T02:16:00 SAST" duration-ms="1004" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsPageTest@493dfb8e]" started-at="2024-08-15T03:10:10 SAST" name="tearDown" finished-at="2024-08-15T03:10:12 SAST" duration-ms="1405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

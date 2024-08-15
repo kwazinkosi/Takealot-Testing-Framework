@@ -3,6 +3,7 @@ package pages;
 import java.util.Collections;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
@@ -181,39 +182,76 @@ public class ProductsPage extends BasePage {
     	
     	boolean isAdded = false;
     	
-    	if(product.isVisible(product.addToCartBtn)) {
-    		LoggingManager.info("cart button is visible");
-    		int c1 = getProductsInCartCount();
-    		product.addToCartBtn.click();
-    		if(getProductsInCartCount() - c1 >0) {
-    			product.setIsAddedToCart(true);
-        		isAdded = true;
-    		}
+    	if (product.isVisible(product.addToCartBtn)) {
+    	    LoggingManager.info("Add to Cart button is visible");
+    	    // Define the condition for waiting for the Add to Cart button to be visible
+    	    Function<WebDriver, WebElement> addToCartBtnCondition = driver -> {
+    	        WebElement btn = driver.findElement(product.cartAddButtonBy);
+    	        return btn.isDisplayed() ? btn : null; // Return the button if visible, or null if not
+    	    };
+    	    
+    	    // Wait for the Add to Cart button to be visible and clickable
+    	    WebElement addToCartBtn = waitUtil.waitFor(addToCartBtnCondition, 10, 500);
+    	    
+    	    if (addToCartBtn != null) {
+    	        LoggingManager.info("Add to Cart button is visible");
+    	        int c1 = getProductsInCartCount();
+    	        addToCartBtn.click();
+    	        
+    	        // Wait for the cart count to update and verify the product was added
+    	        waitUtil.waitImplicitly(1); // Adjust this as needed based on your page's behavior
+    	        if (getProductsInCartCount() - c1 > 0) {
+    	            product.setIsAddedToCart(true);
+    	            isAdded = true;
+    	            LoggingManager.info("Product added to cart successfully");
+    	        } else {
+    	            LoggingManager.warn("Product was not added to cart");
+    	        }
+    	    } else {
+    	        LoggingManager.info("Add to Cart button not found or not visible");
+    	    }
     	}
+
     	else if(product.isVisible(product.showAllOptions)) {
     		
     		LoggingManager.info("cart button is not visible, the shoAll buttons is visible");
-    		click(product.showAllOptions);
-        	waitUtil.waitForElementsToBePresent(DriverFactory.getDriver().findElements(By.cssSelector(".select-dropdown-module_select-dropdown_3Rysq"))).click();
-        	waitUtil.waitImplicitly(1);
-    		List<WebElement> options = DriverFactory.getDriver().findElements(By.className("select-dropdown-module_list-item_2kHtk"));
-        	WebElement clickOption = options.get(1);
-        	waitUtil.waitImplicitly(1);
-        	clickOption.click();
+    		// Click the "Show All Options" button
+    	    click(product.showAllOptions);
+    	    // Define the condition for waiting
+    	    Function<WebDriver, WebElement> dropdownCondition = driver -> {
+    	        List<WebElement> elements = driver.findElements(product.optionsMenuBy);
+    	        return elements.isEmpty() ? null : elements.get(0); // Return the first element or null if not found
+    	    };
+    	    // Wait for the dropdown to be present and clickable
+    	    WebElement dropdown = waitUtil.waitFor(dropdownCondition, 10, 500);
+    	    dropdown.click();
+    	    
+    	    // Define the condition for waiting for the options
+    	    Function<WebDriver, List<WebElement>> optionsCondition = driver -> driver.findElements(product.optionsListBy);
+    	    // Wait for the options to be present
+    	    List<WebElement> options = waitUtil.waitFor(optionsCondition, 10, 500);
+    	    WebElement clickOption = options.get(1);
+    	    waitUtil.waitImplicitly(2);
+    	    clickOption.click();
         	
-        	if(product.isVisible(DriverFactory.getDriver().findElement(By.cssSelector("button.add-to-cart-button-module_add-to-cart-button_1a9gT[data-ref='add-to-cart-button']")))) {
-        		LoggingManager.info("cart button is visible");
-        		int c1 = getProductsInCartCount();
-        		DriverFactory.getDriver().findElement(By.cssSelector("button.add-to-cart-button-module_add-to-cart-button_1a9gT[data-ref='add-to-cart-button']")).click();
-
-        		if(getProductsInCartCount() - c1 >0) {
-        			product.setIsAddedToCart(true);
-            		isAdded = true;
-        		}
-        	}
-        	else {
-        		LoggingManager.info("uhhmmm, button not located");
-        	}
+    	    // Define the condition for waiting for the add-to-cart button to be visible
+    	    Function<WebDriver, WebElement> cartButtonCondition = driver -> driver.findElement(product.cartAddButtonBy);
+    	    
+    	    // Wait for the add-to-cart button to be visible and clickable
+    	    WebElement cartButton = waitUtil.waitFor(cartButtonCondition, 10, 500);
+    	    if (cartButton != null)  {
+    	        LoggingManager.info("Cart button is visible");
+    	        int c1 = getProductsInCartCount();
+    	        waitUtil.waitImplicitly(2);
+        	    cartButton.click();
+    	        
+    	        if (getProductsInCartCount() - c1 > 0) {
+    	            product.setIsAddedToCart(true);
+    	            isAdded = true;
+    	        }
+    	    } else {
+    	        LoggingManager.info("Cart button not located");
+    	    }
         	
     	}
     	else {

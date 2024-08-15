@@ -33,8 +33,11 @@ public class Product extends BaseComponent {
     private WebElement productPrice;
 
 
-    By sponsoredProduct = By.className("product-card-module_sponsored-listing-badge_1nHiP");
-   
+    public By sponsoredProductBy = By.className("product-card-module_sponsored-listing-badge_1nHiP");
+    public By optionsMenuBy = By.cssSelector(".select-dropdown-module_select-dropdown_3Rysq");
+    public By optionsListBy = By.className("select-dropdown-module_list-item_2kHtk");
+    public By cartAddButtonBy = By.cssSelector("button.add-to-cart-button-module_add-to-cart-button_1a9gT[data-ref='add-to-cart-button']");
+    
     @FindBy(css = "button.add-to-cart-button-module_add-to-cart-button_1a9gT[data-ref='add-to-cart-button']")
     public WebElement addToCartBtn;
 
@@ -43,6 +46,7 @@ public class Product extends BaseComponent {
 
     @FindBy(css = ".select-dropdown-module_select-dropdown_3Rysq")
     public WebElement selectColorOptionExpanded;
+    
     
     @FindBy(className ="select-dropdown-module_list-item_2kHtk")
     public List<WebElement> options;
@@ -357,7 +361,7 @@ public class Product extends BaseComponent {
 
 	public Product setProductType(String product_type) {
 		
-		boolean isPresent = waitUtil.isElementPresent(sponsoredProduct, 1);
+		boolean isPresent = waitUtil.isElementPresent(sponsoredProductBy, 2);
 	    if (isPresent) {
 	        this.product_type = product_type;
 	    } else {
