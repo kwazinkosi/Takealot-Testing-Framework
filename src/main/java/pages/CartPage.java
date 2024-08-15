@@ -56,7 +56,7 @@ public class CartPage extends BasePage {
     public CheckoutPage proceedToCheckout() {
     	
     	LoggingManager.info("going to checkout.");
-        waitUtil.waitForElementToBeClickable(checkoutButton, 10);
+        waitUtil.waitForElementToBeClickable(checkoutButton, normalWaitTime);
         checkoutButton.click();
         return new CheckoutPage(driver);
     }
@@ -89,7 +89,7 @@ public class CartPage extends BasePage {
     public boolean isCartVisible() {
         try {
         	LoggingManager.info("Checking cart visibility.");
-            waitUtil.waitForElementToBeVisible(cart, 10);
+            waitUtil.waitForElementToBeVisible(cart, normalWaitTime);
             return cart.isDisplayed();
             
         } catch (Exception e) {

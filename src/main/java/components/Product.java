@@ -36,7 +36,7 @@ public class Product extends BaseComponent {
     public By optionsListBy = By.className("select-dropdown-module_list-item_2kHtk");
     public By cartAddButtonBy = By.cssSelector("button.add-to-cart-button-module_add-to-cart-button_1a9gT[data-ref='add-to-cart-button']");
     
-    @FindBy(css = "button.add-to-cart-button-module_add-to-cart-button_1a9gT[data-ref='add-to-cart-button']")
+    @FindBy(xpath = "//div[@data-ref='buybox-actions']//div//div//button[@data-ref='add-to-cart-button'][normalize-space()='Add to Cart']']")
     public WebElement addToCartBtn;
 
     @FindBy(css = "div .shop-all-options")

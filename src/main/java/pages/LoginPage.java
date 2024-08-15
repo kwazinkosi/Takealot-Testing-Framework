@@ -121,7 +121,7 @@ public class LoginPage extends BasePage {
 		
 		
 		try {
-            waitUtil.waitForElementToBeVisible(loginModal, 10);
+            waitUtil.waitForElementToBeVisible(loginModal, normalWaitTime);
             return loginModal.isDisplayed();
         } catch (Exception e) {
             LoggingManager.error("login modal not visible.", e);
@@ -132,7 +132,7 @@ public class LoginPage extends BasePage {
 	public void closeLogin() {
 		
         try {
-            waitUtil.waitForElementToBeClickable(closeLoginButton, 20);
+            waitUtil.waitForElementToBeClickable(closeLoginButton, normalWaitTime);
             closeLoginButton.click();
             LoggingManager.info("Login modal closed successfully.");
         } catch (Exception e) {

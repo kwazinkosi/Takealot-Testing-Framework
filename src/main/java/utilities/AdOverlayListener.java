@@ -13,11 +13,6 @@ import logging.LoggingManager;
 public class AdOverlayListener implements WebDriverListener {
 
    
-	private WebDriver driver;
-	public AdOverlayListener(WebDriver driver) {
-        this.driver = driver;
-    }
-
     @Override
     public void beforeClick(WebElement element) {
         closeAdOverlay();
@@ -27,6 +22,12 @@ public class AdOverlayListener implements WebDriverListener {
     @Override
     public void beforeClear(WebElement element) {
         closeAdOverlay();
+    }
+    
+    @Override
+    public void afterSubmit(WebElement element) {
+        closeAdOverlay();
+        closeCookieOverlay();
     }
     
     public static void closeAdOverlay() {

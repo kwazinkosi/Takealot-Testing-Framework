@@ -208,7 +208,7 @@ public class ProductsPage extends BasePage {
     	    };
     	    
     	    // Wait for the Add to Cart button to be visible and clickable
-    	    WebElement addToCartBtn = waitUtil.waitFor(addToCartBtnCondition, 10, 500);
+    	    WebElement addToCartBtn = waitUtil.waitFor(addToCartBtnCondition, normalWaitTime, 500);
     	    
     	    if (addToCartBtn != null) {
     	        LoggingManager.info("Add to Cart button is visible");
@@ -240,13 +240,13 @@ public class ProductsPage extends BasePage {
     	        return elements.isEmpty() ? null : elements.get(0); // Return the first element or null if not found
     	    };
     	    // Wait for the dropdown to be present and clickable
-    	    WebElement dropdown = waitUtil.waitFor(dropdownCondition, 10, 500);
+    	    WebElement dropdown = waitUtil.waitFor(dropdownCondition, normalWaitTime, 500);
     	    dropdown.click();
     	    
     	    // Define the condition for waiting for the options
     	    Function<WebDriver, List<WebElement>> optionsCondition = driver -> driver.findElements(product.optionsListBy);
     	    // Wait for the options to be present
-    	    List<WebElement> options = waitUtil.waitFor(optionsCondition, 10, 500);
+    	    List<WebElement> options = waitUtil.waitFor(optionsCondition, normalWaitTime, 500);
     	    WebElement clickOption = options.get(1);
     	    waitUtil.waitImplicitly(2);
     	    clickOption.click();
@@ -255,7 +255,7 @@ public class ProductsPage extends BasePage {
     	    Function<WebDriver, WebElement> cartButtonCondition = driver -> driver.findElement(product.cartAddButtonBy);
     	    
     	    // Wait for the add-to-cart button to be visible and clickable
-    	    WebElement cartButton = waitUtil.waitFor(cartButtonCondition, 10, 500);
+    	    WebElement cartButton = waitUtil.waitFor(cartButtonCondition, normalWaitTime, 500);
     	    if (cartButton != null)  {
     	        LoggingManager.info("Cart button is visible");
     	        int c1 = getProductsInCartCount();

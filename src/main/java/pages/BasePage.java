@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.NoSuchElementException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import components.NavBar;
+import config.ConfigReader;
 import logging.LoggingManager;
 import reporting.ReportManager;
 import utilities.ActionUtil;
@@ -21,6 +24,7 @@ public class BasePage {
     public DataProviderUtil dataUtil;
 	protected ActionUtil actionUtil;
 	public NavBar navBar;
+	public static final int normalWaitTime = Integer.parseInt(ConfigReader.getProperty("normal_wait_time"));
 
     public BasePage(WebDriver driver) {
         
@@ -29,9 +33,34 @@ public class BasePage {
         reporter = new ReportManager();
         this.dataUtil = new DataProviderUtil();
         this.actionUtil = new ActionUtil(driver);
-        this.navBar = new NavBar(driver.findElement(By.cssSelector(".top-nav.top-nav-module_top-nav_2cmJW")));
         PageFactory.initElements(driver, this);
+        this.navBar = new NavBar(getNavBarElement());
+        
         LoggingManager.info("Page factory initialized for " + this.getClass().getSimpleName());
+    }
+    
+    /**
+     * Gets the WebElement for the navBar using waitFor.
+     *
+     * @return The WebElement representing the navBar.
+     */
+    private WebElement getNavBarElement() {
+        return waitUtil.waitFor(driver -> {
+            try {
+                return driver.findElement(By.cssSelector(".top-nav.top-nav-module_top-nav_2cmJW"));
+            } catch (NoSuchElementException e) {
+                return null;
+            }
+        }, 20);
+    }
+
+    /**
+     * Gets the NavBar component.
+     *
+     * @return The NavBar component.
+     */
+    public NavBar getNavBar() {
+        return navBar;
     }
 
     public WaitUtil getWait() {
@@ -47,7 +76,7 @@ public class BasePage {
     	
         LoggingManager.info("Attempting to click on element: ");
         reporter.log("Clicking on element: "); // ReportManager log
-        waitUtil.waitForElementToBeClickable(element, 10);
+        waitUtil.waitForElementToBeClickable(element, normalWaitTime);
         element.click();
         LoggingManager.info("Clicked on element: ");
         reporter.log("Clicked on element: "); // ReportManager log
@@ -62,10 +91,10 @@ public class BasePage {
     public void sendKeys(WebElement element, String keys) {
         LoggingManager.info("Sending keys '" + keys + "' to element: ");
         reporter.log("Sending keys '" + keys + "' to element: "); // ReportManager log
-        waitUtil.waitForElementToBeVisible(element, 10);
+        waitUtil.waitForElementToBeVisible(element, normalWaitTime);
         click(element);
         element.clear();
-        waitUtil.waitFor(ExpectedConditions.textToBePresentInElementValue(element, ""), 10);
+        waitUtil.waitFor(ExpectedConditions.textToBePresentInElementValue(element, ""), normalWaitTime);
         element.sendKeys(keys);
         LoggingManager.info("Sent keys '" + keys + "' to element: " + element.toString());
         reporter.log("Sent keys '" + keys + "' to element: " + element.toString()); // ReportManager log
@@ -81,7 +110,7 @@ public class BasePage {
         LoggingManager.info("Checking visibility of element: " + element.toString());
         reporter.log("Checking visibility of element: " + element.toString()); // ReportManager log
         try {
-            boolean visible = waitUtil.waitForElementToBeVisible(element, 10) != null;
+            boolean visible = waitUtil.waitForElementToBeVisible(element, normalWaitTime) != null;
             LoggingManager.info("Element visibility status: " + visible);
             reporter.log("Element visibility status: " + visible); // ReportManager log
             return visible;
@@ -103,7 +132,7 @@ public class BasePage {
     	LoggingManager.info("Checking presence of element: " + element.toString());
         reporter.log("Checking presence of element: " + element.toString()); // ReportManager log
         try {
-            boolean present = waitUtil.waitForElementToBePresent(element, 10) != null;
+            boolean present = waitUtil.waitForElementToBePresent(element, normalWaitTime) != null;
             LoggingManager.info("Element presence status: " + present);
             reporter.log("Element presence status: " + present); // ReportManager log
             return present;

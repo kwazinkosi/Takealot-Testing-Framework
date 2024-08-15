@@ -68,6 +68,7 @@ public class HomePage extends BasePage {
      * @return A new instance of the ProductsPage.
      */
     public ProductsPage submitSearch() {
+    	
         click(searchButton);
         LoggingManager.info("Search submitted");
         return new ProductsPage(driver);
@@ -84,7 +85,7 @@ public class HomePage extends BasePage {
     	LoggingManager.info("Searching for "+query);
     	enterSearchQuery(query);
         ProductsPage productsPage = submitSearch(); // Assign the returned ProductsPage
-        waitUtil.waitForElementToBeVisible(searchResults, 20); // Wait for search results to be visible
+        waitUtil.waitForElementToBeVisible(searchResults, normalWaitTime); // Wait for search results to be visible
         LoggingManager.info("Products now visible");
         return productsPage; // Return the ProductsPage instance
     }
@@ -106,7 +107,7 @@ public class HomePage extends BasePage {
         switch (expectedResponse) {
             case "default-page":
             	ProductsPage products = new ProductsPage(DriverFactory.getDriver());
-            	List<Product> productList = products.getFilteredProductsMax(p -> !p.getProductType().equals("sponsored"), 10);
+            	List<Product> productList = products.getFilteredProductsMax(p -> !p.getProductType().equals("sponsored"), normalWaitTime);
                 // if none of the products in the list contain the query
                 boolean noneContainQuery = productList.stream().noneMatch(p -> p.getName().toLowerCase().contains(query.toLowerCase()));
 
@@ -118,7 +119,7 @@ public class HomePage extends BasePage {
                 
                 break;
             case "empty-results-page":
-                if (waitUtil.waitForElementToBeVisible(emptyResults, 20) != null) {
+                if (waitUtil.waitForElementToBeVisible(emptyResults, normalWaitTime) != null) {
                     LoggingManager.info("Empty results page displayed");
                     return true;
                 } else {
@@ -138,6 +139,8 @@ public class HomePage extends BasePage {
      * @return RegistrationPage instance.
      */
     public RegistrationPage navigateToRegister() {
+    	
+    	NavBar navBar = getNavBar();
         navBar.clickNavLink("Register");
         return new RegistrationPage(driver);
     }
@@ -148,7 +151,8 @@ public class HomePage extends BasePage {
      * @return LoginPage instance.
      */
     public LoginPage navigateToLogin() {
-        
+    	
+    	NavBar navBar = getNavBar();
     	navBar.clickNavLink("Login");
         return new LoginPage(driver);
     }
@@ -159,7 +163,8 @@ public class HomePage extends BasePage {
      * @return CartPage instance.
      */
     public CartPage navigateToCart() {
-        
+    	
+    	NavBar navBar = getNavBar();
     	navBar.clickNavLink("Cart");
         return new CartPage(driver);
     }
@@ -168,7 +173,9 @@ public class HomePage extends BasePage {
      * Navigates to the Become a Seller page.
      */
     public void navigateToSeller() {
-        navBar.clickNavLink("Become a Seller");
+    	
+    	NavBar navBar = getNavBar();
+    	navBar.clickNavLink("Become a Seller");
     }
     
     /**

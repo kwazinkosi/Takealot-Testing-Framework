@@ -36,7 +36,7 @@ public class ProductsPageTest {
         driver = DriverFactory.initDriver();
 
         // Apply the WebDriverListener
-        WebDriverListener listener = new AdOverlayListener(driver);
+        WebDriverListener listener = new AdOverlayListener();
         driver = new EventFiringDecorator<>(listener).decorate(driver);
         driver.get(ConfigReader.getProperty("base_url"));
 
@@ -46,6 +46,7 @@ public class ProductsPageTest {
         productsPage = homePage.searchValidFor(searchProduct);
         productsPage.getWait().waitImplicitly(0,5);
         BasePage.reporter.setDriver(driver);  // Inject WebDriver into ReportManager
+        LoggingManager.info(" \n\n*************** STARTING PRODUCTS TESTS**************");
     }
 
     @Test(priority = 5, enabled =false)
@@ -61,7 +62,7 @@ public class ProductsPageTest {
         LoggingManager.info("Test for search product results  -- PASSED!\n\n");
     }
 
-    @Test(priority = 6, enabled =false)
+    @Test(priority = 6, enabled = false)
     public void verifyProductsRetrieval() {
         LoggingManager.info("==============Starting test for product retrieval.==============");
 
@@ -76,7 +77,7 @@ public class ProductsPageTest {
         LoggingManager.info("Test for product retrieval -- PASSED!\n\n");
     }
 
-    @Test(priority =7, enabled =false) 
+    @Test(priority =7, enabled = false) 
     public void verifyFilteredProducts() {
         
     	LoggingManager.info("==============Starting test for filtered products.============== ");
@@ -108,10 +109,10 @@ public class ProductsPageTest {
         LoggingManager.info("Product price filter -- Passed!\n\n");
     }
 
-    @Test(priority = 9, enabled =false, dataProvider = "productSearchData", dataProviderClass = DataProviderUtil.class)
+    @Test(priority = 9, dataProvider = "productSearchData", dataProviderClass = DataProviderUtil.class)
     public void verifyProductDetails(String productName, String vendorName, String price,
                                    String rating, String reviews, String category, String executionRequired) {
-    	
+    	LoggingManager.info("============= Testing verifyProductDetails ================");
         // Check if execution is required for this test case
         if ("No".equalsIgnoreCase(executionRequired)) {
             throw new SkipException("Skipping this test case as execution is not required");

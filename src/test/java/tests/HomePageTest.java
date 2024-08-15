@@ -29,18 +29,19 @@ public class HomePageTest {
         driver = DriverFactory.initDriver();
 
         // Apply the WebDriverListener
-        WebDriverListener listener = new AdOverlayListener(driver);
+        WebDriverListener listener = new AdOverlayListener();
         driver = new EventFiringDecorator<>(listener).decorate(driver);
 
         driver.get(ConfigReader.getProperty("base_url"));
         homePage = new HomePage(driver);
         BasePage.reporter.setDriver(driver);
+        LoggingManager.info(" \n\n*************** STARTING HOMEPAGE TESTS**************");
     }
 
     @Test(priority = 0)
     public void verifyTitle() {
     	
-        LoggingManager.info("Testing home page title");
+        LoggingManager.info("=========== Testing home page title. ===========");
         String expectedTitle = homePage.dataUtil.getValue("common info", "home_page_title");
         String actualTitle = homePage.getHomeTitle();
         Assert.assertEquals(actualTitle, expectedTitle, "Home page title does not match the expected value.");
@@ -50,7 +51,7 @@ public class HomePageTest {
     @Test(priority = 1)
     public void testNavigateToRegister() {
     	
-    	LoggingManager.info("Testing navigation to registration");
+    	LoggingManager.info("===========Testing navigation to registration. ===========");
         RegistrationPage registrationPage = homePage.navigateToRegister();
         Assert.assertTrue(registrationPage.isSignupVisible(), "Signup modal should be visible.");
         registrationPage.closeSignup();
@@ -60,7 +61,7 @@ public class HomePageTest {
     @Test(priority = 2)
     public void testNavigateToLogin() {
     	
-    	LoggingManager.info("Testing navigation to login");
+    	LoggingManager.info("=========== Testing navigation to login. ===========");
         LoginPage loginPage = homePage.navigateToLogin();
         Assert.assertTrue(loginPage.isLoginVisible(), "Login modal should be visible.");
         loginPage.closeLogin();
@@ -70,7 +71,7 @@ public class HomePageTest {
     @Test(priority = 3)
     public void testNavigateToCart() {
     	
-    	LoggingManager.info("Testing navigation to cart");
+    	LoggingManager.info("=========== Testing navigation to cart. ===========");
     	CartPage cartPage = homePage.navigateToCart();
         Assert.assertTrue(cartPage.isCartVisible(), "Login modal should be visible.");
         cartPage.navBar.clickNavLink("Home");
@@ -80,7 +81,7 @@ public class HomePageTest {
     @Test(priority = 4, dataProvider = "searchData", dataProviderClass = DataProviderUtil.class)
     public void verifySearchFunctionality(String queryName, String searchValue, String expected) {
         
-    	LoggingManager.info("Testing search functionality with query: " + searchValue);   
+    	LoggingManager.info("===========Testing search functionality with query: " + searchValue+" ===========");   
         boolean resultsFound = false;
         if (expected.equals("results-page")) {
             resultsFound = homePage.searchValidFor(searchValue).isResultsVisible();
