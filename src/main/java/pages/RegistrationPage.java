@@ -1,5 +1,8 @@
 package pages;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,24 +13,27 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class RegistrationPage extends BasePage {
 
-    @FindBy(id = "usernameInput")
-    private WebElement usernameInput;
+    @FindBy(name = "first_name")
+    private WebElement firstname;
 
-    @FindBy(id = "emailInput")
+    @FindBy(name = "last_name")
+    private WebElement lastname;
+    
+    @FindBy(name = "email")
     private WebElement emailInput;
 
-    @FindBy(id = "passwordInput")
+    @FindBy(name = "new_password")
     private WebElement passwordInput;
-
-    @FindBy(id = "confirmPasswordInput")
-    private WebElement confirmPasswordInput;
 
     @FindBy(id = "registerButton")
     private WebElement registerButton;
 
-    @FindBy(id = "registrationError")
-    private WebElement registrationError;
-
+    @FindBy(className = "error")
+    private List<WebElement> registrationErrors;
+    
+    @FindBy(className ="verify-otp-modal")
+    private WebElement otpModal;
+    
     // Constructor
     public RegistrationPage(WebDriver driver) {
         super(driver);
@@ -35,13 +41,24 @@ public class RegistrationPage extends BasePage {
     }
 
     /**
-     * Types the username into the username field.
+     * Types the firstname into the firstname field.
      *
-     * @param username the username to enter
+     * @param firstname the firstname to enter
      * @return the current instance of RegistrationPage
      */
-    public RegistrationPage typeUsername(String username) {
-        usernameInput.sendKeys(username);
+    public RegistrationPage typeFirstname(String firstname) {
+    	sendKeys(this.firstname, firstname);
+        return this;
+    }
+
+    /**
+     * Types the lastname into the lastname field.
+     *
+     * @param lastname the lastname to enter
+     * @return the current instance of RegistrationPage
+     */
+    public RegistrationPage typeLastname(String lastname) {
+    	sendKeys(this.lastname, lastname);
         return this;
     }
 
@@ -52,7 +69,7 @@ public class RegistrationPage extends BasePage {
      * @return the current instance of RegistrationPage
      */
     public RegistrationPage typeEmail(String email) {
-        emailInput.sendKeys(email);
+        sendKeys(emailInput, email);
         return this;
     }
 
@@ -63,21 +80,11 @@ public class RegistrationPage extends BasePage {
      * @return the current instance of RegistrationPage
      */
     public RegistrationPage typePassword(String password) {
-        passwordInput.sendKeys(password);
+        sendKeys(passwordInput, password);
         return this;
     }
 
-    /**
-     * Types the password into the confirm password field.
-     *
-     * @param password the password to confirm
-     * @return the current instance of RegistrationPage
-     */
-    public RegistrationPage typeConfirmPassword(String password) {
-        confirmPasswordInput.sendKeys(password);
-        return this;
-    }
-
+ 
     /**
      * Clicks the register button to submit the registration form.
      *
@@ -103,28 +110,51 @@ public class RegistrationPage extends BasePage {
     /**
      * Performs the registration with the provided user details.
      *
-     * @param username the username to enter
+     * @param firstname the firstname to enter
      * @param email the email to enter
      * @param password the password to enter
-     * @param confirmPassword the password to confirm
+     * @param lastname the lastname to enter
      * @param pageClass the class of the page to navigate to after a successful registration
      * @param <T> the type of the page to return
      * @return the page object representing the page after successful registration
      */
-    public <T> T registerAs(String username, String email, String password, String confirmPassword, Class<T> pageClass) {
-        typeUsername(username);
-        typeEmail(email);
-        typePassword(password);
-        typeConfirmPassword(confirmPassword);
-        return submitRegistration(pageClass);
+    public <T> T registerAs(String firstname, String lastname, String email, String password, String confirmPassword, Class<T> pageClass) {
+        
+		typeFirstname(firstname)
+							.typeLastname(lastname)
+							.typeEmail(email)
+							.typePassword(password);
+		
+		return submitRegistration(pageClass);
     }
     
+    /**
+     * Retrieves the error messages displayed on the registration page.
+     *
+     * @return a list of error messages
+     */
+    public List<String> getErrorMessages() {
+        return registrationErrors
+				        		.stream()
+					            .map(WebElement::getText)
+					            .collect(Collectors.toList());
+    }
+
     /**
      * Checks if the registration error is displayed.
      *
      * @return true if the error is displayed, false otherwise
      */
     public boolean isRegistrationErrorDisplayed() {
-        return registrationError.isDisplayed();
+        return !registrationErrors.isEmpty();
+    }
+
+    /**
+     * Checks if the OTP modal is displayed.
+     *
+     * @return true if the OTP modal is visible, false otherwise
+     */
+    public boolean isOtpModalVisible() {
+        return otpModal.isDisplayed();
     }
 }

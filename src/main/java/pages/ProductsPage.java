@@ -178,6 +178,22 @@ public class ProductsPage extends BasePage {
         return product;
     }
 
+    /**
+     * Attempts to add the specified product to the cart.
+     * 
+     * This method first checks if the "Add to Cart" button is visible. If it is, the method clicks the button
+     * and verifies if the product count in the cart has increased, indicating that the product has been added.
+     * If the "Add to Cart" button is not visible, it clicks the "Show All Options" button to reveal additional options,
+     * selects an option, and then attempts to click the "Add to Cart" button again.
+     * 
+     * The method also handles cases where elements may not be immediately visible by using explicit waits.
+     * 
+     * @param product The {@link Product} object representing the product to be added to the cart.
+     * @return {@code true} if the product was successfully added to the cart; {@code false} otherwise.
+     * 
+     * @throws NoSuchElementException If the required elements are not found within the specified timeout.
+     * @throws TimeoutException If the specified conditions are not met within the given timeout period.
+     */
     public boolean addToCart(Product product) {
     	
     	boolean isAdded = false;
