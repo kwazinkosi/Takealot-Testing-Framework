@@ -11,8 +11,10 @@ import config.ConfigReader;
 import logging.LoggingManager;
 import utilities.AdOverlayListener;
 import pages.BasePage;
+import pages.CartPage;
 import pages.HomePage;
-import reporting.ReportManager;
+import pages.LoginPage;
+import pages.RegistrationPage;
 import utilities.DataProviderUtil;
 import utilities.DriverFactory;
 
@@ -45,10 +47,40 @@ public class HomePageTest {
         LoggingManager.info("Testing home page title -- PASSED \n");
     }
 
-    @Test(priority = 1, dataProvider = "searchData", dataProviderClass = DataProviderUtil.class)
+    @Test(priority = 1)
+    public void testNavigateToRegister() {
+    	
+    	LoggingManager.info("Testing navigation to registration");
+        RegistrationPage registrationPage = homePage.navigateToRegister();
+        Assert.assertTrue(registrationPage.isSignupVisible(), "Signup modal should be visible.");
+        registrationPage.closeSignup();
+        LoggingManager.info("navigated to registration succesfully -- Passed\n\n");
+    }
+
+    @Test(priority = 2)
+    public void testNavigateToLogin() {
+    	
+    	LoggingManager.info("Testing navigation to login");
+        LoginPage loginPage = homePage.navigateToLogin();
+        Assert.assertTrue(loginPage.isLoginVisible(), "Login modal should be visible.");
+        loginPage.closeLogin();
+        LoggingManager.info("navigated to login succesfully -- Passed\n\n");
+    }
+    
+    @Test(priority = 3)
+    public void testNavigateToCart() {
+    	
+    	LoggingManager.info("Testing navigation to cart");
+    	CartPage cartPage = homePage.navigateToCart();
+        Assert.assertTrue(cartPage.isCartVisible(), "Login modal should be visible.");
+        cartPage.navBar.clickNavLink("Home");
+        LoggingManager.info("navigated to cart succesfully -- Passed\n\n");
+    }
+    
+    @Test(priority = 4, dataProvider = "searchData", dataProviderClass = DataProviderUtil.class)
     public void verifySearchFunctionality(String queryName, String searchValue, String expected) {
-        LoggingManager.info("Testing search functionality with query: " + searchValue);
         
+    	LoggingManager.info("Testing search functionality with query: " + searchValue);   
         boolean resultsFound = false;
         if (expected.equals("results-page")) {
             resultsFound = homePage.searchValidFor(searchValue).isResultsVisible();

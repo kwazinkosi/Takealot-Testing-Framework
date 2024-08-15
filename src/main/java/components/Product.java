@@ -5,12 +5,10 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
-import java.util.Set;
 
 import logging.LoggingManager;
 import utilities.AdOverlayListener;
@@ -248,110 +246,6 @@ public class Product extends BaseComponent {
         }
         
         return this;
-    }
-
-
-    /**
-     * Adds the product to the cart.
-     * If the "Add to Cart" button is not directly visible, clicks the "Show All Options" button first.
-     * 
-     * @return The current Product instance.
-     */
-    public Product addToCartOnList() {
-        int retryCount = 2;
-        boolean addedToCart = false;
-        boolean allOptions = false;
-        if(isVisible(this.addToCartBtn)) {
-        	
-        	
-        }
-        else {
-        	AddToCart();
-        }
-/*        String whand1 =DriverFactory.getDriver().getWindowHandle();
-
-        for (int attempt = 0; attempt < retryCount; attempt++) {
-            try {
-                int productsInCartBefore = getProductsInCartCount();
-                LoggingManager.info("Attempting to add product to cart");
-                
-                if(allOptions) {
-                	DriverFactory.getDriver().switchTo().defaultContent();
-                	DriverFactory.getDriver().findElement(By.cssSelector(".select-dropdown-module_select-dropdown_3Rysq")).click();
-                	waitUtil.waitImplicitly(1);
-                	List<WebElement> options = DriverFactory.getDriver().findElements(By.className("select-dropdown-module_list-item_2kHtk"));
-                	WebElement clickOption = options.get(1);
-                	clickOption.click();
-//                	addToCartBtn.get(0).click();
-                }
-                if (waitUtil.waitForElementToBeVisible(this.cartBtnElement, 1) != null) {
-//                    scrollToElement(addToCartBtn.get(0));
-                	this.cartBtnElement.click();
-                    waitUtil.waitImplicitly(1);
-
-                    WebElement miniCartIconCountElement = DriverFactory.getDriver().findElement(By.className("badge-button-module_badge-count-wrapper_2buZm"));
-                    int productsInCartAfter = Integer.parseInt(miniCartIconCountElement.getText().trim());
-
-                    if (productsInCartAfter > productsInCartBefore) {
-                        isAddedToCart = true;
-                        this.itemsInCart = productsInCartAfter - productsInCartBefore;
-                        LoggingManager.info("Product added to cart successfully");
-                        addedToCart = true;
-                        break;
-                    } else {
-                        LoggingManager.warn("Product was not added to cart");
-                    }
-                } else {
-                    LoggingManager.info("Add to Cart button is not visible, clicking 'Show All Options'");
-                    scrollToElement(showAllOptions);
-                    showAllOptions.click();
-                    allOptions =true;
-                    waitUtil.waitImplicitly(1);
-                }
-            } catch (Exception e) {
-                LoggingManager.error("Error adding product to cart: " + e.getMessage(), e);
-                scrollToElement(showAllOptions);
-                showAllOptions.click();
-                allOptions =true;
-                waitUtil.waitImplicitly(1);
-            }
-        }
-
-        if (!addedToCart) {
-            LoggingManager.warn("Failed to add product to cart after " + retryCount + " attempts.");
-        }
-*/
-        return this;
-    }
-
-    private void AddToCart() {
-		
-	}
-
-	/**
-     * Retrieves the current count of products in the cart.
-     * 
-     * @return The count of products in the cart. Defaults to 0 if there's an error.
-     */
-    private int getProductsInCartCount() {
-        try {
-            // Get text from the element
-            String textCount = DriverFactory.getDriver().findElement(By.className("badge-button-module_badge-count-wrapper_2buZm")).getText().trim();
-            
-            // Parse the text to an integer
-            int count =Integer.parseInt(textCount);
-            return count;
-            
-        } catch (NoSuchElementException e) {
-            LoggingManager.error("Mini cart icon count element not found", e);
-        } catch (NumberFormatException e) {
-            LoggingManager.error("Failed to parse the number of products in the cart. Text might not be a valid number", e);
-        } catch (Exception e) {
-            LoggingManager.error("Unexpected error occurred while getting the cart product count", e);
-        }
-        
-        // Return default value if an error occurs
-        return 0;
     }
 
     

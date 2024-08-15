@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import components.NavBar;
 import components.Product;
 import logging.LoggingManager;
 import utilities.DataProviderUtil;
@@ -36,8 +37,7 @@ public class HomePage extends BasePage {
     private WebElement emptyResults;
     
     
-    
-    
+
     /**
      * Constructor for the HomePage class.
      * 
@@ -132,6 +132,44 @@ public class HomePage extends BasePage {
         return false; // Return the current HomePage instance for method chaining
     }
 
+    /**
+     * Navigates to the Register page.
+     * 
+     * @return RegistrationPage instance.
+     */
+    public RegistrationPage navigateToRegister() {
+        navBar.clickNavLink("Register");
+        return new RegistrationPage(driver);
+    }
+
+    /**
+     * Navigates to the Login page.
+     * 
+     * @return LoginPage instance.
+     */
+    public LoginPage navigateToLogin() {
+        
+    	navBar.clickNavLink("Login");
+        return new LoginPage(driver);
+    }
+
+    /**
+     * Navigates to the Cart page.
+     * 
+     * @return CartPage instance.
+     */
+    public CartPage navigateToCart() {
+        
+    	navBar.clickNavLink("Cart");
+        return new CartPage(driver);
+    }
+
+    /**
+     * Navigates to the Become a Seller page.
+     */
+    public void navigateToSeller() {
+        navBar.clickNavLink("Become a Seller");
+    }
     
     /**
      * Retrieves the title of the home page.

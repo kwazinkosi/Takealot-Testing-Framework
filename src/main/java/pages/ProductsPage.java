@@ -199,7 +199,8 @@ public class ProductsPage extends BasePage {
     	boolean isAdded = false;
     	
     	if (product.isVisible(product.addToCartBtn)) {
-    	    LoggingManager.info("Add to Cart button is visible");
+    	    
+    		LoggingManager.info("Add to Cart button is visible");
     	    // Define the condition for waiting for the Add to Cart button to be visible
     	    Function<WebDriver, WebElement> addToCartBtnCondition = driver -> {
     	        WebElement btn = driver.findElement(product.cartAddButtonBy);

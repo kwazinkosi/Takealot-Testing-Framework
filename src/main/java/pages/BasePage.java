@@ -1,10 +1,12 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import components.NavBar;
 import logging.LoggingManager;
 import reporting.ReportManager;
 import utilities.ActionUtil;
@@ -18,13 +20,16 @@ public class BasePage {
     public static ReportManager reporter;
     public DataProviderUtil dataUtil;
 	protected ActionUtil actionUtil;
+	public NavBar navBar;
 
     public BasePage(WebDriver driver) {
-        this.driver = driver;
+        
+    	this.driver = driver;
         this.waitUtil = new WaitUtil(driver);
         reporter = new ReportManager();
         this.dataUtil = new DataProviderUtil();
         this.actionUtil = new ActionUtil(driver);
+        this.navBar = new NavBar(driver.findElement(By.cssSelector(".top-nav.top-nav-module_top-nav_2cmJW")));
         PageFactory.initElements(driver, this);
         LoggingManager.info("Page factory initialized for " + this.getClass().getSimpleName());
     }

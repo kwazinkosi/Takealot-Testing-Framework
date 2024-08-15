@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import logging.LoggingManager;
+
 /**
  * RegistrationPage handles actions and validations on the registration page.
  */
@@ -30,6 +32,12 @@ public class RegistrationPage extends BasePage {
 
     @FindBy(className = "error")
     private List<WebElement> registrationErrors;
+    
+    @FindBy(xpath = "//button[@class='modal-module_close-button_asjao']")
+    private WebElement closeSignupModal;
+  
+    @FindBy(xpath = "//button[@class='backdrop modal-module_backdrop_1x_BI']")
+    private WebElement signupModal;
     
     @FindBy(className ="verify-otp-modal")
     private WebElement otpModal;
@@ -155,6 +163,33 @@ public class RegistrationPage extends BasePage {
      * @return true if the OTP modal is visible, false otherwise
      */
     public boolean isOtpModalVisible() {
-        return otpModal.isDisplayed();
+        try {
+            waitUtil.waitForElementToBeVisible(otpModal, 10);
+            return otpModal.isDisplayed();
+        } catch (Exception e) {
+            LoggingManager.error("OTP modal not visible.", e);
+            return false;
+        }
     }
+
+    public boolean isSignupVisible() {
+        try {
+            waitUtil.waitForElementToBeVisible(signupModal, 10);
+            return signupModal.isDisplayed();
+        } catch (Exception e) {
+            LoggingManager.error("Signup modal not visible.", e);
+            return false;
+        }
+    }
+
+    public void closeSignup() {
+        try {
+            waitUtil.waitForElementToBeClickable(closeSignupModal, 20);
+            closeSignupModal.click();
+            LoggingManager.info("Signup modal closed successfully.");
+        } catch (Exception e) {
+            LoggingManager.error("Failed to close signup modal.", e);
+        }
+    }
+
 }

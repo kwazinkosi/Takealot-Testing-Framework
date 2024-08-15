@@ -48,7 +48,7 @@ public class ProductsPageTest {
         BasePage.reporter.setDriver(driver);  // Inject WebDriver into ReportManager
     }
 
-    @Test(priority = 0, enabled =false)
+    @Test(priority = 5, enabled =false)
     public void verifyIsResultsVisible() {
         
     	LoggingManager.info("==============Starting test to check if product results are visible. ==============");
@@ -61,7 +61,7 @@ public class ProductsPageTest {
         LoggingManager.info("Test for search product results  -- PASSED!\n\n");
     }
 
-    @Test(priority = 1, enabled =false)
+    @Test(priority = 6, enabled =false)
     public void verifyProductsRetrieval() {
         LoggingManager.info("==============Starting test for product retrieval.==============");
 
@@ -76,7 +76,7 @@ public class ProductsPageTest {
         LoggingManager.info("Test for product retrieval -- PASSED!\n\n");
     }
 
-    @Test(priority =2, enabled =false) 
+    @Test(priority =7, enabled =false) 
     public void verifyFilteredProducts() {
         
     	LoggingManager.info("==============Starting test for filtered products.============== ");
@@ -90,7 +90,7 @@ public class ProductsPageTest {
         LoggingManager.info("Test for filtered products -- PASSED!\n\n");
     }
 
-    @Test(priority = 3, enabled =false)
+    @Test(priority = 8, enabled =false)
     public void verifyGetProductByPrice() {
         LoggingManager.info("============== Starting test to get a product by price. ==============");
 
@@ -108,7 +108,7 @@ public class ProductsPageTest {
         LoggingManager.info("Product price filter -- Passed!\n\n");
     }
 
-    @Test(priority = 4, enabled =false, dataProvider = "productSearchData", dataProviderClass = DataProviderUtil.class)
+    @Test(priority = 9, enabled =false, dataProvider = "productSearchData", dataProviderClass = DataProviderUtil.class)
     public void verifyProductDetails(String productName, String vendorName, String price,
                                    String rating, String reviews, String category, String executionRequired) {
     	
@@ -135,7 +135,7 @@ public class ProductsPageTest {
         // TODO: Might add additional assertions based on vendorName, category, etc
     }
 
-    @Test(priority = 5)
+    @Test(priority = 10)
     public void verifyProductAddToCart() {
         
     	// Retrieve the product name from data file

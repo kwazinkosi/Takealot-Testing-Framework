@@ -5,9 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import components.Product;
+import components.CartItem;
+import logging.LoggingManager;
 
+import java.math.BigDecimal;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Page Object Model for the Cart Page.
@@ -15,36 +18,34 @@ import java.util.List;
  */
 public class CartPage extends BasePage {
 
-    private WebDriver driver;
+    // Locators for the cart items
+    @FindBy(xpath ="//div[@data-ref='cart']")
+    private WebElement cart;
+
+    @FindBy(className = "cart-item-module_product-anchor_g4hEN")
+    private List<WebElement> cartItems;
+
+    @FindBy(xpath = "//a[normalize-space()='Proceed to Checkout']")
+    private WebElement checkoutButton;
+
+    @FindBy(css = "p[class='cart-summary-module_cart-summary-items-cost_2gFl4'] span[class='currency plus currency-module_currency_29IIm']")
+    private WebElement totalPrice;
 
     // Constructor to initialize the CartPage with the WebDriver instance
     public CartPage(WebDriver driver) {
         super(driver);
-        this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
-        
-    // Locators for the cart items
-    @FindBy(className = "cart-item-container-module_item_3Vkqc")
-    private List<WebElement> cartItems;
-
-    @FindBy(css = "button.checkout-button")
-    private WebElement checkoutButton;
-
-    @FindBy(css = "div.total-price")
-    private WebElement totalPrice;
-
-    @FindBy(css = "button.clear-cart-button")
-    private WebElement clearCartButton;
 
     /**
      * Gets the list of products in the cart.
      *
      * @return a list of Product components representing the items in the cart.
      */
-    public List<Product> getCartItems() {
+    public List<CartItem> getCartItems() {
         return cartItems.stream()
-                .map(Product::new)
-                .toList();
+                        .map(CartItem::new)
+                        .collect(Collectors.toList());
     }
 
     /**
@@ -53,6 +54,9 @@ public class CartPage extends BasePage {
      * @return the CheckoutPage object for further interactions.
      */
     public CheckoutPage proceedToCheckout() {
+    	
+    	LoggingManager.info("going to checkout.");
+        waitUtil.waitForElementToBeClickable(checkoutButton, 10);
         checkoutButton.click();
         return new CheckoutPage(driver);
     }
@@ -60,17 +64,12 @@ public class CartPage extends BasePage {
     /**
      * Gets the total price of the items in the cart.
      *
-     * @return the total price as a String.
+     * @return the total price as a BigDecimal.
      */
-    public String getTotalPrice() {
-        return totalPrice.getText();
-    }
-
-    /**
-     * Clears all items in the cart.
-     */
-    public void clearCart() {
-        clearCartButton.click();
+    public BigDecimal getTotalCartPrice() {
+        return getCartItems().stream()
+                             .map(CartItem::getPrice)
+                             .reduce(BigDecimal.ZERO, BigDecimal::add);
     }
 
     /**
@@ -81,5 +80,21 @@ public class CartPage extends BasePage {
     public boolean isCartEmpty() {
         return cartItems.isEmpty();
     }
-}
 
+    /**
+     * Checks if the cart is visible.
+     *
+     * @return true if the cart is visible, otherwise false.
+     */
+    public boolean isCartVisible() {
+        try {
+        	LoggingManager.info("Checking cart visibility.");
+            waitUtil.waitForElementToBeVisible(cart, 10);
+            return cart.isDisplayed();
+            
+        } catch (Exception e) {
+            LoggingManager.error("Cart not visible.", e);
+            return false;
+        }
+    }
+}
