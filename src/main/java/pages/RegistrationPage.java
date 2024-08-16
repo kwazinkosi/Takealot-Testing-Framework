@@ -1,7 +1,6 @@
 package pages;
 
 import java.util.List;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import org.openqa.selenium.WebDriver;
@@ -16,19 +15,19 @@ import logging.LoggingManager;
  */
 public class RegistrationPage extends BasePage {
 
-    @FindBy(name = "first_name")
+    @FindBy(xpath = "//input[@id='register_customer_first_name']")
     private WebElement firstname;
 
-    @FindBy(name = "last_name")
+    @FindBy(xpath = "//input[@id='register_customer_last_name']")
     private WebElement lastname;
     
-    @FindBy(name = "email")
+    @FindBy(xpath = "//input[@id='register_customer_email']")
     private WebElement emailInput;
 
-    @FindBy(name = "new_password")
+    @FindBy(xpath = "//input[@id='register_customer_new_password']")
     private WebElement passwordInput;
 
-    @FindBy(name = "mobile_national_number")
+    @FindBy(xpath = "//input[@id='register_customer_mobile_national_number']")
     private WebElement mobileNumber;
     
     @FindBy(xpath = "//button[normalize-space()='Continue']")
@@ -52,6 +51,8 @@ public class RegistrationPage extends BasePage {
     @FindBy(xpath = "//button[@data-ref='modal-primary-button']")
     private WebElement closeOtpConfirm;
 
+    
+    private List<String> errors;
     /**
      * Constructor for RegistrationPage.
      *
@@ -62,91 +63,75 @@ public class RegistrationPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    /**
-     * Types the firstname into the firstname field.
-     *
-     * @param firstname the firstname to enter
-     * @return the current instance of RegistrationPage
-     */
     public RegistrationPage typeFirstname(String firstName) {
-    	
         LoggingManager.info("Typing first name in the field 'first_name'");
+        
         if (firstName == null) {
-            firstName = ""; // Convert null to empty string
+            firstName = " "; // Convert null to empty string
         }
         actionUtil.scrollToElement(firstname);
+        
+        waitUtil.waitFor(driver -> isVisible(firstname), 10, 500); // Wait for the firstname field to be visible
         sendKeys(firstname, firstName);
+        
         return this;
     }
 
-    /**
-     * Types the lastname into the lastname field.
-     *
-     * @param lastname the lastname to enter
-     * @return the current instance of RegistrationPage
-     */
     public RegistrationPage typeLastname(String lastName) {
+        LoggingManager.info("Typing last name in the field 'last_name'");
         
-    	LoggingManager.info("Typing last name in the field 'last_name'");
-        if (lastName == null) {
-            lastName = ""; // Convert null to empty string
+        if (lastName ==null) {
+            lastName = " "; // Convert null to empty string
         }
+        
         actionUtil.scrollToElement(lastname);
+        waitUtil.waitFor(driver -> isVisible(lastname), 10, 500); // Wait for the lastname field to be visible
         sendKeys(lastname, lastName);
+        
         return this;
     }
 
-    /**
-     * Types the email into the email field.
-     *
-     * @param email the email to enter
-     * @return the current instance of RegistrationPage
-     */
     public RegistrationPage typeEmail(String email) {
+        LoggingManager.info("Typing email in the field 'email'");
         
-    	LoggingManager.info("Typing email in the field 'email'");
-        if (email == null) {
-            email = ""; // Convert null to empty string
+        if (email ==null) {
+            email = " "; // Convert null to empty string
         }
+        
         actionUtil.scrollToElement(emailInput);
+        waitUtil.waitFor(driver -> isVisible(emailInput), 10, 500); // Wait for the email field to be visible
         sendKeys(emailInput, email);
+        
         return this;
     }
 
-    /**
-     * Types the password into the password field.
-     *
-     * @param password the password to enter
-     * @return the current instance of RegistrationPage
-     */
     public RegistrationPage typePassword(String password) {
+        LoggingManager.info("Typing password in the field 'new_password'");
         
-    	LoggingManager.info("Typing password in the field 'new_password'");
-    	if (password == null) {
-            password = ""; // Convert null to empty string
+        if (password==null) {
+            password = " "; // Convert null to empty string
         }
-    	actionUtil.scrollToElement(passwordInput);
-    	sendKeys(passwordInput, password);
+        
+        actionUtil.scrollToElement(passwordInput);
+        waitUtil.waitFor(driver -> isVisible(passwordInput), 10, 500); // Wait for the password field to be visible
+        sendKeys(passwordInput, password);
+        
         return this;
     }
 
-    /**
-     * Types the mobile number into the mobile number field.
-     *
-     * @param mobile the mobile number to enter
-     * @return the current instance of RegistrationPage
-     */
     public RegistrationPage typeMobileNumber(String mobile) {
+        LoggingManager.info("Typing password in the field 'new_password'");
         
-    	LoggingManager.info("Typing mobile number in the field 'mobile_national_number'");
         if (mobile == null) {
-            mobile = ""; // Convert null to empty string
+            mobile = " "; // Convert null to empty string
         }
+        
         actionUtil.scrollToElement(mobileNumber);
+        waitUtil.waitFor(driver -> isVisible(mobileNumber), 10, 500); // Wait for the password field to be visible
         sendKeys(mobileNumber, mobile);
+        
         return this;
     }
-
     /**
      * Clicks the register button to submit the registration form.
      *
@@ -157,7 +142,7 @@ public class RegistrationPage extends BasePage {
     public <T> T submitRegistration(Class<T> pageClass) {
         LoggingManager.info("Clicking on the register button to submit the registration form");
         registerButton.click();
-        // Add logic to wait for the next page or handle redirection if necessary
+        
         return PageFactory.initElements(driver, pageClass);
     }
 
@@ -167,13 +152,25 @@ public class RegistrationPage extends BasePage {
      * @return the current instance of RegistrationPage
      */
     public RegistrationPage submitRegistration() {
-        
-    	LoggingManager.info("Submitting the registration form expecting failure");
+        LoggingManager.info("Attempting to submit the registration form");
+
+        // Scroll to the button
         actionUtil.scrollToElement(registerButton);
-        registerButton.click();
+
+        // Check if the button class does not contain "disabled"
+        String classAttribute = registerButton.getAttribute("class");
+        if (classAttribute != null && !classAttribute.contains("disabled")) {
+            // Click the button if it's not disabled
+            registerButton.click();
+            LoggingManager.info("Registration form submitted successfully");
+        } else {
+            LoggingManager.info("Registration button is disabled, cannot submit the form");
+        }
+
         // Add logic to wait for the error message or handle redirection if necessary
         return this;
     }
+
 
     /**
      * Performs the registration with the provided user details.
@@ -204,19 +201,21 @@ public class RegistrationPage extends BasePage {
     public List<String> getErrorMessages() {
         LoggingManager.info("Retrieving error messages from the registration page");
 
-        LoggingManager.info("Waiting for error messages to be visible on the registration page");
-        
-        // Use the waitFor method to wait until the registration errors are visible
-        waitUtil.waitFor(driver -> registrationErrors.stream().allMatch(WebElement::isDisplayed), 10, 600);
-        
-        LoggingManager.info("Retrieving error messages from the registration page");
-        
+        // Wait until at least one error message is visible
+        waitUtil.waitFor(driver -> !registrationErrors.isEmpty() &&
+                registrationErrors.stream().anyMatch(WebElement::isDisplayed), 10, 800);
+
         // Collect and return the text from the visible error messages
         return registrationErrors.stream()
+                                 .filter(WebElement::isDisplayed) // Ensure the element is displayed
                                  .map(WebElement::getText)
                                  .collect(Collectors.toList());
     }
 
+
+//    public List<String> getErrorsList(){
+//    	
+//    }
 
     /**
      * Checks if the registration error is displayed.

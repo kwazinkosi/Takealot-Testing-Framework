@@ -6,7 +6,7 @@ This is a Selenium-based Page Object Model (POM) framework designed for automate
 
 Before you begin, ensure you have the following installed on your system:
 
-- **Java Development Kit (JDK) 8 or above**
+- **Java Development Kit (JDK) 11 or above**
 - **Apache Maven 3.6.0 or above**
 - **Git**
 
@@ -29,6 +29,14 @@ cd TakealotAutomation
 ```
 ### 3. Open the Command Line
 Ensure you're in the project's root directory, where the pom.xml file is located.
+- Run the following commands.
+
+``` sh 
+mvn install:install-file -Dfile=libs/wait-utils-0.0.1-SNAPSHOT.jar -DgroupId=com.kwazi -DartifactId=wait-utils -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar
+mvn install:install-file -Dfile=libs/file-utils-0.0.1-SNAPSHOT.jar -DgroupId=com.kwazi -DartifactId=file-utils -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar
+mvn install:install-file -Dfile=libs/logs-report-util-0.0.1-SNAPSHOT.jar -DgroupId=com.kwazi -DartifactId=logs-report-util -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar
+
+```
 
 ### 4. Run Tests
 You can run the test suite using Maven by executing the following command:
