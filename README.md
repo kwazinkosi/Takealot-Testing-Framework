@@ -32,9 +32,9 @@ Ensure you're in the project's root directory, where the pom.xml file is located
 - Run the following commands.
 
 ``` sh 
-mvn install:install-file -Dfile=libs/wait-utils-0.0.1-SNAPSHOT.jar -DgroupId=com.kwazi -DartifactId=wait-utils -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar
-mvn install:install-file -Dfile=libs/file-utils-0.0.1-SNAPSHOT.jar -DgroupId=com.kwazi -DartifactId=file-utils -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar
-mvn install:install-file -Dfile=libs/logs-report-util-0.0.1-SNAPSHOT.jar -DgroupId=com.kwazi -DartifactId=logs-report-util -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar
+mvn install:install-file -Dfile=libs/wait-utils-0.0.1-SNAPSHOT.jar -DgroupId=com.kwazi -DartifactId=wait-utils -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar -DgeneratePom=true
+mvn install:install-file -Dfile=libs/file-utils-0.0.1-SNAPSHOT.jar -DgroupId=com.kwazi -DartifactId=file-utils -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar -DgeneratePom=true
+mvn install:install-file -Dfile=libs/logs-report-util-0.0.1-SNAPSHOT.jar -DgroupId=com.kwazi -DartifactId=logs-report-util -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar -DgeneratePom=true
 
 ```
 
