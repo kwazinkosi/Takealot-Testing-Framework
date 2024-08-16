@@ -107,7 +107,7 @@ public class LoginPage extends BasePage {
                 boolean errorAlert = errorAlertDisplay();
                 if (!errorAlert) {
                     LoggingManager.info("LoggedIn successfully################");
-                    return new HomePage(driver); // Return the appropriate page after login
+                    return new HomePage(driver).setLoggedIn(true); // Return the appropriate page after login
                 }
                 else if (errorAlert) {
                         try {

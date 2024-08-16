@@ -210,7 +210,7 @@ public class ProductsPage extends BasePage {
     	    
     	    if (addToCartBtn != null) {
     	        LoggingManager.info("Add to Cart button is visible");
-    	        int c1 = getProductsInCartCount();
+    	        int c1 = getProductsInCartCount(); // TODO: nav.getProductsCount
     	        addToCartBtn.click();
     	        
     	        // Wait for the cart count to update and verify the product was added

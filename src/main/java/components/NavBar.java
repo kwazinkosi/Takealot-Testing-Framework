@@ -2,6 +2,7 @@ package components;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.NoSuchElementException;
 import java.util.function.Function;
 
 import org.openqa.selenium.WebDriver;
@@ -9,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import logging.LoggingManager;
 import utilities.DriverFactory;
 
 public class NavBar extends BaseComponent {
@@ -29,6 +31,10 @@ public class NavBar extends BaseComponent {
 
     @FindBy(xpath = "//button[@data-ref='badge-button']")
     private WebElement cartLink;
+    
+    @FindBy(xpath = "//div[@data-ref='badge-count']")
+    private WebElement miniCartIconCount;
+
     
     @FindBy(xpath = "//img[@alt='Takealot']")
     private WebElement homeLink;
@@ -75,5 +81,30 @@ public class NavBar extends BaseComponent {
         }
     }
     
+    /**
+     * Retrieves the current count of products in the cart.
+     * 
+     * @return The count of products in the cart. Defaults to 0 if there's an error.
+     */
+    public int getProductsInCartCount() {
+        try {
+            // Get text from the element
+            String textCount = this.miniCartIconCount.getText().trim();
+            
+            // Parse the text to an integer
+            int count =Integer.parseInt(textCount);
+            return count;
+            
+        } catch (NoSuchElementException e) {
+            LoggingManager.error("Mini cart icon count element not found", e);
+        } catch (NumberFormatException e) {
+            LoggingManager.error("Failed to parse the number of products in the cart. Text might not be a valid number", e);
+        } catch (Exception e) {
+            LoggingManager.error("Unexpected error occurred while getting the cart product count", e);
+        }
+        
+        // Return default value if an error occurs
+        return 0;
+    }
     
 }

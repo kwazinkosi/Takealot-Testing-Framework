@@ -38,7 +38,11 @@ public class HomePage extends BasePage {
     
     
 
-    /**
+    private boolean loggedIn = false;
+    
+
+
+	/**
      * Constructor for the HomePage class.
      * 
      * @param driver The WebDriver instance used to interact with the web page.
@@ -46,6 +50,16 @@ public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
     }
+    
+    public boolean isLoggedIn() {
+		return loggedIn;
+	}
+
+
+	public HomePage setLoggedIn(boolean loggedIn) {
+		this.loggedIn = loggedIn;
+		return this;
+	}
     
     /**
      * Enters a query into the search box.

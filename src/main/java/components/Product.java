@@ -49,10 +49,6 @@ public class Product extends BaseComponent {
     @FindBy(className ="select-dropdown-module_list-item_2kHtk")
     public List<WebElement> options;
 	
-
-    @FindBy(css = ".badge-button-module_badge-count-wrapper_2buZm")
-    public WebElement miniCartIconCount;
-
     @FindBy(css = "div.buybox-button button.wishlist-button")
     public WebElement addToWishlistBtn;
 

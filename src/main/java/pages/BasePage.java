@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import components.CartItem;
 import components.NavBar;
 import config.ConfigReader;
 import logging.LoggingManager;
@@ -24,11 +25,15 @@ abstract public class BasePage {
     public DataProviderUtil dataUtil;
 	protected ActionUtil actionUtil;
 	public NavBar navBar;
+	public CartItem cartItem;
 	
 	public static final int slowWaitTime = Integer.parseInt(ConfigReader.getProperty("slow_wait_time"));
 	public static final int normalWaitTime = Integer.parseInt(ConfigReader.getProperty("normal_wait_time"));
 	public static final int fastWaitTime = Integer.parseInt(ConfigReader.getProperty("fast_wait_time"));
 	public static final int fasterWaitTime = Integer.parseInt(ConfigReader.getProperty("faster_wait_time"));
+	
+	By cart = By.cssSelector(".cart-items-list-module_cart-items-list_3kWF_");
+	By nav = By.cssSelector(".top-nav.top-nav-module_top-nav_2cmJW");
 	
     public BasePage(WebDriver driver) {
         
@@ -39,6 +44,7 @@ abstract public class BasePage {
         this.actionUtil = new ActionUtil(driver);
         PageFactory.initElements(driver, this);
         this.navBar = new NavBar(getNavBarElement());
+        this.cartItem =new CartItem(getCartElement());
         
         LoggingManager.info("Page factory initialized for " + this.getClass().getSimpleName());
     }
@@ -50,7 +56,8 @@ abstract public class BasePage {
      * @return true if page is visible
      */
 	abstract public boolean isVisible();
-    /**
+    
+	/**
      * Gets the WebElement for the navBar using waitFor.
      *
      * @return The WebElement representing the navBar.
@@ -58,13 +65,26 @@ abstract public class BasePage {
     private WebElement getNavBarElement() {
         return waitUtil.waitFor(driver -> {
             try {
-                return driver.findElement(By.cssSelector(".top-nav.top-nav-module_top-nav_2cmJW"));
+                return driver.findElement(nav);
             } catch (NoSuchElementException e) {
                 return null;
             }
         }, 20);
     }
-
+    /**
+     * Gets the WebElement for the cart using waitFor.
+     *
+     * @return The WebElement representing the navBar.
+     */
+    private WebElement getCartElement() {
+        return waitUtil.waitFor(driver -> {
+            try {
+                return driver.findElement(cart);
+            } catch (NoSuchElementException e) {
+                return null;
+            }
+        }, 20);
+    }
     /**
      * Gets the NavBar component.
      *
@@ -74,6 +94,14 @@ abstract public class BasePage {
         return navBar;
     }
 
+    /**
+     * Gets the cart component.
+     *
+     * @return The cart component.
+     */
+    public CartItem getCart() {
+        return cartItem;
+    }
     public WaitUtil getWait() {
     	return waitUtil;
     }

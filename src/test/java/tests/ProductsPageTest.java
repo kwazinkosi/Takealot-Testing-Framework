@@ -31,6 +31,7 @@ public class ProductsPageTest {
     private HomePage homePage;
     private DataProviderUtil dataProviderUtil = new DataProviderUtil();
 
+    private String searchProduct;
     @BeforeClass
     public void setUp() {
         driver = DriverFactory.initDriver();
@@ -40,7 +41,7 @@ public class ProductsPageTest {
         driver = new EventFiringDecorator<>(listener).decorate(driver);
         driver.get(ConfigReader.getProperty("base_url"));
 
-        String searchProduct = dataProviderUtil.getValue("common info", "search_product");
+        searchProduct = dataProviderUtil.getValue("common info", "search_product");
         // Navigate to a particular products page
         homePage = new HomePage(driver);
         productsPage = homePage.searchValidFor(searchProduct);
@@ -82,7 +83,7 @@ public class ProductsPageTest {
         
     	LoggingManager.info("==============Starting test for filtered products.============== ");
         List<Product> product = productsPage.getFilteredProducts(
-        		p -> p.getRatingDetails().getRating() >= 4.5 && p.getName().toLowerCase().contains("iphone"));
+        		p -> p.getRatingDetails().getRating() >= 4.5 && p.getName().toLowerCase().contains(searchProduct.toLowerCase()));
 
 
         Assert.assertFalse(product.isEmpty(), "No products found with a high rating.");
