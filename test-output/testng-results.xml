@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-16T13:34:26 SAST" name="Default suite" finished-at="2024-08-16T13:36:38 SAST" duration-ms="131435">
+  <suite started-at="2024-08-16T17:43:47 SAST" name="Default suite" finished-at="2024-08-16T17:44:28 SAST" duration-ms="41228">
     <groups>
     </groups>
-    <test started-at="2024-08-16T13:34:26 SAST" name="Default test" finished-at="2024-08-16T13:36:38 SAST" duration-ms="131435">
-      <class name="tests.RegistrationPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegistrationPageTest@62dae245]" started-at="2024-08-16T13:34:26 SAST" name="setUp" finished-at="2024-08-16T13:34:36 SAST" duration-ms="10010" status="PASS">
+    <test started-at="2024-08-16T17:43:47 SAST" name="Default test" finished-at="2024-08-16T17:44:28 SAST" duration-ms="41228">
+      <class name="tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginPageTest@62dae245]" started-at="2024-08-16T17:43:47 SAST" name="setUp" finished-at="2024-08-16T17:43:55 SAST" duration-ms="7883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationPageTest@62dae245]" started-at="2024-08-16T13:34:49 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-16T13:35:00 SAST" duration-ms="11053" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginPageTest@62dae245]" started-at="2024-08-16T17:43:57 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-16T17:43:59 SAST" duration-ms="2201" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -20,35 +20,20 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[John]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Doe]]>
+                <![CDATA[P@ssw0rd]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[john.doe@gmail.com]]>
+                <![CDATA[Please fill in your email address]]>
               </value>
             </param>
             <param index="4">
-              <value>
-                <![CDATA[P@ssw0rd]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[0612345679]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[This email address is already registered on takealot.com]]>
-              </value>
-            </param>
-            <param index="7">
               <value>
                 <![CDATA[yes]]>
               </value>
@@ -56,8 +41,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationPageTest@62dae245]" started-at="2024-08-16T13:35:00 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-16T13:35:28 SAST" duration-ms="28627" status="FAIL">
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginPageTest@62dae245]" started-at="2024-08-16T17:43:59 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-16T17:44:01 SAST" duration-ms="1980" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,85 +51,27 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[John]]>
+                <![CDATA[john.doe@gmail.com]]>
               </value>
             </param>
             <param index="2">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
+              <value is-null="true"/>
             </param>
             <param index="3">
               <value>
-                <![CDATA[jon.doe@gmail.com]]>
+                <![CDATA[Please enter a password]]>
               </value>
             </param>
             <param index="4">
-              <value>
-                <![CDATA[P@ssw0rd]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[0612345679]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Success]]>
-              </value>
-            </param>
-            <param index="7">
               <value>
                 <![CDATA[yes]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[OTP not sent. expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: OTP not sent. expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at tests.RegistrationPageTest.verifyRegistration(RegistrationPageTest.java:69)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationPageTest@62dae245]" started-at="2024-08-16T13:35:28 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-16T13:35:36 SAST" duration-ms="7943" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginPageTest@62dae245]" started-at="2024-08-16T17:44:01 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-16T17:44:15 SAST" duration-ms="13257" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -153,33 +80,20 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="2">
-              <value is-null="true"/>
-            </param>
-            <param index="3">
-              <value>
                 <![CDATA[jon.doe@gmail.com]]>
               </value>
             </param>
-            <param index="4">
+            <param index="2">
               <value>
                 <![CDATA[P@ssw0rd]]>
               </value>
             </param>
-            <param index="5">
+            <param index="3">
               <value>
-                <![CDATA[012345679]]>
+                <![CDATA[Incorrect Email or Password. Please try again and ensure Caps Lock is not enabled.]]>
               </value>
             </param>
-            <param index="6">
-              <value>
-                <![CDATA[Please enter your last name]]>
-              </value>
-            </param>
-            <param index="7">
+            <param index="4">
               <value>
                 <![CDATA[yes]]>
               </value>
@@ -187,8 +101,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationPageTest@62dae245]" started-at="2024-08-16T13:35:36 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-16T13:35:44 SAST" duration-ms="7853" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginPageTest@62dae245]" started-at="2024-08-16T17:44:15 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-16T17:44:28 SAST" duration-ms="12967" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -196,369 +110,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
             <param index="1">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[john.doe@gmail.com]]>
+              </value>
             </param>
             <param index="2">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[jon.doe@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
               <value>
                 <![CDATA[P@ssw0rd]]>
               </value>
             </param>
-            <param index="5">
-              <value>
-                <![CDATA[012345680]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Please enter your first name]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationPageTest@62dae245]" started-at="2024-08-16T13:35:44 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-16T13:35:51 SAST" duration-ms="6702" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC005]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
             <param index="3">
               <value>
-                <![CDATA[invalid-email]]>
+                <![CDATA[Incorrect Email or Password. Please try again and ensure Caps Lock is not enabled.]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[P@ssw0rd]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[012345681]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Please enter a valid email address]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
                 <![CDATA[yes]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationPageTest@62dae245]" started-at="2024-08-16T13:35:51 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-16T13:35:58 SAST" duration-ms="7508" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC006]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[jon.doe@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[short]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[012345682]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Password must be at least 8 characters and 1 special character or number]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationPageTest@62dae245]" started-at="2024-08-16T13:35:58 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-16T13:36:05 SAST" duration-ms="7066" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC007]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[jon.doe@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[012345683]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Please enter a password]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationPageTest@62dae245]" started-at="2024-08-16T13:36:05 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-16T13:36:13 SAST" duration-ms="7397" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC008]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[P@ssw0rd]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[012345684]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Please enter your email address]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationPageTest@62dae245]" started-at="2024-08-16T13:36:13 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-16T13:36:20 SAST" duration-ms="7744" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC009]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[jon.doe@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[P@ssw0rd]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[012345]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Please enter a 9 or 10-digit SA mobile number]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationPageTest@62dae245]" started-at="2024-08-16T13:36:20 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-16T13:36:29 SAST" duration-ms="8260" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC010]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[jon.doe@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[P@ssw0rd]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Mobile number must be at least 10 digits]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationPageTest@62dae245]" started-at="2024-08-16T13:36:29 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-16T13:36:36 SAST" duration-ms="7640" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC011]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[jon.doe@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[P@ssw0rd]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[123456789]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Please enter a 9 or 10-digit SA mobile number]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegistration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationPageTest@62dae245]" started-at="2024-08-16T13:36:36 SAST" name="tearDown" finished-at="2024-08-16T13:36:38 SAST" duration-ms="1309" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@62dae245]" started-at="2024-08-16T17:44:28 SAST" name="tearDown" finished-at="2024-08-16T17:44:28 SAST" duration-ms="662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.RegistrationPageTest -->
+      </class> <!-- tests.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

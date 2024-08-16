@@ -25,6 +25,7 @@ public class LoginPageTest {
 
 	private WebDriver driver;
     private HomePage homePage;
+    private LoginPage loginPage;
     @BeforeClass
     public void setUp() {
         driver = DriverFactory.initDriver();
@@ -36,7 +37,7 @@ public class LoginPageTest {
 
         // Navigate to a particular products page
         homePage = new HomePage(driver);
-        homePage.navigateToLogin();
+        loginPage = homePage.navigateToLogin();
         BasePage.reporter.setDriver(driver);  // Inject WebDriver into ReportManager
         LoggingManager.info(" \n\n*************** STARTING LOGIN TESTS**************");
     }
@@ -52,7 +53,7 @@ public class LoginPageTest {
             throw new SkipException("Skipping this test case as execution is not required");
         }
 
-        LoginPage loginPage = new LoginPage(driver);
+        
         loginPage.typeEmail(email)
                  .typePassword(password)
                  .submitLogin();
@@ -62,7 +63,7 @@ public class LoginPageTest {
             LoggingManager.info("Login successful, user redirected to HomePage.\n\n");
         } else {
             Assert.assertTrue(loginPage.getErrorMessages().contains(expectedResult), "Expected error message not displayed.");
-            LoggingManager.info("Login failed as expected with error message: " + expectedResult+"\n\n");
+            LoggingManager.info("Login failed as expected with error message: " + expectedResult+". --Passed\n\n");
         } 
     }
     

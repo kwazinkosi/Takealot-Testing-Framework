@@ -69,11 +69,11 @@ public class DataProviderUtil {
 		int rowCount = reader.getRowCount(sheetName);
 		int colCount = 6;
 		// Create a 2D array to hold the data
-		Object[][] data = new Object[rowCount-1][colCount]; // not staring the description column
+		Object[][] data = new Object[rowCount][colCount-1]; // not staring the description column
 
 		// Loop through each row and retrieve data from the 2nd column onwards
 		for (int i = 0; i < rowCount; i++) { // Start from 1 to skip header row
-			for (int j = 0; j < colCount; j++) { 
+			for (int j = 0; j < colCount-1; j++) { 
 				data[i][j] = reader.getCellValue(sheetName, i + 1, j);
 			}
 		}
