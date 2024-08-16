@@ -54,7 +54,7 @@ public class ProductsPageTest {
         
     	LoggingManager.info("==============Starting test to check if product results are visible. ==============");
         // Check if product results are visible
-        boolean resultsVisible = productsPage.isResultsVisible();
+        boolean resultsVisible = productsPage.isVisible();
 
         // Validate that the product results container is visible
         Assert.assertTrue(resultsVisible, "Product results container should be visible.");

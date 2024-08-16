@@ -33,6 +33,10 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//button[@data-ref='modal-close-button']")
     private WebElement closeLoginButton;
 
+    
+    @FindBy(xpath = ("//div[contains(text(),'Incorrect Email or Password. Please try again and ')]"))
+    private WebElement incorrectEmailPasswordAlert;
+    
     // Constructor
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -45,8 +49,17 @@ public class LoginPage extends BasePage {
      * @param email The email to be entered.
      * @return The current LoginPage instance.
      */
-    public LoginPage typeUsername(String email) {
+    public LoginPage typeEmail(String email) {
+    	LoggingManager.info("Typing email in the field 'email'");
+        
+        if (email ==null) {
+            email = " "; // Convert null to empty string
+        }
+        
+        actionUtil.scrollToElement(emailInput);
+        waitUtil.waitFor(driver -> isVisible(emailInput), 10, 500); // Wait for the email field to be visible
         sendKeys(emailInput, email);
+        
         return this;
     }
 
@@ -58,7 +71,15 @@ public class LoginPage extends BasePage {
      */
     public LoginPage typePassword(String password) {
         
-    	sendKeys(passwordInput, password);
+    	LoggingManager.info("Typing password in the field 'new_password'");
+        if (password==null) {
+            password = " "; // Convert null to empty string
+        }
+        
+        actionUtil.scrollToElement(passwordInput);
+        waitUtil.waitFor(driver -> isVisible(passwordInput), 10, 500); // Wait for the password field to be visible
+        sendKeys(passwordInput, password);
+        
         return this;
     }
 
@@ -70,17 +91,38 @@ public class LoginPage extends BasePage {
      */
     public BasePage submitLogin() {
         
+    	actionUtil.scrollToElement(loginButton);
     	if (!loginButton.getAttribute("class").contains("disabled")) {
-            loginButton.click();
-            return new HomePage(driver); //TODO: return the signedInHomepage
-        } else {
-            LoggingManager.warn("Login button is disabled. Cannot submit.");
-            return this;
+            
+    		loginButton.click();
+            if(getErrorMessages().isEmpty() && !errorAlertDisplay()) {
+            	return new HomePage(driver); //TODO: return the signedInHomepage
+            }
         }
+        LoggingManager.warn("Login button is disabled. Cannot submit.");
+        return this;
+
     }
 
 
-    /**
+	/**
+     *  Checks if the error alert is displayed or not
+     *
+     * @return returns true if the alert is visilbe
+     */
+    private boolean errorAlertDisplay() {
+		
+    	try {
+            LoggingManager.info("Checking if error alert is visible");
+            waitUtil.waitForElementToBeVisible(incorrectEmailPasswordAlert, normalWaitTime);
+            return true;
+        } catch (Exception e) {
+            LoggingManager.error("Error alert not visible.", e);
+            return false;
+        }
+	}
+
+	/**
      * Submits the login form and expects a failure.
      *
      * @return The current LoginPage instance.
@@ -92,17 +134,6 @@ public class LoginPage extends BasePage {
     }
 
     /**
-     * Retrieves the error messages displayed on the login page.
-     *
-     * @return a list of error messages
-     */
-    public List<String> getErrorMessages() {
-        return loginErrors
-		        		.stream()
-			            .map(WebElement::getText)
-			            .collect(Collectors.toList());
-    }
-    /**
      * Logs in using the provided email and password.
      * This method returns a BasePage instance of the page navigated to after login.
      *
@@ -112,12 +143,32 @@ public class LoginPage extends BasePage {
      */
     public BasePage loginAs(String email, String password) {
         
-    	typeUsername(email);
+    	typeEmail(email);
         typePassword(password);
         return submitLogin();
     }
+      
+    /**
+     * Retrieves the error messages displayed on the registration page.
+     *
+     * @return a list of error messages
+     */
+    public List<String> getErrorMessages() {
+        LoggingManager.info("Retrieving error messages from the registration page");
 
-	public boolean isLoginVisible() {
+        // Wait until at least one error message is visible
+        waitUtil.waitFor(driver -> !loginErrors.isEmpty() &&
+        		loginErrors.stream().anyMatch(WebElement::isDisplayed), 10, 800);
+
+        // Collect and return the text from the visible error messages
+        return loginErrors.stream()
+                                 .filter(WebElement::isDisplayed) // Ensure the error element is displayed
+                                 .map(WebElement::getText)
+                                 .collect(Collectors.toList());
+    }
+
+    @Override
+	public boolean isVisible() {
 		
 		
 		try {

@@ -280,7 +280,8 @@ public class ProductsPage extends BasePage {
      * 
      * @return True if the product results container is visible, false otherwise.
      */
-    public boolean isResultsVisible() {
+    @Override
+    public boolean isVisible() {
         
     	boolean isVisible = isVisible(productResultsContainer);
         LoggingManager.info("Product results visibility status: " + isVisible);

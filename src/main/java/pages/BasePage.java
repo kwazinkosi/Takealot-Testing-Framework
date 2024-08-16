@@ -16,7 +16,7 @@ import utilities.ActionUtil;
 import utilities.DataProviderUtil;
 import wait.WaitUtil;
 
-public class BasePage {
+abstract public class BasePage {
 
     protected WebDriver driver;
     protected WaitUtil waitUtil;
@@ -24,8 +24,12 @@ public class BasePage {
     public DataProviderUtil dataUtil;
 	protected ActionUtil actionUtil;
 	public NavBar navBar;
+	
+	public static final int slowWaitTime = Integer.parseInt(ConfigReader.getProperty("slow_wait_time"));
 	public static final int normalWaitTime = Integer.parseInt(ConfigReader.getProperty("normal_wait_time"));
-
+	public static final int fastWaitTime = Integer.parseInt(ConfigReader.getProperty("fast_wait_time"));
+	public static final int fasterWaitTime = Integer.parseInt(ConfigReader.getProperty("faster_wait_time"));
+	
     public BasePage(WebDriver driver) {
         
     	this.driver = driver;
@@ -39,6 +43,13 @@ public class BasePage {
         LoggingManager.info("Page factory initialized for " + this.getClass().getSimpleName());
     }
     
+    /**
+     * Abstract method to determine the visibility of the page, implemented in the child class.
+     * 
+     *
+     * @return true if page is visible
+     */
+	abstract public boolean isVisible();
     /**
      * Gets the WebElement for the navBar using waitFor.
      *
@@ -106,7 +117,7 @@ public class BasePage {
      * @param element The web element to check.
      * @return True if the element is visible, false otherwise.
      */
-    public boolean isVisible(WebElement element) {
+     public boolean isVisible(WebElement element) {
         LoggingManager.info("Checking visibility of element: " + element.toString());
         reporter.log("Checking visibility of element: " + element.toString()); // ReportManager log
         try {

@@ -53,7 +53,7 @@ public class HomePageTest {
     	
     	LoggingManager.info("===========Testing navigation to registration. ===========");
         RegistrationPage registrationPage = homePage.navigateToRegister();
-        Assert.assertTrue(registrationPage.isSignupVisible(), "Signup modal should be visible.");
+        Assert.assertTrue(registrationPage.isVisible(), "Signup modal should be visible.");
         registrationPage.closeSignup();
         LoggingManager.info("navigated to registration succesfully -- Passed\n\n");
     }
@@ -63,7 +63,7 @@ public class HomePageTest {
     	
     	LoggingManager.info("=========== Testing navigation to login. ===========");
         LoginPage loginPage = homePage.navigateToLogin();
-        Assert.assertTrue(loginPage.isLoginVisible(), "Login modal should be visible.");
+        Assert.assertTrue(loginPage.isVisible(), "Login modal should be visible.");
         loginPage.closeLogin();
         LoggingManager.info("navigated to login succesfully -- Passed\n\n");
     }
@@ -73,7 +73,7 @@ public class HomePageTest {
     	
     	LoggingManager.info("=========== Testing navigation to cart. ===========");
     	CartPage cartPage = homePage.navigateToCart();
-        Assert.assertTrue(cartPage.isCartVisible(), "Login modal should be visible.");
+        Assert.assertTrue(cartPage.isVisible(), "Login modal should be visible.");
         cartPage.navBar.clickNavLink("Home");
         LoggingManager.info("navigated to cart succesfully -- Passed\n\n");
     }
@@ -84,7 +84,7 @@ public class HomePageTest {
     	LoggingManager.info("===========Testing search functionality with query: " + searchValue+" ===========");   
         boolean resultsFound = false;
         if (expected.equals("results-page")) {
-            resultsFound = homePage.searchValidFor(searchValue).isResultsVisible();
+            resultsFound = homePage.searchValidFor(searchValue).isVisible();
         } else {
             resultsFound = homePage.searchForInvalidInput(searchValue, expected);
         }

@@ -3,6 +3,7 @@ package pages;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -69,12 +70,17 @@ public class RegistrationPage extends BasePage {
         if (firstName == null) {
             firstName = " "; // Convert null to empty string
         }
-        actionUtil.scrollToElement(firstname);
-        
-        waitUtil.waitFor(driver -> isVisible(firstname), 10, 500); // Wait for the firstname field to be visible
-        sendKeys(firstname, firstName);
-        
-        return this;
+        try {
+	        actionUtil.scrollToAndClick(firstname);
+	        waitUtil.waitFor(driver -> isVisible(firstname), 10, 500); // Wait for the firstname field to be visible
+	        sendKeys(firstname, firstName);
+        }
+        catch(NoSuchElementException e) {
+        	LoggingManager.error("Somehow the element could not be found.", e);
+        	actionUtil.scrollBy(-100);
+        	sendKeys(firstname, firstName);
+        }
+	    return this;
     }
 
     public RegistrationPage typeLastname(String lastName) {
@@ -248,7 +254,8 @@ public class RegistrationPage extends BasePage {
      *
      * @return true if the signup modal is visible, false otherwise
      */
-    public boolean isSignupVisible() {
+    @Override
+    public boolean isVisible() {
         try {
             LoggingManager.info("Checking if signup modal is visible");
             waitUtil.waitForElementToBeVisible(signupModal, normalWaitTime);

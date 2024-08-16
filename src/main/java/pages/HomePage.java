@@ -186,4 +186,10 @@ public class HomePage extends BasePage {
     public String getHomeTitle() {
         return driver.getTitle();
     }
+
+	@Override
+	public boolean isVisible() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }

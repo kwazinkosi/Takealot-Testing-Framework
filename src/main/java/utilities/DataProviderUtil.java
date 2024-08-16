@@ -62,6 +62,25 @@ public class DataProviderUtil {
 		return data;
 	}
 
+	@DataProvider(name = "loginData")
+	public Object[][] getLoginData() {
+
+		String sheetName = "login form";
+		int rowCount = reader.getRowCount(sheetName);
+		int colCount = 6;
+		// Create a 2D array to hold the data
+		Object[][] data = new Object[rowCount-1][colCount]; // not staring the description column
+
+		// Loop through each row and retrieve data from the 2nd column onwards
+		for (int i = 0; i < rowCount; i++) { // Start from 1 to skip header row
+			for (int j = 0; j < colCount; j++) { 
+				data[i][j] = reader.getCellValue(sheetName, i + 1, j);
+			}
+		}
+
+		return data;
+	}
+	
 	@DataProvider(name = "productSearchData")
 	public Object[][] getProductSearchData() {
 

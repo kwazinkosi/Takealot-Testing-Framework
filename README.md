@@ -6,7 +6,7 @@ This is a Selenium-based Page Object Model (POM) framework designed for automate
 
 Before you begin, ensure you have the following installed on your system:
 
-- **Java Development Kit (JDK) 11 or above**
+- **Java Development Kit (JDK) 17 or above**
 - **Apache Maven 3.6.0 or above**
 - **Git**
 

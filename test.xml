@@ -7,10 +7,21 @@
         <listener class-name="reporting.ReportManager"/>
     </listeners>
 
-    <test name="Takealot Automation Tests" thread-count="1" parallel="tests">
+    <test name="Takealot Automation Tests" thread-count="4" parallel="tests">
         <classes>
             <!-- Specify your test classes here -->
             <class name="tests.HomePageTest"/>
+            <class name="tests.ProductsPageTest"/>
+            <class name="tests.RegistrationPageTest"/>
+            <class name="tests.LoginPageTest"/>
+            
+            <!--No succesful checkout implentation because that requires valid login details-->
+            <!--<class name="tests.CheckoutPageTest">
+				<methods>
+					<exclude name="verifyCheckout"/>
+				</methods>
+			</class>-->
+			
         </classes>
     </test>
 </suite>

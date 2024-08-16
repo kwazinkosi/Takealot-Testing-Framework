@@ -86,7 +86,8 @@ public class CartPage extends BasePage {
      *
      * @return true if the cart is visible, otherwise false.
      */
-    public boolean isCartVisible() {
+    @Override
+    public boolean isVisible() {
         try {
         	LoggingManager.info("Checking cart visibility.");
             waitUtil.waitForElementToBeVisible(cart, normalWaitTime);

@@ -53,5 +53,10 @@ public class CheckoutPage extends BasePage {
         return this;
     }
 
+	@Override
+	public boolean isVisible() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 
 }
