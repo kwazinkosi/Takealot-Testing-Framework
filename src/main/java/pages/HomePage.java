@@ -39,7 +39,6 @@ public class HomePage extends BasePage {
     
 
     private boolean loggedIn = false;
-    
 
 
 	/**
@@ -48,6 +47,7 @@ public class HomePage extends BasePage {
      * @param driver The WebDriver instance used to interact with the web page.
      */
     public HomePage(WebDriver driver) {
+    	
         super(driver);
     }
     
@@ -177,11 +177,14 @@ public class HomePage extends BasePage {
      * @return CartPage instance.
      */
     public CartPage navigateToCart() {
-    	
+        
     	NavBar navBar = getNavBar();
-    	navBar.clickNavLink("Cart");
-        return new CartPage(driver);
+        navBar.clickNavLink("Cart");
+        getWait().waitImplicitly(1);
+        CartPage c= new CartPage(driver);  // Using the existing driver instance
+        return c;
     }
+
 
     /**
      * Navigates to the Become a Seller page.

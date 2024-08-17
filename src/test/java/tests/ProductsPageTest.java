@@ -34,7 +34,8 @@ public class ProductsPageTest {
     private String searchProduct;
     @BeforeClass
     public void setUp() {
-        driver = DriverFactory.initDriver();
+        
+    	driver = DriverFactory.initDriver();
 
         // Apply the WebDriverListener
         WebDriverListener listener = new AdOverlayListener();

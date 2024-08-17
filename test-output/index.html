@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\kwazinkosizwane\AppData\Local\Temp\testng-eclipse--777302824\testng-customsuite.xml</span>
+                    <span>C:\Users\kwazinkosizwane\AppData\Local\Temp\testng-eclipse-560868660\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.ProductsPageTest" class="method navigator-link" hash-for-method="verifyProductAddToCart">verifyProductAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.ProductsPageTest" class="method navigator-link" hash-for-method="verifyProductDetails(Apple iPhone 15 Pro Max 256GB, Apple, 27595.0, 4.8, 40.0, smartphones, yes)">verifyProductDetails(Apple iPhone 15 Pro Max 256GB, Apple, 27595.0, 4.8, 40.0, smartphones, yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +122,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.LoginPageTest" class="method navigator-link" hash-for-method="verifyLogin(TC003, jon.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps Lo...)">verifyLogin(TC003, jon.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps Lo...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.ProductsPageTest" class="method navigator-link" hash-for-method="verifyProductDetails(Fujifilm Instax Mini 12 Camera + Case and Film, Fujifilm Instax, 1999.0, 4.8, 120.0, Cameras, yes)">verifyProductDetails(Fujifilm Instax Mini 12 Camera + Case and Film, Fujifilm Instax, 1999.0, 4.8, 120.0, Cameras, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.LoginPageTest" class="method navigator-link" hash-for-method="verifyLogin(TC001, , P@ssw0rd, Please fill in your email address, yes)">verifyLogin(TC001, , P@ssw0rd, Please fill in your email address, yes)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.ProductsPageTest" class="method navigator-link" hash-for-method="verifyProductDetails(Apex - Marine Luxury Men&#039;s Leather Watch, Apex, 690.0, 5.0, 4.0, Watches and accessories, yes)">verifyProductDetails(Apex - Marine Luxury Men's Leather Watch, Apex, 690.0, 5.0, 4.0, Watches and accessories, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.LoginPageTest" class="method navigator-link" hash-for-method="verifyLogin(TC004, john.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps L...)">verifyLogin(TC004, john.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps L...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.LoginPageTest" class="method navigator-link" hash-for-method="verifyLogin(TC002, john.doe@gmail.com, null, Please enter a password, yes)">verifyLogin(TC002, john.doe@gmail.com, null, Please enter a password, yes)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.ProductsPageTest" class="method navigator-link" hash-for-method="verifyProductDetails(Fender Squier SA-105CE Acoustic Electric Guitar, Squier, 3495.0, 4.2, 4.0, Music, yes)">verifyProductDetails(Fender Squier SA-105CE Acoustic Electric Guitar, Squier, 3495.0, 4.2, 4.0, Music, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -133,42 +147,155 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.LoginPageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.ProductsPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLogin(TC003, jon.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps Lo...)">
-                  </a> <!-- verifyLogin(TC003, jon.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps Lo...) -->
-                  <span class="method-name">verifyLogin</span>
-                  <span class="parameters">(TC003,jon.doe@gmail.com,P@ssw0rd,Incorrect Email or Password. Please try again and ensure Caps Lock is not enabled.,yes)</span>
+                  <a name="verifyProductAddToCart">
+                  </a> <!-- verifyProductAddToCart -->
+                  <span class="method-name">verifyProductAddToCart</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=127.0.6533.100)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97b6c856b3e89a45d34b4c4d3436c2e0, clickElement {id=f.DB59145BF1B118BC91AE2E935702AA14.d.B2EF3DEFB579E3F3DAD4A6660712525D.e.2717}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57319/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (97b6c856b3e89a45d34b4c4d3436c2e0)] -&gt; css selector: button.add-to-cart-button-module_add-to-cart-button_1a9gT[data-ref=&apos;add-to-cart-button&apos;]]
+Session ID: 97b6c856b3e89a45d34b4c4d3436c2e0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
+	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$YjEgF9iU.click(Unknown Source)
+	at pages.ProductsPage.addToCart(ProductsPage.java:261)
+	at tests.ProductsPageTest.verifyProductAddToCart(ProductsPageTest.java:155)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLogin(TC001, , P@ssw0rd, Please fill in your email address, yes)">
-                  </a> <!-- verifyLogin(TC001, , P@ssw0rd, Please fill in your email address, yes) -->
-                  <span class="method-name">verifyLogin</span>
-                  <span class="parameters">(TC001,,P@ssw0rd,Please fill in your email address,yes)</span>
+                  <a name="verifyProductDetails(Apple iPhone 15 Pro Max 256GB, Apple, 27595.0, 4.8, 40.0, smartphones, yes)">
+                  </a> <!-- verifyProductDetails(Apple iPhone 15 Pro Max 256GB, Apple, 27595.0, 4.8, 40.0, smartphones, yes) -->
+                  <span class="method-name">verifyProductDetails</span>
+                  <span class="parameters">(Apple iPhone 15 Pro Max 256GB,Apple,27595.0,4.8,40.0,smartphones,yes)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Product price does not match expected [27595.00] but found [26999.00]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at tests.ProductsPageTest.verifyProductDetails(ProductsPageTest.java:134)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ProductsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductDetails(Fujifilm Instax Mini 12 Camera + Case and Film, Fujifilm Instax, 1999.0, 4.8, 120.0, Cameras, yes)">
+                  </a> <!-- verifyProductDetails(Fujifilm Instax Mini 12 Camera + Case and Film, Fujifilm Instax, 1999.0, 4.8, 120.0, Cameras, yes) -->
+                  <span class="method-name">verifyProductDetails</span>
+                  <span class="parameters">(Fujifilm Instax Mini 12 Camera + Case and Film,Fujifilm Instax,1999.0,4.8,120.0,Cameras,yes)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLogin(TC004, john.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps L...)">
-                  </a> <!-- verifyLogin(TC004, john.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps L...) -->
-                  <span class="method-name">verifyLogin</span>
-                  <span class="parameters">(TC004,john.doe@gmail.com,P@ssw0rd,Incorrect Email or Password. Please try again and ensure Caps Lock is not enabled.,yes)</span>
+                  <a name="verifyProductDetails(Apex - Marine Luxury Men&#039;s Leather Watch, Apex, 690.0, 5.0, 4.0, Watches and accessories, yes)">
+                  </a> <!-- verifyProductDetails(Apex - Marine Luxury Men's Leather Watch, Apex, 690.0, 5.0, 4.0, Watches and accessories, yes) -->
+                  <span class="method-name">verifyProductDetails</span>
+                  <span class="parameters">(Apex - Marine Luxury Men's Leather Watch,Apex,690.0,5.0,4.0,Watches and accessories,yes)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLogin(TC002, john.doe@gmail.com, null, Please enter a password, yes)">
-                  </a> <!-- verifyLogin(TC002, john.doe@gmail.com, null, Please enter a password, yes) -->
-                  <span class="method-name">verifyLogin</span>
-                  <span class="parameters">(TC002,john.doe@gmail.com,null,Please enter a password,yes)</span>
+                  <a name="verifyProductDetails(Fender Squier SA-105CE Acoustic Electric Guitar, Squier, 3495.0, 4.2, 4.0, Music, yes)">
+                  </a> <!-- verifyProductDetails(Fender Squier SA-105CE Acoustic Electric Guitar, Squier, 3495.0, 4.2, 4.0, Music, yes) -->
+                  <span class="method-name">verifyProductDetails</span>
+                  <span class="parameters">(Fender Squier SA-105CE Acoustic Electric Guitar,Squier,3495.0,4.2,4.0,Music,yes)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -176,7 +303,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\kwazinkosizwane\AppData\Local\Temp\testng-eclipse--777302824\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\kwazinkosizwane\AppData\Local\Temp\testng-eclipse-560868660\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -185,7 +312,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;tests.ProductsPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -225,28 +352,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyLogin')
-data.setCell(0, 2, 'tests.LoginPageTest')
-data.setCell(0, 3, 13257);
+data.setCell(0, 1, 'verifyProductDetails')
+data.setCell(0, 2, 'tests.ProductsPageTest')
+data.setCell(0, 3, 457366);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLogin')
-data.setCell(1, 2, 'tests.LoginPageTest')
-data.setCell(1, 3, 12967);
+data.setCell(1, 1, 'verifyProductAddToCart')
+data.setCell(1, 2, 'tests.ProductsPageTest')
+data.setCell(1, 3, 346678);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLogin')
-data.setCell(2, 2, 'tests.LoginPageTest')
-data.setCell(2, 3, 2201);
+data.setCell(2, 1, 'verifyProductDetails')
+data.setCell(2, 2, 'tests.ProductsPageTest')
+data.setCell(2, 3, 344168);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyLogin')
-data.setCell(3, 2, 'tests.LoginPageTest')
-data.setCell(3, 3, 1980);
+data.setCell(3, 1, 'verifyProductDetails')
+data.setCell(3, 2, 'tests.ProductsPageTest')
+data.setCell(3, 3, 333068);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyProductDetails')
+data.setCell(4, 2, 'tests.ProductsPageTest')
+data.setCell(4, 3, 332339);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 30 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -261,9 +392,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.ProductsPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyFilteredProducts</span>
+                <br/>
+                <span class="ignored-method-name">verifyIsResultsVisible</span>
+                <br/>
+                <span class="ignored-method-name">verifyGetProductByPrice</span>
+                <br/>
+                <span class="ignored-method-name">verifyProductsRetrieval</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -272,30 +416,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.ProductsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verifyLogin(TC001, , P@ssw0rd, Please fill in your email address, yes)</span>
-                <span class="method-start">10118 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyProductDetails(Apple iPhone 15 Pro Max 256GB, Apple, 27595.0, 4.8, 40.0, smartphones, yes)</span>
+                <span class="method-start">49403 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyLogin(TC002, john.doe@gmail.com, null, Please enter a password, yes)</span>
-                <span class="method-start">12322 ms</span>
+                <span class="method-name">verifyProductDetails(Apex - Marine Luxury Men's Leather Watch, Apex, 690.0, 5.0, 4.0, Watches and accessories, yes)</span>
+                <span class="method-start">382475 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyLogin(TC003, jon.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps Lo...)</span>
-                <span class="method-start">14302 ms</span>
+                <span class="method-name">verifyProductDetails(Fujifilm Instax Mini 12 Camera + Case and Film, Fujifilm Instax, 1999.0, 4.8, 120.0, Cameras, yes)</span>
+                <span class="method-start">726643 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyLogin(TC004, john.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps L...)</span>
-                <span class="method-start">27559 ms</span>
+                <span class="method-name">verifyProductDetails(Fender Squier SA-105CE Acoustic Electric Guitar, Squier, 3495.0, 4.2, 4.0, Music, yes)</span>
+                <span class="method-start">1184013 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyProductAddToCart</span>
+                <span class="method-start">1516352 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">40541 ms</span>
+                <span class="method-start">1863033 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

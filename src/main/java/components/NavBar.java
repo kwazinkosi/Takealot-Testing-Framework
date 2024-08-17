@@ -11,6 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import logging.LoggingManager;
+import utilities.AdOverlayListener;
 import utilities.DriverFactory;
 
 public class NavBar extends BaseComponent {
@@ -70,16 +71,23 @@ public class NavBar extends BaseComponent {
      * @param linkName The name of the link to click.
      */
     public void clickNavLink(String linkName) {
+        LoggingManager.info("Attempting to click navigation link: " + linkName);
         Function<WebDriver, WebElement> linkCondition = navMap.get(linkName);
 
         if (linkCondition != null) {
+            AdOverlayListener.closeAdOverlay();
             WebElement link = linkCondition.apply(DriverFactory.getDriver());
+            
             waitUtil.waitForElementToBeClickable(link, 10);
             link.click();
+            LoggingManager.info("Successfully clicked on navigation link: " + linkName);
         } else {
-            throw new IllegalArgumentException("No such link: " + linkName);
+            String errorMsg = "No such link: " + linkName;
+            LoggingManager.info(errorMsg);
+            throw new IllegalArgumentException(errorMsg);
         }
     }
+
     
     /**
      * Retrieves the current count of products in the cart.

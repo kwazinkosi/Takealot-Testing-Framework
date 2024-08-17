@@ -25,16 +25,12 @@ abstract public class BasePage {
     public DataProviderUtil dataUtil;
 	protected ActionUtil actionUtil;
 	public NavBar navBar;
-	public CartItem cartItem;
 	
-	public static final int slowWaitTime = Integer.parseInt(ConfigReader.getProperty("slow_wait_time"));
+	public static final int slowWaitTime = Integer.parseInt(ConfigReader.getProperty("fast_wait_time"));
 	public static final int normalWaitTime = Integer.parseInt(ConfigReader.getProperty("normal_wait_time"));
-	public static final int fastWaitTime = Integer.parseInt(ConfigReader.getProperty("fast_wait_time"));
+	public static final int fastWaitTime = Integer.parseInt(ConfigReader.getProperty("slow_wait_time"));
 	public static final int fasterWaitTime = Integer.parseInt(ConfigReader.getProperty("faster_wait_time"));
-	
-	By cart = By.cssSelector(".cart-items-list-module_cart-items-list_3kWF_");
-	By nav = By.cssSelector(".top-nav.top-nav-module_top-nav_2cmJW");
-	
+
     public BasePage(WebDriver driver) {
         
     	this.driver = driver;
@@ -42,9 +38,8 @@ abstract public class BasePage {
         reporter = new ReportManager();
         this.dataUtil = new DataProviderUtil();
         this.actionUtil = new ActionUtil(driver);
+        navBar = new NavBar(getNavBarElement());
         PageFactory.initElements(driver, this);
-        this.navBar = new NavBar(getNavBarElement());
-        this.cartItem =new CartItem(getCartElement());
         
         LoggingManager.info("Page factory initialized for " + this.getClass().getSimpleName());
     }
@@ -63,49 +58,52 @@ abstract public class BasePage {
      * @return The WebElement representing the navBar.
      */
     private WebElement getNavBarElement() {
-        return waitUtil.waitFor(driver -> {
-            try {
-                return driver.findElement(nav);
-            } catch (NoSuchElementException e) {
-                return null;
-            }
-        }, 20);
+    	
+    	waitUtil.waitImplicitly(1);
+    	return waitUtil.waitFor(driver -> {
+    	    try {
+    	    	LoggingManager.info("Getting nav element");
+    	        return driver.findElement(By.cssSelector(".top-nav.top-nav-module_top-nav_2cmJW"));
+    	    } catch (NoSuchElementException e) {
+    	        LoggingManager.error("Failed to locate element: " + e.getMessage(), e);
+    	        return null;
+    	    }
+    	}, 20);
     }
-    /**
-     * Gets the WebElement for the cart using waitFor.
-     *
-     * @return The WebElement representing the navBar.
-     */
-    private WebElement getCartElement() {
-        return waitUtil.waitFor(driver -> {
-            try {
-                return driver.findElement(cart);
-            } catch (NoSuchElementException e) {
-                return null;
-            }
-        }, 20);
-    }
+    
     /**
      * Gets the NavBar component.
      *
      * @return The NavBar component.
      */
     public NavBar getNavBar() {
+        if (navBar == null) {
+            navBar = new NavBar(getNavBarElement());
+        }
         return navBar;
     }
-
+    
     /**
-     * Gets the cart component.
+     * Gets the WebElement for the cart using waitFor.
      *
-     * @return The cart component.
+     * @return The WebElement representing the cart.
      */
-    public CartItem getCart() {
-        return cartItem;
+    private WebElement getCartElement() {
+     
+        return waitUtil.waitFor(driver -> {
+            try {
+                return driver.findElement(By.cssSelector(".cart-items-list-module_cart-items-list_3kWF_"));
+            } catch (NoSuchElementException e) {
+                LoggingManager.error("Failed to locate element: " + e.getMessage(), e);
+                return null;
+            }
+        }, 20);
     }
+    
+
     public WaitUtil getWait() {
     	return waitUtil;
     }
-    
     /**
      * Clicks on the given web element.
      * 
@@ -149,7 +147,7 @@ abstract public class BasePage {
         LoggingManager.info("Checking visibility of element: " + element.toString());
         reporter.log("Checking visibility of element: " + element.toString()); // ReportManager log
         try {
-            boolean visible = waitUtil.waitForElementToBeVisible(element, normalWaitTime) != null;
+            boolean visible = waitUtil.waitForElementToBeVisible(element, fastWaitTime) != null;
             LoggingManager.info("Element visibility status: " + visible);
             reporter.log("Element visibility status: " + visible); // ReportManager log
             return visible;

@@ -33,15 +33,18 @@ public class CartPageTest {
 
     @BeforeClass
     public void setUp() {
-        driver = DriverFactory.initDriver();
-
+        
+    	driver = DriverFactory.initDriver();
         // Apply the WebDriverListener
+        
         WebDriverListener listener = new AdOverlayListener();
         driver = new EventFiringDecorator<>(listener).decorate(driver);
         driver.get(ConfigReader.getProperty("base_url"));
 
         // Navigate to the cart page
         homePage = new HomePage(driver);
+        productsPage = new ProductsPage(DriverFactory.getDriver());
+        homePage.getWait().waitImplicitly(1);
         cartPage = homePage.navigateToCart();
         BasePage.reporter.setDriver(driver); // Inject WebDriver into ReportManager
         LoggingManager.info(" \n\n\n*************** STARTING Cart TESTS **************");
@@ -52,7 +55,8 @@ public class CartPageTest {
      */
     @Test
     public void verifyCartIsEmpty() {
-        LoggingManager.info("============ Starting Cart Empty Verification =============");
+        
+    	LoggingManager.info("============ Starting Cart Empty Verification =============");
         int cartBadgeCount = cartPage.getNavBar().getProductsInCartCount();
         Assert.assertEquals(cartBadgeCount, 0, "The cart items count is not 0 as expected.");
         Assert.assertTrue(cartPage.isCartEmpty(), "The cart is not empty.");
@@ -64,13 +68,16 @@ public class CartPageTest {
      */
     @Test
     public void verifyCartNotEmpty() {
-        LoggingManager.info("============ Starting Cart Not Empty Verification =============");
+       
+    	LoggingManager.info("============ Starting Cart Not Empty Verification =============");
         String searchProduct1 = cartPage.dataUtil.getValue("common info", "search_product");
-        Predicate<Product> condition = p -> p.getName().contains(searchProduct1);
+        Predicate<Product> condition = p -> 
+        p.getName().toLowerCase().contains(searchProduct1.toLowerCase()) 
+        && p.getPrice().compareTo(new BigDecimal("10000.00")) >= 0;
 
         homePage.getNavBar().clickNavLink("Home");
-        productsPage = homePage.searchValidFor(searchProduct1);
-        Product product = productsPage.getProduct(condition);
+        Product product = homePage.searchValidFor(searchProduct1).getProduct(condition);;
+         
         boolean isAdded = productsPage.addToCart(product);
         Assert.assertTrue(isAdded, "Product was not added to cart");
         Assert.assertFalse(cartPage.isCartEmpty(), "The cart should not be empty after adding an item.");

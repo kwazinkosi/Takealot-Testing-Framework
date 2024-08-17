@@ -72,7 +72,8 @@ public class HomePageTest {
     public void testNavigateToCart() {
     	
     	LoggingManager.info("=========== Testing navigation to cart. ===========");
-    	CartPage cartPage = homePage.navigateToCart();
+    	homePage.navigateToCart();
+    	CartPage cartPage = new CartPage(DriverFactory.getDriver());
         Assert.assertTrue(cartPage.isVisible(), "Login modal should be visible.");
         cartPage.navBar.clickNavLink("Home");
         LoggingManager.info("navigated to cart succesfully -- Passed\n\n");
