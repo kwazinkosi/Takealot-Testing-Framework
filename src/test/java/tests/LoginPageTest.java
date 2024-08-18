@@ -23,7 +23,7 @@ import utilities.DriverFactory;
  * Test class for verifying the login functionality. This class contains
  * data-driven tests that verify successful and unsuccessful login attempts.
  */
-public class LoginPageTest extends BaseTest {
+public class LoginPageTest {
 
 	private WebDriver driver;
 	private HomePage homePage;

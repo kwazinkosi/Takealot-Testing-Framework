@@ -8,9 +8,9 @@
         <listener class-name="utilities.TestExecutionListener"/>
     </listeners>
 
-    <test name="Takealot Automation Tests" thread-count="5" parallel="classes">
+    <test name="Takealot Automation Tests" >
         <classes>
-            <!-- Specify your test classes here -->
+            
             <class name="tests.HomePageTest"/>
             <class name="tests.ProductsPageTest"/>
             <class name="tests.RegistrationPageTest"/>

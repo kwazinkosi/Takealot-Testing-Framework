@@ -25,7 +25,7 @@ import utilities.DriverFactory;
  * data-driven testing with TestNG's DataProvider to run multiple test scenarios
  * for the registration functionality.
  */
-public class RegistrationPageTest extends BaseTest{
+public class RegistrationPageTest {
 
 	private WebDriver driver;
 	private HomePage homePage;

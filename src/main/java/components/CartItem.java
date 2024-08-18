@@ -152,7 +152,7 @@ public class CartItem extends BaseComponent {
      */
     public void moveToWishlist() {
         try {
-            moveToWishlistBtn.click();
+            click(moveToWishlistBtn);
             LoggingManager.info("Moved item from the cart to wish list.");
         } catch (Exception e) {
             LoggingManager.info("Error moving item to wishlist: " + e.getMessage());

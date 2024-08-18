@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.DefaultElementLocator;
 import org.openqa.selenium.support.pagefactory.ElementLocatorFactory;
 
+import logging.LoggingManager;
 import utilities.DriverFactory;
 import wait.WaitUtil;
 
@@ -48,6 +49,18 @@ public abstract class BaseComponent {
         } catch (Exception e) {
             return false;
         }
+    }
+    /**
+     * Clicks on the specified web element.
+     * Waits for the element to be clickable before performing the click action.
+     * 
+     * @param element The web element to click.
+     */
+    public void click(WebElement element) {
+        LoggingManager.info("Attempting to click on element: " + element.toString());
+        waitUtil.waitForElementToBeClickable(element, 10);
+        element.click();
+        LoggingManager.info("Clicked on element: " + element.toString());
     }
 
     /**

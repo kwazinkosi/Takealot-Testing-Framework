@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Takealot Automation Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>36/2/6</td>
+<td>Tests passed/Failed/Skipped:</td><td>41/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 18 19:53:00 SAST 2024</td>
+<td>Started on:</td><td>Sun Aug 18 23:05:57 SAST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>680 seconds (680415 ms)</td>
+<tr><td>Total time:</td><td>2297 seconds (2297533 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,106 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tests.CartPageTest.setUp()'><b>setUp</b><br>Test class: tests.CartPageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-	at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-	at components.NavBar.clickNavLink(NavBar.java:94)
-	at pages.HomePage.navigateToCart(HomePage.java:183)
-	at tests.CartPageTest.setUp(CartPageTest.java:49)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1502243595", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1502243595'><pre>org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-	at jdk.internal.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-	at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-	at components.NavBar.clickNavLink(NavBar.java:94)
-	at pages.HomePage.navigateToCart(HomePage.java:183)
-	at tests.CartPageTest.setUp(CartPageTest.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div></td>
-<td>35</td>
-<td>tests.CartPageTest@33617539</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tests.CartPageTest.tearDown()'><b>tearDown</b><br>Test class: tests.CartPageTest</td>
-<td></td>
-<td>0</td>
-<td>tests.CartPageTest@33617539</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -176,20 +76,16 @@ Session ID: 385032655c643c347adf27c42c4c36e4
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC002, John, Doe, jon.doe@gmail.com, P@ssw0rd, 0612345679, Success, yes</td>
-<td><div><pre>java.lang.AssertionError: OTP not sent. expected [true] but found [false]
-	at tests.RegistrationPageTest.verifyRegistration(RegistrationPageTest.java:98)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2104497737", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2104497737'><pre>java.lang.AssertionError: OTP not sent. expected [true] but found [false]
+<td title='tests.HomePageTest.testNavigateToCart()'><b>testNavigateToCart</b><br>Test class: tests.HomePageTest</td>
+<td><div><pre>java.lang.AssertionError: Cart page should be visible. expected [true] but found [false]
+	at tests.HomePageTest.testNavigateToCart(HomePageTest.java:108)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1671200668", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1671200668'><pre>java.lang.AssertionError: Cart page should be visible. expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
-	at tests.RegistrationPageTest.verifyRegistration(RegistrationPageTest.java:98)
+	at tests.HomePageTest.testNavigateToCart(HomePageTest.java:108)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -202,26 +98,32 @@ Session ID: 385032655c643c347adf27c42c4c36e4
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>54</td>
-<td>tests.RegistrationPageTest@290b1b2e</td></tr>
+<td>16</td>
+<td>tests.HomePageTest@4a3e3e8b</td></tr>
 <tr>
 <td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Apple iPhone 15 Pro Max 256GB, Apple, 27595.0, 4.8, 40.0, smartphones, yes</td>
 <td><div><pre>java.lang.AssertionError: Product price does not match expected [27595.00] but found [27084.00]
 	at tests.ProductsPageTest.verifyProductDetails(ProductsPageTest.java:179)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1253823841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1253823841'><pre>java.lang.AssertionError: Product price does not match expected [27595.00] but found [27084.00]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace343152935", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace343152935'><pre>java.lang.AssertionError: Product price does not match expected [27595.00] but found [27084.00]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -239,15 +141,67 @@ Session ID: 385032655c643c347adf27c42c4c36e4
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>88</td>
-<td>tests.ProductsPageTest@1fc0053e</td></tr>
+<td>167</td>
+<td>tests.ProductsPageTest@6e9319f</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC002, John, Doe, jon.doe@gmail.com, P@ssw0rd, 0612345679, Success, yes</td>
+<td><div><pre>java.lang.AssertionError: OTP not sent. expected [true] but found [false]
+	at tests.RegistrationPageTest.verifyRegistration(RegistrationPageTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1592535000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1592535000'><pre>java.lang.AssertionError: OTP not sent. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at tests.RegistrationPageTest.verifyRegistration(RegistrationPageTest.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>55</td>
+<td>tests.RegistrationPageTest@72e34f77</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -258,656 +212,210 @@ Session ID: 385032655c643c347adf27c42c4c36e4
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.HomePageTest.testNavigateToLogin()'><b>testNavigateToLogin</b><br>Test class: tests.HomePageTest</td>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC009, XYZ123NonExistent, empty-results-page</td>
 <td></td>
-<td>10</td>
-<td>tests.HomePageTest@3c9168dc</td></tr>
-<tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC001, iphone, results-page</td>
-<td></td>
-<td>31</td>
-<td>tests.HomePageTest@3c9168dc</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC007, John, Doe, jon.doe@gmail.com, , 012345683, Please enter a password, yes</td>
-<td></td>
-<td>29</td>
-<td>tests.RegistrationPageTest@290b1b2e</td></tr>
-<tr>
-<td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC004, john.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps Lock is not enabled., yes</td>
-<td></td>
-<td>25</td>
-<td>tests.LoginPageTest@47874b25</td></tr>
-<tr>
-<td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Apex - Marine Luxury Men's Leather Watch, Apex, 690.0, 5.0, 4.0, Watches and accessories, yes</td>
-<td></td>
-<td>167</td>
-<td>tests.ProductsPageTest@1fc0053e</td></tr>
-<tr>
-<td title='tests.HomePageTest.verifyTitle()'><b>verifyTitle</b><br>Test class: tests.HomePageTest</td>
-<td></td>
-<td>0</td>
-<td>tests.HomePageTest@3c9168dc</td></tr>
-<tr>
-<td title='tests.ProductsPageTest.verifyFilteredProducts()'><b>verifyFilteredProducts</b><br>Test class: tests.ProductsPageTest</td>
-<td></td>
-<td>0</td>
-<td>tests.ProductsPageTest@1fc0053e</td></tr>
-<tr>
-<td title='tests.ProductsPageTest.verifyGetProductByPrice()'><b>verifyGetProductByPrice</b><br>Test class: tests.ProductsPageTest</td>
-<td></td>
-<td>0</td>
-<td>tests.ProductsPageTest@1fc0053e</td></tr>
-<tr>
-<td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC002, john.doe@gmail.com, null, Please enter a password, yes</td>
-<td></td>
-<td>12</td>
-<td>tests.LoginPageTest@47874b25</td></tr>
-<tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC005, iphone 15, results-page</td>
-<td></td>
-<td>13</td>
-<td>tests.HomePageTest@3c9168dc</td></tr>
-<tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC010, gibharish-uhjbjk, empty-results-page</td>
-<td></td>
-<td>29</td>
-<td>tests.HomePageTest@3c9168dc</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC006, John, Doe, jon.doe@gmail.com, short, 012345682, Password must be at least 8 characters and 1 special character or number, yes</td>
-<td></td>
-<td>27</td>
-<td>tests.RegistrationPageTest@290b1b2e</td></tr>
-<tr>
-<td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC001, , P@ssw0rd, Please fill in your email address, yes</td>
-<td></td>
-<td>15</td>
-<td>tests.LoginPageTest@47874b25</td></tr>
-<tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC007, !/*][#$&, default-page</td>
-<td></td>
-<td>72</td>
-<td>tests.HomePageTest@3c9168dc</td></tr>
+<td>28</td>
+<td>tests.HomePageTest@4a3e3e8b</td></tr>
 <tr>
 <td title='tests.ProductsPageTest.verifyProductsRetrieval()'><b>verifyProductsRetrieval</b><br>Test class: tests.ProductsPageTest</td>
 <td></td>
 <td>61</td>
-<td>tests.ProductsPageTest@1fc0053e</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC010, John, Doe, jon.doe@gmail.com, P@ssw0rd, , Mobile number must be at least 10 digits, yes</td>
-<td></td>
-<td>29</td>
-<td>tests.RegistrationPageTest@290b1b2e</td></tr>
+<td>tests.ProductsPageTest@6e9319f</td></tr>
 <tr>
 <td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC006, , default-page</td>
 <td></td>
-<td>47</td>
-<td>tests.HomePageTest@3c9168dc</td></tr>
+<td>44</td>
+<td>tests.HomePageTest@4a3e3e8b</td></tr>
 <tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC008, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, empty-results-page</td>
+<td title='tests.CartPageTest.verifyCartNotEmpty()'><b>verifyCartNotEmpty</b><br>Test class: tests.CartPageTest</td>
 <td></td>
-<td>28</td>
-<td>tests.HomePageTest@3c9168dc</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC001, John, Doe, john.doe@gmail.com, P@ssw0rd, 0612345679, This email address is already registered on takealot.com, yes</td>
-<td></td>
-<td>35</td>
-<td>tests.RegistrationPageTest@290b1b2e</td></tr>
-<tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC009, XYZ123NonExistent, empty-results-page</td>
-<td></td>
-<td>30</td>
-<td>tests.HomePageTest@3c9168dc</td></tr>
+<td>124</td>
+<td>tests.CartPageTest@389adf1d</td></tr>
 <tr>
 <td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC003, monitor, results-page</td>
 <td></td>
-<td>17</td>
-<td>tests.HomePageTest@3c9168dc</td></tr>
+<td>13</td>
+<td>tests.HomePageTest@4a3e3e8b</td></tr>
 <tr>
-<td title='tests.HomePageTest.testNavigateToRegister()'><b>testNavigateToRegister</b><br>Test class: tests.HomePageTest</td>
+<td title='tests.CartPageTest.verifyRemovalOfItemFromCart()'><b>verifyRemovalOfItemFromCart</b><br>Test class: tests.CartPageTest</td>
 <td></td>
-<td>9</td>
-<td>tests.HomePageTest@3c9168dc</td></tr>
+<td>4</td>
+<td>tests.CartPageTest@389adf1d</td></tr>
 <tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC005, John, Doe, invalid-email, P@ssw0rd, 012345681, Please enter a valid email address, yes</td>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC001, iphone, results-page</td>
 <td></td>
-<td>28</td>
-<td>tests.RegistrationPageTest@290b1b2e</td></tr>
+<td>21</td>
+<td>tests.HomePageTest@4a3e3e8b</td></tr>
 <tr>
-<td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Fujifilm Instax Mini 12 Camera + Case and Film, Fujifilm Instax, 1999.0, 4.8, 120.0, Cameras, yes</td>
-<td></td>
-<td>157</td>
-<td>tests.ProductsPageTest@1fc0053e</td></tr>
-<tr>
-<td title='tests.ProductsPageTest.verifyIsResultsVisible()'><b>verifyIsResultsVisible</b><br>Test class: tests.ProductsPageTest</td>
-<td></td>
-<td>0</td>
-<td>tests.ProductsPageTest@1fc0053e</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC004, null, Doe, jon.doe@gmail.com, P@ssw0rd, 012345680, Please enter your first name, yes</td>
-<td></td>
-<td>28</td>
-<td>tests.RegistrationPageTest@290b1b2e</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC011, John, Doe, jon.doe@gmail.com, P@ssw0rd, 123456789, Please enter a 9 or 10-digit SA mobile number, yes</td>
-<td></td>
-<td>31</td>
-<td>tests.RegistrationPageTest@290b1b2e</td></tr>
-<tr>
-<td title='tests.ProductsPageTest.verifyProductAddToCart()'><b>verifyProductAddToCart</b><br>Test class: tests.ProductsPageTest</td>
-<td></td>
-<td>84</td>
-<td>tests.ProductsPageTest@1fc0053e</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC008, John, Doe, , P@ssw0rd, 012345684, Please enter your email address, yes</td>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC007, John, Doe, jon.doe@gmail.com, , 012345683, Please enter a password, yes</td>
 <td></td>
 <td>29</td>
-<td>tests.RegistrationPageTest@290b1b2e</td></tr>
-<tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC004, IPHONE 15, results-page</td>
-<td></td>
-<td>19</td>
-<td>tests.HomePageTest@3c9168dc</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC009, John, Doe, jon.doe@gmail.com, P@ssw0rd, 012345, Please enter a 9 or 10-digit SA mobile number, yes</td>
-<td></td>
-<td>32</td>
-<td>tests.RegistrationPageTest@290b1b2e</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC003, John, null, jon.doe@gmail.com, P@ssw0rd, 012345679, Please enter your last name, yes</td>
-<td></td>
-<td>28</td>
-<td>tests.RegistrationPageTest@290b1b2e</td></tr>
+<td>tests.RegistrationPageTest@72e34f77</td></tr>
 <tr>
 <td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC003, jon.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps Lock is not enabled., yes</td>
 <td></td>
 <td>25</td>
-<td>tests.LoginPageTest@47874b25</td></tr>
+<td>tests.LoginPageTest@7bf9b098</td></tr>
 <tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC002, Wireless Earbuds, results-page</td>
+<td title='tests.CartPageTest.verifyMoveItemToWishlist()'><b>verifyMoveItemToWishlist</b><br>Test class: tests.CartPageTest</td>
 <td></td>
-<td>19</td>
-<td>tests.HomePageTest@3c9168dc</td></tr>
+<td>4</td>
+<td>tests.CartPageTest@389adf1d</td></tr>
 <tr>
-<td title='tests.HomePageTest.testNavigateToCart()'><b>testNavigateToCart</b><br>Test class: tests.HomePageTest</td>
+<td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Apex - Marine Luxury Men's Leather Watch, Apex, 690.0, 5.0, 4.0, Watches and accessories, yes</td>
 <td></td>
-<td>8</td>
-<td>tests.HomePageTest@3c9168dc</td></tr>
+<td>167</td>
+<td>tests.ProductsPageTest@6e9319f</td></tr>
+<tr>
+<td title='tests.CartPageTest.verifyCartIsEmpty()'><b>verifyCartIsEmpty</b><br>Test class: tests.CartPageTest</td>
+<td></td>
+<td>1</td>
+<td>tests.CartPageTest@389adf1d</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC004, IPHONE 15, results-page</td>
+<td></td>
+<td>14</td>
+<td>tests.HomePageTest@4a3e3e8b</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyFilteredProducts()'><b>verifyFilteredProducts</b><br>Test class: tests.ProductsPageTest</td>
+<td></td>
+<td>1</td>
+<td>tests.ProductsPageTest@6e9319f</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC004, null, Doe, jon.doe@gmail.com, P@ssw0rd, 012345680, Please enter your first name, yes</td>
+<td></td>
+<td>29</td>
+<td>tests.RegistrationPageTest@72e34f77</td></tr>
+<tr>
+<td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC001, , P@ssw0rd, Please fill in your email address, yes</td>
+<td></td>
+<td>9</td>
+<td>tests.LoginPageTest@7bf9b098</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC006, John, Doe, jon.doe@gmail.com, short, 012345682, Password must be at least 8 characters and 1 special character or number, yes</td>
+<td></td>
+<td>32</td>
+<td>tests.RegistrationPageTest@72e34f77</td></tr>
+<tr>
+<td title='tests.CartPageTest.verifyItemDetailsInCart()'><b>verifyItemDetailsInCart</b><br>Test class: tests.CartPageTest</td>
+<td></td>
+<td>387</td>
+<td>tests.CartPageTest@389adf1d</td></tr>
+<tr>
+<td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC002, john.doe@gmail.com, null, Please enter a password, yes</td>
+<td></td>
+<td>10</td>
+<td>tests.LoginPageTest@7bf9b098</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC007, !/*][#$&, default-page</td>
+<td></td>
+<td>70</td>
+<td>tests.HomePageTest@4a3e3e8b</td></tr>
 <tr>
 <td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Fender Squier SA-105CE Acoustic Electric Guitar, Squier, 3495.0, 4.2, 4.0, Music, yes</td>
 <td></td>
-<td>77</td>
-<td>tests.ProductsPageTest@1fc0053e</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>169</td>
+<td>tests.ProductsPageTest@6e9319f</td></tr>
 <tr>
-<td title='tests.CartPageTest.verifyRemovalOfItemFromCart()'><b>verifyRemovalOfItemFromCart</b><br>Test class: tests.CartPageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-	at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-	at components.NavBar.clickNavLink(NavBar.java:94)
-	at pages.HomePage.navigateToCart(HomePage.java:183)
-	at tests.CartPageTest.setUp(CartPageTest.java:49)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace595236520", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace595236520'><pre>org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-	at jdk.internal.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-	at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-	at components.NavBar.clickNavLink(NavBar.java:94)
-	at pages.HomePage.navigateToCart(HomePage.java:183)
-	at tests.CartPageTest.setUp(CartPageTest.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div></td>
-<td>0</td>
-<td>tests.CartPageTest@33617539</td></tr>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC002, Wireless Earbuds, results-page</td>
+<td></td>
+<td>14</td>
+<td>tests.HomePageTest@4a3e3e8b</td></tr>
 <tr>
-<td title='tests.CartPageTest.verifyMoveItemToWishlist()'><b>verifyMoveItemToWishlist</b><br>Test class: tests.CartPageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-	at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-	at components.NavBar.clickNavLink(NavBar.java:94)
-	at pages.HomePage.navigateToCart(HomePage.java:183)
-	at tests.CartPageTest.setUp(CartPageTest.java:49)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace762898042", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace762898042'><pre>org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-	at jdk.internal.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-	at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-	at components.NavBar.clickNavLink(NavBar.java:94)
-	at pages.HomePage.navigateToCart(HomePage.java:183)
-	at tests.CartPageTest.setUp(CartPageTest.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div></td>
+<td title='tests.HomePageTest.testNavigateToRegister()'><b>testNavigateToRegister</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>9</td>
+<td>tests.HomePageTest@4a3e3e8b</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC010, John, Doe, jon.doe@gmail.com, P@ssw0rd, , Mobile number must be at least 10 digits, yes</td>
+<td></td>
+<td>29</td>
+<td>tests.RegistrationPageTest@72e34f77</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyGetProductByPrice()'><b>verifyGetProductByPrice</b><br>Test class: tests.ProductsPageTest</td>
+<td></td>
 <td>0</td>
-<td>tests.CartPageTest@33617539</td></tr>
+<td>tests.ProductsPageTest@6e9319f</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyProductAddToCart()'><b>verifyProductAddToCart</b><br>Test class: tests.ProductsPageTest</td>
+<td></td>
+<td>178</td>
+<td>tests.ProductsPageTest@6e9319f</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC009, John, Doe, jon.doe@gmail.com, P@ssw0rd, 012345, Please enter a 9 or 10-digit SA mobile number, yes</td>
+<td></td>
+<td>34</td>
+<td>tests.RegistrationPageTest@72e34f77</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Fujifilm Instax Mini 12 Camera + Case and Film, Fujifilm Instax, 1999.0, 4.8, 120.0, Cameras, yes</td>
+<td></td>
+<td>159</td>
+<td>tests.ProductsPageTest@6e9319f</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC005, John, Doe, invalid-email, P@ssw0rd, 012345681, Please enter a valid email address, yes</td>
+<td></td>
+<td>30</td>
+<td>tests.RegistrationPageTest@72e34f77</td></tr>
+<tr>
+<td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC004, john.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps Lock is not enabled., yes</td>
+<td></td>
+<td>25</td>
+<td>tests.LoginPageTest@7bf9b098</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC001, John, Doe, john.doe@gmail.com, P@ssw0rd, 0612345679, This email address is already registered on takealot.com, yes</td>
+<td></td>
+<td>33</td>
+<td>tests.RegistrationPageTest@72e34f77</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyIsResultsVisible()'><b>verifyIsResultsVisible</b><br>Test class: tests.ProductsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductsPageTest@6e9319f</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC003, John, null, jon.doe@gmail.com, P@ssw0rd, 012345679, Please enter your last name, yes</td>
+<td></td>
+<td>30</td>
+<td>tests.RegistrationPageTest@72e34f77</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC011, John, Doe, jon.doe@gmail.com, P@ssw0rd, 123456789, Please enter a 9 or 10-digit SA mobile number, yes</td>
+<td></td>
+<td>32</td>
+<td>tests.RegistrationPageTest@72e34f77</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC010, gibharish-uhjbjk, empty-results-page</td>
+<td></td>
+<td>28</td>
+<td>tests.HomePageTest@4a3e3e8b</td></tr>
 <tr>
 <td title='tests.CartPageTest.verifyTotalCartPrice()'><b>verifyTotalCartPrice</b><br>Test class: tests.CartPageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-	at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-	at components.NavBar.clickNavLink(NavBar.java:94)
-	at pages.HomePage.navigateToCart(HomePage.java:183)
-	at tests.CartPageTest.setUp(CartPageTest.java:49)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace622096576", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace622096576'><pre>org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-	at jdk.internal.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-	at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-	at components.NavBar.clickNavLink(NavBar.java:94)
-	at pages.HomePage.navigateToCart(HomePage.java:183)
-	at tests.CartPageTest.setUp(CartPageTest.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div></td>
+<td></td>
 <td>0</td>
-<td>tests.CartPageTest@33617539</td></tr>
+<td>tests.CartPageTest@389adf1d</td></tr>
 <tr>
-<td title='tests.CartPageTest.verifyCartIsEmpty()'><b>verifyCartIsEmpty</b><br>Test class: tests.CartPageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-	at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-	at components.NavBar.clickNavLink(NavBar.java:94)
-	at pages.HomePage.navigateToCart(HomePage.java:183)
-	at tests.CartPageTest.setUp(CartPageTest.java:49)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace474040456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace474040456'><pre>org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-	at jdk.internal.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-	at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-	at components.NavBar.clickNavLink(NavBar.java:94)
-	at pages.HomePage.navigateToCart(HomePage.java:183)
-	at tests.CartPageTest.setUp(CartPageTest.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div></td>
-<td>0</td>
-<td>tests.CartPageTest@33617539</td></tr>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC005, iphone 15, results-page</td>
+<td></td>
+<td>14</td>
+<td>tests.HomePageTest@4a3e3e8b</td></tr>
 <tr>
-<td title='tests.CartPageTest.verifyCartNotEmpty()'><b>verifyCartNotEmpty</b><br>Test class: tests.CartPageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-	at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-	at components.NavBar.clickNavLink(NavBar.java:94)
-	at pages.HomePage.navigateToCart(HomePage.java:183)
-	at tests.CartPageTest.setUp(CartPageTest.java:49)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace923585584", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace923585584'><pre>org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-	at jdk.internal.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-	at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-	at components.NavBar.clickNavLink(NavBar.java:94)
-	at pages.HomePage.navigateToCart(HomePage.java:183)
-	at tests.CartPageTest.setUp(CartPageTest.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div></td>
-<td>0</td>
-<td>tests.CartPageTest@33617539</td></tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC008, John, Doe, , P@ssw0rd, 012345684, Please enter your email address, yes</td>
+<td></td>
+<td>29</td>
+<td>tests.RegistrationPageTest@72e34f77</td></tr>
 <tr>
-<td title='tests.CartPageTest.verifyItemDetailsInCart()'><b>verifyItemDetailsInCart</b><br>Test class: tests.CartPageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-	at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-	at components.NavBar.clickNavLink(NavBar.java:94)
-	at pages.HomePage.navigateToCart(HomePage.java:183)
-	at tests.CartPageTest.setUp(CartPageTest.java:49)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2016356018", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2016356018'><pre>org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-	at jdk.internal.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-	at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-	at components.NavBar.clickNavLink(NavBar.java:94)
-	at pages.HomePage.navigateToCart(HomePage.java:183)
-	at tests.CartPageTest.setUp(CartPageTest.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div></td>
-<td>0</td>
-<td>tests.CartPageTest@33617539</td></tr>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC008, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, empty-results-page</td>
+<td></td>
+<td>28</td>
+<td>tests.HomePageTest@4a3e3e8b</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifyTitle()'><b>verifyTitle</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>4</td>
+<td>tests.HomePageTest@4a3e3e8b</td></tr>
+<tr>
+<td title='tests.HomePageTest.testNavigateToLogin()'><b>testNavigateToLogin</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>7</td>
+<td>tests.HomePageTest@4a3e3e8b</td></tr>
 </table><p>
 </body>
 </html>

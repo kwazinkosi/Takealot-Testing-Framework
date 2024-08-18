@@ -22,7 +22,7 @@ import utilities.DriverFactory;
 /**
  * Test class for verifying various functionalities on the HomePage.
  */
-public class HomePageTest extends BaseTest {
+public class HomePageTest {
 
     private WebDriver driver;
     private HomePage homePage;

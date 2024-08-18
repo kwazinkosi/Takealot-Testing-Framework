@@ -6,8 +6,15 @@
     <listener class-name="reporting.ReportManager"/>
     <listener class-name="utilities.TestExecutionListener"/>
   </listeners>
-  <test thread-count="5" parallel="classes" name="Takealot Automation Tests(failed)">
+  <test thread-count="5" name="Takealot Automation Tests(failed)">
     <classes>
+      <class name="tests.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testNavigateToCart"/>
+        </methods>
+      </class> <!-- tests.HomePageTest -->
       <class name="tests.ProductsPageTest">
         <methods>
           <include name="verifyProductDetails" invocation-numbers="0"/>
@@ -15,18 +22,6 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.ProductsPageTest -->
-      <class name="tests.CartPageTest">
-        <methods>
-          <include name="verifyTotalCartPrice"/>
-          <include name="verifyCartNotEmpty"/>
-          <include name="verifyRemovalOfItemFromCart"/>
-          <include name="verifyItemDetailsInCart"/>
-          <include name="verifyCartIsEmpty"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="verifyMoveItemToWishlist"/>
-        </methods>
-      </class> <!-- tests.CartPageTest -->
       <class name="tests.RegistrationPageTest">
         <methods>
           <include name="setUp"/>

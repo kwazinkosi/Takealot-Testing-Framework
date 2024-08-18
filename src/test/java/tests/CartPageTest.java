@@ -25,7 +25,7 @@ import pages.ProductsPage;
 import utilities.EventListener;
 import utilities.DriverFactory;
 
-public class CartPageTest extends BaseTest {
+public class CartPageTest {
 
     private WebDriver driver;
     private ProductsPage productsPage;
@@ -44,8 +44,7 @@ public class CartPageTest extends BaseTest {
 
         // Navigate to the cart page
         homePage = new HomePage(driver);
-        productsPage = new ProductsPage(DriverFactory.getDriver());
-        homePage.getWait().waitImplicitly(1);
+        productsPage = new ProductsPage(driver);
         cartPage = homePage.navigateToCart();
         BasePage.reporter.setDriver(driver); // Inject WebDriver into ReportManager
         LoggingManager.info(" \n\n\n*************** STARTING Cart TESTS **************");

@@ -30,7 +30,7 @@ import utilities.DriverFactory;
  * This class contains various tests to validate product retrieval, filtering, 
  * and the ability to add products to the cart.
  */
-public class ProductsPageTest extends BaseTest{
+public class ProductsPageTest{
 
     private WebDriver driver;
     private ProductsPage productsPage;

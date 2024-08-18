@@ -1,542 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="44" passed="36" failed="2" skipped="6">
+<testng-results ignored="0" total="44" passed="41" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-18T19:53:00 SAST" name="Takealot Suite" finished-at="2024-08-18T20:04:21 SAST" duration-ms="680415">
+  <suite started-at="2024-08-18T23:05:57 SAST" name="Takealot Suite" finished-at="2024-08-18T23:44:15 SAST" duration-ms="2297533">
     <groups>
       <group name="wishlist">
-        <method signature="CartPageTest.verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@33617539]" name="verifyMoveItemToWishlist" class="tests.CartPageTest"/>
+        <method signature="CartPageTest.verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@389adf1d]" name="verifyMoveItemToWishlist" class="tests.CartPageTest"/>
       </group> <!-- wishlist -->
       <group name="login">
-        <method signature="HomePageTest.testNavigateToLogin()[pri:12, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToLogin" class="tests.HomePageTest"/>
-        <method signature="LoginPageTest.verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@47874b25]" name="verifyLogin" class="tests.LoginPageTest"/>
+        <method signature="HomePageTest.testNavigateToLogin()[pri:12, instance:tests.HomePageTest@4a3e3e8b]" name="testNavigateToLogin" class="tests.HomePageTest"/>
+        <method signature="LoginPageTest.verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@7bf9b098]" name="verifyLogin" class="tests.LoginPageTest"/>
       </group> <!-- login -->
       <group name="cart">
-        <method signature="ProductsPageTest.verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@1fc0053e]" name="verifyProductAddToCart" class="tests.ProductsPageTest"/>
-        <method signature="HomePageTest.testNavigateToCart()[pri:13, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToCart" class="tests.HomePageTest"/>
-        <method signature="CartPageTest.verifyCartIsEmpty()[pri:17, instance:tests.CartPageTest@33617539]" name="verifyCartIsEmpty" class="tests.CartPageTest"/>
-        <method signature="CartPageTest.verifyCartNotEmpty()[pri:18, instance:tests.CartPageTest@33617539]" name="verifyCartNotEmpty" class="tests.CartPageTest"/>
-        <method signature="CartPageTest.verifyItemDetailsInCart()[pri:19, instance:tests.CartPageTest@33617539]" name="verifyItemDetailsInCart" class="tests.CartPageTest"/>
-        <method signature="CartPageTest.verifyTotalCartPrice()[pri:20, instance:tests.CartPageTest@33617539]" name="verifyTotalCartPrice" class="tests.CartPageTest"/>
-        <method signature="CartPageTest.verifyRemovalOfItemFromCart()[pri:21, instance:tests.CartPageTest@33617539]" name="verifyRemovalOfItemFromCart" class="tests.CartPageTest"/>
-        <method signature="CartPageTest.verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@33617539]" name="verifyMoveItemToWishlist" class="tests.CartPageTest"/>
+        <method signature="ProductsPageTest.verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@6e9319f]" name="verifyProductAddToCart" class="tests.ProductsPageTest"/>
+        <method signature="HomePageTest.testNavigateToCart()[pri:13, instance:tests.HomePageTest@4a3e3e8b]" name="testNavigateToCart" class="tests.HomePageTest"/>
+        <method signature="CartPageTest.verifyCartIsEmpty()[pri:17, instance:tests.CartPageTest@389adf1d]" name="verifyCartIsEmpty" class="tests.CartPageTest"/>
+        <method signature="CartPageTest.verifyCartNotEmpty()[pri:18, instance:tests.CartPageTest@389adf1d]" name="verifyCartNotEmpty" class="tests.CartPageTest"/>
+        <method signature="CartPageTest.verifyItemDetailsInCart()[pri:19, instance:tests.CartPageTest@389adf1d]" name="verifyItemDetailsInCart" class="tests.CartPageTest"/>
+        <method signature="CartPageTest.verifyTotalCartPrice()[pri:20, instance:tests.CartPageTest@389adf1d]" name="verifyTotalCartPrice" class="tests.CartPageTest"/>
+        <method signature="CartPageTest.verifyRemovalOfItemFromCart()[pri:21, instance:tests.CartPageTest@389adf1d]" name="verifyRemovalOfItemFromCart" class="tests.CartPageTest"/>
+        <method signature="CartPageTest.verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@389adf1d]" name="verifyMoveItemToWishlist" class="tests.CartPageTest"/>
       </group> <!-- cart -->
       <group name="products">
-        <method signature="ProductsPageTest.verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@1fc0053e]" name="verifyIsResultsVisible" class="tests.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@1fc0053e]" name="verifyProductsRetrieval" class="tests.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@1fc0053e]" name="verifyFilteredProducts" class="tests.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@1fc0053e]" name="verifyGetProductByPrice" class="tests.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@1fc0053e]" name="verifyProductDetails" class="tests.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@1fc0053e]" name="verifyProductAddToCart" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@6e9319f]" name="verifyIsResultsVisible" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@6e9319f]" name="verifyProductsRetrieval" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@6e9319f]" name="verifyFilteredProducts" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@6e9319f]" name="verifyGetProductByPrice" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@6e9319f]" name="verifyProductDetails" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@6e9319f]" name="verifyProductAddToCart" class="tests.ProductsPageTest"/>
       </group> <!-- products -->
       <group name="search">
-        <method signature="ProductsPageTest.verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@1fc0053e]" name="verifyIsResultsVisible" class="tests.ProductsPageTest"/>
-        <method signature="HomePageTest.verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" name="verifySearchFunctionality" class="tests.HomePageTest"/>
+        <method signature="ProductsPageTest.verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@6e9319f]" name="verifyIsResultsVisible" class="tests.ProductsPageTest"/>
+        <method signature="HomePageTest.verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@4a3e3e8b]" name="verifySearchFunctionality" class="tests.HomePageTest"/>
       </group> <!-- search -->
       <group name="navigation">
-        <method signature="HomePageTest.verifyTitle()[pri:0, instance:tests.HomePageTest@3c9168dc]" name="verifyTitle" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.testNavigateToRegister()[pri:11, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToRegister" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.testNavigateToLogin()[pri:12, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToLogin" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.testNavigateToCart()[pri:13, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToCart" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.verifyTitle()[pri:0, instance:tests.HomePageTest@4a3e3e8b]" name="verifyTitle" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.testNavigateToRegister()[pri:11, instance:tests.HomePageTest@4a3e3e8b]" name="testNavigateToRegister" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.testNavigateToLogin()[pri:12, instance:tests.HomePageTest@4a3e3e8b]" name="testNavigateToLogin" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.testNavigateToCart()[pri:13, instance:tests.HomePageTest@4a3e3e8b]" name="testNavigateToCart" class="tests.HomePageTest"/>
       </group> <!-- navigation -->
       <group name="price">
-        <method signature="ProductsPageTest.verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@1fc0053e]" name="verifyGetProductByPrice" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@6e9319f]" name="verifyGetProductByPrice" class="tests.ProductsPageTest"/>
       </group> <!-- price -->
       <group name="retrieval">
-        <method signature="ProductsPageTest.verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@1fc0053e]" name="verifyProductsRetrieval" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@6e9319f]" name="verifyProductsRetrieval" class="tests.ProductsPageTest"/>
       </group> <!-- retrieval -->
       <group name="registration">
-        <method signature="HomePageTest.testNavigateToRegister()[pri:11, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToRegister" class="tests.HomePageTest"/>
-        <method signature="RegistrationPageTest.verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" name="verifyRegistration" class="tests.RegistrationPageTest"/>
+        <method signature="HomePageTest.testNavigateToRegister()[pri:11, instance:tests.HomePageTest@4a3e3e8b]" name="testNavigateToRegister" class="tests.HomePageTest"/>
+        <method signature="RegistrationPageTest.verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@72e34f77]" name="verifyRegistration" class="tests.RegistrationPageTest"/>
       </group> <!-- registration -->
       <group name="details">
-        <method signature="ProductsPageTest.verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@1fc0053e]" name="verifyProductDetails" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@6e9319f]" name="verifyProductDetails" class="tests.ProductsPageTest"/>
       </group> <!-- details -->
       <group name="filtering">
-        <method signature="ProductsPageTest.verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@1fc0053e]" name="verifyFilteredProducts" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@6e9319f]" name="verifyFilteredProducts" class="tests.ProductsPageTest"/>
       </group> <!-- filtering -->
       <group name="verification">
-        <method signature="LoginPageTest.verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@47874b25]" name="verifyLogin" class="tests.LoginPageTest"/>
-        <method signature="RegistrationPageTest.verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" name="verifyRegistration" class="tests.RegistrationPageTest"/>
+        <method signature="LoginPageTest.verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@7bf9b098]" name="verifyLogin" class="tests.LoginPageTest"/>
+        <method signature="RegistrationPageTest.verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@72e34f77]" name="verifyRegistration" class="tests.RegistrationPageTest"/>
       </group> <!-- verification -->
       <group name="homepage">
-        <method signature="HomePageTest.verifyTitle()[pri:0, instance:tests.HomePageTest@3c9168dc]" name="verifyTitle" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.testNavigateToRegister()[pri:11, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToRegister" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.testNavigateToLogin()[pri:12, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToLogin" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.testNavigateToCart()[pri:13, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToCart" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" name="verifySearchFunctionality" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.verifyTitle()[pri:0, instance:tests.HomePageTest@4a3e3e8b]" name="verifyTitle" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.testNavigateToRegister()[pri:11, instance:tests.HomePageTest@4a3e3e8b]" name="testNavigateToRegister" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.testNavigateToLogin()[pri:12, instance:tests.HomePageTest@4a3e3e8b]" name="testNavigateToLogin" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.testNavigateToCart()[pri:13, instance:tests.HomePageTest@4a3e3e8b]" name="testNavigateToCart" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@4a3e3e8b]" name="verifySearchFunctionality" class="tests.HomePageTest"/>
       </group> <!-- homepage -->
     </groups>
-    <test started-at="2024-08-18T19:53:00 SAST" name="Takealot Automation Tests" finished-at="2024-08-18T20:04:21 SAST" duration-ms="680415">
+    <test started-at="2024-08-18T23:05:57 SAST" name="Takealot Automation Tests" finished-at="2024-08-18T23:44:15 SAST" duration-ms="2297533">
       <class name="tests.CartPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartPageTest@33617539]" started-at="2024-08-18T19:53:00 SAST" name="setUp" finished-at="2024-08-18T19:53:36 SAST" duration-ms="35789" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-at jdk.internal.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-at components.NavBar.clickNavLink(NavBar.java:94)
-at pages.HomePage.navigateToCart(HomePage.java:183)
-at tests.CartPageTest.setUp(CartPageTest.java:49)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartPageTest@389adf1d]" started-at="2024-08-18T23:35:04 SAST" name="setUp" finished-at="2024-08-18T23:35:29 SAST" duration-ms="24927" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyCartIsEmpty()[pri:17, instance:tests.CartPageTest@33617539]" started-at="2024-08-18T19:53:36 SAST" name="verifyCartIsEmpty" finished-at="2024-08-18T19:53:36 SAST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-at jdk.internal.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-at components.NavBar.clickNavLink(NavBar.java:94)
-at pages.HomePage.navigateToCart(HomePage.java:183)
-at tests.CartPageTest.setUp(CartPageTest.java:49)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifyCartIsEmpty()[pri:17, instance:tests.CartPageTest@389adf1d]" started-at="2024-08-18T23:35:29 SAST" name="verifyCartIsEmpty" finished-at="2024-08-18T23:35:30 SAST" duration-ms="1853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCartIsEmpty -->
-        <test-method signature="verifyCartNotEmpty()[pri:18, instance:tests.CartPageTest@33617539]" started-at="2024-08-18T19:53:36 SAST" name="verifyCartNotEmpty" finished-at="2024-08-18T19:53:36 SAST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-at jdk.internal.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-at components.NavBar.clickNavLink(NavBar.java:94)
-at pages.HomePage.navigateToCart(HomePage.java:183)
-at tests.CartPageTest.setUp(CartPageTest.java:49)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifyCartNotEmpty()[pri:18, instance:tests.CartPageTest@389adf1d]" started-at="2024-08-18T23:35:30 SAST" name="verifyCartNotEmpty" finished-at="2024-08-18T23:37:35 SAST" duration-ms="124528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCartNotEmpty -->
-        <test-method signature="verifyItemDetailsInCart()[pri:19, instance:tests.CartPageTest@33617539]" started-at="2024-08-18T19:53:36 SAST" name="verifyItemDetailsInCart" finished-at="2024-08-18T19:53:36 SAST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-at jdk.internal.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-at components.NavBar.clickNavLink(NavBar.java:94)
-at pages.HomePage.navigateToCart(HomePage.java:183)
-at tests.CartPageTest.setUp(CartPageTest.java:49)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifyItemDetailsInCart()[pri:19, instance:tests.CartPageTest@389adf1d]" started-at="2024-08-18T23:37:35 SAST" name="verifyItemDetailsInCart" finished-at="2024-08-18T23:44:03 SAST" duration-ms="387972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyItemDetailsInCart -->
-        <test-method signature="verifyTotalCartPrice()[pri:20, instance:tests.CartPageTest@33617539]" started-at="2024-08-18T19:53:36 SAST" name="verifyTotalCartPrice" finished-at="2024-08-18T19:53:36 SAST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-at jdk.internal.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-at components.NavBar.clickNavLink(NavBar.java:94)
-at pages.HomePage.navigateToCart(HomePage.java:183)
-at tests.CartPageTest.setUp(CartPageTest.java:49)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifyTotalCartPrice()[pri:20, instance:tests.CartPageTest@389adf1d]" started-at="2024-08-18T23:44:03 SAST" name="verifyTotalCartPrice" finished-at="2024-08-18T23:44:04 SAST" duration-ms="690" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTotalCartPrice -->
-        <test-method signature="verifyRemovalOfItemFromCart()[pri:21, instance:tests.CartPageTest@33617539]" started-at="2024-08-18T19:53:36 SAST" name="verifyRemovalOfItemFromCart" finished-at="2024-08-18T19:53:36 SAST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-at jdk.internal.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-at components.NavBar.clickNavLink(NavBar.java:94)
-at pages.HomePage.navigateToCart(HomePage.java:183)
-at tests.CartPageTest.setUp(CartPageTest.java:49)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifyRemovalOfItemFromCart()[pri:21, instance:tests.CartPageTest@389adf1d]" started-at="2024-08-18T23:44:04 SAST" name="verifyRemovalOfItemFromCart" finished-at="2024-08-18T23:44:08 SAST" duration-ms="4240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRemovalOfItemFromCart -->
-        <test-method signature="verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@33617539]" started-at="2024-08-18T19:53:37 SAST" name="verifyMoveItemToWishlist" finished-at="2024-08-18T19:53:37 SAST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: element not found
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385032655c643c347adf27c42c4c36e4, actions {actions=[org.openqa.selenium.interactions.Sequence@223eb23]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60636}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60636/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385032655c643c347adf27c42c4c36e4
-at jdk.internal.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:613)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-at utilities.ActionUtil.clickElement(ActionUtil.java:79)
-at components.NavBar.clickNavLink(NavBar.java:94)
-at pages.HomePage.navigateToCart(HomePage.java:183)
-at tests.CartPageTest.setUp(CartPageTest.java:49)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@389adf1d]" started-at="2024-08-18T23:44:08 SAST" name="verifyMoveItemToWishlist" finished-at="2024-08-18T23:44:13 SAST" duration-ms="4641" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMoveItemToWishlist -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPageTest@33617539]" started-at="2024-08-18T19:53:37 SAST" name="tearDown" finished-at="2024-08-18T19:53:37 SAST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPageTest@389adf1d]" started-at="2024-08-18T23:44:13 SAST" name="tearDown" finished-at="2024-08-18T23:44:15 SAST" duration-ms="2346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.CartPageTest -->
       <class name="tests.ProductsPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:53:00 SAST" name="setUp" finished-at="2024-08-18T19:53:41 SAST" duration-ms="40222" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductsPageTest@6e9319f]" started-at="2024-08-18T23:11:36 SAST" name="setUp" finished-at="2024-08-18T23:11:59 SAST" duration-ms="22666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:53:41 SAST" name="verifyIsResultsVisible" finished-at="2024-08-18T19:53:41 SAST" duration-ms="252" status="PASS">
+        <test-method signature="verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@6e9319f]" started-at="2024-08-18T23:11:59 SAST" name="verifyIsResultsVisible" finished-at="2024-08-18T23:11:59 SAST" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIsResultsVisible -->
-        <test-method signature="verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:53:41 SAST" name="verifyProductsRetrieval" finished-at="2024-08-18T19:54:43 SAST" duration-ms="61860" status="PASS">
+        <test-method signature="verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@6e9319f]" started-at="2024-08-18T23:11:59 SAST" name="verifyProductsRetrieval" finished-at="2024-08-18T23:13:01 SAST" duration-ms="61422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductsRetrieval -->
-        <test-method signature="verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:54:43 SAST" name="verifyFilteredProducts" finished-at="2024-08-18T19:54:43 SAST" duration-ms="352" status="PASS">
+        <test-method signature="verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@6e9319f]" started-at="2024-08-18T23:13:01 SAST" name="verifyFilteredProducts" finished-at="2024-08-18T23:13:02 SAST" duration-ms="1115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFilteredProducts -->
-        <test-method signature="verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:54:43 SAST" name="verifyGetProductByPrice" finished-at="2024-08-18T19:54:43 SAST" duration-ms="275" status="PASS">
+        <test-method signature="verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@6e9319f]" started-at="2024-08-18T23:13:02 SAST" name="verifyGetProductByPrice" finished-at="2024-08-18T23:13:03 SAST" duration-ms="655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetProductByPrice -->
-        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:54:44 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-18T19:56:13 SAST" duration-ms="88722" status="FAIL">
+        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@6e9319f]" started-at="2024-08-18T23:13:05 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-18T23:15:53 SAST" duration-ms="167789" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -597,19 +184,29 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductDetails -->
-        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:56:13 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-18T19:59:01 SAST" duration-ms="167589" status="PASS">
+        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@6e9319f]" started-at="2024-08-18T23:15:53 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-18T23:18:41 SAST" duration-ms="167564" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -650,7 +247,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductDetails -->
-        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:59:01 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-18T20:01:38 SAST" duration-ms="157445" status="PASS">
+        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@6e9319f]" started-at="2024-08-18T23:18:41 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-18T23:21:20 SAST" duration-ms="159453" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -691,7 +288,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductDetails -->
-        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T20:01:38 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-18T20:02:55 SAST" duration-ms="77010" status="PASS">
+        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@6e9319f]" started-at="2024-08-18T23:21:20 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-18T23:24:10 SAST" duration-ms="169887" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -732,37 +329,78 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductDetails -->
-        <test-method signature="verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T20:02:55 SAST" name="verifyProductAddToCart" finished-at="2024-08-18T20:04:20 SAST" duration-ms="84663" status="PASS">
+        <test-method signature="verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@6e9319f]" started-at="2024-08-18T23:24:10 SAST" name="verifyProductAddToCart" finished-at="2024-08-18T23:27:08 SAST" duration-ms="178079" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T20:04:20 SAST" name="tearDown" finished-at="2024-08-18T20:04:21 SAST" duration-ms="786" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsPageTest@6e9319f]" started-at="2024-08-18T23:27:08 SAST" name="tearDown" finished-at="2024-08-18T23:27:10 SAST" duration-ms="2062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.ProductsPageTest -->
       <class name="tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:53:00 SAST" name="setUp" finished-at="2024-08-18T19:53:13 SAST" duration-ms="12852" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@4a3e3e8b]" started-at="2024-08-18T23:05:58 SAST" name="setUp" finished-at="2024-08-18T23:06:09 SAST" duration-ms="11666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyTitle()[pri:0, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:53:13 SAST" name="verifyTitle" finished-at="2024-08-18T19:53:14 SAST" duration-ms="385" status="PASS">
+        <test-method signature="verifyTitle()[pri:0, instance:tests.HomePageTest@4a3e3e8b]" started-at="2024-08-18T23:06:09 SAST" name="verifyTitle" finished-at="2024-08-18T23:06:14 SAST" duration-ms="4256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method signature="testNavigateToRegister()[pri:11, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:53:14 SAST" name="testNavigateToRegister" finished-at="2024-08-18T19:53:24 SAST" duration-ms="9858" status="PASS">
+        <test-method signature="testNavigateToRegister()[pri:11, instance:tests.HomePageTest@4a3e3e8b]" started-at="2024-08-18T23:06:14 SAST" name="testNavigateToRegister" finished-at="2024-08-18T23:06:23 SAST" duration-ms="9430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNavigateToRegister -->
-        <test-method signature="testNavigateToLogin()[pri:12, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:53:24 SAST" name="testNavigateToLogin" finished-at="2024-08-18T19:53:34 SAST" duration-ms="10112" status="PASS">
+        <test-method signature="testNavigateToLogin()[pri:12, instance:tests.HomePageTest@4a3e3e8b]" started-at="2024-08-18T23:06:23 SAST" name="testNavigateToLogin" finished-at="2024-08-18T23:06:31 SAST" duration-ms="7966" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNavigateToLogin -->
-        <test-method signature="testNavigateToCart()[pri:13, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:53:34 SAST" name="testNavigateToCart" finished-at="2024-08-18T19:53:42 SAST" duration-ms="8097" status="PASS">
+        <test-method signature="testNavigateToCart()[pri:13, instance:tests.HomePageTest@4a3e3e8b]" started-at="2024-08-18T23:06:31 SAST" name="testNavigateToCart" finished-at="2024-08-18T23:06:48 SAST" duration-ms="16495" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Cart page should be visible. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Cart page should be visible. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.HomePageTest.testNavigateToCart(HomePageTest.java:108)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNavigateToCart -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:53:44 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:54:15 SAST" duration-ms="31098" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@4a3e3e8b]" started-at="2024-08-18T23:06:55 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T23:07:16 SAST" duration-ms="21401" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -783,7 +421,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:54:15 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:54:35 SAST" duration-ms="19906" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@4a3e3e8b]" started-at="2024-08-18T23:07:16 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T23:07:31 SAST" duration-ms="14377" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -804,7 +442,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:54:35 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:54:53 SAST" duration-ms="17639" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@4a3e3e8b]" started-at="2024-08-18T23:07:31 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T23:07:45 SAST" duration-ms="13997" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -825,7 +463,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:54:53 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:55:12 SAST" duration-ms="19017" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@4a3e3e8b]" started-at="2024-08-18T23:07:45 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T23:07:59 SAST" duration-ms="14254" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -846,7 +484,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:55:12 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:55:26 SAST" duration-ms="13868" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@4a3e3e8b]" started-at="2024-08-18T23:07:59 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T23:08:13 SAST" duration-ms="14425" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -867,7 +505,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:55:26 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:56:13 SAST" duration-ms="47054" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@4a3e3e8b]" started-at="2024-08-18T23:08:13 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T23:08:58 SAST" duration-ms="44449" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -888,7 +526,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:56:13 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:57:25 SAST" duration-ms="72288" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@4a3e3e8b]" started-at="2024-08-18T23:08:58 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T23:10:09 SAST" duration-ms="70835" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -909,7 +547,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:57:25 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:57:54 SAST" duration-ms="28795" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@4a3e3e8b]" started-at="2024-08-18T23:10:09 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T23:10:38 SAST" duration-ms="28873" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -930,7 +568,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:57:54 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:58:24 SAST" duration-ms="30147" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@4a3e3e8b]" started-at="2024-08-18T23:10:38 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T23:11:06 SAST" duration-ms="28795" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -951,7 +589,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:58:24 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:58:54 SAST" duration-ms="29486" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@4a3e3e8b]" started-at="2024-08-18T23:11:06 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T23:11:35 SAST" duration-ms="28465" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -972,17 +610,17 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:58:54 SAST" name="tearDown" finished-at="2024-08-18T19:58:54 SAST" duration-ms="766" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@4a3e3e8b]" started-at="2024-08-18T23:11:35 SAST" name="tearDown" finished-at="2024-08-18T23:11:36 SAST" duration-ms="1586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.HomePageTest -->
       <class name="tests.RegistrationPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:53:00 SAST" name="setUp" finished-at="2024-08-18T19:53:17 SAST" duration-ms="16113" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegistrationPageTest@72e34f77]" started-at="2024-08-18T23:27:10 SAST" name="setUp" finished-at="2024-08-18T23:27:23 SAST" duration-ms="12998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:53:28 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:54:04 SAST" duration-ms="35895" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@72e34f77]" started-at="2024-08-18T23:27:29 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T23:28:02 SAST" duration-ms="33371" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1028,7 +666,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:54:04 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:54:59 SAST" duration-ms="54502" status="FAIL">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@72e34f77]" started-at="2024-08-18T23:28:02 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T23:28:58 SAST" duration-ms="55880" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1093,19 +731,29 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:54:59 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:55:27 SAST" duration-ms="28431" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@72e34f77]" started-at="2024-08-18T23:28:58 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T23:29:29 SAST" duration-ms="30743" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1149,7 +797,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:55:27 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:55:55 SAST" duration-ms="28310" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@72e34f77]" started-at="2024-08-18T23:29:29 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T23:29:59 SAST" duration-ms="29968" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1193,7 +841,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:55:55 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:56:24 SAST" duration-ms="28369" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@72e34f77]" started-at="2024-08-18T23:29:59 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T23:30:29 SAST" duration-ms="30296" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1239,7 +887,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:56:24 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:56:52 SAST" duration-ms="27924" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@72e34f77]" started-at="2024-08-18T23:30:29 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T23:31:01 SAST" duration-ms="32255" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1285,7 +933,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:56:52 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:57:21 SAST" duration-ms="29140" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@72e34f77]" started-at="2024-08-18T23:31:01 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T23:31:31 SAST" duration-ms="29886" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1331,7 +979,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:57:21 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:57:50 SAST" duration-ms="29372" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@72e34f77]" started-at="2024-08-18T23:31:31 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T23:32:01 SAST" duration-ms="29461" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1377,7 +1025,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:57:50 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:58:22 SAST" duration-ms="32142" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@72e34f77]" started-at="2024-08-18T23:32:01 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T23:32:36 SAST" duration-ms="34957" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1423,7 +1071,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:58:22 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:58:52 SAST" duration-ms="29804" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@72e34f77]" started-at="2024-08-18T23:32:36 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T23:33:06 SAST" duration-ms="29793" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1469,7 +1117,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:58:52 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:59:23 SAST" duration-ms="31132" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@72e34f77]" started-at="2024-08-18T23:33:06 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T23:33:38 SAST" duration-ms="32603" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1515,17 +1163,17 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:59:23 SAST" name="tearDown" finished-at="2024-08-18T19:59:24 SAST" duration-ms="627" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationPageTest@72e34f77]" started-at="2024-08-18T23:33:38 SAST" name="tearDown" finished-at="2024-08-18T23:33:39 SAST" duration-ms="1277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.RegistrationPageTest -->
       <class name="tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginPageTest@47874b25]" started-at="2024-08-18T19:53:00 SAST" name="setUp" finished-at="2024-08-18T19:53:17 SAST" duration-ms="16559" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginPageTest@7bf9b098]" started-at="2024-08-18T23:33:39 SAST" name="setUp" finished-at="2024-08-18T23:33:50 SAST" duration-ms="10392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@47874b25]" started-at="2024-08-18T19:53:19 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T19:53:35 SAST" duration-ms="15963" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@7bf9b098]" started-at="2024-08-18T23:33:51 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T23:34:00 SAST" duration-ms="9467" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1556,7 +1204,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@47874b25]" started-at="2024-08-18T19:53:35 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T19:53:48 SAST" duration-ms="12281" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@7bf9b098]" started-at="2024-08-18T23:34:00 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T23:34:11 SAST" duration-ms="10863" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1585,7 +1233,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@47874b25]" started-at="2024-08-18T19:53:48 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T19:54:13 SAST" duration-ms="25087" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@7bf9b098]" started-at="2024-08-18T23:34:11 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T23:34:37 SAST" duration-ms="25599" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1616,7 +1264,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@47874b25]" started-at="2024-08-18T19:54:13 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T19:54:38 SAST" duration-ms="25271" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@7bf9b098]" started-at="2024-08-18T23:34:37 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T23:35:02 SAST" duration-ms="25488" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1647,7 +1295,7 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@47874b25]" started-at="2024-08-18T19:54:38 SAST" name="tearDown" finished-at="2024-08-18T19:54:39 SAST" duration-ms="810" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@7bf9b098]" started-at="2024-08-18T23:35:02 SAST" name="tearDown" finished-at="2024-08-18T23:35:04 SAST" duration-ms="1319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
