@@ -121,7 +121,7 @@ public class CartPageTest extends BaseTest {
     /**
      * Verifies the total price of the items in the cart.
      */
-    @Test(priority = 20, groups = {"cart"}, dependsOnMethods ={"verifyItemDetailsInCart"})
+    @Test(priority = 20, groups = {"cart"})
     public void verifyTotalCartPrice() {
         
     	LoggingManager.info("============ Starting Total Cart Price Verification =============");
@@ -138,7 +138,7 @@ public class CartPageTest extends BaseTest {
     /**
      * Verifies the removal of an item from the cart.
      */
-    @Test(priority = 21, groups = {"cart"}, dependsOnMethods ={"verifyItemDetailsInCart"})
+    @Test(priority = 21, groups = {"cart"})
     public void verifyRemovalOfItemFromCart() {
 
     	LoggingManager.info("============ Starting Removal of Item from Cart Verification =============");
@@ -154,7 +154,7 @@ public class CartPageTest extends BaseTest {
     /**
      * Verifies moving an item to the wishlist.
      */
-    @Test(priority = 22, groups = {"cart", "wishlist"}, dependsOnMethods ={"verifyItemDetailsInCart"})
+    @Test(priority = 22, groups = {"cart", "wishlist"})
     public void verifyMoveItemToWishlist() {
         
     	LoggingManager.info("============ Starting Move Item to Wishlist Verification =============");
