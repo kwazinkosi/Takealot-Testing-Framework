@@ -11,7 +11,7 @@ import java.math.RoundingMode;
 import java.util.List;
 
 import logging.LoggingManager;
-import utilities.AdOverlayListener;
+import utilities.EventListener;
 import utilities.DriverFactory;
 import wait.WaitUtil;
 
@@ -87,7 +87,7 @@ public class Product extends BaseComponent {
      * Initializes product details.
      */
     public Product initializeProductDetails() {
-        AdOverlayListener.closeAdOverlay();
+        EventListener.closeAdOverlay();
         setName();
         LoggingManager.info("Done initializing product name");
         setPrice();
@@ -200,7 +200,12 @@ public class Product extends BaseComponent {
         return this;
     }
 
-    // Utility method to check if a string is numeric
+    /**
+     * Checks if a string represents a numeric value.
+     * 
+     * @param str The string to check.
+     * @return True if the string is numeric, false otherwise.
+     */
     private boolean isNumeric(String str) {
         try {
             new BigDecimal(str);
@@ -210,7 +215,12 @@ public class Product extends BaseComponent {
         }
     }
 
-
+    /**
+     * Initializes the rating details of the product.
+     * This includes parsing the rating value and the number of reviews.
+     * 
+     * @return The current Product instance with rating details set.
+     */
     public Product setRatingDetails() {
         try {
             if (rating != null && rating.isDisplayed()) {
@@ -244,11 +254,22 @@ public class Product extends BaseComponent {
         return this;
     }
 
-    
-	public String getProductType() {
-		return product_type;
-	}
+    /**
+     * Gets the product type.
+     * 
+     * @return The product type as a String.
+     */
+    public String getProductType() {
+        return product_type;
+    }
 
+    /**
+     * Sets the product type if the sponsored product element is present on the page.
+     * 
+     * @param productType The product type to set.
+     * @return The current Product instance with the product type set.
+     */
+    
 	public Product setProductType(String product_type) {
 		
 		boolean isPresent = waitUtil.isElementPresent(sponsoredProductBy, 2);

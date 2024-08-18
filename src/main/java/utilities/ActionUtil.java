@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import logging.LoggingManager;
 
+/**
+ * ActionUtil class provides utility methods for performing various actions on WebElements using Selenium WebDriver.
+ */
 public class ActionUtil {
 
     private Actions actions;
@@ -22,7 +25,7 @@ public class ActionUtil {
      * @param element The WebElement to scroll to.
      */
     public void scrollToElement(WebElement element) {
-        LoggingManager.info("Scrolling to element");
+        LoggingManager.info("Scrolling to element: " + element);
         jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
@@ -32,7 +35,7 @@ public class ActionUtil {
      * @param pixels The number of pixels to scroll by. Positive values scroll down, negative values scroll up.
      */
     public void scrollBy(int pixels) {
-    	 LoggingManager.info("Scrolling by {} pixels vertically."+ pixels);
+        LoggingManager.info("Scrolling by " + pixels + " pixels vertically.");
         jsExecutor.executeScript("window.scrollBy(0," + pixels + ");");
     }
 
@@ -42,7 +45,7 @@ public class ActionUtil {
      * @param element The WebElement to move the mouse to.
      */
     public void moveToElement(WebElement element) {
-    	 LoggingManager.info("Moving mouse to element: ");
+        LoggingManager.info("Moving mouse to element: " + element);
         actions.moveToElement(element).perform();
     }
 
@@ -52,7 +55,7 @@ public class ActionUtil {
      * @param element The WebElement to click.
      */
     public void clickElementUsingJS(WebElement element) {
-    	 LoggingManager.info("Clicking element using JavaScript: {}");
+        LoggingManager.info("Clicking element using JavaScript: " + element);
         jsExecutor.executeScript("arguments[0].click();", element);
     }
 
@@ -62,25 +65,27 @@ public class ActionUtil {
      * @param element The WebElement to double-click on.
      */
     public void doubleClickElement(WebElement element) {
-        LoggingManager.info("Double-clicking on element: {}");
+        LoggingManager.info("Double-clicking on element: " + element);
         actions.doubleClick(element).perform();
     }
+
     /**
-     * clicks on a WebElement.
+     * Clicks on a WebElement.
      *
      * @param element The WebElement to click on.
      */
     public void clickElement(WebElement element) {
-        LoggingManager.info("mouse clicking on element: {}");
+        LoggingManager.info("Clicking on element: " + element);
         actions.click(element).perform();
     }
+
     /**
      * Right-clicks on a WebElement.
      *
      * @param element The WebElement to right-click on.
      */
     public void rightClickElement(WebElement element) {
-    	 LoggingManager.info("Right-clicking on element: {}");
+        LoggingManager.info("Right-clicking on element: " + element);
         actions.contextClick(element).perform();
     }
 
@@ -91,7 +96,7 @@ public class ActionUtil {
      * @param target The target WebElement to drop.
      */
     public void dragAndDrop(WebElement source, WebElement target) {
-    	 LoggingManager.info("Dragging element from source: { "+ source+" } to target: { "+target+"}");
+        LoggingManager.info("Dragging element from source: " + source + " to target: " + target);
         actions.dragAndDrop(source, target).perform();
     }
 
@@ -101,7 +106,7 @@ public class ActionUtil {
      * @param element The WebElement to click and hold.
      */
     public void clickAndHoldElement(WebElement element) {
-    	 LoggingManager.info("Clicking and holding element: {}");
+        LoggingManager.info("Clicking and holding element: " + element);
         actions.clickAndHold(element).perform();
     }
 
@@ -111,7 +116,7 @@ public class ActionUtil {
      * @param element The WebElement to release.
      */
     public void releaseElement(WebElement element) {
-    	 LoggingManager.info("Releasing element: {}");
+        LoggingManager.info("Releasing element: " + element);
         actions.release(element).perform();
     }
 
@@ -119,10 +124,10 @@ public class ActionUtil {
      * Sends a sequence of keys to an element.
      *
      * @param element The WebElement to send keys to.
-     * @param keys The keys to send.
+     * @param keys    The keys to send.
      */
     public void sendKeysToElement(WebElement element, CharSequence... keys) {
-    	LoggingManager.info("Sending keys: {} to element: {}"+ String.join(", ", keys)+ element);
+        LoggingManager.info("Sending keys: " + String.join(", ", keys) + " to element: " + element);
         actions.sendKeys(element, keys).perform();
     }
 
@@ -141,8 +146,7 @@ public class ActionUtil {
             LoggingManager.info("Successfully clicked element: " + element);
         } catch (Exception e) {
             LoggingManager.error("Error scrolling to and clicking element: " + element, e);
-            throw e;  // Rethrow the exception after logging
+            throw e; // Rethrow the exception after logging
         }
     }
-
 }

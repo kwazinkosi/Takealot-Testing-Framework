@@ -9,10 +9,11 @@ import org.openqa.selenium.support.FindBy;
 import components.NavBar;
 import components.Product;
 import logging.LoggingManager;
-import utilities.DataProviderUtil;
 import utilities.DriverFactory;
-import wait.WaitUtil;
 
+/**
+ * HomePage handles the actions and validations on the home page.
+ */
 public class HomePage extends BasePage {
 
     @FindBy(xpath = "//input[@name='search']")
@@ -36,30 +37,36 @@ public class HomePage extends BasePage {
     @FindBy(className = "no-results-title")
     private WebElement emptyResults;
     
-    
-
     private boolean loggedIn = false;
 
-
-	/**
+    /**
      * Constructor for the HomePage class.
      * 
      * @param driver The WebDriver instance used to interact with the web page.
      */
     public HomePage(WebDriver driver) {
-    	
         super(driver);
     }
-    
+
+    /**
+     * Checks if the user is logged in.
+     * 
+     * @return True if the user is logged in, otherwise false.
+     */
     public boolean isLoggedIn() {
-		return loggedIn;
-	}
+        return loggedIn;
+    }
 
-
-	public HomePage setLoggedIn(boolean loggedIn) {
-		this.loggedIn = loggedIn;
-		return this;
-	}
+    /**
+     * Sets the login status.
+     * 
+     * @param loggedIn True if the user is logged in, otherwise false.
+     * @return The current HomePage instance for method chaining.
+     */
+    public HomePage setLoggedIn(boolean loggedIn) {
+        this.loggedIn = loggedIn;
+        return this;
+    }
     
     /**
      * Enters a query into the search box.
@@ -82,7 +89,6 @@ public class HomePage extends BasePage {
      * @return A new instance of the ProductsPage.
      */
     public ProductsPage submitSearch() {
-    	
         click(searchButton);
         LoggingManager.info("Search submitted");
         return new ProductsPage(driver);
@@ -95,33 +101,30 @@ public class HomePage extends BasePage {
      * @return A new instance of the ProductsPage.
      */
     public ProductsPage searchValidFor(String query) {
-    	
-    	LoggingManager.info("Searching for "+query);
-    	enterSearchQuery(query);
+        LoggingManager.info("Searching for " + query);
+        enterSearchQuery(query);
         ProductsPage productsPage = submitSearch(); // Assign the returned ProductsPage
         waitUtil.waitForElementToBeVisible(searchResults, normalWaitTime); // Wait for search results to be visible
         LoggingManager.info("Products now visible");
         return productsPage; // Return the ProductsPage instance
     }
     
-    
     /**
      * Searches for an invalid input and checks the expected response.
      * 
      * @param query The search term to be entered.
      * @param expectedResponse The expected response type ("default-page" or "empty-results-page").
-     * @return The current HomePage instance for method chaining.
+     * @return True if the expected response is displayed, otherwise false.
      */
     public boolean searchForInvalidInput(String query, String expectedResponse) {
-        
-    	enterSearchQuery(query);
+        enterSearchQuery(query);
         submitSearch(); // Call submitSearch and discard the result as it’s not used in this case
         
         // Wait and validate based on the expected response
         switch (expectedResponse) {
             case "default-page":
-            	ProductsPage products = new ProductsPage(DriverFactory.getDriver());
-            	List<Product> productList = products.getFilteredProductsMax(p -> !p.getProductType().equals("sponsored"), normalWaitTime);
+                ProductsPage products = new ProductsPage(DriverFactory.getDriver());
+                List<Product> productList = products.getFilteredProductsMax(p -> !p.getProductType().equals("sponsored"), normalWaitTime);
                 // if none of the products in the list contain the query
                 boolean noneContainQuery = productList.stream().noneMatch(p -> p.getName().toLowerCase().contains(query.toLowerCase()));
 
@@ -130,8 +133,8 @@ public class HomePage extends BasePage {
                     return true;
                 }
                 LoggingManager.warn("Default results page not displayed");
-                
                 break;
+
             case "empty-results-page":
                 if (waitUtil.waitForElementToBeVisible(emptyResults, normalWaitTime) != null) {
                     LoggingManager.info("Empty results page displayed");
@@ -140,11 +143,12 @@ public class HomePage extends BasePage {
                     LoggingManager.warn("Empty results page not displayed");
                 }
                 break;
+
             default:
                 LoggingManager.warn("Unexpected response type: " + expectedResponse);
         }
         
-        return false; // Return the current HomePage instance for method chaining
+        return false; // Return false if the expected response is not displayed
     }
 
     /**
@@ -153,8 +157,7 @@ public class HomePage extends BasePage {
      * @return RegistrationPage instance.
      */
     public RegistrationPage navigateToRegister() {
-    	
-    	NavBar navBar = getNavBar();
+        NavBar navBar = getNavBar();
         navBar.clickNavLink("Register");
         return new RegistrationPage(driver);
     }
@@ -165,9 +168,8 @@ public class HomePage extends BasePage {
      * @return LoginPage instance.
      */
     public LoginPage navigateToLogin() {
-    	
-    	NavBar navBar = getNavBar();
-    	navBar.clickNavLink("Login");
+        NavBar navBar = getNavBar();
+        navBar.clickNavLink("Login");
         return new LoginPage(driver);
     }
 
@@ -177,22 +179,18 @@ public class HomePage extends BasePage {
      * @return CartPage instance.
      */
     public CartPage navigateToCart() {
-        
-    	NavBar navBar = getNavBar();
+        NavBar navBar = getNavBar();
         navBar.clickNavLink("Cart");
         getWait().waitImplicitly(1);
-        CartPage c= new CartPage(driver);  // Using the existing driver instance
-        return c;
+        return new CartPage(driver);  // Using the existing driver instance
     }
-
 
     /**
      * Navigates to the Become a Seller page.
      */
     public void navigateToSeller() {
-    	
-    	NavBar navBar = getNavBar();
-    	navBar.clickNavLink("Become a Seller");
+        NavBar navBar = getNavBar();
+        navBar.clickNavLink("Become a Seller");
     }
     
     /**
@@ -204,15 +202,15 @@ public class HomePage extends BasePage {
         return driver.getTitle();
     }
 
-	@Override
-	public boolean isVisible() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+    @Override
+    public boolean isVisible() {
+        // TODO: Implement this method if needed
+        return false;
+    }
 
-	@Override
-	public boolean isAlertVisible() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+    @Override
+    public boolean isAlertVisible() {
+        // TODO: Implement this method if needed
+        return false;
+    }
 }

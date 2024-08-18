@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import components.Product;
 import logging.LoggingManager;
-import utilities.AdOverlayListener;
+import utilities.EventListener;
 
 /**
  * Represents the Products Page of the application. This class provides methods
@@ -205,7 +205,6 @@ public class ProductsPage extends BasePage {
 	public boolean addToCart(Product product) {
 	    boolean isAdded = false;
 
-//	    actionUtil.scrollToElement(product.addToCartBtn);
 	    if (product.isVisible(product.addToCartBtn)) {
 	        isAdded = clickAddToCartButton(product);
 	    } else if (product.isVisible(product.showAllOptions)) {
@@ -298,7 +297,7 @@ public class ProductsPage extends BasePage {
 	    		
 	    	}
 
-	        AdOverlayListener.closeCookieOverlay();
+	        EventListener.closeCookieOverlay();
 	        WebElement dropdown = waitUtil.waitFor(ExpectedConditions.elementToBeClickable(product.optionsMenuBy), normalWaitTime);
 	        dropdown.click();
 	        List<WebElement> options = waitUtil.waitFor(ExpectedConditions.visibilityOfAllElementsLocatedBy(product.optionsListBy), normalWaitTime);

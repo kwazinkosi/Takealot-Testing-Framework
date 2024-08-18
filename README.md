@@ -91,7 +91,7 @@ TakealotAutomation/
 │       ├── DriverFactory.java
 │       └── TestSetup.java
 │
-├── src/main/resources
+├── src/main/test/resources
 │   └── testdata.xlsx
 │
 ├── src/test/java

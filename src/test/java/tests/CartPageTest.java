@@ -21,7 +21,7 @@ import pages.BasePage;
 import pages.CartPage;
 import pages.HomePage;
 import pages.ProductsPage;
-import utilities.AdOverlayListener;
+import utilities.EventListener;
 import utilities.DriverFactory;
 
 public class CartPageTest {
@@ -37,7 +37,7 @@ public class CartPageTest {
     	driver = DriverFactory.initDriver();
         // Apply the WebDriverListener
         
-        WebDriverListener listener = new AdOverlayListener();
+        WebDriverListener listener = new EventListener();
         driver = new EventFiringDecorator<>(listener).decorate(driver);
         driver.get(ConfigReader.getProperty("base_url"));
 
@@ -53,7 +53,7 @@ public class CartPageTest {
     /**
      * Verifies that the cart is empty by checking the cart badge count and the cart page's state.
      */
-    @Test(priority = 0, enabled =false)
+    @Test(priority = 0)
     public void verifyCartIsEmpty() {
         
     	LoggingManager.info("============ Starting Cart Empty Verification =============");
@@ -66,7 +66,7 @@ public class CartPageTest {
     /**
      * Verifies that the cart is not empty after adding an item.
      */
-    @Test(priority = 1, enabled = false)
+    @Test(priority = 1)
     public void verifyCartNotEmpty() {
        
     	LoggingManager.info("============ Starting Cart Not Empty Verification =============");

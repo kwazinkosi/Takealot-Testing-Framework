@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
  * Page Object Model for the Cart Page. This class provides methods to interact
  * with the cart page elements.
  */
-public class CartPage extends BasePage {
+public class CartPage extends BasePage{
 
     @FindBy(xpath = "//div[@data-ref='cart']")
     private WebElement cart;
@@ -225,4 +225,6 @@ public class CartPage extends BasePage {
             return false;
         }
 	}
+
+	
 }

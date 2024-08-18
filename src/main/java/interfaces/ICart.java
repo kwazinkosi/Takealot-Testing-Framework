@@ -13,7 +13,7 @@ public interface ICart {
      * 
      * @return List of WebElement representing items in the cart.
      */
-    List<WebElement> getCartItems();
+    List<WebElement> getCartItemElements();
 
     /**
      * Proceeds to checkout.

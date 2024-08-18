@@ -1,82 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-18T04:24:54 SAST" name="Default suite" finished-at="2024-08-18T04:29:55 SAST" duration-ms="300358">
+  <suite started-at="2024-08-18T04:55:15 SAST" name="Default suite" finished-at="2024-08-18T05:00:20 SAST" duration-ms="304061">
     <groups>
     </groups>
-    <test started-at="2024-08-18T04:24:54 SAST" name="Default test" finished-at="2024-08-18T04:29:55 SAST" duration-ms="300358">
+    <test started-at="2024-08-18T04:55:15 SAST" name="Default test" finished-at="2024-08-18T05:00:20 SAST" duration-ms="304061">
       <class name="tests.CartPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T04:24:54 SAST" name="setUp" finished-at="2024-08-18T04:26:09 SAST" duration-ms="74966" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T04:55:16 SAST" name="setUp" finished-at="2024-08-18T04:56:38 SAST" duration-ms="82766" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyItemDetailsInCart()[pri:2, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T04:26:09 SAST" name="verifyItemDetailsInCart" finished-at="2024-08-18T04:29:43 SAST" duration-ms="213800" status="PASS">
+        <test-method signature="verifyItemDetailsInCart()[pri:2, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T04:56:38 SAST" name="verifyItemDetailsInCart" finished-at="2024-08-18T05:00:10 SAST" duration-ms="211280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyItemDetailsInCart -->
-        <test-method signature="verifyTotalCartPrice()[pri:3, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T04:29:43 SAST" name="verifyTotalCartPrice" finished-at="2024-08-18T04:29:43 SAST" duration-ms="323" status="PASS">
+        <test-method signature="verifyTotalCartPrice()[pri:3, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T05:00:10 SAST" name="verifyTotalCartPrice" finished-at="2024-08-18T05:00:10 SAST" duration-ms="498" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTotalCartPrice -->
-        <test-method signature="verifyRemovalOfItemFromCart()[pri:4, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T04:29:43 SAST" name="verifyRemovalOfItemFromCart" finished-at="2024-08-18T04:29:47 SAST" duration-ms="3965" status="PASS">
+        <test-method signature="verifyRemovalOfItemFromCart()[pri:4, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T05:00:10 SAST" name="verifyRemovalOfItemFromCart" finished-at="2024-08-18T05:00:14 SAST" duration-ms="3857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRemovalOfItemFromCart -->
-        <test-method signature="verifyMoveItemToWishlist()[pri:5, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T04:29:47 SAST" name="verifyMoveItemToWishlist" finished-at="2024-08-18T04:29:53 SAST" duration-ms="5634" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[No cart items found.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: No cart items found.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: driver.version: unknown
-at pages.CartPage.initUpdateCartItems(CartPage.java:59)
-at pages.CartPage.getCartItems(CartPage.java:80)
-at pages.CartPage.getCartItem(CartPage.java:111)
-at tests.CartPageTest.verifyMoveItemToWishlist(CartPageTest.java:167)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifyMoveItemToWishlist()[pri:5, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T05:00:14 SAST" name="verifyMoveItemToWishlist" finished-at="2024-08-18T05:00:18 SAST" duration-ms="4503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMoveItemToWishlist -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T04:29:53 SAST" name="tearDown" finished-at="2024-08-18T04:29:55 SAST" duration-ms="1525" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T05:00:18 SAST" name="tearDown" finished-at="2024-08-18T05:00:20 SAST" duration-ms="1065" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

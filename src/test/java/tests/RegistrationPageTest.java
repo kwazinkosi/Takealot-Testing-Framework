@@ -17,7 +17,7 @@ import pages.BasePage;
 import pages.HomePage;
 import pages.ProductsPage;
 import pages.RegistrationPage;
-import utilities.AdOverlayListener;
+import utilities.EventListener;
 import utilities.DataProviderUtil;
 import utilities.DriverFactory;
 
@@ -31,7 +31,7 @@ public class RegistrationPageTest {
         driver = DriverFactory.initDriver();
 
         // Apply the WebDriverListener
-        WebDriverListener listener = new AdOverlayListener();
+        WebDriverListener listener = new EventListener();
         driver = new EventFiringDecorator<>(listener).decorate(driver);
         driver.get(ConfigReader.getProperty("base_url"));
 

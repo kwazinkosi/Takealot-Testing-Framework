@@ -5,7 +5,10 @@
     <classes>
       <class name="tests.CartPageTest">
         <methods>
+          <include name="verifyTotalCartPrice"/>
+          <include name="verifyRemovalOfItemFromCart"/>
           <include name="setUp"/>
+          <include name="verifyItemDetailsInCart"/>
           <include name="tearDown"/>
           <include name="verifyMoveItemToWishlist"/>
         </methods>

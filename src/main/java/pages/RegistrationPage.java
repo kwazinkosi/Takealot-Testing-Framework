@@ -52,8 +52,7 @@ public class RegistrationPage extends BasePage {
     @FindBy(xpath = "//button[@data-ref='modal-primary-button']")
     private WebElement closeOtpConfirm;
 
-    
-    private List<String> errors;
+
     /**
      * Constructor for RegistrationPage.
      *
@@ -61,9 +60,14 @@ public class RegistrationPage extends BasePage {
      */
     public RegistrationPage(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver, this);
     }
 
+    /**
+     * Types the first name into the first name field.
+     *
+     * @param firstName The first name to enter.
+     * @return The current instance of RegistrationPage.
+     */
     public RegistrationPage typeFirstname(String firstName) {
         LoggingManager.info("Typing first name in the field 'first_name'");
         
@@ -71,36 +75,47 @@ public class RegistrationPage extends BasePage {
             firstName = " "; // Convert null to empty string
         }
         try {
-	        actionUtil.scrollToAndClick(firstname);
-	        waitUtil.waitFor(driver -> isVisible(firstname), 10, 500); // Wait for the firstname field to be visible
-	        sendKeys(firstname, firstName);
+            actionUtil.scrollToAndClick(firstname);
+            waitUtil.waitFor(driver -> isVisible(firstname), fastWaitTime); // Wait for the firstname field to be visible
+            sendKeys(firstname, firstName);
+        } catch (NoSuchElementException e) {
+            LoggingManager.error("The element for first name could not be found.", e);
+            actionUtil.scrollBy(-100);
+            sendKeys(firstname, firstName);
         }
-        catch(NoSuchElementException e) {
-        	LoggingManager.error("Somehow the element could not be found.", e);
-        	actionUtil.scrollBy(-100);
-        	sendKeys(firstname, firstName);
-        }
-	    return this;
+        return this;
     }
 
+    /**
+     * Types the last name into the last name field.
+     *
+     * @param lastName The last name to enter.
+     * @return The current instance of RegistrationPage.
+     */
     public RegistrationPage typeLastname(String lastName) {
         LoggingManager.info("Typing last name in the field 'last_name'");
         
-        if (lastName ==null) {
+        if (lastName == null) {
             lastName = " "; // Convert null to empty string
         }
         
         actionUtil.scrollToElement(lastname);
-        waitUtil.waitFor(driver -> isVisible(lastname), 10, 500); // Wait for the lastname field to be visible
+        waitUtil.waitFor(driver -> isVisible(lastname), fastWaitTime); // Wait for the lastname field to be visible
         sendKeys(lastname, lastName);
         
         return this;
     }
 
+    /**
+     * Types the email into the email field.
+     *
+     * @param email The email to enter.
+     * @return The current instance of RegistrationPage.
+     */
     public RegistrationPage typeEmail(String email) {
         LoggingManager.info("Typing email in the field 'email'");
         
-        if (email ==null) {
+        if (email == null) {
             email = " "; // Convert null to empty string
         }
         
@@ -111,33 +126,46 @@ public class RegistrationPage extends BasePage {
         return this;
     }
 
+    /**
+     * Types the password into the password field.
+     *
+     * @param password The password to enter.
+     * @return The current instance of RegistrationPage.
+     */
     public RegistrationPage typePassword(String password) {
         LoggingManager.info("Typing password in the field 'new_password'");
         
-        if (password==null) {
+        if (password == null) {
             password = " "; // Convert null to empty string
         }
         
         actionUtil.scrollToElement(passwordInput);
-        waitUtil.waitFor(driver -> isVisible(passwordInput), 10, 500); // Wait for the password field to be visible
+        waitUtil.waitFor(driver -> isVisible(passwordInput), fastWaitTime); // Wait for the password field to be visible
         sendKeys(passwordInput, password);
         
         return this;
     }
 
+    /**
+     * Types the mobile number into the mobile number field.
+     *
+     * @param mobile The mobile number to enter.
+     * @return The current instance of RegistrationPage.
+     */
     public RegistrationPage typeMobileNumber(String mobile) {
-        LoggingManager.info("Typing password in the field 'new_password'");
+        LoggingManager.info("Typing mobile number in the field 'mobile_number'");
         
         if (mobile == null) {
             mobile = " "; // Convert null to empty string
         }
         
         actionUtil.scrollToElement(mobileNumber);
-        waitUtil.waitFor(driver -> isVisible(mobileNumber), 10, 500); // Wait for the password field to be visible
+        waitUtil.waitFor(driver -> isVisible(mobileNumber), fastWaitTime); // Wait for the mobile number field to be visible
         sendKeys(mobileNumber, mobile);
         
         return this;
     }
+
     /**
      * Clicks the register button to submit the registration form.
      *
@@ -177,7 +205,6 @@ public class RegistrationPage extends BasePage {
         return this;
     }
 
-
     /**
      * Performs the registration with the provided user details.
      *
@@ -209,7 +236,7 @@ public class RegistrationPage extends BasePage {
 
         // Wait until at least one error message is visible
         waitUtil.waitFor(driver -> !registrationErrors.isEmpty() &&
-                registrationErrors.stream().anyMatch(WebElement::isDisplayed), 10, 800);
+                registrationErrors.stream().anyMatch(WebElement::isDisplayed), fastWaitTime);
 
         // Collect and return the text from the visible error messages
         return registrationErrors.stream()
@@ -237,7 +264,7 @@ public class RegistrationPage extends BasePage {
         try {
             LoggingManager.info("Checking if OTP modal is visible");
             waitUtil.waitForElementToBeVisible(otpModal, normalWaitTime);
-            return true;
+            return otpModal.isDisplayed();
         } catch (Exception e) {
             LoggingManager.error("OTP modal not visible.", e);
             return false;
@@ -291,9 +318,9 @@ public class RegistrationPage extends BasePage {
         }
     }
 
-	@Override
-	public boolean isAlertVisible() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+    @Override
+    public boolean isAlertVisible() {
+        // Placeholder for alert visibility check logic
+        return false;
+    }
 }

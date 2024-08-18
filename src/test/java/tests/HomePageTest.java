@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import config.ConfigReader;
 import logging.LoggingManager;
-import utilities.AdOverlayListener;
+import utilities.EventListener;
 import pages.BasePage;
 import pages.CartPage;
 import pages.HomePage;
@@ -29,7 +29,7 @@ public class HomePageTest {
         driver = DriverFactory.initDriver();
 
         // Apply the WebDriverListener
-        WebDriverListener listener = new AdOverlayListener();
+        WebDriverListener listener = new EventListener();
         driver = new EventFiringDecorator<>(listener).decorate(driver);
 
         driver.get(ConfigReader.getProperty("base_url"));

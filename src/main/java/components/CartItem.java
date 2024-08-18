@@ -45,11 +45,8 @@ public class CartItem extends BaseComponent {
     public CartItem(WebElement root) {
         super(root);
         PageFactory.initElements(root, this);
-//        initializeCartItem();
     }
     
-   
-
     /**
      * Initializes the CartItem attributes based on the WebElement state.
      * Retrieves the product name and price from the WebElement and handles any parsing or retrieval issues.
