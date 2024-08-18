@@ -22,10 +22,10 @@ import wait.WaitUtil;
 public class Product extends BaseComponent {
 
     @FindBy(className = "product-title")
-    private WebElement productName;
+    public WebElement productName;
     
     @FindBy (className ="product-thumb-container")
-    private WebElement thumbImage;
+    public WebElement thumbImage;
     
     @FindBy(css = "[data-ref='price'] span.currency.currency-module_currency_29IIm")
     private WebElement productPrice;
@@ -33,10 +33,10 @@ public class Product extends BaseComponent {
 
     public By sponsoredProductBy = By.className("product-card-module_sponsored-listing-badge_1nHiP");
     public By optionsMenuBy = By.cssSelector(".select-dropdown-module_select-dropdown_3Rysq");
-    public By optionsListBy = By.className("select-dropdown-module_list-item_2kHtk");
-    public By cartAddButtonBy = By.cssSelector("button.add-to-cart-button-module_add-to-cart-button_1a9gT[data-ref='add-to-cart-button']");
+    public By optionsListBy = By.className("select-list-item");
+    public By cartAddButtonBy = By.cssSelector("button.add-to-cart-button-module_add-to-cart-button_1a9gT[data-ref='add-to-cart-button']"); // a list
     
-    @FindBy(xpath = "//div[@data-ref='buybox-actions']//div//div//button[@data-ref='add-to-cart-button'][normalize-space()='Add to Cart']']")
+    @FindBy(css ="div.action-cart form.add-form + a.add-to-cart-button-module_add-to-cart-button_1a9gT[data-ref='add-to-cart-button']")
     public WebElement addToCartBtn;
 
     @FindBy(css = "div .shop-all-options")

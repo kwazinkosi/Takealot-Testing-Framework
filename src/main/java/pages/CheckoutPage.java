@@ -59,4 +59,10 @@ public class CheckoutPage extends BasePage {
 		return false;
 	}
 
+	@Override
+	public boolean isAlertVisible() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

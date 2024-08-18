@@ -4,19 +4,14 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import logging.LoggingManager;
 
 public class ActionUtil {
 
-	private WebDriver driver;
     private Actions actions;
     private JavascriptExecutor jsExecutor;
 
     public ActionUtil(WebDriver driver) {
-        this.driver = driver;
         this.actions = new Actions(driver);
         this.jsExecutor = (JavascriptExecutor) driver;
     }
@@ -70,7 +65,15 @@ public class ActionUtil {
         LoggingManager.info("Double-clicking on element: {}");
         actions.doubleClick(element).perform();
     }
-
+    /**
+     * clicks on a WebElement.
+     *
+     * @param element The WebElement to click on.
+     */
+    public void clickElement(WebElement element) {
+        LoggingManager.info("mouse clicking on element: {}");
+        actions.click(element).perform();
+    }
     /**
      * Right-clicks on a WebElement.
      *

@@ -24,7 +24,7 @@ abstract public class BasePage {
     public static ReportManager reporter;
     public DataProviderUtil dataUtil;
 	protected ActionUtil actionUtil;
-	public NavBar navBar;
+	public static NavBar navBar;
 	
 	public static final int slowWaitTime = Integer.parseInt(ConfigReader.getProperty("fast_wait_time"));
 	public static final int normalWaitTime = Integer.parseInt(ConfigReader.getProperty("normal_wait_time"));
@@ -51,6 +51,14 @@ abstract public class BasePage {
      * @return true if page is visible
      */
 	abstract public boolean isVisible();
+	
+	/**
+     * Abstract method to determine the visibility of an alert on the page, implemented in the child class.
+     * 
+     *
+     * @return true if page is visible
+     */
+	abstract public boolean isAlertVisible();
     
 	/**
      * Gets the WebElement for the navBar using waitFor.
@@ -81,23 +89,6 @@ abstract public class BasePage {
             navBar = new NavBar(getNavBarElement());
         }
         return navBar;
-    }
-    
-    /**
-     * Gets the WebElement for the cart using waitFor.
-     *
-     * @return The WebElement representing the cart.
-     */
-    private WebElement getCartElement() {
-     
-        return waitUtil.waitFor(driver -> {
-            try {
-                return driver.findElement(By.cssSelector(".cart-items-list-module_cart-items-list_3kWF_"));
-            } catch (NoSuchElementException e) {
-                LoggingManager.error("Failed to locate element: " + e.getMessage(), e);
-                return null;
-            }
-        }, 20);
     }
     
 
@@ -179,4 +170,6 @@ abstract public class BasePage {
             return false;
         }
     }
+    
+    
 }

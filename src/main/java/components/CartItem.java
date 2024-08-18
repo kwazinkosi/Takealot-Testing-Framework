@@ -1,6 +1,7 @@
 package components;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.Locale;
@@ -26,10 +27,10 @@ public class CartItem extends BaseComponent {
     @FindBy(className = "stock-availability-status")
     private WebElement stockAvailability;
 
-    @FindBy(className = "item-price")
+    @FindBy(css = ".cart-item-module_total_hR9wF span.currency.plus.currency-module_currency_29IIm")
     private WebElement priceElement;
 
-    @FindBy(className = "item-name")
+    @FindBy(className = "cart-item-module_item-title_1M9cq")
     private WebElement productNameElement;
 
     private BigDecimal price;
@@ -44,6 +45,7 @@ public class CartItem extends BaseComponent {
     public CartItem(WebElement root) {
         super(root);
         PageFactory.initElements(root, this);
+//        initializeCartItem();
     }
     
    
@@ -53,6 +55,9 @@ public class CartItem extends BaseComponent {
      * Retrieves the product name and price from the WebElement and handles any parsing or retrieval issues.
      */
     public void initializeCartItem() {
+    	if(this.productName !=null && this.price !=null) {
+    		return;
+    	}
         try {
             this.productName = productNameElement.getText();
             this.price = parsePrice(priceElement.getText());
@@ -69,14 +74,28 @@ public class CartItem extends BaseComponent {
      * 
      * @param priceText The price text to parse.
      * @return The parsed price as a BigDecimal.
-     * @throws ParseException If parsing the price text fails.
      */
-    private BigDecimal parsePrice(String priceText) throws ParseException {
-        
-    	NumberFormat format = NumberFormat.getCurrencyInstance(Locale.getDefault());
-        Number number = format.parse(priceText);
-        return new BigDecimal(number.toString());
+    private BigDecimal parsePrice(String priceText) {
+        String cleanedPrice = priceText.replace("R", "").replace(",", "").trim();
+        LoggingManager.info("Extracted price text: '" + cleanedPrice + "'");
+
+        if (!cleanedPrice.isEmpty() && isNumeric(cleanedPrice)) {
+            return new BigDecimal(cleanedPrice).setScale(2, RoundingMode.HALF_UP);
+        } else {
+            LoggingManager.warn("Price text is empty or not a valid number: '" + cleanedPrice + "'");
+            return BigDecimal.ZERO;
+        }
     }
+
+    private boolean isNumeric(String str) {
+        try {
+            new BigDecimal(str);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+
 
     /**
      * Retrieves the name of the product.

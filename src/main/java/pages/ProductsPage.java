@@ -3,10 +3,12 @@ package pages;
 import java.util.Collections;
 import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,6 +16,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import components.Product;
 import logging.LoggingManager;
+import utilities.AdOverlayListener;
 
 /**
  * Represents the Products Page of the application. This class provides methods
@@ -31,6 +34,12 @@ public class ProductsPage extends BasePage {
 	@FindBy(className = "badge-button-module_badge-count-wrapper_2buZm")
 	private WebElement badgeCount;
 
+	@FindBy(css = ".drawer-screen-module_close_3bZkV")
+	private WebElement drawerCloseBtn;
+	
+	@FindBy(xpath = "//div[@data-ref='toggle-container']")
+	private WebElement toggle;
+	
 	private List<Product> productList;
 
 	/**
@@ -40,8 +49,16 @@ public class ProductsPage extends BasePage {
 	 */
 	public ProductsPage(WebDriver driver) {
 		super(driver);
+		setToggle();
 	}
 
+	public void setToggle() {
+		
+		if(isVisible(toggle)) {
+			if(toggle.getAttribute("class").contains("toggle-module_active_cSV_W"))
+				toggle.click();
+		}
+	}
 	/**
 	 * Returns a list of Product components representing each product on the page.
 	 * 
@@ -57,11 +74,7 @@ public class ProductsPage extends BasePage {
 
 		// Initialize productList if it hasn't been initialized yet
 		if (productList == null) {
-			productList = productElements.stream().map(el -> new Product(el).initializeProductDetails()).toList();// Initialize
-																													// product
-																													// details
-																													// only
-																													// once
+			productList = productElements.stream().map(el -> new Product(el).initializeProductDetails()).toList();// Initialize product details only once
 		}
 
 		return productList;
@@ -192,12 +205,22 @@ public class ProductsPage extends BasePage {
 	public boolean addToCart(Product product) {
 	    boolean isAdded = false;
 
+//	    actionUtil.scrollToElement(product.addToCartBtn);
 	    if (product.isVisible(product.addToCartBtn)) {
 	        isAdded = clickAddToCartButton(product);
 	    } else if (product.isVisible(product.showAllOptions)) {
 	        LoggingManager.info("Add to Cart button is not visible, attempting to show all options.");
 	        isAdded = handleShowAllOptions(product);
-	    } else {
+	        
+	    } else if(product.isVisible(product.productName)) {
+	    	setToggle();
+	    	actionUtil.scrollToElement(product.productName);
+    		actionUtil.clickElement(product.productName);
+    		
+    		return clickAddToCartButton(product);
+	    }
+	    
+	    else {
 	        LoggingManager.warn("Neither 'Add to Cart' nor 'Show All Options' buttons are visible.");
 	    }
 
@@ -214,27 +237,46 @@ public class ProductsPage extends BasePage {
 	 * @return {@code true} if the product was successfully added to the cart; {@code false} otherwise.
 	 */
 	private boolean clickAddToCartButton(Product product) {
-	    try {
-	        LoggingManager.info("Attempting to click the 'Add to Cart' button.");
-	        WebElement addToCartBtn = waitUtil.waitFor(ExpectedConditions.visibilityOf(product.addToCartBtn), normalWaitTime);
-	        
-	        int initialCount = getProductsInCartCount();
-	        addToCartBtn.click();
-	        
-	        waitUtil.waitImplicitly(1); // Adjust this based on your page's behavior
-	        
-	        if (getProductsInCartCount() > initialCount) {
-	            product.setIsAddedToCart(true);
-	            LoggingManager.info("Product added to cart successfully.");
-	            return true;
-	        } else {
-	            LoggingManager.warn("Product was not added to the cart.");
+	    int attempts = 0;
+	    boolean isAdded = false;
+	    while (attempts < 3 && !isAdded) {
+	        try {
+	            LoggingManager.info("Attempting to click the 'Add to Cart' button. Attempt: " + (attempts + 1));
+	         // Re-fetch the element before each attempt
+	            WebElement addToCartBtn = waitUtil.waitFor(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.action-cart a.add-to-cart-button-module_add-to-cart-button_1a9gT[data-ref='add-to-cart-button']")), normalWaitTime);
+
+	            int initialCount = getProductsInCartCount();
+	            addToCartBtn.click();
+
+	            waitUtil.waitImplicitly(1); // Adjust this based on your page's behavior
+
+	            if(isVisible(drawerCloseBtn)) drawerCloseBtn.click();
+	            if (getProductsInCartCount() > initialCount) {
+	                product.setIsAddedToCart(true);
+	                LoggingManager.info("Product added to cart successfully.");
+	                isAdded = true;
+	                break;
+	            } else {
+	                LoggingManager.warn("Product was not added to the cart.");
+	            }
+
+	        } catch (StaleElementReferenceException e) {
+	            LoggingManager.info("StaleElementReferenceException encountered. Retrying...");
+	            // might re-locate the product's "Add to Cart" button here if needed.
+	        } 
+	        catch(TimeoutException e) {
+	       
 	        }
-	    } catch (Exception e) {
-	        LoggingManager.info("Error while attempting to add the product to the cart: " + e.getMessage());
+	        catch(Exception e) {
+	            LoggingManager.info("Error while attempting to add the product to the cart: " + e.getMessage());
+	            break;
+	        }
+	        attempts++;
 	    }
-	    return false;
+
+	    return isAdded;
 	}
+
 
 	/**
 	 * Handles the scenario where the "Show All Options" button is visible instead of the "Add to Cart" button.
@@ -247,17 +289,26 @@ public class ProductsPage extends BasePage {
 	 */
 	private boolean handleShowAllOptions(Product product) {
 	    try {
-	    	actionUtil.scrollToElement(product.showAllOptions);
-	        click(product.showAllOptions);
-	        
+	    	try {
+	    		actionUtil.scrollToElement(product.showAllOptions);
+	    		click(product.showAllOptions);
+	    	}
+	    	catch(Exception e) {
+	    		
+	    		
+	    	}
+
+	        AdOverlayListener.closeCookieOverlay();
 	        WebElement dropdown = waitUtil.waitFor(ExpectedConditions.elementToBeClickable(product.optionsMenuBy), normalWaitTime);
 	        dropdown.click();
-
 	        List<WebElement> options = waitUtil.waitFor(ExpectedConditions.visibilityOfAllElementsLocatedBy(product.optionsListBy), normalWaitTime);
 	        if (!options.isEmpty()) {
-	            WebElement selectedOption = options.get(1); // Adjust index based on requirement
-	            selectedOption.click();
-
+	            WebElement selectedOption = options.get(1); //index of product color set to 1
+	            try{
+	            	selectedOption.click();
+	            }catch(Exception e){
+	            	actionUtil.clickElement(selectedOption);
+	            }
 	            return clickAddToCartButton(product); // Attempt to add to cart after selecting an option
 	        } else {
 	            LoggingManager.warn("No options available to select.");
@@ -280,5 +331,11 @@ public class ProductsPage extends BasePage {
 		boolean isVisible = isVisible(productResultsContainer);
 		LoggingManager.info("Product results visibility status: " + isVisible);
 		return isVisible;
+	}
+
+	@Override
+	public boolean isAlertVisible() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

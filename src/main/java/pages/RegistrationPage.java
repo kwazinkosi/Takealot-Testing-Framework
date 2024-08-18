@@ -218,11 +218,6 @@ public class RegistrationPage extends BasePage {
                                  .collect(Collectors.toList());
     }
 
-
-//    public List<String> getErrorsList(){
-//    	
-//    }
-
     /**
      * Checks if the registration error is displayed.
      *
@@ -295,4 +290,10 @@ public class RegistrationPage extends BasePage {
             LoggingManager.error("Failed to close OTP modal.", e);
         }
     }
+
+	@Override
+	public boolean isAlertVisible() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }

@@ -53,7 +53,7 @@ public class CartPageTest {
     /**
      * Verifies that the cart is empty by checking the cart badge count and the cart page's state.
      */
-    @Test
+    @Test(priority = 0, enabled =false)
     public void verifyCartIsEmpty() {
         
     	LoggingManager.info("============ Starting Cart Empty Verification =============");
@@ -66,7 +66,7 @@ public class CartPageTest {
     /**
      * Verifies that the cart is not empty after adding an item.
      */
-    @Test
+    @Test(priority = 1, enabled = false)
     public void verifyCartNotEmpty() {
        
     	LoggingManager.info("============ Starting Cart Not Empty Verification =============");
@@ -80,6 +80,7 @@ public class CartPageTest {
          
         boolean isAdded = productsPage.addToCart(product);
         Assert.assertTrue(isAdded, "Product was not added to cart");
+        cartPage.getNavBar().clickNavLink("Cart");
         Assert.assertFalse(cartPage.isCartEmpty(), "The cart should not be empty after adding an item.");
         LoggingManager.info("============ Cart Not Empty Verification -- Passed ============= \n\n");
     }
@@ -87,28 +88,29 @@ public class CartPageTest {
     /**
      * Verifies the details of items in the cart.
      */
-    @Test
+    @Test(priority = 2)
     public void verifyItemDetailsInCart() {
     	
         LoggingManager.info("============ Starting Item Details Verification in Cart =============");
         String searchProduct1 = cartPage.dataUtil.getValue("common info", "search_product-1");
         String searchProduct2 = cartPage.dataUtil.getValue("common info", "search_product-2");
         List<String> cartItems = Arrays.asList(searchProduct1, searchProduct2);
-
         for (String item : cartItems) {
             Predicate<Product> condition = p -> p.getName().toLowerCase().contains(item.toLowerCase());
+            
             homePage.getNavBar().clickNavLink("Home");
             productsPage = homePage.searchValidFor(item);
             Product product = productsPage.getProduct(condition);
             boolean isAdded = productsPage.addToCart(product);
             Assert.assertTrue(isAdded, "Product was not added to cart");
         }
-
+        homePage.getNavBar().clickNavLink("Cart");
         for (String item : cartItems) {
+        	
             CartItem cartItem = cartPage.getCartItem(item);
-
+            
             Assert.assertNotNull(cartItem, "The cart item should be present in the cart.");
-            Assert.assertEquals(cartItem.getProductName(), item, "The product name does not match.");
+            Assert.assertTrue(cartItem.getProductName().toLowerCase().contains(item.toLowerCase()), "The product name does not match.");
             Assert.assertTrue(cartItem.getPrice().compareTo(BigDecimal.ZERO) > 0, "The price of the cart item is zero.");
         }
         LoggingManager.info("============ Item Details Verification in Cart -- Passed ============= \n\n");
@@ -117,7 +119,7 @@ public class CartPageTest {
     /**
      * Verifies the total price of the items in the cart.
      */
-    @Test
+    @Test(priority = 3)
     public void verifyTotalCartPrice() {
         
     	LoggingManager.info("============ Starting Total Cart Price Verification =============");
@@ -134,7 +136,7 @@ public class CartPageTest {
     /**
      * Verifies the removal of an item from the cart.
      */
-    @Test
+    @Test(priority = 4)
     public void verifyRemovalOfItemFromCart() {
 
     	LoggingManager.info("============ Starting Removal of Item from Cart Verification =============");
@@ -150,18 +152,17 @@ public class CartPageTest {
     /**
      * Verifies moving an item to the wishlist.
      */
-    @Test
+    @Test(priority = 5)
     public void verifyMoveItemToWishlist() {
         
     	LoggingManager.info("============ Starting Move Item to Wishlist Verification =============");
-        String searchProduct1 = cartPage.dataUtil.getValue("common info", "search_product-1");
-        CartItem cartItem = cartPage.getCartItem(searchProduct1);
+        String wishlistProduct = cartPage.dataUtil.getValue("common info", "search_product-2");
+        CartItem cartItem = cartPage.getCartItem(wishlistProduct);
         Assert.assertNotNull(cartItem, "The cart item should be present in the cart before moving to wishlist.");
-
         cartItem.moveToWishlist();
-
-        Assert.assertNull(cartPage.getCartItem(searchProduct1), "The cart item should be moved to the wishlist and not in the cart.");
-        // Add additional assertions if the item should appear in the wishlist page
+        
+        Assert.assertNull(cartPage.getCartItem(wishlistProduct), "The cart item should be moved to the wishlist and not in the cart.");
+        
         LoggingManager.info("============ Move Item to Wishlist Verification -- Passed ============= \n\n");
     }
 

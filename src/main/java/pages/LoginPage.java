@@ -213,4 +213,10 @@ public class LoginPage extends BasePage {
 			LoggingManager.error("Failed to close login modal.", e);
 		}
 	}
+
+	@Override
+	public boolean isAlertVisible() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
