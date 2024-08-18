@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.function.Function;
 
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,6 +13,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import logging.LoggingManager;
 import utilities.EventListener;
+import utilities.ActionUtil;
 import utilities.DriverFactory;
 
 /**
@@ -43,14 +45,19 @@ public class NavBar extends BaseComponent {
     @FindBy(xpath = "//img[@alt='Takealot']")
     private WebElement homeLink;
 
+    
+    private static ActionUtil actionUtil;
     /**
      * Constructor to initialize the navigation bar component.
      *
      * @param root The root WebElement of the navigation bar component.
      */
     public NavBar(WebElement root) {
-        super(root);
+        
+    	super(root);
+        actionUtil =new ActionUtil(DriverFactory.getDriver());
         PageFactory.initElements(root, this);
+        
         initializeNavMap();
     }
 
@@ -80,9 +87,12 @@ public class NavBar extends BaseComponent {
         if (linkFunction != null) {
             EventListener.closeAdOverlay();
             WebElement link = linkFunction.apply(DriverFactory.getDriver());
-            
-            waitUtil.waitForElementToBeClickable(link, 10);
-            link.click();
+            try {
+            	waitUtil.waitForElementToBeClickable(link, 10);
+            	link.click();
+            }catch(ElementClickInterceptedException e){
+            	actionUtil.clickElement(link);
+            }
             LoggingManager.info("Successfully clicked on navigation link: " + linkName);
         } else {
             String errorMsg = "No such link: " + linkName;

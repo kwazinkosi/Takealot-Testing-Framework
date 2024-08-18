@@ -27,7 +27,7 @@ abstract public class BasePage {
     public static ReportManager reporter;
     public DataProviderUtil dataUtil;
     protected ActionUtil actionUtil;
-    public static NavBar navBar;
+    private static NavBar navBar;
     
     public static final int slowWaitTime = Integer.parseInt(ConfigReader.getProperty("slow_wait_time"));
     public static final int normalWaitTime = Integer.parseInt(ConfigReader.getProperty("normal_wait_time"));

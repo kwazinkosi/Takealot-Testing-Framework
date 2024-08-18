@@ -2,9 +2,6 @@ package components;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.text.NumberFormat;
-import java.text.ParseException;
-import java.util.Locale;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

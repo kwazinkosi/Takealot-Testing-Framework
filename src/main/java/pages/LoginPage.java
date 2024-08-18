@@ -165,7 +165,7 @@ public class LoginPage extends BasePage {
         try {
             // Wait until at least one error message is visible
             waitUtil.waitFor(driver -> !loginErrors.isEmpty() &&
-                    loginErrors.stream().anyMatch(WebElement::isDisplayed), fastWaitTime, 800);
+                    loginErrors.stream().anyMatch(WebElement::isDisplayed), fastWaitTime);
         } catch (TimeoutException e) {
             LoggingManager.info("No input errors found");
         }

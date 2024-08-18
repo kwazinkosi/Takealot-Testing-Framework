@@ -120,7 +120,7 @@ public class RegistrationPage extends BasePage {
         }
         
         actionUtil.scrollToElement(emailInput);
-        waitUtil.waitFor(driver -> isVisible(emailInput), 10, 500); // Wait for the email field to be visible
+        waitUtil.waitFor(driver -> isVisible(emailInput), fastWaitTime); // Wait for the email field to be visible
         sendKeys(emailInput, email);
         
         return this;

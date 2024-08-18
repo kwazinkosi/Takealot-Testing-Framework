@@ -2,36 +2,142 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-18T04:55:15 SAST" name="Default suite" finished-at="2024-08-18T05:00:20 SAST" duration-ms="304061">
+  <suite started-at="2024-08-18T07:41:49 SAST" name="Default suite" finished-at="2024-08-18T07:43:31 SAST" duration-ms="101306">
     <groups>
     </groups>
-    <test started-at="2024-08-18T04:55:15 SAST" name="Default test" finished-at="2024-08-18T05:00:20 SAST" duration-ms="304061">
-      <class name="tests.CartPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T04:55:16 SAST" name="setUp" finished-at="2024-08-18T04:56:38 SAST" duration-ms="82766" status="PASS">
+    <test started-at="2024-08-18T07:41:49 SAST" name="Default test" finished-at="2024-08-18T07:43:31 SAST" duration-ms="101306">
+      <class name="tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginPageTest@3a4e343]" started-at="2024-08-18T07:41:49 SAST" name="setUp" finished-at="2024-08-18T07:42:03 SAST" duration-ms="13829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyItemDetailsInCart()[pri:2, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T04:56:38 SAST" name="verifyItemDetailsInCart" finished-at="2024-08-18T05:00:10 SAST" duration-ms="211280" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginPageTest@3a4e343]" started-at="2024-08-18T07:42:13 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T07:42:24 SAST" duration-ms="11491" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[P@ssw0rd]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Please fill in your email address]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyItemDetailsInCart -->
-        <test-method signature="verifyTotalCartPrice()[pri:3, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T05:00:10 SAST" name="verifyTotalCartPrice" finished-at="2024-08-18T05:00:10 SAST" duration-ms="498" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginPageTest@3a4e343]" started-at="2024-08-18T07:42:24 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T07:42:36 SAST" duration-ms="11777" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC002]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john.doe@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Please enter a password]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTotalCartPrice -->
-        <test-method signature="verifyRemovalOfItemFromCart()[pri:4, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T05:00:10 SAST" name="verifyRemovalOfItemFromCart" finished-at="2024-08-18T05:00:14 SAST" duration-ms="3857" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginPageTest@3a4e343]" started-at="2024-08-18T07:42:36 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T07:43:02 SAST" duration-ms="26350" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jon.doe@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[P@ssw0rd]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Incorrect Email or Password. Please try again and ensure Caps Lock is not enabled.]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyRemovalOfItemFromCart -->
-        <test-method signature="verifyMoveItemToWishlist()[pri:5, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T05:00:14 SAST" name="verifyMoveItemToWishlist" finished-at="2024-08-18T05:00:18 SAST" duration-ms="4503" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginPageTest@3a4e343]" started-at="2024-08-18T07:43:02 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T07:43:30 SAST" duration-ms="27271" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC004]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john.doe@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[P@ssw0rd]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Incorrect Email or Password. Please try again and ensure Caps Lock is not enabled.]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMoveItemToWishlist -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPageTest@3954d008]" started-at="2024-08-18T05:00:18 SAST" name="tearDown" finished-at="2024-08-18T05:00:20 SAST" duration-ms="1065" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@3a4e343]" started-at="2024-08-18T07:43:30 SAST" name="tearDown" finished-at="2024-08-18T07:43:31 SAST" duration-ms="1145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.CartPageTest -->
+      </class> <!-- tests.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

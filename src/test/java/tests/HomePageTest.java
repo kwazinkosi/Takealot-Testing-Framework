@@ -18,72 +18,113 @@ import pages.RegistrationPage;
 import utilities.DataProviderUtil;
 import utilities.DriverFactory;
 
+/**
+ * Test class for verifying various functionalities on the HomePage.
+ */
 public class HomePageTest {
 
     private WebDriver driver;
     private HomePage homePage;
 
+    /**
+     * Setup method that runs before the test class.
+     * Initializes the WebDriver, applies event listeners, and navigates to the HomePage.
+     */
     @BeforeClass
     public void setUp() {
-        
-        driver = DriverFactory.initDriver();
 
-        // Apply the WebDriverListener
+        // Apply the WebDriverListener to capture events during test execution
         WebDriverListener listener = new EventListener();
         driver = new EventFiringDecorator<>(listener).decorate(driver);
 
+        // Navigate to the base URL and initialize the HomePage object
         driver.get(ConfigReader.getProperty("base_url"));
         homePage = new HomePage(driver);
+
+        // Set the WebDriver for reporting purposes
         BasePage.reporter.setDriver(driver);
-        LoggingManager.info(" \n\n*************** STARTING HOMEPAGE TESTS**************");
+        LoggingManager.info("\n\n*************** STARTING HOMEPAGE TESTS **************");
     }
 
+    /**
+     * Test to verify that the HomePage title matches the expected value.
+     */
     @Test(priority = 0)
     public void verifyTitle() {
-    	
         LoggingManager.info("=========== Testing home page title. ===========");
+        
+        // Fetch expected title from dataUtil and compare it with the actual title
         String expectedTitle = homePage.dataUtil.getValue("common info", "home_page_title");
         String actualTitle = homePage.getHomeTitle();
+        
         Assert.assertEquals(actualTitle, expectedTitle, "Home page title does not match the expected value.");
-        LoggingManager.info("Testing home page title -- PASSED \n");
+        LoggingManager.info("Testing home page title -- PASSED\n");
     }
 
+    /**
+     * Test to verify navigation to the Registration page.
+     */
     @Test(priority = 1)
     public void testNavigateToRegister() {
-    	
-    	LoggingManager.info("===========Testing navigation to registration. ===========");
+        LoggingManager.info("=========== Testing navigation to registration. ===========");
+        
+        // Navigate to the Registration page and verify visibility
         RegistrationPage registrationPage = homePage.navigateToRegister();
         Assert.assertTrue(registrationPage.isVisible(), "Signup modal should be visible.");
+        
+        // Close the registration modal
         registrationPage.closeSignup();
-        LoggingManager.info("navigated to registration succesfully -- Passed\n\n");
+        LoggingManager.info("Navigated to registration successfully -- Passed\n\n");
     }
 
+    /**
+     * Test to verify navigation to the Login page.
+     */
     @Test(priority = 2)
     public void testNavigateToLogin() {
-    	
-    	LoggingManager.info("=========== Testing navigation to login. ===========");
+        LoggingManager.info("=========== Testing navigation to login. ===========");
+        
+        // Navigate to the Login page and verify visibility
         LoginPage loginPage = homePage.navigateToLogin();
         Assert.assertTrue(loginPage.isVisible(), "Login modal should be visible.");
+        
+        // Close the login modal
         loginPage.closeLogin();
-        LoggingManager.info("navigated to login succesfully -- Passed\n\n");
+        LoggingManager.info("Navigated to login successfully -- Passed\n\n");
     }
-    
+
+    /**
+     * Test to verify navigation to the Cart page.
+     */
     @Test(priority = 3)
     public void testNavigateToCart() {
-    	
-    	LoggingManager.info("=========== Testing navigation to cart. ===========");
-    	homePage.navigateToCart();
-    	CartPage cartPage = new CartPage(DriverFactory.getDriver());
-        Assert.assertTrue(cartPage.isVisible(), "Login modal should be visible.");
-        cartPage.navBar.clickNavLink("Home");
-        LoggingManager.info("navigated to cart succesfully -- Passed\n\n");
+        LoggingManager.info("=========== Testing navigation to cart. ===========");
+        
+        // Navigate to the Cart page and verify visibility
+        homePage.navigateToCart();
+        CartPage cartPage = new CartPage(DriverFactory.getDriver());
+        Assert.assertTrue(cartPage.isVisible(), "Cart page should be visible.");
+        
+        // Navigate back to Home from the Cart page
+        cartPage.getNavBar().clickNavLink("Home");
+        LoggingManager.info("Navigated to cart successfully -- Passed\n\n");
     }
-    
+
+    /**
+     * Test to verify the search functionality on the HomePage.
+     * The test is data-driven and verifies both valid and invalid search scenarios.
+     *
+     * @param queryName  The name of the search query.
+     * @param searchValue  The value to search for.
+     * @param expected  The expected outcome of the search ("results-page" or error message).
+     */
     @Test(priority = 4, dataProvider = "searchData", dataProviderClass = DataProviderUtil.class)
     public void verifySearchFunctionality(String queryName, String searchValue, String expected) {
+        LoggingManager.info("=========== Testing search functionality with query: " + searchValue + " ===========");
         
-    	LoggingManager.info("===========Testing search functionality with query: " + searchValue+" ===========");   
-        boolean resultsFound = false;
+        boolean resultsFound;
+        
+        // Verify the search results based on the expected outcome
         if (expected.equals("results-page")) {
             resultsFound = homePage.searchValidFor(searchValue).isVisible();
         } else {
@@ -91,13 +132,16 @@ public class HomePageTest {
         }
         
         Assert.assertTrue(resultsFound, "Could not handle query: " + searchValue);
-        LoggingManager.info("Testing search functionality {search value = " + searchValue + " -- PASSED \n");
+        LoggingManager.info("Testing search functionality {search value = " + searchValue + "} -- PASSED\n");
     }
-    
-    
-    
+
+    /**
+     * Tear down method that runs after the test class.
+     * Closes the WebDriver instance.
+     */
     @AfterClass
     public void tearDown() {
         DriverFactory.quitDriver(); // Quit the WebDriver instance
+        LoggingManager.info("Driver quit successfully.");
     }
 }
