@@ -30,7 +30,7 @@ import utilities.DriverFactory;
  * This class contains various tests to validate product retrieval, filtering, 
  * and the ability to add products to the cart.
  */
-public class ProductsPageTest {
+public class ProductsPageTest extends BaseTest{
 
     private WebDriver driver;
     private ProductsPage productsPage;
@@ -68,13 +68,6 @@ public class ProductsPageTest {
         LoggingManager.info("\n\n*************** STARTING PRODUCTS TESTS **************");
     }
 
-
-    @BeforeMethod
-    public void setup() {
-        
-    	BasePage.reporter.setDriver(DriverFactory.getDriver());
-    }
-    
     /**
      * Test to verify that product results are visible on the page.
      * This test checks the visibility of the product results container.
@@ -224,9 +217,7 @@ public class ProductsPageTest {
      */
     @AfterClass
     public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-            LoggingManager.info("Driver quit successfully.");
-        }
+    	DriverFactory.quitDriver(); // Quit the WebDriver instance
+        LoggingManager.info("Driver quit successfully.");
     }
 }

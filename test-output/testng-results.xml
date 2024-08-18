@@ -1,93 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="44" passed="25" failed="5" skipped="14">
+<testng-results ignored="0" total="44" passed="32" failed="12" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-18T15:14:02 SAST" name="Takealot Suite" finished-at="2024-08-18T15:39:35 SAST" duration-ms="1532736">
+  <suite started-at="2024-08-18T19:03:07 SAST" name="Takealot Suite" finished-at="2024-08-18T19:15:05 SAST" duration-ms="717218">
     <groups>
       <group name="wishlist">
-        <method signature="CartPageTest.verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@5d25e6bb]" name="verifyMoveItemToWishlist" class="tests.CartPageTest"/>
+        <method signature="CartPageTest.verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@33617539]" name="verifyMoveItemToWishlist" class="tests.CartPageTest"/>
       </group> <!-- wishlist -->
       <group name="login">
-        <method signature="HomePageTest.testNavigateToLogin()[pri:12, instance:tests.HomePageTest@25bcd0c7]" name="testNavigateToLogin" class="tests.HomePageTest"/>
-        <method signature="LoginPageTest.verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@493dfb8e]" name="verifyLogin" class="tests.LoginPageTest"/>
+        <method signature="HomePageTest.testNavigateToLogin()[pri:12, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToLogin" class="tests.HomePageTest"/>
+        <method signature="LoginPageTest.verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@47874b25]" name="verifyLogin" class="tests.LoginPageTest"/>
       </group> <!-- login -->
       <group name="cart">
-        <method signature="ProductsPageTest.verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@6d8792db]" name="verifyProductAddToCart" class="tests.ProductsPageTest"/>
-        <method signature="HomePageTest.testNavigateToCart()[pri:13, instance:tests.HomePageTest@25bcd0c7]" name="testNavigateToCart" class="tests.HomePageTest"/>
-        <method signature="CartPageTest.verifyCartIsEmpty()[pri:17, instance:tests.CartPageTest@5d25e6bb]" name="verifyCartIsEmpty" class="tests.CartPageTest"/>
-        <method signature="CartPageTest.verifyCartNotEmpty()[pri:18, instance:tests.CartPageTest@5d25e6bb]" name="verifyCartNotEmpty" class="tests.CartPageTest"/>
-        <method signature="CartPageTest.verifyItemDetailsInCart()[pri:19, instance:tests.CartPageTest@5d25e6bb]" name="verifyItemDetailsInCart" class="tests.CartPageTest"/>
-        <method signature="CartPageTest.verifyTotalCartPrice()[pri:20, instance:tests.CartPageTest@5d25e6bb]" name="verifyTotalCartPrice" class="tests.CartPageTest"/>
-        <method signature="CartPageTest.verifyRemovalOfItemFromCart()[pri:21, instance:tests.CartPageTest@5d25e6bb]" name="verifyRemovalOfItemFromCart" class="tests.CartPageTest"/>
-        <method signature="CartPageTest.verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@5d25e6bb]" name="verifyMoveItemToWishlist" class="tests.CartPageTest"/>
+        <method signature="ProductsPageTest.verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@1fc0053e]" name="verifyProductAddToCart" class="tests.ProductsPageTest"/>
+        <method signature="HomePageTest.testNavigateToCart()[pri:13, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToCart" class="tests.HomePageTest"/>
+        <method signature="CartPageTest.verifyCartIsEmpty()[pri:17, instance:tests.CartPageTest@33617539]" name="verifyCartIsEmpty" class="tests.CartPageTest"/>
+        <method signature="CartPageTest.verifyCartNotEmpty()[pri:18, instance:tests.CartPageTest@33617539]" name="verifyCartNotEmpty" class="tests.CartPageTest"/>
+        <method signature="CartPageTest.verifyItemDetailsInCart()[pri:19, instance:tests.CartPageTest@33617539]" name="verifyItemDetailsInCart" class="tests.CartPageTest"/>
+        <method signature="CartPageTest.verifyTotalCartPrice()[pri:20, instance:tests.CartPageTest@33617539]" name="verifyTotalCartPrice" class="tests.CartPageTest"/>
+        <method signature="CartPageTest.verifyRemovalOfItemFromCart()[pri:21, instance:tests.CartPageTest@33617539]" name="verifyRemovalOfItemFromCart" class="tests.CartPageTest"/>
+        <method signature="CartPageTest.verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@33617539]" name="verifyMoveItemToWishlist" class="tests.CartPageTest"/>
       </group> <!-- cart -->
       <group name="products">
-        <method signature="ProductsPageTest.verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@6d8792db]" name="verifyIsResultsVisible" class="tests.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@6d8792db]" name="verifyProductsRetrieval" class="tests.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@6d8792db]" name="verifyFilteredProducts" class="tests.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@6d8792db]" name="verifyGetProductByPrice" class="tests.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@6d8792db]" name="verifyProductDetails" class="tests.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@6d8792db]" name="verifyProductAddToCart" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@1fc0053e]" name="verifyIsResultsVisible" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@1fc0053e]" name="verifyProductsRetrieval" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@1fc0053e]" name="verifyFilteredProducts" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@1fc0053e]" name="verifyGetProductByPrice" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@1fc0053e]" name="verifyProductDetails" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@1fc0053e]" name="verifyProductAddToCart" class="tests.ProductsPageTest"/>
       </group> <!-- products -->
       <group name="search">
-        <method signature="ProductsPageTest.verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@6d8792db]" name="verifyIsResultsVisible" class="tests.ProductsPageTest"/>
-        <method signature="HomePageTest.verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@25bcd0c7]" name="verifySearchFunctionality" class="tests.HomePageTest"/>
+        <method signature="ProductsPageTest.verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@1fc0053e]" name="verifyIsResultsVisible" class="tests.ProductsPageTest"/>
+        <method signature="HomePageTest.verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" name="verifySearchFunctionality" class="tests.HomePageTest"/>
       </group> <!-- search -->
       <group name="navigation">
-        <method signature="HomePageTest.verifyTitle()[pri:0, instance:tests.HomePageTest@25bcd0c7]" name="verifyTitle" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.testNavigateToRegister()[pri:11, instance:tests.HomePageTest@25bcd0c7]" name="testNavigateToRegister" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.testNavigateToLogin()[pri:12, instance:tests.HomePageTest@25bcd0c7]" name="testNavigateToLogin" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.testNavigateToCart()[pri:13, instance:tests.HomePageTest@25bcd0c7]" name="testNavigateToCart" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.verifyTitle()[pri:0, instance:tests.HomePageTest@3c9168dc]" name="verifyTitle" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.testNavigateToRegister()[pri:11, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToRegister" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.testNavigateToLogin()[pri:12, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToLogin" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.testNavigateToCart()[pri:13, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToCart" class="tests.HomePageTest"/>
       </group> <!-- navigation -->
       <group name="price">
-        <method signature="ProductsPageTest.verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@6d8792db]" name="verifyGetProductByPrice" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@1fc0053e]" name="verifyGetProductByPrice" class="tests.ProductsPageTest"/>
       </group> <!-- price -->
       <group name="retrieval">
-        <method signature="ProductsPageTest.verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@6d8792db]" name="verifyProductsRetrieval" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@1fc0053e]" name="verifyProductsRetrieval" class="tests.ProductsPageTest"/>
       </group> <!-- retrieval -->
       <group name="registration">
-        <method signature="HomePageTest.testNavigateToRegister()[pri:11, instance:tests.HomePageTest@25bcd0c7]" name="testNavigateToRegister" class="tests.HomePageTest"/>
-        <method signature="RegistrationPageTest.verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@64bc21ac]" name="verifyRegistration" class="tests.RegistrationPageTest"/>
+        <method signature="HomePageTest.testNavigateToRegister()[pri:11, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToRegister" class="tests.HomePageTest"/>
+        <method signature="RegistrationPageTest.verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" name="verifyRegistration" class="tests.RegistrationPageTest"/>
       </group> <!-- registration -->
       <group name="details">
-        <method signature="ProductsPageTest.verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@6d8792db]" name="verifyProductDetails" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@1fc0053e]" name="verifyProductDetails" class="tests.ProductsPageTest"/>
       </group> <!-- details -->
       <group name="filtering">
-        <method signature="ProductsPageTest.verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@6d8792db]" name="verifyFilteredProducts" class="tests.ProductsPageTest"/>
+        <method signature="ProductsPageTest.verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@1fc0053e]" name="verifyFilteredProducts" class="tests.ProductsPageTest"/>
       </group> <!-- filtering -->
       <group name="verification">
-        <method signature="LoginPageTest.verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@493dfb8e]" name="verifyLogin" class="tests.LoginPageTest"/>
-        <method signature="RegistrationPageTest.verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@64bc21ac]" name="verifyRegistration" class="tests.RegistrationPageTest"/>
+        <method signature="LoginPageTest.verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@47874b25]" name="verifyLogin" class="tests.LoginPageTest"/>
+        <method signature="RegistrationPageTest.verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" name="verifyRegistration" class="tests.RegistrationPageTest"/>
       </group> <!-- verification -->
       <group name="homepage">
-        <method signature="HomePageTest.verifyTitle()[pri:0, instance:tests.HomePageTest@25bcd0c7]" name="verifyTitle" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.testNavigateToRegister()[pri:11, instance:tests.HomePageTest@25bcd0c7]" name="testNavigateToRegister" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.testNavigateToLogin()[pri:12, instance:tests.HomePageTest@25bcd0c7]" name="testNavigateToLogin" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.testNavigateToCart()[pri:13, instance:tests.HomePageTest@25bcd0c7]" name="testNavigateToCart" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@25bcd0c7]" name="verifySearchFunctionality" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.verifyTitle()[pri:0, instance:tests.HomePageTest@3c9168dc]" name="verifyTitle" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.testNavigateToRegister()[pri:11, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToRegister" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.testNavigateToLogin()[pri:12, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToLogin" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.testNavigateToCart()[pri:13, instance:tests.HomePageTest@3c9168dc]" name="testNavigateToCart" class="tests.HomePageTest"/>
+        <method signature="HomePageTest.verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" name="verifySearchFunctionality" class="tests.HomePageTest"/>
       </group> <!-- homepage -->
     </groups>
-    <test started-at="2024-08-18T15:14:02 SAST" name="Takealot Automation Tests" finished-at="2024-08-18T15:39:35 SAST" duration-ms="1532736">
+    <test started-at="2024-08-18T19:03:07 SAST" name="Takealot Automation Tests" finished-at="2024-08-18T19:15:05 SAST" duration-ms="717218">
       <class name="tests.CartPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartPageTest@5d25e6bb]" started-at="2024-08-18T15:32:45 SAST" name="setUp" finished-at="2024-08-18T15:33:08 SAST" duration-ms="22554" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartPageTest@33617539]" started-at="2024-08-18T19:03:08 SAST" name="setUp" finished-at="2024-08-18T19:03:48 SAST" duration-ms="40410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyCartIsEmpty()[pri:17, instance:tests.CartPageTest@5d25e6bb]" started-at="2024-08-18T15:33:08 SAST" name="verifyCartIsEmpty" finished-at="2024-08-18T15:33:08 SAST" duration-ms="514" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCartIsEmpty -->
-        <test-method signature="verifyCartNotEmpty()[pri:18, instance:tests.CartPageTest@5d25e6bb]" started-at="2024-08-18T15:33:08 SAST" name="verifyCartNotEmpty" finished-at="2024-08-18T15:35:46 SAST" duration-ms="157818" status="FAIL">
+        <test-method signature="verifyCartIsEmpty()[pri:17, instance:tests.CartPageTest@33617539]" started-at="2024-08-18T19:03:48 SAST" name="verifyCartIsEmpty" finished-at="2024-08-18T19:04:04 SAST" duration-ms="15920" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Product was not added to cart expected [true] but found [false]]]>
+              <![CDATA[The cart is not empty. expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Product was not added to cart expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: The cart is not empty. expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertTrue(Assert.java:57)
-at tests.CartPageTest.verifyCartNotEmpty(CartPageTest.java:82)
+at tests.CartPageTest.verifyCartIsEmpty(CartPageTest.java:64)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -100,71 +96,408 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- verifyCartIsEmpty -->
+        <test-method signature="verifyCartNotEmpty()[pri:18, instance:tests.CartPageTest@33617539]" started-at="2024-08-18T19:04:04 SAST" name="verifyCartNotEmpty" finished-at="2024-08-18T19:08:34 SAST" duration-ms="270373" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- verifyCartNotEmpty -->
-        <test-method signature="verifyItemDetailsInCart()[pri:19, instance:tests.CartPageTest@5d25e6bb]" started-at="2024-08-18T15:35:46 SAST" name="verifyItemDetailsInCart" finished-at="2024-08-18T15:39:23 SAST" duration-ms="217580" status="PASS">
+        <test-method signature="verifyItemDetailsInCart()[pri:19, instance:tests.CartPageTest@33617539]" started-at="2024-08-18T19:08:34 SAST" name="verifyItemDetailsInCart" finished-at="2024-08-18T19:11:52 SAST" duration-ms="197604" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findChildElement {using=xpath, value=//img[@alt='Takealot'], id=f.5890025590AF9804FA08F62BEB38FCC2.d.0EB6D164E6B8E703019A740976D13661.e.3920}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55673}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55673/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findChildElement {using=xpath, value=//img[@alt='Takealot'], id=f.5890025590AF9804FA08F62BEB38FCC2.d.0EB6D164E6B8E703019A740976D13661.e.3920}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55673}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55673/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
+at jdk.internal.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$h3f2aNcp.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy52.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at wait.WaitUtil.waitForElementToBeClickable(WaitUtil.java:37)
+at components.NavBar.clickNavLink(NavBar.java:91)
+at tests.CartPageTest.verifyItemDetailsInCart(CartPageTest.java:103)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyItemDetailsInCart -->
-        <test-method signature="verifyTotalCartPrice()[pri:20, instance:tests.CartPageTest@5d25e6bb]" started-at="2024-08-18T15:39:23 SAST" name="verifyTotalCartPrice" finished-at="2024-08-18T15:39:24 SAST" duration-ms="495" status="PASS">
+        <test-method signature="verifyTotalCartPrice()[pri:20, instance:tests.CartPageTest@33617539]" started-at="2024-08-18T19:11:52 SAST" name="verifyTotalCartPrice" finished-at="2024-08-18T19:11:54 SAST" duration-ms="2251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTotalCartPrice -->
-        <test-method signature="verifyRemovalOfItemFromCart()[pri:21, instance:tests.CartPageTest@5d25e6bb]" started-at="2024-08-18T15:39:24 SAST" name="verifyRemovalOfItemFromCart" finished-at="2024-08-18T15:39:28 SAST" duration-ms="4275" status="PASS">
+        <test-method signature="verifyRemovalOfItemFromCart()[pri:21, instance:tests.CartPageTest@33617539]" started-at="2024-08-18T19:11:54 SAST" name="verifyRemovalOfItemFromCart" finished-at="2024-08-18T19:12:08 SAST" duration-ms="13714" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findChildElement {using=xpath, value=//button[@data-ref='badge-button'], id=f.5890025590AF9804FA08F62BEB38FCC2.d.0EB6D164E6B8E703019A740976D13661.e.3920}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55673}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55673/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findChildElement {using=xpath, value=//button[@data-ref='badge-button'], id=f.5890025590AF9804FA08F62BEB38FCC2.d.0EB6D164E6B8E703019A740976D13661.e.3920}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55673}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55673/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
+at jdk.internal.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$h3f2aNcp.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy52.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at wait.WaitUtil.waitForElementToBeClickable(WaitUtil.java:37)
+at components.NavBar.clickNavLink(NavBar.java:91)
+at pages.CartPage.getCartItem(CartPage.java:107)
+at tests.CartPageTest.verifyRemovalOfItemFromCart(CartPageTest.java:147)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRemovalOfItemFromCart -->
-        <test-method signature="verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@5d25e6bb]" started-at="2024-08-18T15:39:28 SAST" name="verifyMoveItemToWishlist" finished-at="2024-08-18T15:39:34 SAST" duration-ms="5592" status="PASS">
+        <test-method signature="verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@33617539]" started-at="2024-08-18T19:12:08 SAST" name="verifyMoveItemToWishlist" finished-at="2024-08-18T19:12:21 SAST" duration-ms="13384" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findChildElement {using=xpath, value=//button[@data-ref='badge-button'], id=f.5890025590AF9804FA08F62BEB38FCC2.d.0EB6D164E6B8E703019A740976D13661.e.3920}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55673}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55673/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findChildElement {using=xpath, value=//button[@data-ref='badge-button'], id=f.5890025590AF9804FA08F62BEB38FCC2.d.0EB6D164E6B8E703019A740976D13661.e.3920}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55673}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55673/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
+at jdk.internal.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$h3f2aNcp.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy52.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at wait.WaitUtil.waitForElementToBeClickable(WaitUtil.java:37)
+at components.NavBar.clickNavLink(NavBar.java:91)
+at pages.CartPage.getCartItem(CartPage.java:107)
+at tests.CartPageTest.verifyMoveItemToWishlist(CartPageTest.java:162)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMoveItemToWishlist -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPageTest@5d25e6bb]" started-at="2024-08-18T15:39:34 SAST" name="tearDown" finished-at="2024-08-18T15:39:35 SAST" duration-ms="1353" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPageTest@33617539]" started-at="2024-08-18T19:12:21 SAST" name="tearDown" finished-at="2024-08-18T19:12:27 SAST" duration-ms="6124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.CartPageTest -->
       <class name="tests.ProductsPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductsPageTest@6d8792db]" started-at="2024-08-18T15:14:04 SAST" name="setUp" finished-at="2024-08-18T15:14:29 SAST" duration-ms="25244" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:03:08 SAST" name="setUp" finished-at="2024-08-18T19:03:54 SAST" duration-ms="46255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@6d8792db]" started-at="2024-08-18T15:14:29 SAST" name="verifyIsResultsVisible" finished-at="2024-08-18T15:14:30 SAST" duration-ms="1251" status="PASS">
+        <test-method signature="verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:03:54 SAST" name="verifyIsResultsVisible" finished-at="2024-08-18T19:03:54 SAST" duration-ms="153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIsResultsVisible -->
-        <test-method signature="verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@6d8792db]" started-at="2024-08-18T15:14:30 SAST" name="verifyProductsRetrieval" finished-at="2024-08-18T15:15:36 SAST" duration-ms="65731" status="PASS">
+        <test-method signature="verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:03:54 SAST" name="verifyProductsRetrieval" finished-at="2024-08-18T19:04:10 SAST" duration-ms="15552" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1fbb5da47fc581e5c4c1fb251cde7d59, findChildElement {using=css selector, value=[data-ref='price'] span.currency.currency-module_currency_29IIm, id=f.D4377DD39E692F7E0567CF3B7C725E3C.d.19703ACE16DD52464FF2F7254161C626.e.573}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55701/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fbb5da47fc581e5c4c1fb251cde7d59]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1fbb5da47fc581e5c4c1fb251cde7d59, findChildElement {using=css selector, value=[data-ref='price'] span.currency.currency-module_currency_29IIm, id=f.D4377DD39E692F7E0567CF3B7C725E3C.d.19703ACE16DD52464FF2F7254161C626.e.573}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55701/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fbb5da47fc581e5c4c1fb251cde7d59
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
+at jdk.internal.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$PRcicNpV.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy52.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at wait.WaitUtil.waitForElementToBeVisible(WaitUtil.java:50)
+at components.Product.setPrice(Product.java:181)
+at components.Product.initializeProductDetails(Product.java:93)
+at pages.ProductsPage.lambda$0(ProductsPage.java:80)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
+at pages.ProductsPage.getProducts(ProductsPage.java:80)
+at tests.ProductsPageTest.verifyProductsRetrieval(ProductsPageTest.java:97)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductsRetrieval -->
-        <test-method signature="verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@6d8792db]" started-at="2024-08-18T15:15:36 SAST" name="verifyFilteredProducts" finished-at="2024-08-18T15:15:37 SAST" duration-ms="353" status="PASS">
+        <test-method signature="verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:04:10 SAST" name="verifyFilteredProducts" finished-at="2024-08-18T19:04:12 SAST" duration-ms="2018" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[No products found with a high rating. expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: No products found with a high rating. expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at tests.ProductsPageTest.verifyFilteredProducts(ProductsPageTest.java:120)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFilteredProducts -->
-        <test-method signature="verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@6d8792db]" started-at="2024-08-18T15:15:37 SAST" name="verifyGetProductByPrice" finished-at="2024-08-18T15:15:37 SAST" duration-ms="265" status="PASS">
+        <test-method signature="verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:04:12 SAST" name="verifyGetProductByPrice" finished-at="2024-08-18T19:04:13 SAST" duration-ms="1070" status="FAIL">
+          <exception class="java.util.NoSuchElementException">
+            <message>
+              <![CDATA[No value present]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.util.NoSuchElementException: No value present
+at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+at pages.ProductsPage.getProduct(ProductsPage.java:188)
+at tests.ProductsPageTest.verifyGetProductByPrice(ProductsPageTest.java:137)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.util.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetProductByPrice -->
-        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@6d8792db]" started-at="2024-08-18T15:15:38 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-18T15:17:06 SAST" duration-ms="88029" status="FAIL">
+        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:04:14 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-18T19:06:14 SAST" duration-ms="120475" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -212,7 +545,7 @@ at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
-at tests.ProductsPageTest.verifyProductDetails(ProductsPageTest.java:178)
+at tests.ProductsPageTest.verifyProductDetails(ProductsPageTest.java:179)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -225,29 +558,19 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductDetails -->
-        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@6d8792db]" started-at="2024-08-18T15:17:06 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-18T15:18:38 SAST" duration-ms="91544" status="PASS">
+        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:06:14 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-18T19:09:10 SAST" duration-ms="176012" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -288,7 +611,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductDetails -->
-        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@6d8792db]" started-at="2024-08-18T15:18:38 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-18T15:21:18 SAST" duration-ms="160128" status="PASS">
+        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:09:10 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-18T19:12:03 SAST" duration-ms="172354" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -329,7 +652,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductDetails -->
-        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@6d8792db]" started-at="2024-08-18T15:21:18 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-18T15:22:42 SAST" duration-ms="83971" status="PASS">
+        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:12:03 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-18T19:13:34 SAST" duration-ms="90997" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -370,17 +693,84 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductDetails -->
-        <test-method signature="verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@6d8792db]" started-at="2024-08-18T15:22:42 SAST" name="verifyProductAddToCart" finished-at="2024-08-18T15:25:14 SAST" duration-ms="152392" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:13:34 SAST" name="verifyProductAddToCart" finished-at="2024-08-18T19:14:59 SAST" duration-ms="85244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductAddToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsPageTest@1fc0053e]" started-at="2024-08-18T19:14:59 SAST" name="tearDown" finished-at="2024-08-18T19:15:05 SAST" duration-ms="5702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ProductsPageTest -->
+      <class name="tests.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:03:08 SAST" name="setUp" finished-at="2024-08-18T19:03:24 SAST" duration-ms="16917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTitle()[pri:0, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:03:25 SAST" name="verifyTitle" finished-at="2024-08-18T19:03:25 SAST" duration-ms="561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method signature="testNavigateToRegister()[pri:11, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:03:25 SAST" name="testNavigateToRegister" finished-at="2024-08-18T19:03:35 SAST" duration-ms="9611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigateToRegister -->
+        <test-method signature="testNavigateToLogin()[pri:12, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:03:35 SAST" name="testNavigateToLogin" finished-at="2024-08-18T19:03:44 SAST" duration-ms="8952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigateToLogin -->
+        <test-method signature="testNavigateToCart()[pri:13, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:03:44 SAST" name="testNavigateToCart" finished-at="2024-08-18T19:03:49 SAST" duration-ms="5128" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[Product 'iphone 15' was not added to the cart expected [true] but found [false]]]>
+              <![CDATA[element not interactable
+  (Session info: chrome=127.0.6533.100)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b11684358e973a2b8bcf631e6fc9ec12, clickElement {id=f.5890025590AF9804FA08F62BEB38FCC2.d.A22AF482336BE7F261024EA172CB8790.e.183}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55673}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55673/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (b11684358e973a2b8bcf631e6fc9ec12)] -> css selector: .top-nav.top-nav-module_top-nav_2cmJW]] -> xpath: //button[@data-ref='badge-button']]
+Session ID: b11684358e973a2b8bcf631e6fc9ec12]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Product 'iphone 15' was not added to the cart expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at tests.ProductsPageTest.verifyProductAddToCart(ProductsPageTest.java:209)
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=127.0.6533.100)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b11684358e973a2b8bcf631e6fc9ec12, clickElement {id=f.5890025590AF9804FA08F62BEB38FCC2.d.A22AF482336BE7F261024EA172CB8790.e.183}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55673}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55673/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (b11684358e973a2b8bcf631e6fc9ec12)] -> css selector: .top-nav.top-nav-module_top-nav_2cmJW]] -> xpath: //button[@data-ref='badge-button']]
+Session ID: b11684358e973a2b8bcf631e6fc9ec12
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at jdk.internal.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$dv7CF8Rg.click(Unknown Source)
+at jdk.internal.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy52.click(Unknown Source)
+at components.NavBar.clickNavLink(NavBar.java:92)
+at pages.HomePage.navigateToCart(HomePage.java:183)
+at tests.HomePageTest.testNavigateToCart(HomePageTest.java:106)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -393,245 +783,19 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsPageTest@6d8792db]" started-at="2024-08-18T15:25:14 SAST" name="tearDown" finished-at="2024-08-18T15:25:16 SAST" duration-ms="2403" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.ProductsPageTest -->
-      <class name="tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@25bcd0c7]" started-at="2024-08-18T15:14:03 SAST" name="setUp" finished-at="2024-08-18T15:14:03 SAST" duration-ms="47" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[WebDriver must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: WebDriver must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.decorate(WebDriverDecorator.java:200)
-at tests.HomePageTest.setUp(HomePageTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyTitle()[pri:0, instance:tests.HomePageTest@25bcd0c7]" started-at="2024-08-18T15:14:03 SAST" name="verifyTitle" finished-at="2024-08-18T15:14:03 SAST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[WebDriver must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: WebDriver must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.decorate(WebDriverDecorator.java:200)
-at tests.HomePageTest.setUp(HomePageTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method signature="testNavigateToRegister()[pri:11, instance:tests.HomePageTest@25bcd0c7]" started-at="2024-08-18T15:25:16 SAST" name="testNavigateToRegister" finished-at="2024-08-18T15:25:16 SAST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[WebDriver must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: WebDriver must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.decorate(WebDriverDecorator.java:200)
-at tests.HomePageTest.setUp(HomePageTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNavigateToRegister -->
-        <test-method signature="testNavigateToLogin()[pri:12, instance:tests.HomePageTest@25bcd0c7]" started-at="2024-08-18T15:25:17 SAST" name="testNavigateToLogin" finished-at="2024-08-18T15:25:17 SAST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[WebDriver must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: WebDriver must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.decorate(WebDriverDecorator.java:200)
-at tests.HomePageTest.setUp(HomePageTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNavigateToLogin -->
-        <test-method signature="testNavigateToCart()[pri:13, instance:tests.HomePageTest@25bcd0c7]" started-at="2024-08-18T15:25:17 SAST" name="testNavigateToCart" finished-at="2024-08-18T15:25:17 SAST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[WebDriver must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: WebDriver must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.decorate(WebDriverDecorator.java:200)
-at tests.HomePageTest.setUp(HomePageTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNavigateToCart -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@25bcd0c7]" started-at="2024-08-18T15:25:18 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T15:25:18 SAST" duration-ms="0" status="SKIP">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:03:50 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:04:11 SAST" duration-ms="21239" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -649,48 +813,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[WebDriver must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: WebDriver must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.decorate(WebDriverDecorator.java:200)
-at tests.HomePageTest.setUp(HomePageTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@25bcd0c7]" started-at="2024-08-18T15:25:19 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T15:25:19 SAST" duration-ms="0" status="SKIP">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:04:11 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:05:14 SAST" duration-ms="62912" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -708,48 +834,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[WebDriver must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: WebDriver must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.decorate(WebDriverDecorator.java:200)
-at tests.HomePageTest.setUp(HomePageTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@25bcd0c7]" started-at="2024-08-18T15:25:19 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T15:25:19 SAST" duration-ms="0" status="SKIP">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:05:14 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:05:32 SAST" duration-ms="17960" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -767,48 +855,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[WebDriver must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: WebDriver must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.decorate(WebDriverDecorator.java:200)
-at tests.HomePageTest.setUp(HomePageTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@25bcd0c7]" started-at="2024-08-18T15:25:19 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T15:25:19 SAST" duration-ms="0" status="SKIP">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:05:32 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:05:50 SAST" duration-ms="18200" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -826,48 +876,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[WebDriver must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: WebDriver must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.decorate(WebDriverDecorator.java:200)
-at tests.HomePageTest.setUp(HomePageTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@25bcd0c7]" started-at="2024-08-18T15:25:19 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T15:25:19 SAST" duration-ms="0" status="SKIP">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:05:50 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:06:04 SAST" duration-ms="14319" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -885,48 +897,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[WebDriver must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: WebDriver must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.decorate(WebDriverDecorator.java:200)
-at tests.HomePageTest.setUp(HomePageTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@25bcd0c7]" started-at="2024-08-18T15:25:19 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T15:25:19 SAST" duration-ms="0" status="SKIP">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:06:04 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:06:47 SAST" duration-ms="42371" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -944,48 +918,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[WebDriver must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: WebDriver must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.decorate(WebDriverDecorator.java:200)
-at tests.HomePageTest.setUp(HomePageTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@25bcd0c7]" started-at="2024-08-18T15:25:19 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T15:25:19 SAST" duration-ms="0" status="SKIP">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:06:47 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:08:34 SAST" duration-ms="107543" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1003,48 +939,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[WebDriver must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: WebDriver must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.decorate(WebDriverDecorator.java:200)
-at tests.HomePageTest.setUp(HomePageTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@25bcd0c7]" started-at="2024-08-18T15:25:19 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T15:25:19 SAST" duration-ms="0" status="SKIP">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:08:34 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:09:06 SAST" duration-ms="31244" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1062,48 +960,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[WebDriver must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: WebDriver must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.decorate(WebDriverDecorator.java:200)
-at tests.HomePageTest.setUp(HomePageTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@25bcd0c7]" started-at="2024-08-18T15:25:19 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T15:25:19 SAST" duration-ms="0" status="SKIP">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:09:06 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:09:36 SAST" duration-ms="30390" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1121,48 +981,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[WebDriver must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: WebDriver must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.decorate(WebDriverDecorator.java:200)
-at tests.HomePageTest.setUp(HomePageTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@25bcd0c7]" started-at="2024-08-18T15:25:19 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T15:25:19 SAST" duration-ms="0" status="SKIP">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:09:36 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-18T19:10:05 SAST" duration-ms="28707" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1180,58 +1002,20 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[WebDriver must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: WebDriver must be set
-at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.decorate(WebDriverDecorator.java:200)
-at tests.HomePageTest.setUp(HomePageTest.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@25bcd0c7]" started-at="2024-08-18T15:25:20 SAST" name="tearDown" finished-at="2024-08-18T15:25:20 SAST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@3c9168dc]" started-at="2024-08-18T19:10:05 SAST" name="tearDown" finished-at="2024-08-18T19:10:25 SAST" duration-ms="20171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.HomePageTest -->
       <class name="tests.RegistrationPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegistrationPageTest@64bc21ac]" started-at="2024-08-18T15:26:48 SAST" name="setUp" finished-at="2024-08-18T15:26:59 SAST" duration-ms="10546" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:03:08 SAST" name="setUp" finished-at="2024-08-18T19:03:29 SAST" duration-ms="21734" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@64bc21ac]" started-at="2024-08-18T15:27:04 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T15:27:08 SAST" duration-ms="3846" status="FAIL">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:03:35 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:04:09 SAST" duration-ms="34067" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1274,92 +1058,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <input name="first_name" type="text" id="register_customer_first_name" autocomplete="on" value=""> is not clickable at point (768, 96). Other element would receive the click: <div class="ab-page-blocker" style="background-color: rgba(51, 51, 51, 0.75);"></div>
-  (Session info: chrome=127.0.6533.100)
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cc924ea9744d214f63cb53d6b2a98fc8, clickElement {id=f.C757F3418D6193F3EB4BEB43E5307B6B.d.014E6DA3D7D3C39F120BAC21FF9C2E52.e.141}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56919}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56919/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (cc924ea9744d214f63cb53d6b2a98fc8)] -> xpath: //input[@id='register_customer_first_name']]
-Session ID: cc924ea9744d214f63cb53d6b2a98fc8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input name="first_name" type="text" id="register_customer_first_name" autocomplete="on" value=""> is not clickable at point (768, 96). Other element would receive the click: <div class="ab-page-blocker" style="background-color: rgba(51, 51, 51, 0.75);"></div>
-  (Session info: chrome=127.0.6533.100)
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cc924ea9744d214f63cb53d6b2a98fc8, clickElement {id=f.C757F3418D6193F3EB4BEB43E5307B6B.d.014E6DA3D7D3C39F120BAC21FF9C2E52.e.141}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56919}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56919/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (cc924ea9744d214f63cb53d6b2a98fc8)] -> xpath: //input[@id='register_customer_first_name']]
-Session ID: cc924ea9744d214f63cb53d6b2a98fc8
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at jdk.internal.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
-at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
-at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$8JV9BhgN.click(Unknown Source)
-at jdk.internal.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy50.click(Unknown Source)
-at utilities.ActionUtil.scrollToAndClick(ActionUtil.java:145)
-at pages.RegistrationPage.typeFirstname(RegistrationPage.java:78)
-at tests.RegistrationPageTest.verifyRegistration(RegistrationPageTest.java:88)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@64bc21ac]" started-at="2024-08-18T15:27:08 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T15:28:04 SAST" duration-ms="55828" status="FAIL">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:04:09 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:05:00 SAST" duration-ms="50366" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1402,51 +1104,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[OTP not sent. expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: OTP not sent. expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at tests.RegistrationPageTest.verifyRegistration(RegistrationPageTest.java:96)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@64bc21ac]" started-at="2024-08-18T15:28:04 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T15:28:35 SAST" duration-ms="31197" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:05:00 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:05:31 SAST" duration-ms="30869" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1490,7 +1151,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@64bc21ac]" started-at="2024-08-18T15:28:35 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T15:29:05 SAST" duration-ms="30071" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:05:31 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:06:01 SAST" duration-ms="30213" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1534,7 +1195,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@64bc21ac]" started-at="2024-08-18T15:29:05 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T15:29:35 SAST" duration-ms="29660" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:06:01 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:06:30 SAST" duration-ms="28865" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1580,7 +1241,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@64bc21ac]" started-at="2024-08-18T15:29:35 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T15:30:04 SAST" duration-ms="29162" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:06:30 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:06:58 SAST" duration-ms="28862" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1626,7 +1287,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@64bc21ac]" started-at="2024-08-18T15:30:04 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T15:30:34 SAST" duration-ms="30702" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:06:58 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:07:30 SAST" duration-ms="31454" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1672,7 +1333,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@64bc21ac]" started-at="2024-08-18T15:30:34 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T15:31:04 SAST" duration-ms="30039" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:07:30 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:07:59 SAST" duration-ms="28925" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1718,7 +1379,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@64bc21ac]" started-at="2024-08-18T15:31:04 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T15:31:40 SAST" duration-ms="35293" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:07:59 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:08:20 SAST" duration-ms="21038" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1761,10 +1422,81 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='register_customer_email']"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6cf23ae08561db27f803a8bfce382e27, findElement {value=//input[@id='register_customer_email'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55729}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55729/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6cf23ae08561db27f803a8bfce382e27]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='register_customer_email']"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6cf23ae08561db27f803a8bfce382e27, findElement {value=//input[@id='register_customer_email'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55729}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55729/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6cf23ae08561db27f803a8bfce382e27
+at jdk.internal.reflect.GeneratedConstructorAccessor47.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$qbgxZnX8.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy52.clear(Unknown Source)
+at pages.BasePage.sendKeys(BasePage.java:138)
+at pages.RegistrationPage.typeEmail(RegistrationPage.java:124)
+at tests.RegistrationPageTest.verifyRegistration(RegistrationPageTest.java:90)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@64bc21ac]" started-at="2024-08-18T15:31:40 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T15:32:10 SAST" duration-ms="30428" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:08:20 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:08:38 SAST" duration-ms="18512" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1807,10 +1539,82 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='register_customer_first_name']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='register_customer_first_name']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at wait.WaitUtil.waitForElementToBeVisible(WaitUtil.java:50)
+at pages.BasePage.sendKeys(BasePage.java:136)
+at pages.RegistrationPage.typeFirstname(RegistrationPage.java:84)
+at tests.RegistrationPageTest.verifyRegistration(RegistrationPageTest.java:90)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='register_customer_first_name']"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6cf23ae08561db27f803a8bfce382e27, findElement {value=//input[@id='register_customer_first_name'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55729}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55729/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6cf23ae08561db27f803a8bfce382e27
+at jdk.internal.reflect.GeneratedConstructorAccessor47.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$qbgxZnX8.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy52.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@64bc21ac]" started-at="2024-08-18T15:32:10 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T15:32:44 SAST" duration-ms="33478" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:08:38 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-18T19:08:56 SAST" duration-ms="17924" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1853,20 +1657,92 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='register_customer_first_name']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='register_customer_first_name']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at wait.WaitUtil.waitForElementToBeVisible(WaitUtil.java:50)
+at pages.BasePage.sendKeys(BasePage.java:136)
+at pages.RegistrationPage.typeFirstname(RegistrationPage.java:84)
+at tests.RegistrationPageTest.verifyRegistration(RegistrationPageTest.java:90)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='register_customer_first_name']"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6cf23ae08561db27f803a8bfce382e27, findElement {value=//input[@id='register_customer_first_name'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55729}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55729/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6cf23ae08561db27f803a8bfce382e27
+at jdk.internal.reflect.GeneratedConstructorAccessor47.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$qbgxZnX8.findElement(Unknown Source)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy52.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationPageTest@64bc21ac]" started-at="2024-08-18T15:32:44 SAST" name="tearDown" finished-at="2024-08-18T15:32:45 SAST" duration-ms="1315" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationPageTest@290b1b2e]" started-at="2024-08-18T19:08:56 SAST" name="tearDown" finished-at="2024-08-18T19:08:57 SAST" duration-ms="765" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.RegistrationPageTest -->
       <class name="tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginPageTest@493dfb8e]" started-at="2024-08-18T15:25:20 SAST" name="setUp" finished-at="2024-08-18T15:25:30 SAST" duration-ms="9986" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginPageTest@47874b25]" started-at="2024-08-18T19:03:08 SAST" name="setUp" finished-at="2024-08-18T19:03:29 SAST" duration-ms="21149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@493dfb8e]" started-at="2024-08-18T15:25:30 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T15:25:39 SAST" duration-ms="9379" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@47874b25]" started-at="2024-08-18T19:03:31 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T19:03:43 SAST" duration-ms="11819" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1897,7 +1773,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@493dfb8e]" started-at="2024-08-18T15:25:39 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T15:25:51 SAST" duration-ms="11300" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@47874b25]" started-at="2024-08-18T19:03:43 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T19:03:53 SAST" duration-ms="10750" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1926,7 +1802,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@493dfb8e]" started-at="2024-08-18T15:25:51 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T15:26:18 SAST" duration-ms="27300" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@47874b25]" started-at="2024-08-18T19:03:53 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T19:04:20 SAST" duration-ms="26760" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1957,7 +1833,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@493dfb8e]" started-at="2024-08-18T15:26:18 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T15:26:47 SAST" duration-ms="28614" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@47874b25]" started-at="2024-08-18T19:04:20 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-18T19:04:46 SAST" duration-ms="25797" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1988,7 +1864,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@493dfb8e]" started-at="2024-08-18T15:26:47 SAST" name="tearDown" finished-at="2024-08-18T15:26:48 SAST" duration-ms="1323" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@47874b25]" started-at="2024-08-18T19:04:46 SAST" name="tearDown" finished-at="2024-08-18T19:04:47 SAST" duration-ms="808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

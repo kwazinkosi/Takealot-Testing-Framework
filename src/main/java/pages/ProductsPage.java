@@ -53,10 +53,13 @@ public class ProductsPage extends BasePage {
 	}
 
 	public void setToggle() {
-		
-		if(isVisible(toggle)) {
-			if(toggle.getAttribute("class").contains("toggle-module_active_cSV_W"))
-				toggle.click();
+		try {
+			if(isVisible(toggle)) {
+				if(toggle.getAttribute("class").contains("toggle-module_active_cSV_W"))
+					toggle.click();
+			}
+		}catch (Exception e) {
+			
 		}
 	}
 	/**

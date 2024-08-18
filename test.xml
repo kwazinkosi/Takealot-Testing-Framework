@@ -8,7 +8,7 @@
         <listener class-name="utilities.TestExecutionListener"/>
     </listeners>
 
-    <test name="Takealot Automation Tests" thread-count="4" parallel="tests">
+    <test name="Takealot Automation Tests" thread-count="5" parallel="classes">
         <classes>
             <!-- Specify your test classes here -->
             <class name="tests.HomePageTest"/>
@@ -16,14 +16,6 @@
             <class name="tests.RegistrationPageTest"/>
             <class name="tests.LoginPageTest"/>
             <class name="tests.CartPageTest"/>
-            
-            <!--No succesful checkout implentation because that requires valid login details-->
-            <!--<class name="tests.CheckoutPageTest">
-				<methods>
-					<exclude name="verifyCheckout"/>
-				</methods>
-			</class>-->
-			
         </classes>
     </test>
 </suite>

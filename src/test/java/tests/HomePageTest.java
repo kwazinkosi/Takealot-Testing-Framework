@@ -22,7 +22,7 @@ import utilities.DriverFactory;
 /**
  * Test class for verifying various functionalities on the HomePage.
  */
-public class HomePageTest {
+public class HomePageTest extends BaseTest {
 
     private WebDriver driver;
     private HomePage homePage;
@@ -34,6 +34,7 @@ public class HomePageTest {
     @BeforeClass
     public void setUp() {
 
+    	driver = DriverFactory.initDriver();
         // Apply the WebDriverListener to capture events during test execution
         WebDriverListener listener = new EventListener();
         driver = new EventFiringDecorator<>(listener).decorate(driver);
@@ -47,11 +48,6 @@ public class HomePageTest {
         LoggingManager.info("\n\n*************** STARTING HOMEPAGE TESTS **************");
     }
 
-    @BeforeMethod
-    public void setup() {
-        // Optionally, you can set the driver again before each test method
-    	BasePage.reporter.setDriver(DriverFactory.getDriver());
-    }
     /**
      * Test to verify that the HomePage title matches the expected value.
      */

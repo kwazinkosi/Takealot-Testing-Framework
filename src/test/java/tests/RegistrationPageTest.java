@@ -25,7 +25,7 @@ import utilities.DriverFactory;
  * data-driven testing with TestNG's DataProvider to run multiple test scenarios
  * for the registration functionality.
  */
-public class RegistrationPageTest {
+public class RegistrationPageTest extends BaseTest{
 
 	private WebDriver driver;
 	private HomePage homePage;
@@ -57,11 +57,6 @@ public class RegistrationPageTest {
 		LoggingManager.info("\n\n*************** STARTING REGISTRATION TESTS **************");
 	}
 
-    @BeforeMethod
-    public void setup() {
-        
-    	BasePage.reporter.setDriver(DriverFactory.getDriver());
-    }
 	
 	/**
 	 * Test method for verifying the registration functionality. This method is
@@ -122,8 +117,7 @@ public class RegistrationPageTest {
 	 */
 	@AfterClass
 	public void tearDown() {
-		if (driver != null) {
-			driver.quit();
-		}
+		DriverFactory.quitDriver(); // Quit the WebDriver instance
+        LoggingManager.info("Driver quit successfully.");
 	}
 }

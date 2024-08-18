@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 18 07:41:49 SAST 2024</td>
+<td>Started on:</td><td>Sun Aug 18 17:44:48 SAST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>101 seconds (101306 ms)</td>
+<tr><td>Total time:</td><td>596 seconds (596106 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,89 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Apple iPhone 15 Pro Max 256GB, Apple, 27595.0, 4.8, 40.0, smartphones, yes</td>
+<td><div><pre>java.lang.AssertionError: Product price does not match expected [27595.00] but found [27084.00]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at tests.ProductsPageTest.verifyProductDetails(ProductsPageTest.java:186)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace218181144", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace218181144'><pre>java.lang.AssertionError: Product price does not match expected [27595.00] but found [27084.00]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at tests.ProductsPageTest.verifyProductDetails(ProductsPageTest.java:186)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>80</td>
+<td>tests.ProductsPageTest@209775a9</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,25 +159,45 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC004, john.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps Lock is not enabled., yes</td>
+<td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Apex - Marine Luxury Men's Leather Watch, Apex, 690.0, 5.0, 4.0, Watches and accessories, yes</td>
 <td></td>
-<td>27</td>
-<td>tests.LoginPageTest@3a4e343</td></tr>
+<td>77</td>
+<td>tests.ProductsPageTest@209775a9</td></tr>
 <tr>
-<td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC002, john.doe@gmail.com, null, Please enter a password, yes</td>
+<td title='tests.ProductsPageTest.verifyFilteredProducts()'><b>verifyFilteredProducts</b><br>Test class: tests.ProductsPageTest</td>
 <td></td>
-<td>11</td>
-<td>tests.LoginPageTest@3a4e343</td></tr>
+<td>0</td>
+<td>tests.ProductsPageTest@209775a9</td></tr>
 <tr>
-<td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC003, jon.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps Lock is not enabled., yes</td>
+<td title='tests.ProductsPageTest.verifyIsResultsVisible()'><b>verifyIsResultsVisible</b><br>Test class: tests.ProductsPageTest</td>
 <td></td>
-<td>26</td>
-<td>tests.LoginPageTest@3a4e343</td></tr>
+<td>0</td>
+<td>tests.ProductsPageTest@209775a9</td></tr>
 <tr>
-<td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC001, , P@ssw0rd, Please fill in your email address, yes</td>
+<td title='tests.ProductsPageTest.verifyProductAddToCart()'><b>verifyProductAddToCart</b><br>Test class: tests.ProductsPageTest</td>
 <td></td>
-<td>11</td>
-<td>tests.LoginPageTest@3a4e343</td></tr>
+<td>84</td>
+<td>tests.ProductsPageTest@209775a9</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyGetProductByPrice()'><b>verifyGetProductByPrice</b><br>Test class: tests.ProductsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductsPageTest@209775a9</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyProductsRetrieval()'><b>verifyProductsRetrieval</b><br>Test class: tests.ProductsPageTest</td>
+<td></td>
+<td>69</td>
+<td>tests.ProductsPageTest@209775a9</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Fujifilm Instax Mini 12 Camera + Case and Film, Fujifilm Instax, 1999.0, 4.8, 120.0, Cameras, yes</td>
+<td></td>
+<td>161</td>
+<td>tests.ProductsPageTest@209775a9</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Fender Squier SA-105CE Acoustic Electric Guitar, Squier, 3495.0, 4.2, 4.0, Music, yes</td>
+<td></td>
+<td>86</td>
+<td>tests.ProductsPageTest@209775a9</td></tr>
 </table><p>
 </body>
 </html>

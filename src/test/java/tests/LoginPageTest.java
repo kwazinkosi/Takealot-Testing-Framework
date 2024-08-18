@@ -23,7 +23,7 @@ import utilities.DriverFactory;
  * Test class for verifying the login functionality. This class contains
  * data-driven tests that verify successful and unsuccessful login attempts.
  */
-public class LoginPageTest {
+public class LoginPageTest extends BaseTest {
 
 	private WebDriver driver;
 	private HomePage homePage;
@@ -56,12 +56,6 @@ public class LoginPageTest {
 		LoggingManager.info("\n\n*************** STARTING LOGIN TESTS **************");
 	}
 
-
-    @BeforeMethod
-    public void setup() {
-        
-    	BasePage.reporter.setDriver(DriverFactory.getDriver());
-    }
     
 	/**
 	 * Test to verify the login functionality. This test is data-driven and verifies
@@ -108,9 +102,7 @@ public class LoginPageTest {
 	 */
 	@AfterClass
 	public void tearDown() {
-		if (driver != null) {
-			driver.quit();
-			LoggingManager.info("Driver quit successfully.");
-		}
+		DriverFactory.quitDriver(); // Quit the WebDriver instance
+        LoggingManager.info("Driver quit successfully.");
 	}
 }

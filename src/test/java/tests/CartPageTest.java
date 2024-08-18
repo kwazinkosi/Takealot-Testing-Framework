@@ -25,7 +25,7 @@ import pages.ProductsPage;
 import utilities.EventListener;
 import utilities.DriverFactory;
 
-public class CartPageTest {
+public class CartPageTest extends BaseTest {
 
     private WebDriver driver;
     private ProductsPage productsPage;
@@ -51,11 +51,7 @@ public class CartPageTest {
         LoggingManager.info(" \n\n\n*************** STARTING Cart TESTS **************");
     }
 
-    @BeforeMethod
-    public void setup() {
-        
-    	BasePage.reporter.setDriver(DriverFactory.getDriver());
-    }
+ 
     /**
      * Verifies that the cart is empty by checking the cart badge count and the cart page's state.
      */
@@ -125,7 +121,7 @@ public class CartPageTest {
     /**
      * Verifies the total price of the items in the cart.
      */
-    @Test(priority = 20, groups = {"cart"})
+    @Test(priority = 20, groups = {"cart"}, dependsOnMethods ={"verifyItemDetailsInCart"})
     public void verifyTotalCartPrice() {
         
     	LoggingManager.info("============ Starting Total Cart Price Verification =============");
@@ -142,7 +138,7 @@ public class CartPageTest {
     /**
      * Verifies the removal of an item from the cart.
      */
-    @Test(priority = 21, groups = {"cart"})
+    @Test(priority = 21, groups = {"cart"}, dependsOnMethods ={"verifyItemDetailsInCart"})
     public void verifyRemovalOfItemFromCart() {
 
     	LoggingManager.info("============ Starting Removal of Item from Cart Verification =============");
@@ -158,7 +154,7 @@ public class CartPageTest {
     /**
      * Verifies moving an item to the wishlist.
      */
-    @Test(priority = 22, groups = {"cart", "wishlist"})
+    @Test(priority = 22, groups = {"cart", "wishlist"}, dependsOnMethods ={"verifyItemDetailsInCart"})
     public void verifyMoveItemToWishlist() {
         
     	LoggingManager.info("============ Starting Move Item to Wishlist Verification =============");
@@ -174,8 +170,7 @@ public class CartPageTest {
 
     @AfterClass
     public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
+    	DriverFactory.quitDriver(); // Quit the WebDriver instance
+        LoggingManager.info("Driver quit successfully.");
     }
 }
