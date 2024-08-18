@@ -13,7 +13,7 @@ public class DataProviderUtil {
     private static final String DATA_PATH = System.getProperty("user.dir") + File.separator + "src" + File.separator
             + "test" + File.separator + "resources" + File.separator + "testdata.xlsx";
     private static ExcelReader reader;
-
+ 
     // Initialize the ExcelReader once in the constructor
     public DataProviderUtil() {
         reader = new ExcelReader(DATA_PATH);
@@ -124,5 +124,11 @@ public class DataProviderUtil {
     public String getValue(String sheetName, String key) {
         // Use the existing getValue method from ExcelReader
         return reader.getValue(sheetName, key);
+    }
+    
+    public static String getExecutionStatus(String testname) {
+        // Use the existing getValue method from ExcelReader
+    	String sheetName = "execution";
+        return reader.getValue(sheetName, testname);
     }
 }

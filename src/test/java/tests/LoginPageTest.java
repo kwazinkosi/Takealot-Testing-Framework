@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import config.ConfigReader;
@@ -55,6 +56,13 @@ public class LoginPageTest {
 		LoggingManager.info("\n\n*************** STARTING LOGIN TESTS **************");
 	}
 
+
+    @BeforeMethod
+    public void setup() {
+        
+    	BasePage.reporter.setDriver(DriverFactory.getDriver());
+    }
+    
 	/**
 	 * Test to verify the login functionality. This test is data-driven and verifies
 	 * both successful and unsuccessful login attempts.

@@ -6,6 +6,7 @@ import org.openqa.selenium.support.events.WebDriverListener;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import config.ConfigReader;
 import logging.LoggingManager;
@@ -46,6 +47,11 @@ public class HomePageTest {
         LoggingManager.info("\n\n*************** STARTING HOMEPAGE TESTS **************");
     }
 
+    @BeforeMethod
+    public void setup() {
+        // Optionally, you can set the driver again before each test method
+    	BasePage.reporter.setDriver(DriverFactory.getDriver());
+    }
     /**
      * Test to verify that the HomePage title matches the expected value.
      */

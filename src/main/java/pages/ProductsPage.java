@@ -302,7 +302,7 @@ public class ProductsPage extends BasePage {
 	        dropdown.click();
 	        List<WebElement> options = waitUtil.waitFor(ExpectedConditions.visibilityOfAllElementsLocatedBy(product.optionsListBy), normalWaitTime);
 	        if (!options.isEmpty()) {
-	            WebElement selectedOption = options.get(1); //index of product color set to 1
+	            WebElement selectedOption = options.get(0); //index of product color set to 0
 	            try{
 	            	selectedOption.click();
 	            }catch(Exception e){

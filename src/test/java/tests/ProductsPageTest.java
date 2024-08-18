@@ -12,6 +12,7 @@ import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import components.Product;
@@ -67,6 +68,13 @@ public class ProductsPageTest {
         LoggingManager.info("\n\n*************** STARTING PRODUCTS TESTS **************");
     }
 
+
+    @BeforeMethod
+    public void setup() {
+        
+    	BasePage.reporter.setDriver(DriverFactory.getDriver());
+    }
+    
     /**
      * Test to verify that product results are visible on the page.
      * This test checks the visibility of the product results container.

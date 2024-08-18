@@ -5,6 +5,7 @@
         <!-- Register listeners for setup and reporting -->
         <listener class-name="utilities.TestSetup"/>
         <listener class-name="reporting.ReportManager"/>
+        <listener class-name="utilities.TestExecutionListener"/>
     </listeners>
 
     <test name="Takealot Automation Tests" thread-count="4" parallel="tests">

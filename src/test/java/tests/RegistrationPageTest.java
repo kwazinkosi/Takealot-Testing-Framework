@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import config.ConfigReader;
@@ -56,6 +57,12 @@ public class RegistrationPageTest {
 		LoggingManager.info("\n\n*************** STARTING REGISTRATION TESTS **************");
 	}
 
+    @BeforeMethod
+    public void setup() {
+        
+    	BasePage.reporter.setDriver(DriverFactory.getDriver());
+    }
+	
 	/**
 	 * Test method for verifying the registration functionality. This method is
 	 * data-driven and runs multiple test scenarios based on the provided data.

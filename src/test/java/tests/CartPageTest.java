@@ -11,6 +11,7 @@ import org.openqa.selenium.support.events.WebDriverListener;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import components.CartItem;
@@ -50,6 +51,11 @@ public class CartPageTest {
         LoggingManager.info(" \n\n\n*************** STARTING Cart TESTS **************");
     }
 
+    @BeforeMethod
+    public void setup() {
+        
+    	BasePage.reporter.setDriver(DriverFactory.getDriver());
+    }
     /**
      * Verifies that the cart is empty by checking the cart badge count and the cart page's state.
      */
