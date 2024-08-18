@@ -53,7 +53,7 @@ public class CartPageTest {
     /**
      * Verifies that the cart is empty by checking the cart badge count and the cart page's state.
      */
-    @Test(priority = 0)
+    @Test(priority = 17, groups = {"cart"})
     public void verifyCartIsEmpty() {
         
     	LoggingManager.info("============ Starting Cart Empty Verification =============");
@@ -66,7 +66,7 @@ public class CartPageTest {
     /**
      * Verifies that the cart is not empty after adding an item.
      */
-    @Test(priority = 1)
+    @Test(priority = 18, groups = {"cart"})
     public void verifyCartNotEmpty() {
        
     	LoggingManager.info("============ Starting Cart Not Empty Verification =============");
@@ -88,8 +88,8 @@ public class CartPageTest {
     /**
      * Verifies the details of items in the cart.
      */
-    @Test(priority = 2)
-    public void verifyItemDetailsInCart() {
+    @Test(priority = 19, groups = {"cart"})
+    public void verifyItemDetailsInCart() {//verifyCartIsEmpty(), verifyCartNotEmpty(), verifyItemDetailsInCart() 
     	
         LoggingManager.info("============ Starting Item Details Verification in Cart =============");
         String searchProduct1 = cartPage.dataUtil.getValue("common info", "search_product-1");
@@ -119,7 +119,7 @@ public class CartPageTest {
     /**
      * Verifies the total price of the items in the cart.
      */
-    @Test(priority = 3)
+    @Test(priority = 20, groups = {"cart"})
     public void verifyTotalCartPrice() {
         
     	LoggingManager.info("============ Starting Total Cart Price Verification =============");
@@ -136,7 +136,7 @@ public class CartPageTest {
     /**
      * Verifies the removal of an item from the cart.
      */
-    @Test(priority = 4)
+    @Test(priority = 21, groups = {"cart"})
     public void verifyRemovalOfItemFromCart() {
 
     	LoggingManager.info("============ Starting Removal of Item from Cart Verification =============");
@@ -152,7 +152,7 @@ public class CartPageTest {
     /**
      * Verifies moving an item to the wishlist.
      */
-    @Test(priority = 5)
+    @Test(priority = 22, groups = {"cart", "wishlist"})
     public void verifyMoveItemToWishlist() {
         
     	LoggingManager.info("============ Starting Move Item to Wishlist Verification =============");

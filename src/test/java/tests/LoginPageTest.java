@@ -66,7 +66,7 @@ public class LoginPageTest {
 	 *                          error message for failure).
 	 * @param executionRequired Indicates whether this test case should be executed.
 	 */
-	@Test(dataProvider = "loginData", dataProviderClass = DataProviderUtil.class)
+	@Test(priority = 15, dataProvider = "loginData", dataProviderClass = DataProviderUtil.class, groups = {"login", "verification"})
 	public void verifyLogin(String caseNum, String email, String password, String expectedResult,
 			String executionRequired) {
 

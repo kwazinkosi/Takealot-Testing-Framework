@@ -69,7 +69,7 @@ public class RegistrationPageTest {
 	 * @param expectedResult    The expected result of the test (e.g., "Success" or an error message).
 	 * @param executionRequired Indicates whether this test case should be executed.
 	 */
-	@Test(dataProvider = "registrationData", dataProviderClass = DataProviderUtil.class)
+	@Test(priority = 16, dataProvider = "registrationData", dataProviderClass = DataProviderUtil.class, groups = {"registration", "verification"})
 	public void verifyRegistration(String caseNum, String firstName, String lastName, String email, String password,
 			String mobileNumber, String expectedResult, String executionRequired) {
 

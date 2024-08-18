@@ -49,7 +49,7 @@ public class HomePageTest {
     /**
      * Test to verify that the HomePage title matches the expected value.
      */
-    @Test(priority = 0)
+    @Test(priority = 0, groups = {"homepage", "navigation"})
     public void verifyTitle() {
         LoggingManager.info("=========== Testing home page title. ===========");
         
@@ -64,7 +64,7 @@ public class HomePageTest {
     /**
      * Test to verify navigation to the Registration page.
      */
-    @Test(priority = 1)
+    @Test(priority = 11, groups = {"homepage", "navigation", "registration"})
     public void testNavigateToRegister() {
         LoggingManager.info("=========== Testing navigation to registration. ===========");
         
@@ -80,7 +80,7 @@ public class HomePageTest {
     /**
      * Test to verify navigation to the Login page.
      */
-    @Test(priority = 2)
+    @Test(priority = 12, groups = {"homepage", "navigation", "login"})
     public void testNavigateToLogin() {
         LoggingManager.info("=========== Testing navigation to login. ===========");
         
@@ -96,7 +96,7 @@ public class HomePageTest {
     /**
      * Test to verify navigation to the Cart page.
      */
-    @Test(priority = 3)
+    @Test(priority = 13, groups = {"homepage", "navigation", "cart"})
     public void testNavigateToCart() {
         LoggingManager.info("=========== Testing navigation to cart. ===========");
         
@@ -118,7 +118,7 @@ public class HomePageTest {
      * @param searchValue  The value to search for.
      * @param expected  The expected outcome of the search ("results-page" or error message).
      */
-    @Test(priority = 4, dataProvider = "searchData", dataProviderClass = DataProviderUtil.class)
+    @Test(priority = 14, dataProvider = "searchData", dataProviderClass = DataProviderUtil.class, groups ={"homepage", "search"})
     public void verifySearchFunctionality(String queryName, String searchValue, String expected) {
         LoggingManager.info("=========== Testing search functionality with query: " + searchValue + " ===========");
         

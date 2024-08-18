@@ -71,7 +71,7 @@ public class ProductsPageTest {
      * Test to verify that product results are visible on the page.
      * This test checks the visibility of the product results container.
      */
-    @Test(priority = 5)
+    @Test(priority = 5, groups = {"products", "search"})
     public void verifyIsResultsVisible() {
         LoggingManager.info("============== Starting test to check if product results are visible. ==============");
 
@@ -88,7 +88,7 @@ public class ProductsPageTest {
      * Test to verify the retrieval of products.
      * This test ensures that the list of products is not empty.
      */
-    @Test(priority = 6)
+    @Test(priority = 6, groups = {"products", "retrieval"})
     public void verifyProductsRetrieval() {
         LoggingManager.info("============== Starting test for product retrieval. ==============");
 
@@ -107,7 +107,7 @@ public class ProductsPageTest {
      * Test to verify the filtering of products.
      * This test filters products based on a rating and name criteria.
      */
-    @Test(priority = 7)
+    @Test(priority = 7, groups = {"products", "filtering"})
     public void verifyFilteredProducts() {
         LoggingManager.info("============== Starting test for filtered products. ==============");
 
@@ -125,7 +125,7 @@ public class ProductsPageTest {
      * Test to verify the retrieval of a product by price.
      * This test uses a predicate to find a product with a specific price.
      */
-    @Test(priority = 8)
+    @Test(priority = 8, groups = {"products", "price"})
     public void verifyGetProductByPrice() {
         LoggingManager.info("============== Starting test to get a product by price. ==============");
 
@@ -155,7 +155,7 @@ public class ProductsPageTest {
      * @param category            The expected category of the product (optional).
      * @param executionRequired   Indicates whether this test case should be executed.
      */
-    @Test(priority = 9, dataProvider = "productSearchData", dataProviderClass = DataProviderUtil.class)
+    @Test(priority = 9, dataProvider = "productSearchData", dataProviderClass = DataProviderUtil.class, groups = {"products", "details"})
     public void verifyProductDetails(String productName, String vendorName, String price, String rating, String reviews, String category, String executionRequired) {
         LoggingManager.info("============= Starting test for verifyProductDetails ================");
 
@@ -188,7 +188,7 @@ public class ProductsPageTest {
      * Test to verify that a product can be added to the cart.
      * This test searches for a product by name and price range, then adds it to the cart.
      */
-    @Test(priority = 10)
+    @Test(priority = 10, groups = {"products", "cart"})
     public void verifyProductAddToCart() {
         LoggingManager.info("============= Starting test to verify adding a product to the cart ===============");
 
