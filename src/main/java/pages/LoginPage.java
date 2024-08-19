@@ -17,10 +17,10 @@ import logging.LoggingManager;
  */
 public class LoginPage extends BasePage {
 
-    @FindBy(name = "password")
+    @FindBy(xpath = "//input[@id='customer_login_password']")
     private WebElement passwordInput;
 
-    @FindBy(name = "email")
+    @FindBy(xpath = "//input[@id='customer_login_email']")
     private WebElement emailInput;
 
     @FindBy(xpath = "//button[normalize-space()='Login']")
@@ -61,7 +61,7 @@ public class LoginPage extends BasePage {
         }
 
         actionUtil.scrollToElement(emailInput);
-        waitUtil.waitFor(driver -> isVisible(emailInput), fastWaitTime); // Wait for the email field to be visible
+        waitUtil.waitFor(driver -> isVisible(emailInput), normalWaitTime); // Wait for the email field to be visible
         sendKeys(emailInput, email);
 
         return this;
@@ -81,7 +81,7 @@ public class LoginPage extends BasePage {
         }
 
         actionUtil.scrollToElement(passwordInput);
-        waitUtil.waitFor(driver -> isVisible(passwordInput), fastWaitTime); // Wait for the password field to be visible
+        waitUtil.waitFor(driver -> isVisible(passwordInput), normalWaitTime); // Wait for the password field to be visible
         sendKeys(passwordInput, password);
 
         return this;
@@ -132,7 +132,7 @@ public class LoginPage extends BasePage {
     private boolean isErrorAlertDisplayed() {
         try {
             LoggingManager.info("Checking if error alert is visible");
-            waitUtil.waitForElementToBeVisible(incorrectEmailPasswordAlert, fastWaitTime);
+            waitUtil.waitForElementToBeVisible(incorrectEmailPasswordAlert, normalWaitTime);
             return true;
         } catch (TimeoutException e) {
             LoggingManager.info("Error alert not visible.");

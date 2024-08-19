@@ -12,7 +12,6 @@ import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import components.Product;
@@ -30,7 +29,7 @@ import utilities.DriverFactory;
  * This class contains various tests to validate product retrieval, filtering, 
  * and the ability to add products to the cart.
  */
-public class ProductsPageTest{
+public class ProductsPageTest extends BaseTest{
 
     private WebDriver driver;
     private ProductsPage productsPage;

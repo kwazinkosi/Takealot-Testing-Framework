@@ -7,7 +7,6 @@ import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import config.ConfigReader;
@@ -23,7 +22,7 @@ import utilities.DriverFactory;
  * Test class for verifying the login functionality. This class contains
  * data-driven tests that verify successful and unsuccessful login attempts.
  */
-public class LoginPageTest {
+public class LoginPageTest extends BaseTest {
 
 	private WebDriver driver;
 	private HomePage homePage;

@@ -8,7 +8,6 @@ import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import config.ConfigReader;
@@ -25,7 +24,7 @@ import utilities.DriverFactory;
  * data-driven testing with TestNG's DataProvider to run multiple test scenarios
  * for the registration functionality.
  */
-public class RegistrationPageTest {
+public class RegistrationPageTest extends BaseTest{
 
 	private WebDriver driver;
 	private HomePage homePage;

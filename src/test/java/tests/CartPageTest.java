@@ -11,7 +11,6 @@ import org.openqa.selenium.support.events.WebDriverListener;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import components.CartItem;
@@ -25,7 +24,7 @@ import pages.ProductsPage;
 import utilities.EventListener;
 import utilities.DriverFactory;
 
-public class CartPageTest {
+public class CartPageTest extends BaseTest{
 
     private WebDriver driver;
     private ProductsPage productsPage;

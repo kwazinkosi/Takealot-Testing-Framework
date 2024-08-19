@@ -1,5 +1,5 @@
 package tests;
 
-public class CheckoutPageTest{
+public class CheckoutPageTest extends BaseTest{
 
 }

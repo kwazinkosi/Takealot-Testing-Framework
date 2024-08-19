@@ -23,7 +23,7 @@ o	Dependencies:
 	May not be necessary in all pipelines.
 Trigger:
 	•	The pipeline can be triggered manually or configured to run automatically based on a schedule (e.g., cron expression) defined within Jenkins.
-	•	Alternatively thriggers can be configured within the Jenkinsfile.
+	•	Alternatively triggers can be configured within the Jenkinsfile.
 
 //====Dependencies and Requirements:
 	•	Git: A working Git installation is required on the Jenkins server to access the GitLab repository.
