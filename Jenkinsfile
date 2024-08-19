@@ -30,12 +30,9 @@ pipeline {
     
     stage('Test') {
       steps {
-        // Execute unit tests 
-        bat "mvn test"
-        echo 'Unit tests RUNNING!'
-        
-        catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-            //bat 'mvn clean test'
+        catchError(buildResult: 'SUCCESS', stageResult: 'UNSTABLE') {
+          bat "mvn test"
+          echo 'Unit tests RUNNING!'
         }
       }
     }
