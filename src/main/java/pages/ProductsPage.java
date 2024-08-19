@@ -75,9 +75,10 @@ public class ProductsPage extends BasePage {
 			return Collections.emptyList();
 		}
 
-		// Initialize productList if it hasn't been initialized yet
 		if (productList == null) {
-			productList = productElements.stream().map(el -> new Product(el).initializeProductDetails()).toList();// Initialize product details only once
+		    productList = productElements.stream()
+		                                 .map(el -> new Product(el).initializeProductDetails())
+		                                 .collect(Collectors.toList()); // Initialize product details only once
 		}
 
 		return productList;
