@@ -1,0 +1,33 @@
+//=========Pipeline Setup for Project Documentation
+This document outlines the pipeline setup within Jenkins. It details the stages involved in the pipeline, the actions performed in each stage, and any dependencies or requirements for successful execution.
+
+//====Pipeline Stages:
+The pipeline was configured with the following stages:
+
+1.	Checkout: This stage retrieves the source code from the GitLab repository.
+	Uses the git command to clone the code from the specified GitLab URL provided in the Jenkinsfile.
+	Requires the Git executable to be installed and configured on the Jenkins server.
+
+2.	Build: This stage performs the build process for the Amazon automation code.
+	Typically involves running commands like mvn clean package to compile and package the code for deployment to AWS.
+	May include additional steps specific to a project, such as building infrastructure definitions using tools like CloudFormation.
+o	Dependencies:
+	Might depend on build tools like Maven or specific build scripts within your project.
+
+3.	Test :This stage runs tests for the automation code.
+	May use tools like mvn test to execute unit or integration tests.
+	Could involve additional testing frameworks depending on the project's requirements.
+
+4.	Clean :This stage cleans up resources after the pipeline execution.
+	Involves deleting temporary files or build artifacts.
+	May not be necessary in all pipelines.
+Trigger:
+	•	The pipeline can be triggered manually or configured to run automatically based on a schedule (e.g., cron expression) defined within Jenkins.
+	•	Alternatively thriggers can be configured within the Jenkinsfile.
+
+//====Dependencies and Requirements:
+	•	Git: A working Git installation is required on the Jenkins server to access the GitLab repository.
+	•	Jenkinsfile: A Jenkinsfile script containing the pipeline definition needs to be present in the root directory of the  application. This script defines the stages, actions, and triggers for the pipeline.
+	•	Credentials: Credentials (username/password or personal access token) need to be configured within Jenkins to access the GitLab repository if it's private.
+	•	Build Tools : Depending on the build process, specific tools like Maven or CloudFormation might be required and configured within Jenkins or your project. Including installation of any other plugins.
+
