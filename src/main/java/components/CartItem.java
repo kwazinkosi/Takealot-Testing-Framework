@@ -29,6 +29,9 @@ public class CartItem extends BaseComponent {
 
     @FindBy(className = "cart-item-module_item-title_1M9cq")
     private WebElement productNameElement;
+    
+    @FindBy(css =".product-anchor.cart-item-module_product-anchor_g4hEN")
+    private WebElement cartItemElement;
 
     private BigDecimal price;
     private String productName;
@@ -62,6 +65,15 @@ public class CartItem extends BaseComponent {
         }
     }
 
+    public boolean isVisible() {
+        try {
+            waitUtil.waitForElementToBeVisible(cartItemElement, 10);
+            return cartItemElement.isDisplayed();
+        } catch (Exception e) {
+            LoggingManager.info("cart item not visible. "+ e.getMessage());
+            return false;
+        }
+    }
     /**
      * Parses the price text to a BigDecimal.
      * Handles different currency formats and locale-specific parsing.

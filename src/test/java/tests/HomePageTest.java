@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import config.ConfigReader;
 import logging.LoggingManager;
@@ -67,7 +68,7 @@ public class HomePageTest extends BaseTest{
      * Test to verify navigation to the Registration page.
      */
     @Test(priority = 11, groups = {"homepage", "navigation", "registration"})
-    public void testNavigateToRegister() {
+    public void verifyNavigateToRegister() {
         LoggingManager.info("=========== Testing navigation to registration. ===========");
         
         // Navigate to the Registration page and verify visibility
@@ -83,7 +84,7 @@ public class HomePageTest extends BaseTest{
      * Test to verify navigation to the Login page.
      */
     @Test(priority = 12, groups = {"homepage", "navigation", "login"})
-    public void testNavigateToLogin() {
+    public void verifyNavigateToLogin() {
         LoggingManager.info("=========== Testing navigation to login. ===========");
         
         // Navigate to the Login page and verify visibility
@@ -99,13 +100,14 @@ public class HomePageTest extends BaseTest{
      * Test to verify navigation to the Cart page.
      */
     @Test(priority = 13, groups = {"homepage", "navigation", "cart"})
-    public void testNavigateToCart() {
+    public void verifyNavigateToCart() {
         LoggingManager.info("=========== Testing navigation to cart. ===========");
+        String title = homePage.dataUtil.getValue("common info", "cart_page_title");
         
         // Navigate to the Cart page and verify visibility
         homePage.navigateToCart();
         CartPage cartPage = new CartPage(DriverFactory.getDriver());
-        Assert.assertTrue(cartPage.isVisible(), "Cart page should be visible.");
+        Assert.assertTrue(cartPage.getTitle().equalsIgnoreCase(title), "Cart page should be visible.");
         
         // Navigate back to Home from the Cart page
         cartPage.getNavBar().clickNavLink("Home");

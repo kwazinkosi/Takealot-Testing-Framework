@@ -160,7 +160,8 @@ public class CartPageTest extends BaseTest{
         CartItem cartItem = cartPage.getCartItem(wishlistProduct);
         Assert.assertNotNull(cartItem, "The cart item should be present in the cart before moving to wishlist.");
         cartItem.moveToWishlist();
-        
+        boolean wishVisible = cartItem.isVisible();
+        Assert.assertFalse(wishVisible, "Seems like the item is still in the cart");
         Assert.assertNull(cartPage.getCartItem(wishlistProduct), "The cart item should be moved to the wishlist and not in the cart.");
         
         LoggingManager.info("============ Move Item to Wishlist Verification -- Passed ============= \n\n");

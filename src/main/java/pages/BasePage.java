@@ -14,6 +14,7 @@ import logging.LoggingManager;
 import reporting.ReportManager;
 import utilities.ActionUtil;
 import utilities.DataProviderUtil;
+import utilities.DriverFactory;
 import wait.WaitUtil;
 
 /**
@@ -182,5 +183,12 @@ abstract public class BasePage {
             reporter.log("Error checking presence of element: " + element.toString() + " - " + e.getMessage()); // ReportManager log
             return false;
         }
+    }
+    /**
+     * Returns the title of the current page.
+     */
+    public String getTitle() {
+    	
+    	return DriverFactory.getDriver().getTitle();
     }
 }

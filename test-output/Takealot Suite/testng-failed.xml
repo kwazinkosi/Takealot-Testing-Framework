@@ -10,30 +10,23 @@
     <classes>
       <class name="tests.ProductsPageTest">
         <methods>
-          <include name="verifyProductDetails" invocation-numbers="0 1 3"/>
+          <include name="verifyProductDetails" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.ProductsPageTest -->
-      <class name="tests.CartPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="verifyMoveItemToWishlist"/>
-        </methods>
-      </class> <!-- tests.CartPageTest -->
       <class name="tests.RegistrationPageTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyRegistration" invocation-numbers="1"/>
+          <include name="verifyRegistration" invocation-numbers="0"/>
         </methods>
       </class> <!-- tests.RegistrationPageTest -->
       <class name="tests.LoginPageTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyLogin" invocation-numbers="0 1 2 3"/>
+          <include name="verifyLogin" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- tests.LoginPageTest -->
     </classes>

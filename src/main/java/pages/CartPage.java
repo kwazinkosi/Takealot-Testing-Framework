@@ -185,7 +185,7 @@ public class CartPage extends BasePage{
     public boolean isVisible() {
         try {
         	LoggingManager.info("Checking cart visibility.");
-            waitUtil.waitForElementToBeVisible(cart, fastWaitTime);
+            waitUtil.waitForElementToBeVisible(cart, fastWaitTime); //Cart - TAKEALOT
             return cart.isDisplayed();
         } catch (Exception e) {
         	LoggingManager.info("Error checking cart visibility: " + e.getMessage());
