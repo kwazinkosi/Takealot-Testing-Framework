@@ -87,7 +87,6 @@ public class Product extends BaseComponent {
      * Initializes product details.
      */
     public Product initializeProductDetails() {
-        EventListener.closeAdOverlay();
         setName();
         LoggingManager.info("Done initializing product name");
         setPrice();
@@ -106,7 +105,6 @@ public class Product extends BaseComponent {
     public Product setName() {
     	
         try {
-            waitUtil.waitForElementToBeVisible(thumbImage);
             String nameText = this.productName.getText();
             LoggingManager.info("Product name extracted: '" + nameText + "'");
             if (nameText != null && !nameText.isEmpty()) {
@@ -178,7 +176,6 @@ public class Product extends BaseComponent {
      */
     public Product setPrice() {
         try {
-        	waitUtil.waitForElementToBeVisible(productPrice, 1);
             if (productPrice != null) {
                 String priceText = productPrice.getText().replace("R", "").replace(",", "").trim();
                 LoggingManager.info("Extracted price text: '" + priceText + "'");
@@ -223,7 +220,7 @@ public class Product extends BaseComponent {
      */
     public Product setRatingDetails() {
         try {
-            if (rating != null && rating.isDisplayed()) {
+            if (rating != null) {
             	LoggingManager.info("getting the rating");
                 String ratingText = rating.getAttribute("innerText").trim();
                 LoggingManager.info("Raw rating text: " + ratingText);
@@ -272,12 +269,8 @@ public class Product extends BaseComponent {
     
 	public Product setProductType(String product_type) {
 		
-		boolean isPresent = waitUtil.isElementPresent(sponsoredProductBy, 2);
-	    if (isPresent) {
-	        this.product_type = product_type;
-	    } else {
-	        LoggingManager.warn("Sponsored product element is not present.");
-	    }
+		this.product_type = product_type;
+		
 	    return this;
 	}
 }
