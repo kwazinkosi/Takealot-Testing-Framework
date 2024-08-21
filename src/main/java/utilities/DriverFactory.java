@@ -56,7 +56,7 @@ public class DriverFactory {
 
         driver.set(webDriver);
         WebDriver currentDriver = getDriver();
-        currentDriver.manage().timeouts().implicitlyWait(Duration.ofMillis(400)); 
+        currentDriver.manage().timeouts().implicitlyWait(Duration.ofMillis(100)); 
         currentDriver.manage().deleteAllCookies();
         currentDriver.manage().window().maximize();
         return currentDriver;

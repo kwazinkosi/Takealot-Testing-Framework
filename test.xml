@@ -8,9 +8,8 @@
         <listener class-name="utilities.TestExecutionListener"/>
     </listeners>
 
-    <test name="Takealot Automation Tests" >
+    <test name="Takealot Automation Tests">
         <classes>
-            
             <class name="tests.HomePageTest"/>
             <class name="tests.ProductsPageTest"/>
             <class name="tests.RegistrationPageTest"/>

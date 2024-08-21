@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="44" passed="40" failed="4" skipped="0">
+<testng-results ignored="0" total="44" passed="43" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-19T19:04:08 SAST" name="Takealot Suite" finished-at="2024-08-19T19:40:37 SAST" duration-ms="2188934">
+  <suite started-at="2024-08-21T08:20:24 SAST" name="Takealot Suite" finished-at="2024-08-21T08:52:05 SAST" duration-ms="1901377">
     <groups>
       <group name="wishlist">
         <method signature="CartPageTest.verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@37eeec90]" name="verifyMoveItemToWishlist" class="tests.CartPageTest"/>
@@ -67,63 +67,63 @@
         <method signature="HomePageTest.verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" name="verifySearchFunctionality" class="tests.HomePageTest"/>
       </group> <!-- homepage -->
     </groups>
-    <test started-at="2024-08-19T19:04:08 SAST" name="Takealot Automation Tests" finished-at="2024-08-19T19:40:37 SAST" duration-ms="2188934">
+    <test started-at="2024-08-21T08:20:24 SAST" name="Takealot Automation Tests" finished-at="2024-08-21T08:52:05 SAST" duration-ms="1901377">
       <class name="tests.CartPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-19T19:32:31 SAST" name="setUp" finished-at="2024-08-19T19:32:56 SAST" duration-ms="25034" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-21T08:45:11 SAST" name="setUp" finished-at="2024-08-21T08:45:33 SAST" duration-ms="21804" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyCartIsEmpty()[pri:17, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-19T19:32:56 SAST" name="verifyCartIsEmpty" finished-at="2024-08-19T19:32:57 SAST" duration-ms="626" status="PASS">
+        <test-method signature="verifyCartIsEmpty()[pri:17, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-21T08:45:33 SAST" name="verifyCartIsEmpty" finished-at="2024-08-21T08:45:34 SAST" duration-ms="492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCartIsEmpty -->
-        <test-method signature="verifyCartNotEmpty()[pri:18, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-19T19:32:57 SAST" name="verifyCartNotEmpty" finished-at="2024-08-19T19:35:13 SAST" duration-ms="136392" status="PASS">
+        <test-method signature="verifyCartNotEmpty()[pri:18, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-21T08:45:34 SAST" name="verifyCartNotEmpty" finished-at="2024-08-21T08:47:44 SAST" duration-ms="130031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCartNotEmpty -->
-        <test-method signature="verifyItemDetailsInCart()[pri:19, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-19T19:35:13 SAST" name="verifyItemDetailsInCart" finished-at="2024-08-19T19:40:23 SAST" duration-ms="309969" status="PASS">
+        <test-method signature="verifyItemDetailsInCart()[pri:19, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-21T08:47:44 SAST" name="verifyItemDetailsInCart" finished-at="2024-08-21T08:51:55 SAST" duration-ms="251428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyItemDetailsInCart -->
-        <test-method signature="verifyTotalCartPrice()[pri:20, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-19T19:40:23 SAST" name="verifyTotalCartPrice" finished-at="2024-08-19T19:40:25 SAST" duration-ms="1995" status="PASS">
+        <test-method signature="verifyTotalCartPrice()[pri:20, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-21T08:51:55 SAST" name="verifyTotalCartPrice" finished-at="2024-08-21T08:51:56 SAST" duration-ms="589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTotalCartPrice -->
-        <test-method signature="verifyRemovalOfItemFromCart()[pri:21, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-19T19:40:25 SAST" name="verifyRemovalOfItemFromCart" finished-at="2024-08-19T19:40:30 SAST" duration-ms="4637" status="PASS">
+        <test-method signature="verifyRemovalOfItemFromCart()[pri:21, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-21T08:51:56 SAST" name="verifyRemovalOfItemFromCart" finished-at="2024-08-21T08:52:00 SAST" duration-ms="3836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRemovalOfItemFromCart -->
-        <test-method signature="verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-19T19:40:30 SAST" name="verifyMoveItemToWishlist" finished-at="2024-08-19T19:40:35 SAST" duration-ms="4497" status="PASS">
+        <test-method signature="verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-21T08:52:00 SAST" name="verifyMoveItemToWishlist" finished-at="2024-08-21T08:52:04 SAST" duration-ms="4164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMoveItemToWishlist -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-19T19:40:35 SAST" name="tearDown" finished-at="2024-08-19T19:40:37 SAST" duration-ms="2520" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-21T08:52:04 SAST" name="tearDown" finished-at="2024-08-21T08:52:05 SAST" duration-ms="1376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.CartPageTest -->
       <class name="tests.ProductsPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-19T19:09:51 SAST" name="setUp" finished-at="2024-08-19T19:10:15 SAST" duration-ms="23336" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:26:18 SAST" name="setUp" finished-at="2024-08-21T08:26:43 SAST" duration-ms="24833" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-19T19:10:15 SAST" name="verifyIsResultsVisible" finished-at="2024-08-19T19:10:15 SAST" duration-ms="334" status="PASS">
+        <test-method signature="verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:26:43 SAST" name="verifyIsResultsVisible" finished-at="2024-08-21T08:26:43 SAST" duration-ms="265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIsResultsVisible -->
-        <test-method signature="verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-19T19:10:15 SAST" name="verifyProductsRetrieval" finished-at="2024-08-19T19:11:18 SAST" duration-ms="63036" status="PASS">
+        <test-method signature="verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:26:43 SAST" name="verifyProductsRetrieval" finished-at="2024-08-21T08:27:53 SAST" duration-ms="70695" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductsRetrieval -->
-        <test-method signature="verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-19T19:11:18 SAST" name="verifyFilteredProducts" finished-at="2024-08-19T19:11:18 SAST" duration-ms="303" status="PASS">
+        <test-method signature="verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:27:53 SAST" name="verifyFilteredProducts" finished-at="2024-08-21T08:27:54 SAST" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFilteredProducts -->
-        <test-method signature="verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-19T19:11:18 SAST" name="verifyGetProductByPrice" finished-at="2024-08-19T19:11:19 SAST" duration-ms="316" status="PASS">
+        <test-method signature="verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:27:54 SAST" name="verifyGetProductByPrice" finished-at="2024-08-21T08:27:54 SAST" duration-ms="227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetProductByPrice -->
-        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-19T19:11:21 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-19T19:14:15 SAST" duration-ms="173920" status="FAIL">
+        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:27:55 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-21T08:29:31 SAST" duration-ms="96488" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -163,10 +163,10 @@
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Product price does not match expected [27595.00] but found [26999.00]]]>
+              <![CDATA[Product price does not match expected [27595.00] but found [27078.00]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Product price does not match expected [27595.00] but found [26999.00]
+              <![CDATA[java.lang.AssertionError: Product price does not match expected [27595.00] but found [27078.00]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -206,7 +206,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductDetails -->
-        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-19T19:14:16 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-19T19:17:08 SAST" duration-ms="172683" status="PASS">
+        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:29:31 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-21T08:31:04 SAST" duration-ms="92231" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -247,7 +247,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductDetails -->
-        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-19T19:17:08 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-19T19:19:55 SAST" duration-ms="166578" status="PASS">
+        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:31:04 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-21T08:33:45 SAST" duration-ms="161721" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -288,7 +288,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductDetails -->
-        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-19T19:19:55 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-19T19:21:17 SAST" duration-ms="81852" status="PASS">
+        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:33:45 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-21T08:35:16 SAST" duration-ms="90111" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -329,37 +329,37 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductDetails -->
-        <test-method signature="verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-19T19:21:17 SAST" name="verifyProductAddToCart" finished-at="2024-08-19T19:24:24 SAST" duration-ms="186668" status="PASS">
+        <test-method signature="verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:35:16 SAST" name="verifyProductAddToCart" finished-at="2024-08-21T08:36:46 SAST" duration-ms="90916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-19T19:24:24 SAST" name="tearDown" finished-at="2024-08-19T19:24:26 SAST" duration-ms="2628" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:36:46 SAST" name="tearDown" finished-at="2024-08-21T08:36:50 SAST" duration-ms="3890" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.ProductsPageTest -->
       <class name="tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-19T19:04:09 SAST" name="setUp" finished-at="2024-08-19T19:04:18 SAST" duration-ms="9286" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:20:24 SAST" name="setUp" finished-at="2024-08-21T08:20:31 SAST" duration-ms="6468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyTitle()[pri:0, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-19T19:04:18 SAST" name="verifyTitle" finished-at="2024-08-19T19:04:21 SAST" duration-ms="2590" status="PASS">
+        <test-method signature="verifyTitle()[pri:0, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:20:31 SAST" name="verifyTitle" finished-at="2024-08-21T08:20:32 SAST" duration-ms="903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method signature="verifyNavigateToRegister()[pri:11, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-19T19:04:21 SAST" name="verifyNavigateToRegister" finished-at="2024-08-19T19:04:35 SAST" duration-ms="13602" status="PASS">
+        <test-method signature="verifyNavigateToRegister()[pri:11, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:20:32 SAST" name="verifyNavigateToRegister" finished-at="2024-08-21T08:20:39 SAST" duration-ms="7548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNavigateToRegister -->
-        <test-method signature="verifyNavigateToLogin()[pri:12, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-19T19:04:35 SAST" name="verifyNavigateToLogin" finished-at="2024-08-19T19:04:44 SAST" duration-ms="9637" status="PASS">
+        <test-method signature="verifyNavigateToLogin()[pri:12, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:20:39 SAST" name="verifyNavigateToLogin" finished-at="2024-08-21T08:20:47 SAST" duration-ms="8216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNavigateToLogin -->
-        <test-method signature="verifyNavigateToCart()[pri:13, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-19T19:04:44 SAST" name="verifyNavigateToCart" finished-at="2024-08-19T19:04:53 SAST" duration-ms="8988" status="PASS">
+        <test-method signature="verifyNavigateToCart()[pri:13, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:20:47 SAST" name="verifyNavigateToCart" finished-at="2024-08-21T08:20:56 SAST" duration-ms="8748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNavigateToCart -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-19T19:04:59 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-19T19:05:18 SAST" duration-ms="19255" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:20:57 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:21:14 SAST" duration-ms="17035" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -380,7 +380,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-19T19:05:18 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-19T19:05:35 SAST" duration-ms="16483" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:21:14 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:21:28 SAST" duration-ms="14424" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -401,7 +401,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-19T19:05:35 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-19T19:05:50 SAST" duration-ms="15097" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:21:28 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:21:44 SAST" duration-ms="15563" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -422,7 +422,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-19T19:05:50 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-19T19:06:04 SAST" duration-ms="14479" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:21:44 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:21:59 SAST" duration-ms="14993" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -443,7 +443,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-19T19:06:04 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-19T19:06:19 SAST" duration-ms="15051" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:21:59 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:22:14 SAST" duration-ms="14794" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -464,7 +464,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-19T19:06:19 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-19T19:07:06 SAST" duration-ms="47206" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:22:14 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:23:03 SAST" duration-ms="49410" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -485,7 +485,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-19T19:07:06 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-19T19:08:19 SAST" duration-ms="72739" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:23:03 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:24:31 SAST" duration-ms="87380" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -506,7 +506,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-19T19:08:19 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-19T19:08:49 SAST" duration-ms="29724" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:24:31 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:25:04 SAST" duration-ms="33103" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -527,7 +527,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-19T19:08:49 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-19T19:09:19 SAST" duration-ms="29804" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:25:04 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:25:39 SAST" duration-ms="34816" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -548,7 +548,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-19T19:09:19 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-19T19:09:49 SAST" duration-ms="30354" status="PASS">
+        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:25:39 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:26:13 SAST" duration-ms="34059" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -569,17 +569,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-19T19:09:49 SAST" name="tearDown" finished-at="2024-08-19T19:09:51 SAST" duration-ms="2002" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:26:13 SAST" name="tearDown" finished-at="2024-08-21T08:26:18 SAST" duration-ms="5070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.HomePageTest -->
       <class name="tests.RegistrationPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-19T19:24:26 SAST" name="setUp" finished-at="2024-08-19T19:24:38 SAST" duration-ms="12054" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:36:50 SAST" name="setUp" finished-at="2024-08-21T08:36:59 SAST" duration-ms="8899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-19T19:24:44 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-19T19:24:49 SAST" duration-ms="4078" status="FAIL">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:37:01 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:37:41 SAST" duration-ms="39428" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -622,91 +622,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <input name="first_name" type="text" id="register_customer_first_name" autocomplete="on" value=""> is not clickable at point (768, 96). Other element would receive the click: <div class="ab-page-blocker" style="background-color: rgba(51, 51, 51, 0.75);"></div>
-  (Session info: chrome=127.0.6533.100)
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a0648165ca2f77ffa6728ca19859b476, clickElement {id=f.0147F695749951DAA7565DE68C788F91.d.792283BB2F575133D2DA5F3084B075B0.e.138}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50502}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50502/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a0648165ca2f77ffa6728ca19859b476)] -> xpath: //input[@id='register_customer_first_name']]
-Session ID: a0648165ca2f77ffa6728ca19859b476]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input name="first_name" type="text" id="register_customer_first_name" autocomplete="on" value=""> is not clickable at point (768, 96). Other element would receive the click: <div class="ab-page-blocker" style="background-color: rgba(51, 51, 51, 0.75);"></div>
-  (Session info: chrome=127.0.6533.100)
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a0648165ca2f77ffa6728ca19859b476, clickElement {id=f.0147F695749951DAA7565DE68C788F91.d.792283BB2F575133D2DA5F3084B075B0.e.138}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50502}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50502/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a0648165ca2f77ffa6728ca19859b476)] -> xpath: //input[@id='register_customer_first_name']]
-Session ID: a0648165ca2f77ffa6728ca19859b476
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
-at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
-at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$93TBLjum.click(Unknown Source)
-at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy51.click(Unknown Source)
-at utilities.ActionUtil.scrollToAndClick(ActionUtil.java:145)
-at pages.RegistrationPage.typeFirstname(RegistrationPage.java:78)
-at tests.RegistrationPageTest.verifyRegistration(RegistrationPageTest.java:89)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-19T19:24:49 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-19T19:25:42 SAST" duration-ms="52567" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:37:41 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:38:32 SAST" duration-ms="50853" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -752,7 +671,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-19T19:25:42 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-19T19:26:13 SAST" duration-ms="31896" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:38:32 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:39:06 SAST" duration-ms="34609" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -796,7 +715,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-19T19:26:14 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-19T19:26:50 SAST" duration-ms="36161" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:39:06 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:39:49 SAST" duration-ms="42422" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -840,7 +759,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-19T19:26:50 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-19T19:27:23 SAST" duration-ms="33241" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:39:49 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:40:21 SAST" duration-ms="32750" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -886,7 +805,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-19T19:27:23 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-19T19:27:59 SAST" duration-ms="35907" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:40:22 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:40:54 SAST" duration-ms="32782" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -932,7 +851,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-19T19:27:59 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-19T19:28:31 SAST" duration-ms="32552" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:40:54 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:41:27 SAST" duration-ms="32675" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -978,7 +897,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-19T19:28:31 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-19T19:29:03 SAST" duration-ms="31635" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:41:27 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:41:57 SAST" duration-ms="29847" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1024,7 +943,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-19T19:29:03 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-19T19:29:39 SAST" duration-ms="35784" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:41:57 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:42:30 SAST" duration-ms="33235" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1070,7 +989,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-19T19:29:39 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-19T19:30:13 SAST" duration-ms="33832" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:42:30 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:43:02 SAST" duration-ms="32115" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1116,7 +1035,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-19T19:30:13 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-19T19:30:48 SAST" duration-ms="35650" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:43:02 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:43:43 SAST" duration-ms="41194" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1162,17 +1081,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-19T19:30:48 SAST" name="tearDown" finished-at="2024-08-19T19:30:50 SAST" duration-ms="1423" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:43:43 SAST" name="tearDown" finished-at="2024-08-21T08:43:44 SAST" duration-ms="1064" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.RegistrationPageTest -->
       <class name="tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-19T19:30:50 SAST" name="setUp" finished-at="2024-08-19T19:31:01 SAST" duration-ms="10634" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-21T08:43:44 SAST" name="setUp" finished-at="2024-08-21T08:43:54 SAST" duration-ms="9079" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-19T19:31:02 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-19T19:31:11 SAST" duration-ms="8767" status="FAIL">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-21T08:43:54 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-21T08:44:04 SAST" duration-ms="9821" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1200,92 +1119,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <input name="password" type="password" id="customer_login_password" autocomplete="on" value=""> is not clickable at point (748, 278). Other element would receive the click: <img src="https://cdn.braze.eu/appboy/communication/marketing/slide_up/slide_up_message_parameters/images/65e490f302128f004cb8cb23/7d04f26560833a9dcf10abfacd13b001161d2c3d/original.png?1709478135" alt="">
-  (Session info: chrome=127.0.6533.100)
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1db65767b497dc177f3abc45b0027cfa, clickElement {id=f.11792ADE56B2D0ABD69356CBA4B448F2.d.13E025433C3527538769F8E9A077E4CF.e.132}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50903/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (1db65767b497dc177f3abc45b0027cfa)] -> xpath: //input[@id='customer_login_password']]
-Session ID: 1db65767b497dc177f3abc45b0027cfa]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input name="password" type="password" id="customer_login_password" autocomplete="on" value=""> is not clickable at point (748, 278). Other element would receive the click: <img src="https://cdn.braze.eu/appboy/communication/marketing/slide_up/slide_up_message_parameters/images/65e490f302128f004cb8cb23/7d04f26560833a9dcf10abfacd13b001161d2c3d/original.png?1709478135" alt="">
-  (Session info: chrome=127.0.6533.100)
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1db65767b497dc177f3abc45b0027cfa, clickElement {id=f.11792ADE56B2D0ABD69356CBA4B448F2.d.13E025433C3527538769F8E9A077E4CF.e.132}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\KWAZIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50903/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (1db65767b497dc177f3abc45b0027cfa)] -> xpath: //input[@id='customer_login_password']]
-Session ID: 1db65767b497dc177f3abc45b0027cfa
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
-at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
-at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
-at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$I2QhutaM.click(Unknown Source)
-at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy51.click(Unknown Source)
-at pages.BasePage.click(BasePage.java:122)
-at pages.BasePage.sendKeys(BasePage.java:138)
-at pages.LoginPage.typePassword(LoginPage.java:85)
-at tests.LoginPageTest.verifyLogin(LoginPageTest.java:83)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-19T19:31:11 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-19T19:31:34 SAST" duration-ms="22816" status="FAIL">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-21T08:44:04 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-21T08:44:16 SAST" duration-ms="12153" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1311,51 +1148,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Expected error message not displayed. expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected error message not displayed. expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at tests.LoginPageTest.verifyLogin(LoginPageTest.java:92)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-19T19:31:35 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-19T19:32:03 SAST" duration-ms="28232" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-21T08:44:16 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-21T08:44:43 SAST" duration-ms="26675" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1386,7 +1182,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-19T19:32:03 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-19T19:32:30 SAST" duration-ms="26542" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-21T08:44:43 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-21T08:45:11 SAST" duration-ms="27964" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1417,7 +1213,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-19T19:32:30 SAST" name="tearDown" finished-at="2024-08-19T19:32:31 SAST" duration-ms="1459" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-21T08:45:11 SAST" name="tearDown" finished-at="2024-08-21T08:45:11 SAST" duration-ms="717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

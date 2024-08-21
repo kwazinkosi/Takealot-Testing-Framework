@@ -15,20 +15,6 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.ProductsPageTest -->
-      <class name="tests.RegistrationPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="verifyRegistration" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- tests.RegistrationPageTest -->
-      <class name="tests.LoginPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="verifyLogin" invocation-numbers="0 1"/>
-        </methods>
-      </class> <!-- tests.LoginPageTest -->
     </classes>
   </test> <!-- Takealot Automation Tests(failed) -->
 </suite> <!-- Failed suite [Takealot Suite] -->
