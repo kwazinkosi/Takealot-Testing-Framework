@@ -3,6 +3,7 @@ package pages;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import logging.LoggingManager;
+import utilities.EventListener;
 
 /**
  * RegistrationPage handles actions and validations on the registration page.
@@ -66,7 +68,7 @@ public class RegistrationPage extends BasePage {
      * Types the first name into the first name field.
      *
      * @param firstName The first name to enter.
-     * @return The current instance of RegistrationPage.
+     * @return The current instance of RegistrationPage.ElementClickInterceptedException
      */
     public RegistrationPage typeFirstname(String firstName) {
         LoggingManager.info("Typing first name in the field 'first_name'");
@@ -76,13 +78,20 @@ public class RegistrationPage extends BasePage {
         }
         try {
             actionUtil.scrollToAndClick(firstname);
-            waitUtil.waitFor(driver -> isVisible(firstname), fastWaitTime); // Wait for the firstname field to be visible
-            sendKeys(firstname, firstName);
+            waitUtil.waitForElementToBeVisible(firstname, fastWaitTime); // Wait for the firstname field to be visible
+           
+            send(firstname, firstName);
         } catch (NoSuchElementException e) {
             LoggingManager.error("The element for first name could not be found.", e);
             actionUtil.scrollBy(-100);
-            sendKeys(firstname, firstName);
+            send(firstname, firstName);
         }
+        catch(ElementClickInterceptedException e) {
+        	EventListener.closeAdOverlay();
+        	EventListener.closeCookieOverlay();
+        	send(firstname, firstName);
+        }
+        
         return this;
     }
 
@@ -100,9 +109,15 @@ public class RegistrationPage extends BasePage {
         }
         
         actionUtil.scrollToElement(lastname);
-        waitUtil.waitFor(driver -> isVisible(lastname), fastWaitTime); // Wait for the lastname field to be visible
-        sendKeys(lastname, lastName);
+        waitUtil.waitForElementToBeVisible(lastname, fastWaitTime); // Wait for the lastname field to be visible
         
+        try{
+        	send(lastname, lastName);
+        }
+        catch(Exception e){
+        	EventListener.closeAdOverlay();
+        	send(lastname, lastName);
+        }
         return this;
     }
 
@@ -120,9 +135,15 @@ public class RegistrationPage extends BasePage {
         }
         
         actionUtil.scrollToElement(emailInput);
-        waitUtil.waitFor(driver -> isVisible(emailInput), fastWaitTime); // Wait for the email field to be visible
-        sendKeys(emailInput, email);
+        waitUtil.waitForElementToBeVisible(emailInput, fastWaitTime); // Wait for the email field to be visible
         
+        try{
+        	send(emailInput, email);
+        }
+        catch(Exception e){
+        	EventListener.closeAdOverlay();
+        	send(emailInput, email);
+        }
         return this;
     }
 
@@ -140,9 +161,15 @@ public class RegistrationPage extends BasePage {
         }
         
         actionUtil.scrollToElement(passwordInput);
-        waitUtil.waitFor(driver -> isVisible(passwordInput), fastWaitTime); // Wait for the password field to be visible
-        sendKeys(passwordInput, password);
+        waitUtil.waitForElementToBeVisible(passwordInput, fastWaitTime); // Wait for the password field to be visible
         
+        try{
+        	send(passwordInput, password);
+        }
+        catch(Exception e){
+        	EventListener.closeAdOverlay();
+        	send(passwordInput, password);
+        }
         return this;
     }
 
@@ -160,9 +187,14 @@ public class RegistrationPage extends BasePage {
         }
         
         actionUtil.scrollToElement(mobileNumber);
-        waitUtil.waitFor(driver -> isVisible(mobileNumber), fastWaitTime); // Wait for the mobile number field to be visible
-        sendKeys(mobileNumber, mobile);
-        
+        waitUtil.waitForElementToBeVisible(mobileNumber, fastWaitTime); // Wait for the mobile number field to be visible
+        try{
+        	send(mobileNumber, mobile);
+        }
+        catch(Exception e){
+        	EventListener.closeAdOverlay();
+        	send(mobileNumber, mobile);
+        }
         return this;
     }
 
@@ -317,7 +349,16 @@ public class RegistrationPage extends BasePage {
             LoggingManager.error("Failed to close OTP modal.", e);
         }
     }
-
+    
+    public void send(WebElement element, String keystr) {
+    	try{
+    		element.sendKeys(keystr);
+        }
+        catch(Exception e){
+        	EventListener.closeAdOverlay();
+        	element.sendKeys(keystr);
+        }
+    }
     @Override
     public boolean isAlertVisible() {
         // Placeholder for alert visibility check logic

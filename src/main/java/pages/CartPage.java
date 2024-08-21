@@ -54,7 +54,7 @@ public class CartPage extends BasePage{
     private void initUpdateCartItems() {
     	
     	LoggingManager.info("Initializing or updating cart items list.");
-        if (cartItems == null || cartItems.isEmpty()) {
+        if (cartItems.isEmpty()) {
             cartItemsList.clear();
             throw new NoSuchElementException("No cart items found.");
         } else {
@@ -110,6 +110,7 @@ public class CartPage extends BasePage{
 
         String normalizedProductName = productName.trim().toLowerCase();
 
+        waitUtil.waitForElementToBeVisible(cart, fastWaitTime);
         // Log the entire list before filtering
         List<CartItem> items = getCartItems();
         LoggingManager.info("Total Cart Items: " + items.size());
@@ -186,7 +187,7 @@ public class CartPage extends BasePage{
         try {
         	LoggingManager.info("Checking cart visibility.");
             waitUtil.waitForElementToBeVisible(cart, fastWaitTime); //Cart - TAKEALOT
-            return cart.isDisplayed();
+            return true;
         } catch (Exception e) {
         	LoggingManager.info("Error checking cart visibility: " + e.getMessage());
             return false;

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 19 18:20:37 SAST 2024</td>
+<td>Started on:</td><td>Wed Aug 21 15:04:05 SAST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>409 seconds (409456 ms)</td>
+<tr><td>Total time:</td><td>153 seconds (153647 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,35 +76,60 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.CartPageTest.verifyCartNotEmpty()'><b>verifyCartNotEmpty</b><br>Test class: tests.CartPageTest</td>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC002, John, Doe, jon.doe@gmail.com, P@ssw0rd, 0612345679, Success, yes</td>
 <td></td>
-<td>146</td>
-<td>tests.CartPageTest@7bb3a9fe</td></tr>
+<td>18</td>
+<td>tests.RegistrationPageTest@1922e6d</td></tr>
 <tr>
-<td title='tests.CartPageTest.verifyMoveItemToWishlist()'><b>verifyMoveItemToWishlist</b><br>Test class: tests.CartPageTest</td>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC011, John, Doe, jon.doe@gmail.com, P@ssw0rd, 123456789, Please enter a 9 or 10-digit SA mobile number, yes</td>
 <td></td>
-<td>4</td>
-<td>tests.CartPageTest@7bb3a9fe</td></tr>
+<td>10</td>
+<td>tests.RegistrationPageTest@1922e6d</td></tr>
 <tr>
-<td title='tests.CartPageTest.verifyTotalCartPrice()'><b>verifyTotalCartPrice</b><br>Test class: tests.CartPageTest</td>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC006, John, Doe, jon.doe@gmail.com, short, 012345682, Password must be at least 8 characters and 1 special character or number, yes</td>
 <td></td>
-<td>0</td>
-<td>tests.CartPageTest@7bb3a9fe</td></tr>
+<td>9</td>
+<td>tests.RegistrationPageTest@1922e6d</td></tr>
 <tr>
-<td title='tests.CartPageTest.verifyCartIsEmpty()'><b>verifyCartIsEmpty</b><br>Test class: tests.CartPageTest</td>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC010, John, Doe, jon.doe@gmail.com, P@ssw0rd, , Mobile number must be at least 10 digits, yes</td>
 <td></td>
-<td>0</td>
-<td>tests.CartPageTest@7bb3a9fe</td></tr>
+<td>11</td>
+<td>tests.RegistrationPageTest@1922e6d</td></tr>
 <tr>
-<td title='tests.CartPageTest.verifyRemovalOfItemFromCart()'><b>verifyRemovalOfItemFromCart</b><br>Test class: tests.CartPageTest</td>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC005, John, Doe, invalid-email, P@ssw0rd, 012345681, Please enter a valid email address, yes</td>
 <td></td>
-<td>5</td>
-<td>tests.CartPageTest@7bb3a9fe</td></tr>
+<td>9</td>
+<td>tests.RegistrationPageTest@1922e6d</td></tr>
 <tr>
-<td title='tests.CartPageTest.verifyItemDetailsInCart()'><b>verifyItemDetailsInCart</b><br>Test class: tests.CartPageTest</td>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC009, John, Doe, jon.doe@gmail.com, P@ssw0rd, 012345, Please enter a 9 or 10-digit SA mobile number, yes</td>
 <td></td>
-<td>221</td>
-<td>tests.CartPageTest@7bb3a9fe</td></tr>
+<td>10</td>
+<td>tests.RegistrationPageTest@1922e6d</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC008, John, Doe, , P@ssw0rd, 012345684, Please enter your email address, yes</td>
+<td></td>
+<td>10</td>
+<td>tests.RegistrationPageTest@1922e6d</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC001, John, Doe, john.doe@gmail.com, P@ssw0rd, 0612345679, This email address is already registered on takealot.com, yes</td>
+<td></td>
+<td>14</td>
+<td>tests.RegistrationPageTest@1922e6d</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC003, John, null, jon.doe@gmail.com, P@ssw0rd, 012345679, Please enter your last name, yes</td>
+<td></td>
+<td>9</td>
+<td>tests.RegistrationPageTest@1922e6d</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC004, null, Doe, jon.doe@gmail.com, P@ssw0rd, 012345680, Please enter your first name, yes</td>
+<td></td>
+<td>9</td>
+<td>tests.RegistrationPageTest@1922e6d</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC007, John, Doe, jon.doe@gmail.com, , 012345683, Please enter a password, yes</td>
+<td></td>
+<td>10</td>
+<td>tests.RegistrationPageTest@1922e6d</td></tr>
 </table><p>
 </body>
 </html>

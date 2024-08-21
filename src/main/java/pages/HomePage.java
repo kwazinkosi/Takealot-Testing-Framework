@@ -136,7 +136,7 @@ public class HomePage extends BasePage {
                 break;
 
             case "empty-results-page":
-                if (waitUtil.waitForElementToBeVisible(emptyResults, normalWaitTime) != null) {
+                if (waitUtil.waitForElementToBeVisible(emptyResults, fasterWaitTime) != null) {
                     LoggingManager.info("Empty results page displayed");
                     return true;
                 } else {

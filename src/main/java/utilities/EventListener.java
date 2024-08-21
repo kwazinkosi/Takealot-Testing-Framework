@@ -22,8 +22,8 @@ public class EventListener implements WebDriverListener {
      */
     @Override
     public void beforeClick(WebElement element) {
-        closeAdOverlay();
-        closeCookieOverlay();
+//        closeAdOverlay();
+//        closeCookieOverlay();
     }
 
     /**
@@ -34,7 +34,7 @@ public class EventListener implements WebDriverListener {
      */
     @Override
     public void beforeClear(WebElement element) {
-        closeAdOverlay();
+
     }
 
     /**
@@ -49,6 +49,11 @@ public class EventListener implements WebDriverListener {
         closeCookieOverlay();
     }
 
+    @Override
+    public void beforeSendKeys(WebElement element, CharSequence... keysToSend) {
+    	element.clear();
+    	closeAdOverlay();
+    }
     /**
      * Attempts to close any ad overlay that may appear on the page. This method looks for
      * an ad popup close button with the text "NOT NOW" and clicks it if found.
@@ -102,7 +107,6 @@ public class EventListener implements WebDriverListener {
      */
     @Override
     public void afterClick(WebElement element) {
-        closeAdOverlay();
-//        moveToWishlistAlert();
+//        closeAdOverlay();
     }
 }

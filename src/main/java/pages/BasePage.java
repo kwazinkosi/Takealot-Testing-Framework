@@ -197,6 +197,7 @@ abstract public class BasePage {
 	 */
 	public String getTitle() {
 
+		
 		return DriverFactory.getDriver().getTitle();
 	}
 }

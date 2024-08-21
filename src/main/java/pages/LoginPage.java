@@ -11,6 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import logging.LoggingManager;
+import utilities.EventListener;
 
 /**
  * LoginPage handles the actions and validations on the login page.
@@ -61,8 +62,15 @@ public class LoginPage extends BasePage {
         }
 
         actionUtil.scrollToElement(emailInput);
-        waitUtil.waitFor(driver -> isVisible(emailInput), normalWaitTime); // Wait for the email field to be visible
-        sendKeys(emailInput, email);
+        waitUtil.waitForElementToBeVisible(emailInput, fastWaitTime); // Wait for the email field to be visible
+//        sendKeys(emailInput, email);
+        try{
+        	emailInput.sendKeys(email);
+        }
+        catch(Exception e){
+        	EventListener.closeAdOverlay();
+        	emailInput.sendKeys(email);
+        }
 
         return this;
     }
@@ -81,9 +89,17 @@ public class LoginPage extends BasePage {
         }
 
         actionUtil.scrollToElement(passwordInput);
-        waitUtil.waitFor(driver -> isVisible(passwordInput), normalWaitTime); // Wait for the password field to be visible
-        sendKeys(passwordInput, password);
+        waitUtil.waitForElementToBeVisible(passwordInput, fastWaitTime); // Wait for the password field to be visible
+//        sendKeys(passwordInput, password);
+        passwordInput.sendKeys(password);
 
+        try{
+        	passwordInput.sendKeys(password);
+        }
+        catch(Exception e){
+        	EventListener.closeAdOverlay();
+        	passwordInput.sendKeys(password);
+        }
         return this;
     }
 
@@ -164,8 +180,10 @@ public class LoginPage extends BasePage {
 
         try {
             // Wait until at least one error message is visible
+        	LoggingManager.info("Waiting to get errors list.");
             waitUtil.waitFor(driver -> !loginErrors.isEmpty() &&
                     loginErrors.stream().anyMatch(WebElement::isDisplayed), fastWaitTime);
+            LoggingManager.info("Done waiting for errors list.");
         } catch (TimeoutException e) {
             LoggingManager.info("No input errors found");
         }
@@ -175,7 +193,7 @@ public class LoginPage extends BasePage {
                                     .filter(WebElement::isDisplayed) // Ensure the error element is displayed
                                     .map(WebElement::getText)
                                     .collect(Collectors.toList()));
-
+        LoggingManager.info("Returning errors list.");
         return errorsList;
     }
 

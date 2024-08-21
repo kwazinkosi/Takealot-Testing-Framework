@@ -1,585 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="44" passed="43" failed="1" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-21T08:20:24 SAST" name="Takealot Suite" finished-at="2024-08-21T08:52:05 SAST" duration-ms="1901377">
+  <suite started-at="2024-08-21T15:04:05 SAST" name="Default suite" finished-at="2024-08-21T15:06:39 SAST" duration-ms="153647">
     <groups>
-      <group name="wishlist">
-        <method signature="CartPageTest.verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@37eeec90]" name="verifyMoveItemToWishlist" class="tests.CartPageTest"/>
-      </group> <!-- wishlist -->
-      <group name="login">
-        <method signature="HomePageTest.verifyNavigateToLogin()[pri:12, instance:tests.HomePageTest@11acdc30]" name="verifyNavigateToLogin" class="tests.HomePageTest"/>
-        <method signature="LoginPageTest.verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@724f138e]" name="verifyLogin" class="tests.LoginPageTest"/>
-      </group> <!-- login -->
-      <group name="cart">
-        <method signature="ProductsPageTest.verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@f415a95]" name="verifyProductAddToCart" class="tests.ProductsPageTest"/>
-        <method signature="HomePageTest.verifyNavigateToCart()[pri:13, instance:tests.HomePageTest@11acdc30]" name="verifyNavigateToCart" class="tests.HomePageTest"/>
-        <method signature="CartPageTest.verifyCartIsEmpty()[pri:17, instance:tests.CartPageTest@37eeec90]" name="verifyCartIsEmpty" class="tests.CartPageTest"/>
-        <method signature="CartPageTest.verifyCartNotEmpty()[pri:18, instance:tests.CartPageTest@37eeec90]" name="verifyCartNotEmpty" class="tests.CartPageTest"/>
-        <method signature="CartPageTest.verifyItemDetailsInCart()[pri:19, instance:tests.CartPageTest@37eeec90]" name="verifyItemDetailsInCart" class="tests.CartPageTest"/>
-        <method signature="CartPageTest.verifyTotalCartPrice()[pri:20, instance:tests.CartPageTest@37eeec90]" name="verifyTotalCartPrice" class="tests.CartPageTest"/>
-        <method signature="CartPageTest.verifyRemovalOfItemFromCart()[pri:21, instance:tests.CartPageTest@37eeec90]" name="verifyRemovalOfItemFromCart" class="tests.CartPageTest"/>
-        <method signature="CartPageTest.verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@37eeec90]" name="verifyMoveItemToWishlist" class="tests.CartPageTest"/>
-      </group> <!-- cart -->
-      <group name="products">
-        <method signature="ProductsPageTest.verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@f415a95]" name="verifyIsResultsVisible" class="tests.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@f415a95]" name="verifyProductsRetrieval" class="tests.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@f415a95]" name="verifyFilteredProducts" class="tests.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@f415a95]" name="verifyGetProductByPrice" class="tests.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@f415a95]" name="verifyProductDetails" class="tests.ProductsPageTest"/>
-        <method signature="ProductsPageTest.verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@f415a95]" name="verifyProductAddToCart" class="tests.ProductsPageTest"/>
-      </group> <!-- products -->
-      <group name="search">
-        <method signature="ProductsPageTest.verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@f415a95]" name="verifyIsResultsVisible" class="tests.ProductsPageTest"/>
-        <method signature="HomePageTest.verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" name="verifySearchFunctionality" class="tests.HomePageTest"/>
-      </group> <!-- search -->
-      <group name="navigation">
-        <method signature="HomePageTest.verifyTitle()[pri:0, instance:tests.HomePageTest@11acdc30]" name="verifyTitle" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verifyNavigateToRegister()[pri:11, instance:tests.HomePageTest@11acdc30]" name="verifyNavigateToRegister" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verifyNavigateToLogin()[pri:12, instance:tests.HomePageTest@11acdc30]" name="verifyNavigateToLogin" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verifyNavigateToCart()[pri:13, instance:tests.HomePageTest@11acdc30]" name="verifyNavigateToCart" class="tests.HomePageTest"/>
-      </group> <!-- navigation -->
-      <group name="price">
-        <method signature="ProductsPageTest.verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@f415a95]" name="verifyGetProductByPrice" class="tests.ProductsPageTest"/>
-      </group> <!-- price -->
-      <group name="retrieval">
-        <method signature="ProductsPageTest.verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@f415a95]" name="verifyProductsRetrieval" class="tests.ProductsPageTest"/>
-      </group> <!-- retrieval -->
       <group name="registration">
-        <method signature="HomePageTest.verifyNavigateToRegister()[pri:11, instance:tests.HomePageTest@11acdc30]" name="verifyNavigateToRegister" class="tests.HomePageTest"/>
-        <method signature="RegistrationPageTest.verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" name="verifyRegistration" class="tests.RegistrationPageTest"/>
+        <method signature="RegistrationPageTest.verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@1922e6d]" name="verifyRegistration" class="tests.RegistrationPageTest"/>
       </group> <!-- registration -->
-      <group name="details">
-        <method signature="ProductsPageTest.verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@f415a95]" name="verifyProductDetails" class="tests.ProductsPageTest"/>
-      </group> <!-- details -->
-      <group name="filtering">
-        <method signature="ProductsPageTest.verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@f415a95]" name="verifyFilteredProducts" class="tests.ProductsPageTest"/>
-      </group> <!-- filtering -->
       <group name="verification">
-        <method signature="LoginPageTest.verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@724f138e]" name="verifyLogin" class="tests.LoginPageTest"/>
-        <method signature="RegistrationPageTest.verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" name="verifyRegistration" class="tests.RegistrationPageTest"/>
+        <method signature="RegistrationPageTest.verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@1922e6d]" name="verifyRegistration" class="tests.RegistrationPageTest"/>
       </group> <!-- verification -->
-      <group name="homepage">
-        <method signature="HomePageTest.verifyTitle()[pri:0, instance:tests.HomePageTest@11acdc30]" name="verifyTitle" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verifyNavigateToRegister()[pri:11, instance:tests.HomePageTest@11acdc30]" name="verifyNavigateToRegister" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verifyNavigateToLogin()[pri:12, instance:tests.HomePageTest@11acdc30]" name="verifyNavigateToLogin" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verifyNavigateToCart()[pri:13, instance:tests.HomePageTest@11acdc30]" name="verifyNavigateToCart" class="tests.HomePageTest"/>
-        <method signature="HomePageTest.verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" name="verifySearchFunctionality" class="tests.HomePageTest"/>
-      </group> <!-- homepage -->
     </groups>
-    <test started-at="2024-08-21T08:20:24 SAST" name="Takealot Automation Tests" finished-at="2024-08-21T08:52:05 SAST" duration-ms="1901377">
-      <class name="tests.CartPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-21T08:45:11 SAST" name="setUp" finished-at="2024-08-21T08:45:33 SAST" duration-ms="21804" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyCartIsEmpty()[pri:17, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-21T08:45:33 SAST" name="verifyCartIsEmpty" finished-at="2024-08-21T08:45:34 SAST" duration-ms="492" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCartIsEmpty -->
-        <test-method signature="verifyCartNotEmpty()[pri:18, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-21T08:45:34 SAST" name="verifyCartNotEmpty" finished-at="2024-08-21T08:47:44 SAST" duration-ms="130031" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCartNotEmpty -->
-        <test-method signature="verifyItemDetailsInCart()[pri:19, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-21T08:47:44 SAST" name="verifyItemDetailsInCart" finished-at="2024-08-21T08:51:55 SAST" duration-ms="251428" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyItemDetailsInCart -->
-        <test-method signature="verifyTotalCartPrice()[pri:20, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-21T08:51:55 SAST" name="verifyTotalCartPrice" finished-at="2024-08-21T08:51:56 SAST" duration-ms="589" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalCartPrice -->
-        <test-method signature="verifyRemovalOfItemFromCart()[pri:21, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-21T08:51:56 SAST" name="verifyRemovalOfItemFromCart" finished-at="2024-08-21T08:52:00 SAST" duration-ms="3836" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRemovalOfItemFromCart -->
-        <test-method signature="verifyMoveItemToWishlist()[pri:22, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-21T08:52:00 SAST" name="verifyMoveItemToWishlist" finished-at="2024-08-21T08:52:04 SAST" duration-ms="4164" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMoveItemToWishlist -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPageTest@37eeec90]" started-at="2024-08-21T08:52:04 SAST" name="tearDown" finished-at="2024-08-21T08:52:05 SAST" duration-ms="1376" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.CartPageTest -->
-      <class name="tests.ProductsPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:26:18 SAST" name="setUp" finished-at="2024-08-21T08:26:43 SAST" duration-ms="24833" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyIsResultsVisible()[pri:5, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:26:43 SAST" name="verifyIsResultsVisible" finished-at="2024-08-21T08:26:43 SAST" duration-ms="265" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyIsResultsVisible -->
-        <test-method signature="verifyProductsRetrieval()[pri:6, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:26:43 SAST" name="verifyProductsRetrieval" finished-at="2024-08-21T08:27:53 SAST" duration-ms="70695" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductsRetrieval -->
-        <test-method signature="verifyFilteredProducts()[pri:7, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:27:53 SAST" name="verifyFilteredProducts" finished-at="2024-08-21T08:27:54 SAST" duration-ms="246" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFilteredProducts -->
-        <test-method signature="verifyGetProductByPrice()[pri:8, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:27:54 SAST" name="verifyGetProductByPrice" finished-at="2024-08-21T08:27:54 SAST" duration-ms="227" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGetProductByPrice -->
-        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:27:55 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-21T08:29:31 SAST" duration-ms="96488" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Apple iPhone 15 Pro Max 256GB]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Apple]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[27595.0]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[4.8]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[40.0]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[smartphones]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Product price does not match expected [27595.00] but found [27078.00]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Product price does not match expected [27595.00] but found [27078.00]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at tests.ProductsPageTest.verifyProductDetails(ProductsPageTest.java:178)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductDetails -->
-        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:29:31 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-21T08:31:04 SAST" duration-ms="92231" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Apex - Marine Luxury Men's Leather Watch]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Apex]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[850.0]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[5.0]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[4.0]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Watches and accessories]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductDetails -->
-        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:31:04 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-21T08:33:45 SAST" duration-ms="161721" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Fujifilm Instax Mini 12 Camera + Case and Film]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Fujifilm Instax]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1999.0]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[4.8]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[120.0]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Cameras]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductDetails -->
-        <test-method signature="verifyProductDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:33:45 SAST" name="verifyProductDetails" data-provider="productSearchData" finished-at="2024-08-21T08:35:16 SAST" duration-ms="90111" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Fender Squier SA-105CE Acoustic Electric Guitar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Squier]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[3495.0]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[4.2]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[4.0]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Music]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductDetails -->
-        <test-method signature="verifyProductAddToCart()[pri:10, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:35:16 SAST" name="verifyProductAddToCart" finished-at="2024-08-21T08:36:46 SAST" duration-ms="90916" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsPageTest@f415a95]" started-at="2024-08-21T08:36:46 SAST" name="tearDown" finished-at="2024-08-21T08:36:50 SAST" duration-ms="3890" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.ProductsPageTest -->
-      <class name="tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:20:24 SAST" name="setUp" finished-at="2024-08-21T08:20:31 SAST" duration-ms="6468" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyTitle()[pri:0, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:20:31 SAST" name="verifyTitle" finished-at="2024-08-21T08:20:32 SAST" duration-ms="903" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method signature="verifyNavigateToRegister()[pri:11, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:20:32 SAST" name="verifyNavigateToRegister" finished-at="2024-08-21T08:20:39 SAST" duration-ms="7548" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigateToRegister -->
-        <test-method signature="verifyNavigateToLogin()[pri:12, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:20:39 SAST" name="verifyNavigateToLogin" finished-at="2024-08-21T08:20:47 SAST" duration-ms="8216" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigateToLogin -->
-        <test-method signature="verifyNavigateToCart()[pri:13, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:20:47 SAST" name="verifyNavigateToCart" finished-at="2024-08-21T08:20:56 SAST" duration-ms="8748" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigateToCart -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:20:57 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:21:14 SAST" duration-ms="17035" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[iphone]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[results-page]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:21:14 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:21:28 SAST" duration-ms="14424" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC002]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Wireless Earbuds]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[results-page]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:21:28 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:21:44 SAST" duration-ms="15563" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC003]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[monitor]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[results-page]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:21:44 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:21:59 SAST" duration-ms="14993" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC004]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[IPHONE 15]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[results-page]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:21:59 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:22:14 SAST" duration-ms="14794" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC005]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[iphone 15]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[results-page]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:22:14 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:23:03 SAST" duration-ms="49410" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC006]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[default-page]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:23:03 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:24:31 SAST" duration-ms="87380" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC007]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[!/*][#$&]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[default-page]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:24:31 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:25:04 SAST" duration-ms="33103" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC008]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[empty-results-page]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:25:04 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:25:39 SAST" duration-ms="34816" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC009]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[XYZ123NonExistent]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[empty-results-page]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchFunctionality -->
-        <test-method signature="verifySearchFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:14, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:25:39 SAST" name="verifySearchFunctionality" data-provider="searchData" finished-at="2024-08-21T08:26:13 SAST" duration-ms="34059" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC010]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[gibharish-uhjbjk]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[empty-results-page]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@11acdc30]" started-at="2024-08-21T08:26:13 SAST" name="tearDown" finished-at="2024-08-21T08:26:18 SAST" duration-ms="5070" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.HomePageTest -->
+    <test started-at="2024-08-21T15:04:05 SAST" name="Default test" finished-at="2024-08-21T15:06:39 SAST" duration-ms="153647">
       <class name="tests.RegistrationPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:36:50 SAST" name="setUp" finished-at="2024-08-21T08:36:59 SAST" duration-ms="8899" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegistrationPageTest@1922e6d]" started-at="2024-08-21T15:04:05 SAST" name="setUp" finished-at="2024-08-21T15:04:19 SAST" duration-ms="13388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:37:01 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:37:41 SAST" duration-ms="39428" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@1922e6d]" started-at="2024-08-21T15:04:34 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T15:04:48 SAST" duration-ms="14181" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -625,7 +63,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:37:41 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:38:32 SAST" duration-ms="50853" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@1922e6d]" started-at="2024-08-21T15:04:48 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T15:05:07 SAST" duration-ms="18259" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -671,7 +109,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:38:32 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:39:06 SAST" duration-ms="34609" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@1922e6d]" started-at="2024-08-21T15:05:07 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T15:05:16 SAST" duration-ms="9075" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -715,7 +153,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:39:06 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:39:49 SAST" duration-ms="42422" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@1922e6d]" started-at="2024-08-21T15:05:16 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T15:05:25 SAST" duration-ms="9060" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -759,7 +197,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:39:49 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:40:21 SAST" duration-ms="32750" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@1922e6d]" started-at="2024-08-21T15:05:25 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T15:05:34 SAST" duration-ms="9249" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -805,7 +243,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:40:22 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:40:54 SAST" duration-ms="32782" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@1922e6d]" started-at="2024-08-21T15:05:34 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T15:05:43 SAST" duration-ms="9539" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -851,7 +289,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:40:54 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:41:27 SAST" duration-ms="32675" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@1922e6d]" started-at="2024-08-21T15:05:44 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T15:05:54 SAST" duration-ms="10707" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -897,7 +335,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:41:27 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:41:57 SAST" duration-ms="29847" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@1922e6d]" started-at="2024-08-21T15:05:54 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T15:06:04 SAST" duration-ms="10128" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -943,7 +381,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:41:57 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:42:30 SAST" duration-ms="33235" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@1922e6d]" started-at="2024-08-21T15:06:04 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T15:06:15 SAST" duration-ms="10661" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -989,7 +427,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:42:30 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:43:02 SAST" duration-ms="32115" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@1922e6d]" started-at="2024-08-21T15:06:15 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T15:06:27 SAST" duration-ms="11525" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1035,7 +473,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:43:02 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T08:43:43 SAST" duration-ms="41194" status="PASS">
+        <test-method signature="verifyRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:16, instance:tests.RegistrationPageTest@1922e6d]" started-at="2024-08-21T15:06:27 SAST" name="verifyRegistration" data-provider="registrationData" finished-at="2024-08-21T15:06:37 SAST" duration-ms="10699" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1081,143 +519,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationPageTest@cf65451]" started-at="2024-08-21T08:43:43 SAST" name="tearDown" finished-at="2024-08-21T08:43:44 SAST" duration-ms="1064" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationPageTest@1922e6d]" started-at="2024-08-21T15:06:37 SAST" name="tearDown" finished-at="2024-08-21T15:06:39 SAST" duration-ms="1485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.RegistrationPageTest -->
-      <class name="tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-21T08:43:44 SAST" name="setUp" finished-at="2024-08-21T08:43:54 SAST" duration-ms="9079" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-21T08:43:54 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-21T08:44:04 SAST" duration-ms="9821" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[P@ssw0rd]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Please fill in your email address]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-21T08:44:04 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-21T08:44:16 SAST" duration-ms="12153" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC002]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[john.doe@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value is-null="true"/>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Please enter a password]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-21T08:44:16 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-21T08:44:43 SAST" duration-ms="26675" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC003]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[jon.doe@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[P@ssw0rd]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Incorrect Email or Password. Please try again and ensure Caps Lock is not enabled.]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:15, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-21T08:44:43 SAST" name="verifyLogin" data-provider="loginData" finished-at="2024-08-21T08:45:11 SAST" duration-ms="27964" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC004]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[john.doe@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[P@ssw0rd]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Incorrect Email or Password. Please try again and ensure Caps Lock is not enabled.]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@724f138e]" started-at="2024-08-21T08:45:11 SAST" name="tearDown" finished-at="2024-08-21T08:45:11 SAST" duration-ms="717" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.LoginPageTest -->
-    </test> <!-- Takealot Automation Tests -->
-  </suite> <!-- Takealot Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

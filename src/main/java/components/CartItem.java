@@ -6,6 +6,7 @@ import java.math.RoundingMode;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import logging.LoggingManager;
 
@@ -151,7 +152,9 @@ public class CartItem extends BaseComponent {
      */
     public void removeFromCart() {
         try {
-            removeBtn.click();
+            click(removeBtn);
+
+            waitUtil.waitFor(ExpectedConditions.invisibilityOf(cartItemElement), 10);
             LoggingManager.info("Removed item from the cart");
         } catch (Exception e) {
             LoggingManager.info("Error removing item from cart: " + e.getMessage());
@@ -165,7 +168,8 @@ public class CartItem extends BaseComponent {
     public void moveToWishlist() {
         try {
             click(moveToWishlistBtn);
-            waitUtil.waitImplicitly(5);
+            // Wait until the moveToWishlistBtn is null or no longer visible
+            waitUtil.waitFor(ExpectedConditions.invisibilityOf(cartItemElement), 10);
             LoggingManager.info("Moved item from the cart to wish list.");
         } catch (Exception e) {
             LoggingManager.info("Error moving item to wishlist: " + e.getMessage());

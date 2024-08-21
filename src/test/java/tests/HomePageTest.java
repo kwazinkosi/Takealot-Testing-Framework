@@ -106,8 +106,9 @@ public class HomePageTest extends BaseTest{
         
         // Navigate to the Cart page and verify visibility
         homePage.navigateToCart();
+        homePage.getWait().waitImplicitly(2);
         CartPage cartPage = new CartPage(DriverFactory.getDriver());
-        Assert.assertTrue(cartPage.getTitle().equalsIgnoreCase(title), "Cart page should be visible.");
+        Assert.assertTrue(cartPage.isVisible(), "Cart page should be visible.");
         
         // Navigate back to Home from the Cart page
         cartPage.getNavBar().clickNavLink("Home");
