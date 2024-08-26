@@ -1,23 +1,15 @@
 package tests;
 
 import java.util.List;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.events.EventFiringDecorator;
-import org.openqa.selenium.support.events.WebDriverListener;
 import org.testng.Assert;
 import org.testng.SkipException;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import config.ConfigReader;
 import logging.LoggingManager;
-import pages.BasePage;
 import pages.HomePage;
 import pages.RegistrationPage;
-import utilities.EventListener;
 import utilities.DataProviderUtil;
-import utilities.DriverFactory;
 
 /**
  * Test class for verifying the registration process on the website. It uses
@@ -26,7 +18,6 @@ import utilities.DriverFactory;
  */
 public class RegistrationPageTest extends BaseTest{
 
-	private WebDriver driver;
 	private HomePage homePage;
 
 	/**
@@ -35,22 +26,10 @@ public class RegistrationPageTest extends BaseTest{
 	 */
 	@BeforeClass
 	public void setUp() {
-		// Initialize WebDriver
-		driver = DriverFactory.initDriver();
-
-		// Apply the WebDriverListener to handle events during the test
-		WebDriverListener listener = new EventListener();
-		driver = new EventFiringDecorator<>(listener).decorate(driver);
-
-		// Navigate to the base URL
-		driver.get(ConfigReader.getProperty("base_url"));
 
 		// Initialize HomePage and navigate to the registration page
 		homePage = new HomePage(driver);
 		homePage.navigateToRegister();
-
-		// Set the WebDriver for reporting purposes
-		BasePage.reporter.setDriver(driver);
 
 		// Log the start of the registration tests
 		LoggingManager.info("\n\n*************** STARTING REGISTRATION TESTS **************");
@@ -110,13 +89,4 @@ public class RegistrationPageTest extends BaseTest{
 		}
 	}
 
-	/**
-	 * Tear down method that runs after the test class. Closes the WebDriver
-	 * instance to end the session.
-	 */
-	@AfterClass
-	public void tearDown() {
-		DriverFactory.quitDriver(); // Quit the WebDriver instance
-        LoggingManager.info("Driver quit successfully.");
-	}
 }

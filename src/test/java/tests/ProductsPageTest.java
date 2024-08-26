@@ -5,24 +5,18 @@ import java.math.RoundingMode;
 import java.util.List;
 import java.util.function.Predicate;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.events.EventFiringDecorator;
-import org.openqa.selenium.support.events.WebDriverListener;
+
 import org.testng.Assert;
 import org.testng.SkipException;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import components.Product;
-import config.ConfigReader;
 import logging.LoggingManager;
 import pages.BasePage;
 import pages.HomePage;
 import pages.ProductsPage;
-import utilities.EventListener;
 import utilities.DataProviderUtil;
-import utilities.DriverFactory;
 
 /**
  * Test class for verifying functionalities on the Products Page.
@@ -31,7 +25,6 @@ import utilities.DriverFactory;
  */
 public class ProductsPageTest extends BaseTest{
 
-    private WebDriver driver;
     private ProductsPage productsPage;
     private HomePage homePage;
     private DataProviderUtil dataProviderUtil = new DataProviderUtil();
@@ -43,19 +36,9 @@ public class ProductsPageTest extends BaseTest{
      */
     @BeforeClass
     public void setUp() {
-        // Initialize WebDriver
-        driver = DriverFactory.initDriver();
-
-        // Apply the WebDriverListener to handle events during the test
-        WebDriverListener listener = new EventListener();
-        driver = new EventFiringDecorator<>(listener).decorate(driver);
-
-        // Navigate to the base URL
-        driver.get(ConfigReader.getProperty("base_url"));
 
         // Retrieve the product to search for from the data provider
         searchProduct = dataProviderUtil.getValue("common info", "search_product");
-
         // Navigate to the search results page for the product
         homePage = new HomePage(driver);
         productsPage = homePage.searchValidFor(searchProduct);
@@ -210,13 +193,4 @@ public class ProductsPageTest extends BaseTest{
         LoggingManager.info("Product '" + cartProduct + "' was successfully added to the cart.");
     }
 
-    /**
-     * Tear down method that runs after the test class.
-     * Closes the WebDriver instance to end the session.
-     */
-    @AfterClass
-    public void tearDown() {
-    	DriverFactory.quitDriver(); // Quit the WebDriver instance
-        LoggingManager.info("Driver quit successfully.");
-    }
 }

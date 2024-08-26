@@ -10,9 +10,11 @@
     <classes>
       <class name="tests.ProductsPageTest">
         <methods>
-          <include name="verifyProductDetails" invocation-numbers="0"/>
+          <include name="verifyProductDetails" invocation-numbers="0 1 3"/>
+          <include name="verifyGetProductByPrice"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="setupClass"/>
         </methods>
       </class> <!-- tests.ProductsPageTest -->
     </classes>

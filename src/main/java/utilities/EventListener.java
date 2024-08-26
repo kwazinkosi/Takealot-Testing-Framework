@@ -77,7 +77,7 @@ public class EventListener implements WebDriverListener {
      */
     public static void closeCookieOverlay() {
         try {
-            WebElement cookiePopupCloseButton = DriverFactory.getDriver().findElement(By.className("cookies-banner-module_dismiss-button_24Z98"));
+            WebElement cookiePopupCloseButton = DriverFactory.getDriver().findElement(By.cssSelector("button.cookies-banner-module_dismiss-button_24Z98"));
             if (cookiePopupCloseButton.isDisplayed()) {
                 cookiePopupCloseButton.click();
                 System.out.println("Cookie overlay closed.");

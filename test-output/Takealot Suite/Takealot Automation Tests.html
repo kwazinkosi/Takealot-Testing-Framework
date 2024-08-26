@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Takealot Automation Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>43/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>40/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Aug 21 15:08:57 SAST 2024</td>
+<td>Started on:</td><td>Mon Aug 26 09:18:15 SAST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>623 seconds (623439 ms)</td>
+<tr><td>Total time:</td><td>693 seconds (693612 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Apple iPhone 15 Pro Max 256GB, Apple, 27595.0, 4.8, 40.0, smartphones, yes</td>
-<td><div><pre>java.lang.AssertionError: Product price does not match expected [27595.00] but found [27078.00]
-	at tests.ProductsPageTest.verifyProductDetails(ProductsPageTest.java:178)
+<td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Apex - Marine Luxury Men's Leather Watch, Apex, 850.0, 5.0, 4.0, Watches and accessories, yes</td>
+<td><div><pre>java.lang.AssertionError: Product price does not match expected [850.00] but found [740.00]
+	at tests.ProductsPageTest.verifyProductDetails(ProductsPageTest.java:163)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1901662085", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1901662085'><pre>java.lang.AssertionError: Product price does not match expected [27595.00] but found [27078.00]
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace236730494", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace236730494'><pre>java.lang.AssertionError: Product price does not match expected [850.00] but found [740.00]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
-	at tests.ProductsPageTest.verifyProductDetails(ProductsPageTest.java:178)
+	at tests.ProductsPageTest.verifyProductDetails(ProductsPageTest.java:163)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -116,8 +116,155 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>33</td>
-<td>tests.ProductsPageTest@12cd9150</td></tr>
+<td>35</td>
+<td>tests.ProductsPageTest@6063d80a</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyGetProductByPrice()'><b>verifyGetProductByPrice</b><br>Test class: tests.ProductsPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at tests.ProductsPageTest.lambda$1(ProductsPageTest.java:118)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at pages.ProductsPage.getProduct(ProductsPage.java:189)
+	at tests.ProductsPageTest.verifyGetProductByPrice(ProductsPageTest.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace566706526", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace566706526'><pre>java.lang.NullPointerException
+	at tests.ProductsPageTest.lambda$1(ProductsPageTest.java:118)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at pages.ProductsPage.getProduct(ProductsPage.java:189)
+	at tests.ProductsPageTest.verifyGetProductByPrice(ProductsPageTest.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.ProductsPageTest@6063d80a</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Fender Squier SA-105CE Acoustic Electric Guitar, Squier, 3495.0, 4.2, 4.0, Music, yes</td>
+<td><div><pre>java.lang.AssertionError: Product price does not match expected [3495.00] but found [2995.00]
+	at tests.ProductsPageTest.verifyProductDetails(ProductsPageTest.java:163)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace59360804", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace59360804'><pre>java.lang.AssertionError: Product price does not match expected [3495.00] but found [2995.00]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at tests.ProductsPageTest.verifyProductDetails(ProductsPageTest.java:163)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>32</td>
+<td>tests.ProductsPageTest@6063d80a</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Apple iPhone 15 Pro Max 256GB, Apple, 27078.0, 4.8, 40.0, smartphones, yes</td>
+<td><div><pre>java.lang.AssertionError: Product price does not match expected [27078.00] but found [26489.00]
+	at tests.ProductsPageTest.verifyProductDetails(ProductsPageTest.java:163)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace658510078", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace658510078'><pre>java.lang.AssertionError: Product price does not match expected [27078.00] but found [26489.00]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at tests.ProductsPageTest.verifyProductDetails(ProductsPageTest.java:163)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>37</td>
+<td>tests.ProductsPageTest@6063d80a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -128,220 +275,205 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.ProductsPageTest.verifyFilteredProducts()'><b>verifyFilteredProducts</b><br>Test class: tests.ProductsPageTest</td>
-<td></td>
-<td>0</td>
-<td>tests.ProductsPageTest@12cd9150</td></tr>
-<tr>
-<td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC002, john.doe@gmail.com, null, Please enter a password, yes</td>
-<td></td>
-<td>4</td>
-<td>tests.LoginPageTest@f415a95</td></tr>
-<tr>
-<td title='tests.HomePageTest.verifyTitle()'><b>verifyTitle</b><br>Test class: tests.HomePageTest</td>
-<td></td>
-<td>4</td>
-<td>tests.HomePageTest@460f76a6</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC003, John, null, jon.doe@gmail.com, P@ssw0rd, 012345679, Please enter your last name, yes</td>
-<td></td>
-<td>7</td>
-<td>tests.RegistrationPageTest@114a85c2</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC008, John, Doe, , P@ssw0rd, 012345684, Please enter your email address, yes</td>
-<td></td>
-<td>9</td>
-<td>tests.RegistrationPageTest@114a85c2</td></tr>
-<tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC006, , default-page</td>
-<td></td>
-<td>10</td>
-<td>tests.HomePageTest@460f76a6</td></tr>
-<tr>
-<td title='tests.ProductsPageTest.verifyProductAddToCart()'><b>verifyProductAddToCart</b><br>Test class: tests.ProductsPageTest</td>
-<td></td>
-<td>19</td>
-<td>tests.ProductsPageTest@12cd9150</td></tr>
-<tr>
-<td title='tests.CartPageTest.verifyItemDetailsInCart()'><b>verifyItemDetailsInCart</b><br>Test class: tests.CartPageTest</td>
-<td></td>
-<td>76</td>
-<td>tests.CartPageTest@cf65451</td></tr>
-<tr>
-<td title='tests.CartPageTest.verifyRemovalOfItemFromCart()'><b>verifyRemovalOfItemFromCart</b><br>Test class: tests.CartPageTest</td>
-<td></td>
-<td>1</td>
-<td>tests.CartPageTest@cf65451</td></tr>
-<tr>
-<td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC003, jon.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps Lock is not enabled., yes</td>
-<td></td>
-<td>16</td>
-<td>tests.LoginPageTest@f415a95</td></tr>
-<tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC002, Wireless Earbuds, results-page</td>
-<td></td>
-<td>6</td>
-<td>tests.HomePageTest@460f76a6</td></tr>
-<tr>
-<td title='tests.CartPageTest.verifyMoveItemToWishlist()'><b>verifyMoveItemToWishlist</b><br>Test class: tests.CartPageTest</td>
-<td></td>
-<td>2</td>
-<td>tests.CartPageTest@cf65451</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC011, John, Doe, jon.doe@gmail.com, P@ssw0rd, 123456789, Please enter a 9 or 10-digit SA mobile number, yes</td>
-<td></td>
-<td>8</td>
-<td>tests.RegistrationPageTest@114a85c2</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC001, John, Doe, john.doe@gmail.com, P@ssw0rd, 0612345679, This email address is already registered on takealot.com, yes</td>
-<td></td>
-<td>8</td>
-<td>tests.RegistrationPageTest@114a85c2</td></tr>
-<tr>
-<td title='tests.HomePageTest.verifyNavigateToRegister()'><b>verifyNavigateToRegister</b><br>Test class: tests.HomePageTest</td>
-<td></td>
-<td>3</td>
-<td>tests.HomePageTest@460f76a6</td></tr>
-<tr>
-<td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC001, , P@ssw0rd, Please fill in your email address, yes</td>
-<td></td>
-<td>5</td>
-<td>tests.LoginPageTest@f415a95</td></tr>
-<tr>
-<td title='tests.HomePageTest.verifyNavigateToLogin()'><b>verifyNavigateToLogin</b><br>Test class: tests.HomePageTest</td>
-<td></td>
-<td>2</td>
-<td>tests.HomePageTest@460f76a6</td></tr>
-<tr>
-<td title='tests.CartPageTest.verifyCartIsEmpty()'><b>verifyCartIsEmpty</b><br>Test class: tests.CartPageTest</td>
-<td></td>
-<td>0</td>
-<td>tests.CartPageTest@cf65451</td></tr>
-<tr>
 <td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC010, gibharish-uhjbjk, empty-results-page</td>
 <td></td>
-<td>21</td>
-<td>tests.HomePageTest@460f76a6</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC005, John, Doe, invalid-email, P@ssw0rd, 012345681, Please enter a valid email address, yes</td>
-<td></td>
-<td>8</td>
-<td>tests.RegistrationPageTest@114a85c2</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC007, John, Doe, jon.doe@gmail.com, , 012345683, Please enter a password, yes</td>
-<td></td>
-<td>8</td>
-<td>tests.RegistrationPageTest@114a85c2</td></tr>
-<tr>
-<td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Fujifilm Instax Mini 12 Camera + Case and Film, Fujifilm Instax, 1999.0, 4.8, 120.0, Cameras, yes</td>
-<td></td>
-<td>20</td>
-<td>tests.ProductsPageTest@12cd9150</td></tr>
-<tr>
-<td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Fender Squier SA-105CE Acoustic Electric Guitar, Squier, 3495.0, 4.2, 4.0, Music, yes</td>
-<td></td>
-<td>27</td>
-<td>tests.ProductsPageTest@12cd9150</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC002, John, Doe, jon.doe@gmail.com, P@ssw0rd, 0612345679, Success, yes</td>
-<td></td>
-<td>13</td>
-<td>tests.RegistrationPageTest@114a85c2</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC006, John, Doe, jon.doe@gmail.com, short, 012345682, Password must be at least 8 characters and 1 special character or number, yes</td>
-<td></td>
-<td>7</td>
-<td>tests.RegistrationPageTest@114a85c2</td></tr>
+<td>23</td>
+<td>tests.HomePageTest@4cc76301</td></tr>
 <tr>
 <td title='tests.CartPageTest.verifyTotalCartPrice()'><b>verifyTotalCartPrice</b><br>Test class: tests.CartPageTest</td>
 <td></td>
 <td>0</td>
-<td>tests.CartPageTest@cf65451</td></tr>
+<td>tests.CartPageTest@54709809</td></tr>
 <tr>
-<td title='tests.ProductsPageTest.verifyProductsRetrieval()'><b>verifyProductsRetrieval</b><br>Test class: tests.ProductsPageTest</td>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC003, monitor, results-page</td>
 <td></td>
-<td>13</td>
-<td>tests.ProductsPageTest@12cd9150</td></tr>
+<td>8</td>
+<td>tests.HomePageTest@4cc76301</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Fujifilm Instax Mini 12 Camera + Case and Film, Fujifilm Instax, 1999.0, 4.8, 120.0, Cameras, yes</td>
+<td></td>
+<td>42</td>
+<td>tests.ProductsPageTest@6063d80a</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC009, John, Doe, jon.doe@gmail.com, P@ssw0rd, 012345, Please enter a 9 or 10-digit SA mobile number, yes</td>
+<td></td>
+<td>10</td>
+<td>tests.RegistrationPageTest@1133ec6e</td></tr>
+<tr>
+<td title='tests.CartPageTest.verifyCartNotEmpty()'><b>verifyCartNotEmpty</b><br>Test class: tests.CartPageTest</td>
+<td></td>
+<td>42</td>
+<td>tests.CartPageTest@54709809</td></tr>
+<tr>
+<td title='tests.CartPageTest.verifyCartIsEmpty()'><b>verifyCartIsEmpty</b><br>Test class: tests.CartPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CartPageTest@54709809</td></tr>
+<tr>
+<td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC002, john.doe@gmail.com, null, Please enter a password, yes</td>
+<td></td>
+<td>4</td>
+<td>tests.LoginPageTest@355e34c7</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyFilteredProducts()'><b>verifyFilteredProducts</b><br>Test class: tests.ProductsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductsPageTest@6063d80a</td></tr>
 <tr>
 <td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC010, John, Doe, jon.doe@gmail.com, P@ssw0rd, , Mobile number must be at least 10 digits, yes</td>
 <td></td>
-<td>7</td>
-<td>tests.RegistrationPageTest@114a85c2</td></tr>
+<td>8</td>
+<td>tests.RegistrationPageTest@1133ec6e</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC008, John, Doe, , P@ssw0rd, 012345684, Please enter your email address, yes</td>
+<td></td>
+<td>8</td>
+<td>tests.RegistrationPageTest@1133ec6e</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifyNavigateToRegister()'><b>verifyNavigateToRegister</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>3</td>
+<td>tests.HomePageTest@4cc76301</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC009, XYZ123NonExistent, empty-results-page</td>
+<td></td>
+<td>22</td>
+<td>tests.HomePageTest@4cc76301</td></tr>
 <tr>
 <td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC004, john.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps Lock is not enabled., yes</td>
 <td></td>
 <td>16</td>
-<td>tests.LoginPageTest@f415a95</td></tr>
+<td>tests.LoginPageTest@355e34c7</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC008, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, empty-results-page</td>
+<td></td>
+<td>22</td>
+<td>tests.HomePageTest@4cc76301</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC002, Wireless Earbuds, results-page</td>
+<td></td>
+<td>9</td>
+<td>tests.HomePageTest@4cc76301</td></tr>
 <tr>
 <td title='tests.HomePageTest.verifyNavigateToCart()'><b>verifyNavigateToCart</b><br>Test class: tests.HomePageTest</td>
 <td></td>
-<td>4</td>
-<td>tests.HomePageTest@460f76a6</td></tr>
+<td>5</td>
+<td>tests.HomePageTest@4cc76301</td></tr>
 <tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC003, monitor, results-page</td>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC001, John, Doe, john.doe@gmail.com, P@ssw0rd, 0612345679, This email address is already registered on takealot.com, yes</td>
 <td></td>
-<td>6</td>
-<td>tests.HomePageTest@460f76a6</td></tr>
+<td>10</td>
+<td>tests.RegistrationPageTest@1133ec6e</td></tr>
 <tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC009, XYZ123NonExistent, empty-results-page</td>
+<td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC003, jon.doe@gmail.com, P@ssw0rd, Incorrect Email or Password. Please try again and ensure Caps Lock is not enabled., yes</td>
 <td></td>
-<td>19</td>
-<td>tests.HomePageTest@460f76a6</td></tr>
-<tr>
-<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC009, John, Doe, jon.doe@gmail.com, P@ssw0rd, 012345, Please enter a 9 or 10-digit SA mobile number, yes</td>
-<td></td>
-<td>14</td>
-<td>tests.RegistrationPageTest@114a85c2</td></tr>
+<td>17</td>
+<td>tests.LoginPageTest@355e34c7</td></tr>
 <tr>
 <td title='tests.ProductsPageTest.verifyIsResultsVisible()'><b>verifyIsResultsVisible</b><br>Test class: tests.ProductsPageTest</td>
 <td></td>
 <td>0</td>
-<td>tests.ProductsPageTest@12cd9150</td></tr>
+<td>tests.ProductsPageTest@6063d80a</td></tr>
 <tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC005, iphone 15, results-page</td>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC007, John, Doe, jon.doe@gmail.com, , 012345683, Please enter a password, yes</td>
 <td></td>
-<td>7</td>
-<td>tests.HomePageTest@460f76a6</td></tr>
+<td>8</td>
+<td>tests.RegistrationPageTest@1133ec6e</td></tr>
 <tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC004, IPHONE 15, results-page</td>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC005, John, Doe, invalid-email, P@ssw0rd, 012345681, Please enter a valid email address, yes</td>
 <td></td>
-<td>6</td>
-<td>tests.HomePageTest@460f76a6</td></tr>
+<td>8</td>
+<td>tests.RegistrationPageTest@1133ec6e</td></tr>
 <tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC007, !/*][#$&, default-page</td>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC006, , default-page</td>
 <td></td>
-<td>7</td>
-<td>tests.HomePageTest@460f76a6</td></tr>
-<tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC008, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, empty-results-page</td>
-<td></td>
-<td>20</td>
-<td>tests.HomePageTest@460f76a6</td></tr>
-<tr>
-<td title='tests.ProductsPageTest.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: tests.ProductsPageTest<br>Parameters: Apex - Marine Luxury Men's Leather Watch, Apex, 850.0, 5.0, 4.0, Watches and accessories, yes</td>
-<td></td>
-<td>26</td>
-<td>tests.ProductsPageTest@12cd9150</td></tr>
-<tr>
-<td title='tests.CartPageTest.verifyCartNotEmpty()'><b>verifyCartNotEmpty</b><br>Test class: tests.CartPageTest</td>
-<td></td>
-<td>43</td>
-<td>tests.CartPageTest@cf65451</td></tr>
-<tr>
-<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC001, iphone, results-page</td>
-<td></td>
-<td>7</td>
-<td>tests.HomePageTest@460f76a6</td></tr>
-<tr>
-<td title='tests.ProductsPageTest.verifyGetProductByPrice()'><b>verifyGetProductByPrice</b><br>Test class: tests.ProductsPageTest</td>
-<td></td>
-<td>0</td>
-<td>tests.ProductsPageTest@12cd9150</td></tr>
+<td>11</td>
+<td>tests.HomePageTest@4cc76301</td></tr>
 <tr>
 <td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC004, null, Doe, jon.doe@gmail.com, P@ssw0rd, 012345680, Please enter your first name, yes</td>
 <td></td>
+<td>8</td>
+<td>tests.RegistrationPageTest@1133ec6e</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC004, IPHONE 15, results-page</td>
+<td></td>
 <td>7</td>
-<td>tests.RegistrationPageTest@114a85c2</td></tr>
+<td>tests.HomePageTest@4cc76301</td></tr>
+<tr>
+<td title='tests.CartPageTest.verifyItemDetailsInCart()'><b>verifyItemDetailsInCart</b><br>Test class: tests.CartPageTest</td>
+<td></td>
+<td>77</td>
+<td>tests.CartPageTest@54709809</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC011, John, Doe, jon.doe@gmail.com, P@ssw0rd, 123456789, Please enter a 9 or 10-digit SA mobile number, yes</td>
+<td></td>
+<td>9</td>
+<td>tests.RegistrationPageTest@1133ec6e</td></tr>
+<tr>
+<td title='tests.CartPageTest.verifyRemovalOfItemFromCart()'><b>verifyRemovalOfItemFromCart</b><br>Test class: tests.CartPageTest</td>
+<td></td>
+<td>1</td>
+<td>tests.CartPageTest@54709809</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifyNavigateToLogin()'><b>verifyNavigateToLogin</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>tests.HomePageTest@4cc76301</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC006, John, Doe, jon.doe@gmail.com, short, 012345682, Password must be at least 8 characters and 1 special character or number, yes</td>
+<td></td>
+<td>8</td>
+<td>tests.RegistrationPageTest@1133ec6e</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC001, iphone, results-page</td>
+<td></td>
+<td>12</td>
+<td>tests.HomePageTest@4cc76301</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyProductAddToCart()'><b>verifyProductAddToCart</b><br>Test class: tests.ProductsPageTest</td>
+<td></td>
+<td>27</td>
+<td>tests.ProductsPageTest@6063d80a</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC003, John, null, jon.doe@gmail.com, P@ssw0rd, 012345679, Please enter your last name, yes</td>
+<td></td>
+<td>7</td>
+<td>tests.RegistrationPageTest@1133ec6e</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC007, !/*][#$&, default-page</td>
+<td></td>
+<td>8</td>
+<td>tests.HomePageTest@4cc76301</td></tr>
+<tr>
+<td title='tests.RegistrationPageTest.verifyRegistration()'><b>verifyRegistration</b><br>Test class: tests.RegistrationPageTest<br>Parameters: TC002, John, Doe, jon.doe@gmail.com, P@ssw0rd, 0612345679, Success, yes</td>
+<td></td>
+<td>17</td>
+<td>tests.RegistrationPageTest@1133ec6e</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifyTitle()'><b>verifyTitle</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>tests.HomePageTest@4cc76301</td></tr>
+<tr>
+<td title='tests.ProductsPageTest.verifyProductsRetrieval()'><b>verifyProductsRetrieval</b><br>Test class: tests.ProductsPageTest</td>
+<td></td>
+<td>12</td>
+<td>tests.ProductsPageTest@6063d80a</td></tr>
+<tr>
+<td title='tests.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: tests.LoginPageTest<br>Parameters: TC001, , P@ssw0rd, Please fill in your email address, yes</td>
+<td></td>
+<td>4</td>
+<td>tests.LoginPageTest@355e34c7</td></tr>
+<tr>
+<td title='tests.CartPageTest.verifyMoveItemToWishlist()'><b>verifyMoveItemToWishlist</b><br>Test class: tests.CartPageTest</td>
+<td></td>
+<td>2</td>
+<td>tests.CartPageTest@54709809</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.HomePageTest<br>Parameters: TC005, iphone 15, results-page</td>
+<td></td>
+<td>6</td>
+<td>tests.HomePageTest@4cc76301</td></tr>
 </table><p>
 </body>
 </html>

@@ -5,28 +5,19 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.events.EventFiringDecorator;
-import org.openqa.selenium.support.events.WebDriverListener;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import components.CartItem;
 import components.Product;
-import config.ConfigReader;
 import logging.LoggingManager;
-import pages.BasePage;
 import pages.CartPage;
 import pages.HomePage;
 import pages.ProductsPage;
-import utilities.EventListener;
-import utilities.DriverFactory;
 
 public class CartPageTest extends BaseTest{
 
-    private WebDriver driver;
     private ProductsPage productsPage;
     private HomePage homePage;
     private CartPage cartPage;
@@ -34,18 +25,10 @@ public class CartPageTest extends BaseTest{
     @BeforeClass
     public void setUp() {
         
-    	driver = DriverFactory.initDriver();
-        // Apply the WebDriverListener
-        
-        WebDriverListener listener = new EventListener();
-        driver = new EventFiringDecorator<>(listener).decorate(driver);
-        driver.get(ConfigReader.getProperty("base_url"));
-
         // Navigate to the cart page
         homePage = new HomePage(driver);
         productsPage = new ProductsPage(driver);
         cartPage = homePage.navigateToCart();
-        BasePage.reporter.setDriver(driver); // Inject WebDriver into ReportManager
         LoggingManager.info(" \n\n\n*************** STARTING Cart TESTS **************");
     }
 
@@ -167,9 +150,4 @@ public class CartPageTest extends BaseTest{
         LoggingManager.info("============ Move Item to Wishlist Verification -- Passed ============= \n\n");
     }
 
-    @AfterClass
-    public void tearDown() {
-    	DriverFactory.quitDriver(); // Quit the WebDriver instance
-        LoggingManager.info("Driver quit successfully.");
-    }
 }

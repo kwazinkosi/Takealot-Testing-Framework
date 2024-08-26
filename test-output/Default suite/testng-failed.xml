@@ -3,13 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.RegistrationPageTest">
+      <class name="tests.ProductsPageTest">
         <methods>
-          <include name="setUp"/>
+          <include name="verifyProductDetails"/>
+          <include name="verifyFilteredProducts"/>
+          <include name="verifyGetProductByPrice"/>
+          <include name="verifyIsResultsVisible"/>
           <include name="tearDown"/>
-          <include name="verifyRegistration" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10"/>
+          <include name="verifyProductAddToCart"/>
+          <include name="setUp"/>
+          <include name="setupClass"/>
+          <include name="verifyProductsRetrieval"/>
         </methods>
-      </class> <!-- tests.RegistrationPageTest -->
+      </class> <!-- tests.ProductsPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

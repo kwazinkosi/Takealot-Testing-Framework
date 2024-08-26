@@ -1,18 +1,9 @@
 package tests;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.events.EventFiringDecorator;
-import org.openqa.selenium.support.events.WebDriverListener;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import config.ConfigReader;
 import logging.LoggingManager;
-import utilities.EventListener;
-import pages.BasePage;
 import pages.CartPage;
 import pages.HomePage;
 import pages.LoginPage;
@@ -25,7 +16,6 @@ import utilities.DriverFactory;
  */
 public class HomePageTest extends BaseTest{
 
-    private WebDriver driver;
     private HomePage homePage;
 
     /**
@@ -34,19 +24,9 @@ public class HomePageTest extends BaseTest{
      */
     @BeforeClass
     public void setUp() {
-
-    	driver = DriverFactory.initDriver();
-        // Apply the WebDriverListener to capture events during test execution
-        WebDriverListener listener = new EventListener();
-        driver = new EventFiringDecorator<>(listener).decorate(driver);
-
-        // Navigate to the base URL and initialize the HomePage object
-        driver.get(ConfigReader.getProperty("base_url"));
+	
         homePage = new HomePage(driver);
-
-        // Set the WebDriver for reporting purposes
-        BasePage.reporter.setDriver(driver);
-        LoggingManager.info("\n\n*************** STARTING HOMEPAGE TESTS **************");
+        LoggingManager.info("\n\n\n*************** STARTING HOMEPAGE TESTS **************");
     }
 
     /**
@@ -104,10 +84,12 @@ public class HomePageTest extends BaseTest{
         LoggingManager.info("=========== Testing navigation to cart. ===========");
         String title = homePage.dataUtil.getValue("common info", "cart_page_title");
         
-        // Navigate to the Cart page and verify visibility
-        homePage.navigateToCart();
-        homePage.getWait().waitImplicitly(2);
+        
         CartPage cartPage = new CartPage(DriverFactory.getDriver());
+        // Navigate to the Cart page and verify visibility
+        cartPage = homePage.navigateToCart();
+        homePage.getWait().waitImplicitly(2);
+        Assert.assertTrue(cartPage.getTitle().equalsIgnoreCase(title), "Cart title is not correct.");
         Assert.assertTrue(cartPage.isVisible(), "Cart page should be visible.");
         
         // Navigate back to Home from the Cart page
@@ -140,13 +122,4 @@ public class HomePageTest extends BaseTest{
         LoggingManager.info("Testing search functionality {search value = " + searchValue + "} -- PASSED\n");
     }
 
-    /**
-     * Tear down method that runs after the test class.
-     * Closes the WebDriver instance.
-     */
-    @AfterClass
-    public void tearDown() {
-        DriverFactory.quitDriver(); // Quit the WebDriver instance
-        LoggingManager.info("Driver quit successfully.");
-    }
 }

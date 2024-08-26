@@ -1,20 +1,14 @@
 package tests;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.events.EventFiringDecorator;
-import org.openqa.selenium.support.events.WebDriverListener;
 import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import config.ConfigReader;
 import logging.LoggingManager;
-import pages.BasePage;
 import pages.HomePage;
 import pages.LoginPage;
-import utilities.EventListener;
 import utilities.DataProviderUtil;
 import utilities.DriverFactory;
 
@@ -24,7 +18,6 @@ import utilities.DriverFactory;
  */
 public class LoginPageTest extends BaseTest {
 
-	private WebDriver driver;
 	private HomePage homePage;
 	private LoginPage loginPage;
 
@@ -34,25 +27,13 @@ public class LoginPageTest extends BaseTest {
 	 */
 	@BeforeClass
 	public void setUp() {
-		// Initialize WebDriver using the DriverFactory
-		driver = DriverFactory.initDriver();
-
-		// Apply the WebDriverListener to handle events during the test
-		WebDriverListener listener = new EventListener();
-		driver = new EventFiringDecorator<>(listener).decorate(driver);
-
-		// Navigate to the base URL
-		driver.get(ConfigReader.getProperty("base_url"));
 
 		// Navigate to the login page via the home page
 		homePage = new HomePage(driver);
 		loginPage = homePage.navigateToLogin();
 
-		// Set the WebDriver for reporting purposes
-		BasePage.reporter.setDriver(driver);
-
 		// Log the start of the login tests
-		LoggingManager.info("\n\n*************** STARTING LOGIN TESTS **************");
+		LoggingManager.info("\n\n\n*************** STARTING LOGIN TESTS **************");
 	}
 
     
